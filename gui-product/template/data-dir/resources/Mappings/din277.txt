@@ -1,0 +1,69 @@
+1.1 Wohnräume
+1.2 Gemeinschaftsräume
+1.3 Pausenräume
+1.4 Warteräume
+1.5 Speiseräume
+1.6 Hafträume
+2.1 Büroräume
+2.2 Grossraumbüros
+2.3 Besprechungsräume
+2.4 Konstruktionsräume
+2.5 Schalterräume
+2.6 Bedienungsräume
+2.7 Aufsichtsräume
+2.8 Bürotechnikräume
+2.9 Sonstige Büroflächen
+3.1 Werkhallen
+3.2 Werkstätten
+3.3 Technologische Labors
+3.4 Physikalische, physikalischtechnische, elektrotechnische Labors
+3.5 Chemische, bakteriologische, morphologische Labors
+3.6 Räume für Tierhaltung
+3.7 Räume für Pflanzenzucht
+3.8 Küchen
+3.9 Sonderarbeitsräume
+4.1 Lagerräume
+4.2 Archive, Sammlungsräume
+4.3 Kühlräume
+4.4 Annahme- und Ausgaberäume
+4.5 Verkaufsräume
+4.6 Ausstellungsräume
+4.9 Sonstige Lagerräume
+5.1 Unterrichtsräume mit festem Gestühl
+5.2 Allgemeine Unterrichts- und Übungsräume ohne festes Gestühl
+5.3 Besondere Unterrichts- und Übungsräume ohne festes Gestühl
+5.4 Bibliotheksräume
+5.5 Sporträume
+5.6 Versammlungsräume
+5.7 Bühnen-, Studioräume
+5.8 Schauräume
+5.9 Sakralräume
+6.1 Räume mit allgemeiner medizinischer Ausstattung
+6.2 Räume mit besonderer medizinischer Ausstattung
+6.3 Räume für operative Eingriffe, Endoskopien und Entbindungen
+6.4 Räume für Strahlendiagnostik
+6.5 Räume für Strahlentherapie
+6.6 Räume für Physiotherapie und Rehabilitation
+6.7 Bettenräume mit allgemeiner Ausstattung in Krankenhäusern, Pflegeheimen, Heil- und Pflegeanstalten
+6.8 Bettenräume mit besonderer Ausstattung
+6.9 Sonstige Pflegeräume
+7.1 Sanitärräume
+7.2 Garderoben
+7.3 Abstellräume
+7.4 Fahrzeugabstellflächen
+7.5 Fahrgastflächen
+7.6 Räume für zentrale Technik
+7.7 Schutzräume
+7.9 Sonstige Räume
+8.1 Abwasseraufbereitung und Beseitigung Wasserversorgung Gase (außer für Heizzwecke) und Flüssigkeiten)
+8.2 Heizung und Brauchwassererwärmung
+8.3 Raumlufttechnische Anlagen
+8.4 Elektrische Stromversorgung
+8.5 Fernmeldetechnik
+8.6 Aufzugs- und Förderanlagen
+8.9 Sonstige betriebstechnische Anlagen
+9.1 Flure, Hallen
+9.2 Treppen
+9.3 Schächte für Förderanlagen
+9.4 Fahrzeugverkehrsflächen
+9.9 Sonstige Verkehrsflächen

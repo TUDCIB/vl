@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<DelphinProject xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fileVersion="5.6.7" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" xmlns="http://www.bauklimatik-dresden.de">
+  <Materials>
+    <MaterialReference displayName="DS 2-fach">${Material Database}/material_1.m6</MaterialReference>
+  </Materials>
+  <Discretization>
+    <XSteps unit="m">0,100</XSteps>
+  </Discretization>
+  <Assignments>
+    <Assignment location="Element" type="Material">
+      <Reference displayName="DS 2-fach">1</Reference>
+      <IBK:Range>0 0 0 0</IBK:Range>
+    </Assignment>
+  </Assignments>
+</DelphinProject>

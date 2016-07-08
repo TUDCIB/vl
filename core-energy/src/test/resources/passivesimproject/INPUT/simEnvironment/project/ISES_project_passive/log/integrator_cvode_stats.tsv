@@ -1,0 +1,3 @@
+                 Time [s]	     Steps	  RhsEvals	 LinSetups	  NIters	 NConvFails	  NErrFails	 Order	  StepSize [s]
+          3608.6488723189	       165	       182	        21	     181	          0	          3	     3	     30.000000
+          7208.6488723189	       285	       302	        27	     301	          0	          3	     3	     30.000000

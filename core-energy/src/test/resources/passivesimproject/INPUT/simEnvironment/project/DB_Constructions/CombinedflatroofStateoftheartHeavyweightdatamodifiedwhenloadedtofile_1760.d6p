@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" fileVersion="5.6.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd">
+   <ProjectInfo>
+      <DisplayName>CombinedflatroofStateoftheartHeavyweightdatamodifiedwhenloadedtofile</DisplayName>
+      <Comment>This template was made by ResCon</Comment>
+   </ProjectInfo>
+   <!--List of all materials used in this construction-->
+   <Materials>
+      <MaterialReference displayName="Asphalt">${Material Database}/Asphalt_4.m6</MaterialReference>
+      <MaterialReference displayName="Plasterboard">${Material Database}/Plasterboard_113.m6</MaterialReference>
+      <MaterialReference displayName="MWGlassWoolrolls">${Material Database}/MWGlassWoolrolls_20.m6</MaterialReference>
+      <MaterialReference displayName="Airgapandgt25mm">${Material Database}/Airgapandgt25mm_123.m6</MaterialReference>
+   </Materials>
+   <!--Discretization data (grid and sketches)-->
+   <Discretization geometryType="2D">
+      <XSteps unit="m">0.01 0.1 0.2 0.013</XSteps>
+   </Discretization>
+   <!--List of all assignments of materials and conditions-->
+   <Assignments>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="Asphalt">4</Reference>
+         <IBK:Range>0 0 0 0</IBK:Range>
+      </Assignment>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="MWGlassWoolrolls">20</Reference>
+         <IBK:Range>1 0 1 0</IBK:Range>
+      </Assignment>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="Airgapandgt25mm">123</Reference>
+         <IBK:Range>2 0 2 0</IBK:Range>
+      </Assignment>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="Plasterboard">113</Reference>
+         <IBK:Range>3 0 3 0</IBK:Range>
+      </Assignment>
+   </Assignments>
+</DelphinProject>

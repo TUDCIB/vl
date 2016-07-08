@@ -1,0 +1,18 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = CONCRETE WATER-TIGHT
+    RHO                      = 2420 kg/m3
+    CE                       = 1000 J/kgK
+    LAMBDA                   = 2.3 W/mK
+    OPOR                     = 0.12 m3/m3
+    OEFF                     = 0.12 m3/m3
+    AW                       = 0.00383333 kg/m2s05
+    MEW                      = 650 -
+    KLEFF                    = 2.71201e-010 s
+	O80                		 = 0.05 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 5 - Concrete Containing Building Materials
+    COLOR                    = 10485760

@@ -1,0 +1,33 @@
+D6MARLZ! 006.000
+
+[IDENTIFICATION]
+  NAME                     = Glass - Escape door upper floors_large
+  LABORATORY               = DE: Literatur Annex 14 Vol 3 |EN: Literature Annex 14 Vol 3 |IT: Letteratura Annex 14 Vol 3 |RU: Литература Annex 14 том 3
+  DATE                     = Wed, 16 May 2012 10:48:53 Mitteleurop�ische Sommerzeit
+  COLOUR                   = #404060
+  FLAGS                    = AIR_TIGHT VAPOR_TIGHT WATER_TIGHT 
+  USE_INSTEAD              = 0
+  CATEGORY                 = 13
+  COMMENTS                 = DE: Spiegelglas und Fensterglas |EN: Plate and sheet glass |IT: Vetro argentato (specchio) e vetro per finestre |RU: Зеркальное и оконное стекло
+  DBTYPE                   = 1,4,5,7,21
+
+
+[STORAGE_BASE_PARAMETERS]
+  RHO                      = 2400 kg/m3
+  CE                       = 1000 J/kgK
+  THETA_POR                = 1.6e-006 m3/m3
+  THETA_EFF                = 1.5e-006 m3/m3
+  THETA_CAP                = 1.4e-006 m3/m3
+  THETA_80                 = 1.5e-008 m3/m3
+  U						   = 1.70 W/(m2K)
+  Glass percentage		   = 60 %
+  Frame percentage		   = 40 %
+  G-Value				   = 0.6
+
+
+[TRANSPORT_BASE_PARAMETERS]
+  LAMBDA                   = 0.8 W/mK
+  AW                       = 1e-006 kg/m2s05
+  MEW                      = 200000 -
+  KLEFF                    = 0 s
+  

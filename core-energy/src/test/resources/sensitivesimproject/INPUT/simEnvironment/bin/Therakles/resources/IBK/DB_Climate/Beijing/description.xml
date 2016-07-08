@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start='175' duration='20'/>
+<Position latitude='39.80' longitude='116.47'/>
+<Description langid='de'>Peking, China, Asien</Description>
+<Description langid='en'>Beijing, China, Asia</Description>
+</ClimateDataLocation>

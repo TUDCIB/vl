@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="5.6.7">
+
+<ProjectInfo>
+        <DisplayName>Natural_stone_28cm</DisplayName>
+</ProjectInfo>
+	
+    <!--List of all materials used in this construction-->
+    <Materials>
+		<MaterialReference displayName="SANDSTONE COTTA">${Material Database}/material_219.m6</MaterialReference>
+		<MaterialReference displayName="COMPOUND MORTAR">${Material Database}/material_990.m6</MaterialReference>
+		<MaterialReference displayName="FLOATING SCREED">${Material Database}/material_69.m6</MaterialReference>
+		<MaterialReference displayName="PE FOIL CLAD">${Material Database}/material_998.m6</MaterialReference>
+    </Materials>
+
+    <!--Discretization data (grid and sketches)-->
+    <Discretization geometryType="2D">
+		<XSteps unit="m">0.020 0.010 0.035 0.005</XSteps>
+    </Discretization>
+
+    <!--List of all assignments of materials and conditions-->
+    <Assignments>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="SANDSTONE COTTA">219</Reference>
+			<IBK:Range>0 0 0 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="COMPOUND MORTAR">990</Reference>
+			<IBK:Range>1 0 1 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="FLOATING SCREED">69</Reference>
+			<IBK:Range>2 0 2 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="PE FOIL CLAD">998</Reference>
+			<IBK:Range>3 0 3 0</IBK:Range>
+		</Assignment>
+    </Assignments>
+	<Costs>0.0</Costs>
+</DelphinProject>

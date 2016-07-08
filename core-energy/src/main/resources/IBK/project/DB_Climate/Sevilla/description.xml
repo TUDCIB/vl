@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start='160' duration='100'/>
+<Position latitude='37.42' longitude='354.10'/>
+<Description langid='de'>Sevilla, Spanien, Europa</Description>
+<Description langid='en'>Sevilla, Spain, Europe</Description>
+</ClimateDataLocation>

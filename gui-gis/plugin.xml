@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.7"?>
+<plugin>
+   	<extension
+         point="org.eclipse.ui.views">
+      <!-- GisView initialized by Spring -->
+	  <view
+         category="geoview"
+         class="org.eclipse.springframework.util.SpringExtensionFactory:gisView"
+         icon="resources/icons/google-maps_mod.png"
+         id="de.tudresden.bau.cib.vl.gui.gis.ui.view.main.Geolocation"
+         name="%GeoLocationView_name"
+         restorable="true">
+	  </view>
+   <category
+         id="geoview"
+         name="Geo Views">
+   </category>
+   	</extension>
+    <extension
+          point="org.eclipse.ui.perspectiveExtensions">
+       <perspectiveExtension
+             targetID="vl.perspective">
+          <view
+                id="de.tudresden.bau.cib.vl.gui.gis.ui.view.main.Geolocation"
+                minimized="false"
+                ratio="0.8f"
+                relationship="right"
+                relative="de.tudresden.bau.cib.vl.gui.bim.ui.view.main.OntologyView"
+                visible="false">
+          </view>
+       </perspectiveExtension>
+    </extension>
+
+</plugin>

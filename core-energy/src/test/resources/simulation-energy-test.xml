@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-init-method="init" default-destroy-method="destroy"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    
+    
+    <bean id="configuration"
+		class="de.tudresden.bau.cib.vl.core.configuration.Configuration">
+		
+		<!-- TEST MODE -->
+		<property name="configDirectoryPath" 
+        	value="D:/Nutzer/ken/Workspaces/VirtualLaboratory/master/core-configuration/config"/>
+        	
+        <!-- PRODUCTION MODE -->        
+        <!--<property name="configDirectoryPath" 
+        	value="D:/Daten/tomcat-data/vl/config"/>-->
+	</bean> 
+	
+	<bean id="fileService"
+		class="de.tudresden.bau.cib.vl.core.service.impl.FileServiceImpl">
+		<property name="configuration" ref="configuration" />
+	</bean>
+	
+	<bean id="templateService"
+		class="de.tudresden.bau.cib.vl.core.model.eeBim.service.impl.TemplateServiceImpl">
+		<property name="configurationService" ref="configuration" />
+		<property name="fileService" ref="fileService" />
+	</bean>
+	
+	<bean name="userService" class="de.tudresden.bau.cib.vl.core.service.impl.UserServiceImpl">
+    	<property name="fileService" ref="fileService" />
+    	<property name="configuration" ref="configuration" />
+    </bean>
+	
+
+	<bean id="ontologyService" class="de.tudresden.bau.cib.vl.core.model.ontology.service.impl.OntologyServiceImpl">
+		<property name="configurationService" ref="configuration" />
+		<property name="fileService" ref="fileService" />
+	</bean>    
+
+	<bean id="dataResourceServiceClient" class="de.tudresden.bau.cib.vl.core.model.eeBim.service.impl.DataResourceServiceImpl">
+		<property name="configurationService" ref="configuration" />
+		<property name="fileService" ref="fileService" />
+	</bean>	
+	
+	<!-- 
+	<bean name="nandradSimulation"
+  		class="de.tudresden.bau.cib.vl.core.simulation.energy.process.NandradSimulation">
+  		<constructor-arg index = "0" type="de.tudresden.bau.cib.vl.core.service.ConfigurationService" ref="configuration" />
+  		<property name="userService" ref="userService" />
+  	</bean>
+  	-->
+	
+	<bean name="localEnergySimulationService"
+  		class="de.tudresden.bau.cib.vl.core.simulation.energy.service.impl.LocalEnergySimulationService">  
+		<property name="configurationService" ref="configuration" />
+		<property name="templateService" ref="templateService" />
+		<property name="fileService" ref="fileService" />
+		<property name="userService" ref="userService" />
+		<property name="ontologyService" ref="ontologyService" />
+  	</bean>
+  	
+  	<bean id="remoteEnergySimulationService"
+		class="de.tudresden.bau.cib.vl.core.simulation.energy.service.impl.RemoteEnergySimulationServiceImpl">
+		<property name="userService" ref="userService" />
+		<property name="configurationService" ref="configuration" />
+		<property name="fileService" ref="fileService" />
+		<property name="templateService" ref="templateService" />
+		<property name="ontologyService" ref="ontologyService" />
+	</bean>
+	
+	<bean id="decisionMakingService"
+		class="de.tudresden.bau.cib.vl.core.simulation.energy.service.impl.DecisionMakingServiceImpl">
+		<property name="configurationService" ref="configuration" />
+	</bean>
+  	
+  	<bean name="energyResultService"
+  		class="de.tudresden.bau.cib.vl.core.simulation.energy.service.impl.EnergyResultServiceImpl">  
+		<property name="configurationService" ref="configuration" />
+		<!--<property name="simulationInformationService" ref="osgiSimulationInformationService" />-->
+		<property name="energySimulationService" ref="remoteEnergySimulationService" />
+		<!-- <property name="energySimulationService" ref="localEnergySimulationService" /> -->
+		<property name="templateService" ref="dataResourceServiceClient" />
+  	</bean>  	
+
+  	<bean name="spaceBoundaryService" class="de.tudresden.bau.cib.vl.core.simulation.energy.service.impl.SpaceBoundaryServiceImpl">
+  		<property name="configurationService" ref="configuration" />
+  		<property name="fileService" ref="fileService" />	
+  	</bean>
+
+	<bean id="simMatrixService"
+		class="de.tudresden.bau.cib.vl.core.simulation.energy.service.impl.SimulationMatrixServiceImpl">
+	</bean>
+	
+	
+	<bean id="cs" class="activiti.SpaceBoundaryConversionService" />
+	
+	<bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
+		<property name="history" value="full" />
+		<property name="dataSource" ref="dataSource" />
+	    <property name="transactionManager" ref="transactionManager" />
+	    <property name="databaseSchemaUpdate" value="true" />
+	    <property name="jobExecutorActivate" value="false" />
+		<!--<property name="deploymentResources" value="classpath*:/activiti/*.bpmn" />-->
+    	<!-- use only SpaceBoundaryConversionService in BPMN -->
+    	<!-- 
+    	<property name="beans"> 
+		    <map>
+		      <entry key="cs" value-ref="cs" />
+		    </map>
+  		</property>
+  		-->
+	</bean>
+	
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+        <property name="driverClass" value="#{configuration.getProperty('activiti.db.driverClass')}" />
+		<property name="url" value="#{configuration.getProperty('activiti.db.url')}" />
+		<property name="username" value="#{configuration.getProperty('activiti.db.username')}" />
+		<property name="password" value="#{configuration.getProperty('activiti.db.password')}" />
+    </bean>
+    
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    	<property name="dataSource" ref="dataSource" />
+  	</bean>
+  	
+  	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
+	<bean id="processEngine" class="org.activiti.spring.ProcessEngineFactoryBean">
+    	<property name="processEngineConfiguration" ref="processEngineConfiguration" />
+  	</bean> 	
+  
+  	<bean id="repositoryService" factory-bean="processEngine" factory-method="getRepositoryService" />
+  	<bean id="runtimeService" factory-bean="processEngine" factory-method="getRuntimeService" />
+  	<bean id="taskService" factory-bean="processEngine" factory-method="getTaskService" />
+  	<bean id="historyService" factory-bean="processEngine" factory-method="getHistoryService" />
+  	<bean id="managementService" factory-bean="processEngine" factory-method="getManagementService" />
+	
+	<bean id="activitiRule" class="org.activiti.engine.test.ActivitiRule">
+		<property name="processEngine" ref="processEngine" />
+	</bean>
+</beans>

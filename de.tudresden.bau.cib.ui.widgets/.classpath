@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="lib/images.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry exported="true" kind="lib" path="lib/openifctools.com.openifcjavatoolbox_1.0.1_20111129.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/openifctools.com.viewer.api.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/swingx-2009_02_01.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/vldocking_2.1.5.jar"/>
+	<classpathentry kind="src" path="src/"/>
+	<classpathentry exported="true" kind="lib" path="lib/javaws.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/j3dcore.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/j3dutils.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/vecmath.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

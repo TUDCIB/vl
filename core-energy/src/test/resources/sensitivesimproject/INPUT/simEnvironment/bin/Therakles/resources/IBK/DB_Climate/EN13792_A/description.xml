@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<Position latitude="52" longitude="8" unused="1"/>
+<Description langid="de"> EN ISO 13792 - A</Description>
+<Description langid="en"> EN ISO 13792 - A</Description>
+</ClimateDataLocation>

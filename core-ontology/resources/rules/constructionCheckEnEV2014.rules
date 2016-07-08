@@ -1,0 +1,268 @@
+// @id: coloredcheckResourceUValuesEnEV2014 @name: Check u-Value (EnEV 2014) @description: Check u-Value of assigned resources rule set based on EnEV 2014 @end
+@prefix BIMOnto: http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMOnto#
+
+// Currently important because in the model are only direct rdf:type but we also need the super class information
+[buildingElementDerivationA: 	(?a rdf:type BIMOnto:IfcWindow) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationB: 	(?a rdf:type BIMOnto:IfcWallStandardCase) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationC: 	(?a rdf:type BIMOnto:IfcColumn) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationD: 	(?a rdf:type BIMOnto:IfcSlab) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationE: 	(?a rdf:type BIMOnto:IfcWall) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationF: 	(?a rdf:type BIMOnto:IfcWallStandardCase) -> (?a rdf:type BIMOnto:IfcWall)]
+[buildingElementDerivationG: 	(?a rdf:type BIMOnto:IfcDoor) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+
+[noAssignedConstruction: 
+		(?element	rdf:type	BIMOnto:IfcBuildingElement)
+		noValue(?element	eeBIM:hasConstruction	?c)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Critical)]
+
+[enevOuterWalls19COk: 
+		(?element	rdf:type	BIMOnto:IfcWall)
+		(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		lessThan(?uValue, 0.25)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Information)]
+		
+[enevOuterWalls19CWarning: 
+		(?element	rdf:type	BIMOnto:IfcWall)
+		(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 0.24)
+		lessThan(?uValue, 0.35)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Warning)]
+		
+[enevOuterWalls19CCritical: 
+		(?element	rdf:type	BIMOnto:IfcWall)
+		(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 0.35)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Critical)]
+
+[enevOuterSlabs19COk: 
+		(?element	rdf:type	BIMOnto:IfcSlab)
+		(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		lessThan(?uValue, 0.25)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Information)]
+		
+[enevOuterSlabs19CWarning: 
+		(?element	rdf:type	BIMOnto:IfcSlab)
+		(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 0.24)
+		lessThan(?uValue, 0.35)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Warning)]
+		
+[enevOuterSlabs19CCritical: 
+		(?element	rdf:type	BIMOnto:IfcSlab)
+		(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 0.35)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Critical)]
+
+[enevOuterWindows19COk: 
+		(?element	rdf:type	BIMOnto:IfcWindow)
+		(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		lessThan(?uValue, 1.4)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Information)]
+						
+[enevOuterWindows19CWarning: 
+		(?element	rdf:type	BIMOnto:IfcWindow)
+		(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 1.3)
+		lessThan(?uValue, 1.9)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Warning)]
+		
+[enevOuterWindows19CCritical: 
+		(?element	rdf:type	BIMOnto:IfcWindow)
+		(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 1.9)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Critical)]
+
+[enevOuterDoors19COk: 
+		(?element	rdf:type	BIMOnto:IfcDoor)
+		(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		lessThan(?uValue, 1.81)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Information)]
+		
+[enevOuterDoors19CCritical: 
+		(?element	rdf:type	BIMOnto:IfcDoor)
+		(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 1.8)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Critical)]
+		
+// Inner building elements are every time OK
+[enevInnerBEInfo: 
+		(?element	rdf:type	BIMOnto:IfcBuildingElement)
+		(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?sb BIMOnto:IfcInternalOrExternalEnum "INTERNAL")	
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Information)]
+		
+// No space boundary related to an element -> we expect that these are outer elements
+[enevWalls19COk: 
+		(?element	rdf:type	BIMOnto:IfcWall)
+		noValue(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		lessThan(?uValue, 0.25)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Information)]
+		
+[enevWalls19CWarning: 
+		(?element	rdf:type	BIMOnto:IfcWall)
+		noValue(?element	BIMOnto:ProvidesBoundaries	?sb)	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 0.24)
+		lessThan(?uValue, 0.35)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Warning)]
+		
+[enevWalls19CCritical: 
+		(?element	rdf:type	BIMOnto:IfcWall)
+		noValue(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 0.35)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Critical)]
+
+[enevSlabs19COk: 
+		(?element	rdf:type	BIMOnto:IfcSlab)
+		noValue(?element	BIMOnto:ProvidesBoundaries	?sb)	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		lessThan(?uValue, 0.25)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Information)]
+		
+[enevSlabs19CWarning: 
+		(?element	rdf:type	BIMOnto:IfcSlab)
+		noValue(?element	BIMOnto:ProvidesBoundaries	?sb)	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 0.24)
+		lessThan(?uValue, 0.35)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Warning)]
+		
+[enevSlabs19CCritical: 
+		(?element	rdf:type	BIMOnto:IfcSlab)
+		noValue(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 0.35)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Critical)]
+
+[enevWindows19COk: 
+		(?element	rdf:type	BIMOnto:IfcWindow)
+		noValue(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		lessThan(?uValue, 1.4)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Information)]
+						
+[enevWindows19CWarning: 
+		(?element	rdf:type	BIMOnto:IfcWindow)
+		noValue(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 1.3)
+		lessThan(?uValue, 1.9)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Warning)]
+		
+[enevWindows19CCritical: 
+		(?element	rdf:type	BIMOnto:IfcWindow)
+		noValue(?element	BIMOnto:ProvidesBoundaries	?sb)	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 1.9)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Critical)]
+
+[enevDoors19COk: 
+		(?element	rdf:type	BIMOnto:IfcDoor)
+		noValue(?element	BIMOnto:ProvidesBoundaries	?sb)
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		lessThan(?uValue, 1.81)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Information)]
+		
+[enevDoors19CCritical: 
+		(?element	rdf:type	BIMOnto:IfcDoor)
+		noValue(?element	BIMOnto:ProvidesBoundaries	?sb)	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 1.8)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Critical)]
+		
+// Roofs
+[enevRoofs19COk: 
+		(?element	rdf:type	BIMOnto:IfcRoof)
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		lessThan(?uValue, 0.25)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Information)]
+						
+[enevRoofs19CWarning: 
+		(?element	rdf:type	BIMOnto:IfcRoof)
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 0.25)
+		lessThan(?uValue, 0.36)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Warning)]
+		
+[enevRoofs19CCritical: 
+		(?element	rdf:type	BIMOnto:IfcRoof)	
+		(?element	eeBIM:hasConstruction	?c)
+		(?c			eeBIM:uValue	?uValue)
+		greaterThan(?uValue, 0.35)
+		-> 
+		(?element	eeBIM:hasSummary	eeBIM:Critical)]

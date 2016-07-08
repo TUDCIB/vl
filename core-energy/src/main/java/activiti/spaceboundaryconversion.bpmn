@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/test">
+  <process id="spaceboundaryconversion" name="spaceboundaryconversion" isExecutable="true">
+    <serviceTask id="parseFile" name="parse IFC file with first level space boundaries" activiti:expression="#{cs.parseFile('D:\\Nutzer\\ken\\data\\repository','D:\\Nutzer\\ken\\data\\ifcFiles\\IFC3\\SpaceBoundaries\\1stLevel\\Quickstart_Project.ifc')}"></serviceTask>
+    <startEvent id="startevent2" name="Start"></startEvent>
+    <endEvent id="endevent2" name="End"></endEvent>
+    <serviceTask id="exportFile" name="save new IFC file with second level space boundaries" activiti:expression="#{cs.exportFile('D:\\Nutzer\\ken\\data\\ifcFiles\\export')}"></serviceTask>
+    <sequenceFlow id="flow10" sourceRef="exportFile" targetRef="endevent2"></sequenceFlow>
+    <serviceTask id="analyzeGeometry" name="analyze geometry of first level space boundaries" activiti:expression="#{cs.analyzeGeometry('D:\\Nutzer\\ken\\data\\ifcFiles\\temp','D:\\Daten\\tomcat-data\\vl\\resources\\tools\\SpaceBoundary\\SpaceBoundaryReadXML.exe')}"></serviceTask>
+    <serviceTask id="deleteOldSpaceBoundaries" name="delete first level space boundaries" activiti:expression="#{cs.deleteAllFirstLevelSpaceBoundaries()}"></serviceTask>
+    <sequenceFlow id="flow18" sourceRef="deleteOldSpaceBoundaries" targetRef="exportFile"></sequenceFlow>
+    <exclusiveGateway id="exclusivegateway1" name="Are there still spaces to convert?"></exclusiveGateway>
+    <serviceTask id="startConversion" name="start space boundary conversion of IfcSpace" activiti:expression="#{cs.createSecondLevelSpaceBoundaries()}"></serviceTask>
+    <sequenceFlow id="flow23" sourceRef="startConversion" targetRef="exclusivegateway1"></sequenceFlow>
+    <sequenceFlow id="flow26" name="all IfcSpace objects" sourceRef="analyzeGeometry" targetRef="startConversion"></sequenceFlow>
+    <sequenceFlow id="flow28" name="no spaces to convert anymore" sourceRef="exclusivegateway1" targetRef="deleteOldSpaceBoundaries"></sequenceFlow>
+    <sequenceFlow id="flow29" name="convert next space" sourceRef="exclusivegateway1" targetRef="startConversion"></sequenceFlow>
+    <sequenceFlow id="flow30" sourceRef="startevent2" targetRef="parseFile"></sequenceFlow>
+    <sequenceFlow id="flow31" sourceRef="parseFile" targetRef="analyzeGeometry"></sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_spaceboundaryconversion">
+    <bpmndi:BPMNPlane bpmnElement="spaceboundaryconversion" id="BPMNPlane_spaceboundaryconversion">
+      <bpmndi:BPMNShape bpmnElement="parseFile" id="BPMNShape_parseFile">
+        <omgdc:Bounds height="63.0" width="141.0" x="92.0" y="200.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="startevent2" id="BPMNShape_startevent2">
+        <omgdc:Bounds height="35.0" width="35.0" x="10.0" y="214.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="endevent2" id="BPMNShape_endevent2">
+        <omgdc:Bounds height="35.0" width="35.0" x="1070.0" y="361.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="exportFile" id="BPMNShape_exportFile">
+        <omgdc:Bounds height="81.0" width="142.0" x="870.0" y="338.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="analyzeGeometry" id="BPMNShape_analyzeGeometry">
+        <omgdc:Bounds height="81.0" width="141.0" x="270.0" y="191.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="deleteOldSpaceBoundaries" id="BPMNShape_deleteOldSpaceBoundaries">
+        <omgdc:Bounds height="64.0" width="142.0" x="870.0" y="200.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="exclusivegateway1" id="BPMNShape_exclusivegateway1">
+        <omgdc:Bounds height="40.0" width="40.0" x="720.0" y="213.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="startConversion" id="BPMNShape_startConversion">
+        <omgdc:Bounds height="70.0" width="150.0" x="525.0" y="197.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="flow10" id="BPMNEdge_flow10">
+        <omgdi:waypoint x="1012.0" y="378.0"></omgdi:waypoint>
+        <omgdi:waypoint x="1070.0" y="378.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow18" id="BPMNEdge_flow18">
+        <omgdi:waypoint x="941.0" y="264.0"></omgdi:waypoint>
+        <omgdi:waypoint x="941.0" y="338.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow23" id="BPMNEdge_flow23">
+        <omgdi:waypoint x="675.0" y="232.0"></omgdi:waypoint>
+        <omgdi:waypoint x="720.0" y="233.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow26" id="BPMNEdge_flow26">
+        <omgdi:waypoint x="411.0" y="231.0"></omgdi:waypoint>
+        <omgdi:waypoint x="525.0" y="232.0"></omgdi:waypoint>
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds height="14.0" width="94.0" x="426.0" y="211.0"></omgdc:Bounds>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow28" id="BPMNEdge_flow28">
+        <omgdi:waypoint x="760.0" y="233.0"></omgdi:waypoint>
+        <omgdi:waypoint x="870.0" y="232.0"></omgdi:waypoint>
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds height="42.0" width="100.0" x="770.0" y="199.0"></omgdc:Bounds>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow29" id="BPMNEdge_flow29">
+        <omgdi:waypoint x="740.0" y="253.0"></omgdi:waypoint>
+        <omgdi:waypoint x="740.0" y="322.0"></omgdi:waypoint>
+        <omgdi:waypoint x="598.0" y="322.0"></omgdi:waypoint>
+        <omgdi:waypoint x="600.0" y="267.0"></omgdi:waypoint>
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds height="14.0" width="94.0" x="627.0" y="299.0"></omgdc:Bounds>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow30" id="BPMNEdge_flow30">
+        <omgdi:waypoint x="45.0" y="231.0"></omgdi:waypoint>
+        <omgdi:waypoint x="92.0" y="231.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow31" id="BPMNEdge_flow31">
+        <omgdi:waypoint x="233.0" y="231.0"></omgdi:waypoint>
+        <omgdi:waypoint x="270.0" y="231.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

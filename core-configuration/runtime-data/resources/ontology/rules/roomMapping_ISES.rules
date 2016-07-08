@@ -1,0 +1,10 @@
+//* @id: roommappingkindergarden @name: Room Mapping Rules rule set @description: Maps occupancy information to rooms @end
+@prefix ifcOWL: http://openeebim.bau.tu-dresden.de/dev/ontology/ifcOWL#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMInterfaceOnto#
+[void: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "VOID") -> (?s rdf:type eeBIM:TechnicalRoom)]	
+[wc: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "WC M") -> (?s rdf:type eeBIM:LivingRoom)]	
+[rp: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "RAZSTAVNI PROSTOR") -> (?s rdf:type eeBIM:Passage)]	
+[garde: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "GARDEROBA") -> (?s rdf:type eeBIM:Storage)]	
+[pisaz: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "PISARNA ZAPOSLENI") -> (?s rdf:type eeBIM:LivingRoom)]
+[pisad: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "PISARNA DIREKTOR") -> (?s rdf:type eeBIM:LivingRoom)]	
+

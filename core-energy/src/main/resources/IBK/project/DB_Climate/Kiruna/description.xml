@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start='170' duration='10'/>
+<Position latitude='67.82' longitude='20.33'/>
+<Description langid='de'>Kiruna, Schweden, Europa</Description>
+<Description langid='en'>Kiruna, Sweden, Europe</Description>
+</ClimateDataLocation>

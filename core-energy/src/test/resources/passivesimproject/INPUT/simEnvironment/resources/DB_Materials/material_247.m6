@@ -1,0 +1,18 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = TILES WITH MORTAR
+    RHO                      = 2000 kg/m3
+    CE                       = 900 J/kgK
+    LAMBDA                   = 1 W/mK
+    OPOR                     = 0.05 m3/m3
+    OEFF                     = 0.05 m3/m3
+    AW                       = 0.0005 kg/m2s05
+    MEW                      = 300 -
+    KLEFF                    = 0 s
+	O80                		 = 0.0004 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 11 - Cladding Panels and Ceramic Tiles
+    COLOR                    = 10485760

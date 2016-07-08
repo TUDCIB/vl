@@ -1,0 +1,14 @@
+;          
+;          
+ 
+     [GENERAL]
+       NAME               = Sarnafil TS 77
+       RHO                = 1100.000 kg/m3
+       CE                 = 1400.00 J/kgK
+       LAMBDA             = 0.250 W/mK
+ 
+     [IDENTIFICATION]
+       SOURCE             = oebox Export
+       CATEGORY           = 12
+       COLOR              = 4227327
+

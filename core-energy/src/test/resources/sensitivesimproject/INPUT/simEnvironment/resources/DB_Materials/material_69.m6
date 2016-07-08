@@ -1,0 +1,20 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = FLOATING SCREED
+    RHO                      = 2050 kg/m3
+    CE                       = 855 J/kgK
+    LAMBDA                   = 1.42 W/mK
+    OPOR                     = 0.2642 m3/m3
+    OEFF                     = 0.265 m3/m3
+	OCAP					 = 0.165 m3/m3
+    AW                       = 0.08 kg/m2s05
+    MEW                      = 25 -
+    KLEFF                    = 9.33254e-011 s
+    OCAP                     = 0.1 s
+	O80                		 = 0.018 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 2 - Plaster and Mortar
+    COLOR                    = 10485760

@@ -1,0 +1,14 @@
+[MATERIAL]
+
+[GENERAL]
+  NAME                     = PE FOIL CLAD
+  RHO                      = 1200 kg/m3
+  CE                       = 2100 J/kgK
+  LAMBDA                   = 0.2 W/mK
+  OPOR                	   = 1.5e-006 m3/m3
+  OEFF                     = 1.5e-006 m3/m3
+  O80                      = 1e-008 m3/m3
+  AW                       = 1e-010 kg/m2s05
+
+  [IDENTIFICATION]
+       SOURCE             = TU Dresden

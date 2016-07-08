@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<!--This file describes parameter combinations for a sensitivity analysis of building's thermal behaviour via simulation.-->
+<SimulationMatrix id="1" type="TypeA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SimMatrix_ISES.xsd">
+	<Targets>
+		<TargetList id="rcCDTCnPLKyu8j">
+			<!-- type="zone/storey/building" -->
+			<Target type="zone">SeEFwwjTx3Hg65</Target>
+		</TargetList>
+		<TargetList id="FPt2gHHH9JyYNw">
+			<Target type="storey">SeEFXXjTx3Hg65</Target>
+			<Target type="zone">SeEFwwj644Hg65</Target>
+		</TargetList>
+	</Targets>
+	<!-- Variables tag defines all modified parameters (variants) compared to the original project -->
+	<Variables>
+		<!-- Project variables are unique for the entire project, they don't need an identification of the original element-->
+		<ProjectVariables>
+			<WeatherVariables>
+				<!-- Weather data set is a complete data set including all relevant weather elements, type= format type, e.g. TMY, value=file name OR url -->
+				<WeatherDataSetVariant type="CCD" id="SeEFwwjTx3HgtL">http://www.meteogroup.com/de/de/services/historische-wetterdaten/TRY_15.ccd</WeatherDataSetVariant>
+				<WeatherDataSetVariant type="TMY" id="Bs4f7STSLZh782">http://www.meteogroup.com/de/de/services/historische-wetterdaten/TMY_Greece_3.tmy</WeatherDataSetVariant>
+				<WeatherDataSetVariant type="TMY" id="ZpVJtsfNMqy9h6">http://www.meteogroup.com/de/de/services/historische-wetterdaten/TMY_Austria_2.tmy</WeatherDataSetVariant>
+				<!-- OPTIONAL, not relevant for ISES-->
+				<!-- Weather data series variant lists only modified data series, type= weather data set type, e.g. ccd -->
+				<WeatherDataSeriesVariant type="CCD" id="fAGHRBPPkyyWpF">
+					<!--Each data series is given with its value (uri or file name) -->
+					<AirTemperature>http://www.meteogroup.com/de/de/services/historische-wetterdaten/temperatur.ccd</AirTemperature>
+				</WeatherDataSeriesVariant>
+				<WeatherDataSeriesVariant type="CCD" id="TnyKAkjSBqxdEU">
+					<!--Each data series is given with its value (uri or file name) -->
+					<AirTemperature>http://www.meteogroup.com/de/de/services/historische-wetterdaten/temperatur.ccd</AirTemperature>
+					<ShortWaveDiffuse>http://www.meteogroup.com/de/de/services/historische-wetterdaten/shortWaveDiffuse.ccd</ShortWaveDiffuse>
+					<ShortWaveDirect>http://www.meteogroup.com/de/de/services/historische-wetterdaten/shortWaveDirect.ccd</ShortWaveDirect>
+				</WeatherDataSeriesVariant>
+			</WeatherVariables>
+			<OrientationVariables>
+				<!-- Shifting describes change of orientation for the complete building, unit=angle unit, e.g. "DEG", value=value of shifting -->
+				<!-- absolute -->
+				<OrientationVariant id="dMRkcqSURxA2VX" unit="Deg">45.9</OrientationVariant>
+				<OrientationVariant id="NavypT8N4gxvxU" unit="Deg">124</OrientationVariant>
+			</OrientationVariables>
+			<!-- OPTIONAL, not relevant for ISES-->
+			<ElevationVariables>
+				<!-- Elevation allows modification of air temperature or solar incidence calculation, unit=distance to weather data set elevation, e.g. "m" -->
+				<!-- absolute -->
+				<ElevationVariant id="z2FCDnMGCwtjSS" unit="m">366</ElevationVariant>
+				<ElevationVariant id="aEGPF2cTKbyEhV" unit="m">245</ElevationVariant>
+			</ElevationVariables>
+		</ProjectVariables>
+		<!--Usage variables are defined for zone types. They require an identification of the original zone usage type via "name".-->
+		<UsageTypeVariables>
+			<!-- Occupancy type (parent tag) includes original element via "name" -->
+			<OccupancyType source="http://siies/resources/DB_Templates/HESMOS_Occupancy_OfficeRoom.xml">
+				<!-- Occupancy type variant holds dataset of occupants presence, e.g. "CSV" and id of each variant, value is a file name or uri, period is the time period. -->
+				<OccupancyTypeVariant id="T4FqybR2qvzRQS" type="CSV" period="annual">http://siies/resources/DB_Templates/HESMOS_Occupancy_OfficeRoom_annual.csv</OccupancyTypeVariant>
+				<OccupancyTypeVariant id="ZzA257FAXJjzKG" type="CSV" period="weekly">http://siies/resources/DB_Templates/HESMOS_Occupancy_OfficeRoom_weekly.csv</OccupancyTypeVariant>
+			</OccupancyType>
+			<!-- Schedule type (parent tag) includes original element via "name" -->
+			<ScheduleType source="http://siies/resources/DB_Templates/HESMOS_Schedule/OfficeRoom.xml">
+				<!-- Schedule type variant holds one or several schedule data sets, type = file format or VALUE, period= day||week||year, value= file name or uri-->
+				<ScheduleTypeVariant id="TTuTqY8M2QEfb5">
+					<HeatingSetPoint unit="C" type="TSV" period="annual">http://siies/resources/DB_Templates/HESMOS_Schedule/OfficeRoom_HeatingSPTemp_annual.tsv</HeatingSetPoint>
+					<CoolingSetPoint unit="C" type="TSV" period="annual">http://siies/resources/DB_Templates/HESMOS_Schedule/OfficeRoom_CoolingSPTemp_annual.tsv</CoolingSetPoint>
+				</ScheduleTypeVariant>
+				<ScheduleTypeVariant id="WSMNgcEcabCYKM">
+					<CoolingSetPoint unit="C" type="TSV" period="daily">http://siies/resources/DB_Templates/HESMOS_Schedule/OfficeRoom/CoolingSPTemp_daily.tsv</CoolingSetPoint>
+					<PersonLoad unit="W/m2" type="TSV" period="daily">http://siies/resources/DB_Templates/HESMOS_Schedule/OfficeRoom/PersonLoad_daily.tsv</PersonLoad>
+					<Shading unit="%" type="TSV" period="daily">http://siies/resources/DB_Templates/HESMOS_Schedule/OfficeRoom/Shading_daily.tsv</Shading>
+				</ScheduleTypeVariant>
+				<!-- OPTIONAL, not relevant for ISES-->
+				<!-- Constant type variant holds one or several values which are time constant and given with its value and unit-->
+				<ConstantTypeVariant id="pkkh4D2htZVkGr">
+					<HeatingSetPoint unit="C">23.4</HeatingSetPoint>
+					<CoolingSetPoint unit="C">27.6</CoolingSetPoint>
+					<PersonLoad unit="W">100</PersonLoad>
+					<EquipmentLoad unit="W">250</EquipmentLoad>
+					<Shading unit="Frac">0.5</Shading>
+				</ConstantTypeVariant>
+			</ScheduleType>
+		</UsageTypeVariables>
+		<!--Construction variables are defined for construction types. They require an identification of the original construction.-->
+		<ConstructionTypeVariables>
+			<!-- Construction type (parent tag) includes original element via "name", side defines order of layers -->
+			<ConstructionType source="http://siies/resources/DB_Constructions/HESMOS_HighStand/WDVS_40cm.xml">
+				<!--optional or obsolete side="A" -->
+				<!-- Construction type variant holds all layers of the construction variant-->
+				<ConstructionTypeVariant id="rHkdrWSyZnAZp3">
+					<!-- Each layer is mandatory and given with a thickness of a defined unit (e.g. "m"), value= material name -->
+					<Layer unit="mm" thickness="25">http://siies/resources/DB_Constructions/HESMOS_HighStand/CementPlaster.xml</Layer>
+					<Layer unit="cm" thickness="10">http://siies/resources/DB_Constructions/HESMOS_HighStand/EPS_035.xml</Layer>
+					<Layer unit="m" thickness="0.25">http://siies/resources/DB_Constructions/HESMOS_HighStand/ReinforcedConcrete_2.xml</Layer>
+					<Layer unit="mm" thickness="25">http://siies/resources/DB_Constructions/HESMOS_HighStand/CementPlaster.xml</Layer>
+				</ConstructionTypeVariant>
+				<ConstructionTypeVariant id="PXE49Pb3j4bCTW">
+					<!-- Each layer is mandatory and given with a thickness of a defined unit (e.g. "m"), value= material name -->
+					<Layer unit="mm" thickness="25">http://siies/resources/DB_Constructions/HESMOS_HighStand/CementPlaster.xml</Layer>
+					<Layer unit="cm" thickness="10">http://siies/resources/DB_Constructions/HESMOS_HighStand/EPS_040.xml</Layer>
+					<Layer unit="m" thickness="0.25">http://siies/resources/DB_Constructions/HESMOS_HighStand/ReinforcedConcrete_2.xml</Layer>
+					<Layer unit="mm" thickness="25">http://siies/resources/DB_Constructions/HESMOS_HighStand/CementPlaster.xml</Layer>
+				</ConstructionTypeVariant>
+			</ConstructionType>
+		</ConstructionTypeVariables>
+		<!--Window variables are defined for window types. They require an identification of the original construction.-->
+		<WindowTypeVariables>
+			<!-- Window type (parent tag) includes original element via "name" -->
+			<WindowType name="http://siies/resources/DB_Windows/DoubleLowE_1_4.xml">
+				<!-- Window type variant holds all properties of the window variant-->
+				<WindowTypeVariant id="Mrd4Yq7ebQC333">
+					<!-- Each property is optional and given with its unit and value-->
+					<ThermalTransmittance unit="W/m2K">1.2</ThermalTransmittance>
+					<FrameFraction unit="Frac">0.3</FrameFraction>
+				</WindowTypeVariant>
+				<WindowTypeVariant id="SgVy6st56uXfpY">
+					<!-- Each property is optional and given with its unit and value-->
+					<ThermalTransmittance unit="W/m2K">1.0</ThermalTransmittance>
+					<FrameFraction unit="Frac">0.2</FrameFraction>
+				</WindowTypeVariant>
+				<WindowTypeVariant id="H8MkpQdc5bh7RK">
+					<!-- Each property is optional and given with its unit and value-->
+					<ThermalTransmittance unit="W/m2K">0.8</ThermalTransmittance>
+					<FrameFraction unit="Frac">0.1</FrameFraction>
+				</WindowTypeVariant>
+			</WindowType>
+		</WindowTypeVariables>
+		<!--Material variables are defined for a material. They require an identification of an original material to be replaced. They are applied to all constructions with this material.-->
+		<MaterialTypeVariables>
+			<!-- Material type (parent tag) includes original element via "name" -->
+			<MaterialType source="http://siies/resources/DB_Constructions/HESMOS_HighStand/CementPlaster.xml">
+				<!-- Material type variant holds only modified properties (compared to the original element)-->
+				<MaterialTypeVariant id="YKDHRq7NFqHCJw">
+					<!-- Each property is optional and given with its value and unit-->
+					<SpecificHeatCapacity unit="J/kgK">980.0</SpecificHeatCapacity>
+					<Density unit="kg/m3">1800.0</Density>
+					<Conductivity unit="W/mK">1.87</Conductivity>
+				</MaterialTypeVariant>
+				<MaterialTypeVariant id="HWmfUYs9EvcAxm">
+					<!-- Each property is optional and given with its value and unit-->
+					<SpecificHeatCapacity unit="J/kgK">1100.0</SpecificHeatCapacity>
+				</MaterialTypeVariant>
+				<MaterialTypeVariant id="yeVpPrWxFTab9J">
+					<!-- Each property is optional and given with its value and unit-->
+					<Conductivity unit="W/mK">1.50</Conductivity>
+				</MaterialTypeVariant>
+			</MaterialType>
+		</MaterialTypeVariables>
+	</Variables>
+	<!-- Combinations shall be constrained to a selected number of (ifc) elements -->
+	<AssignmentGroups>
+		<Spaces>
+			<SpaceGroup id="S_01">
+				<!-- key to id -->
+				<Space id="EH6cwhjg7BgCWk"/>
+				<Space id="ejwsqhF4yts4bt"/>
+			</SpaceGroup>
+			<SpaceGroup id="S_02">
+				<Space id="EH6cwhjg7BgCWk"/>
+				<Space id="ejwsqhF4yts4bt"/>
+				<Space id="fyUbzMC8A75yK7"/>
+				<Space id="sQgNGA4JfBY4E9"/>
+			</SpaceGroup>
+		</Spaces>
+		<Elements>
+			<ElementGroup id="E_01">
+				<Element id="w2urbPGrXdkmwB"/>
+				<Element id="Wb3AJXD67Nc4ej"/>
+			</ElementGroup>
+		</Elements>
+	</AssignmentGroups>
+	<!-- Combination tag lists all simulation matrix variants -->
+	<Combinations>
+		<!-- Each combination holds all variants of modified parameters compared to the original project, id= unique sim id-->
+		<!-- Combinations with different weather data sets-->
+		<Combination id="C_0000001">
+			<!-- Variants are given with the id reference to a variant in the variables tag -->
+			<Variant varRef="SeEFwwjTx3HgtL"/>
+		</Combination>
+		<Combination id="C_0000002">
+			<!-- Variants are given with the id reference to a variant in the variables tag -->
+			<Variant varRef="Bs4f7STSLZh782"/>
+		</Combination>
+		<Combination id="C_0000003">
+			<!-- Variants are given with the id reference to a variant in the variables tag -->
+			<Variant varRef="ZpVJtsfNMqy9h6"/>
+		</Combination>
+		<!-- Combinations with different constructions and weather data sets-->
+		<Combination id="C_0000004">
+			<!-- Variants are given with the id reference to a variant in the variables tag -->
+			<Variant varRef="SeEFwwjTx3HgtL"/>
+			<Variant varRef="rHkdrWSyZnAZp3"/>
+		</Combination>
+		<Combination id="C_0000005">
+			<!-- Variants are given with the id reference to a variant in the variables tag -->
+			<Variant varRef="Bs4f7STSLZh782"/>
+			<Variant varRef="rHkdrWSyZnAZp3" keyRef="E_01"/>
+		</Combination>
+		<Combination id="C_0000006">
+			<!-- Variants are given with the id reference to a variant in the variables tag -->
+			<Variant varRef="rHkdrWSyZnAZp3" keyRef="E_01"/>
+		</Combination>
+	</Combinations>
+</SimulationMatrix>

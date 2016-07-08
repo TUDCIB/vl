@@ -1,0 +1,19 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = BITUMEN ROOF SHEETING
+    RHO                      = 1720 kg/m3
+    CE                       = 900 J/kgK
+    LAMBDA                   = 0.45 W/mK
+    OPOR                     = 1.5e-006 m3/m3
+    OEFF                     = 1.5e-006 m3/m3
+    AW                       = 1e-006 kg/m2s05
+    MEW                      = 35000 -
+    KLEFF                    = 0 s
+    OCAP                     = 0.1 s
+	O80                		 = 1e-008 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 12 - Foils and Waterproofing Products
+    COLOR                    = 10485760

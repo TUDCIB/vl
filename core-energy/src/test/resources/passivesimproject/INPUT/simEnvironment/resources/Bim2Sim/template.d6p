@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="5.6.7">
+
+    <!--List of all materials used in this construction-->
+    <Materials>
+    </Materials>
+
+    <!--Discretization data (grid and sketches)-->
+    <Discretization geometryType="2D">
+    </Discretization>
+
+    <!--List of all assignments of materials and conditions-->
+    <Assignments>
+    </Assignments>
+
+</DelphinProject>

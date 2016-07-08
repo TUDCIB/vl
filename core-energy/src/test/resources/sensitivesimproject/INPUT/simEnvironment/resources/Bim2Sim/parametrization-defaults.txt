@@ -1,0 +1,7 @@
+Temperature	15
+HeatCapacity	50
+HeatTransferCoefficient	20
+Ambient.HeatTransferCoefficient	8
+AbsorptionCoefficient	0.5
+Ambient.AbsorptionCoefficient	0.5
+Emissivity	0.5

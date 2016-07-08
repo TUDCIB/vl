@@ -1,0 +1,13 @@
+         
+ 
+     [GENERAL]
+       NAME               = Heraklith-BM
+       RHO                = 400.000 kg/m3
+       CE                 = 2010.00 J/kgK
+       LAMBDA             = 0.090 W/mK
+ 
+     [IDENTIFICATION]
+       SOURCE             = oebox Export
+       CATEGORY           = 6
+       COLOR              = 4227327
+

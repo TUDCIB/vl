@@ -1,0 +1,6 @@
+Model	CoolingModelIdeal
+MaximumCoolingPower	8000
+
+Model	HeatingModelIdeal
+RadiationLoadFraction	0
+MaximumHeatingPower	12000

@@ -1,0 +1,2025 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns2:getConListResponse xmlns:ns2="http://ises.ibk.materialservice/">
+	<return>
+		<j:jelly xmlns:ises="jelly:ises.dataframework.stp.tags.IsesTagLibray" xmlns:j="jelly:core">
+			<Constructions>
+				<Construction id="1" sourceId="Q-80">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One B</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">not tested</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">2000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0805</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0795</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One B_Q-80</Shortname>
+					<ForeignProperty name="soundreduction">30</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.08</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.52</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="2" sourceId="Q-100">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One B</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 30</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">2000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One B_Q-100</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.1</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.41</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="3" sourceId="Q-120">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One B</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">2000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1205</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1195</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One B_Q-120</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.12</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.34</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="4" sourceId="Q-133">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One B</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">3000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1335</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1325</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One B_Q-133</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.133</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.31</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="5" sourceId="Q-150">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One B</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">3000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1505</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1495</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One B_Q-150</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.15</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.27</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="6" sourceId="Q-172">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One B</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">3000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1725</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1715</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One B_Q-172</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.172</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.24</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="7" sourceId="Q-200">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One B</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">4000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One B_Q-200</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.2</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.2</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="8" sourceId="Q-240">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One B</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">4000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2405</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.2395</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One B_Q-240</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.24</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.17</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="9" sourceId="Q-80">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One F</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">not tested</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">2000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0805</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0795</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One F_Q-80</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.08</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.52</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="10" sourceId="Q-100">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One F</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 30</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">2000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One F_Q-100</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.1</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.41</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="11" sourceId="Q-120">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One F</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">2000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1205</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1195</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One F_Q-120</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.12</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.34</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="12" sourceId="Q-133">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One F</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">3000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1335</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1325</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One F_Q-133</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.133</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.31</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="13" sourceId="Q-150">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One F</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">3000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1505</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1495</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One F_Q-150</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.15</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.27</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="14" sourceId="Q-172">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One F</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">3000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1725</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1715</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One F_Q-172</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.172</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.24</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="15" sourceId="Q-200">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One F</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">4000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One F_Q-200</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.2</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.2</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="16" sourceId="Q-240">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One F</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">4000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2405</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.2395</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One F_Q-240</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.24</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.17</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="17" sourceId="Q-80">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">not tested</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">2000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0805</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0795</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power S_Q-80</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.08</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.5</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="18" sourceId="Q-100">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 30</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">2000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power S_Q-100</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.1</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.41</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="19" sourceId="Q-120">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">2000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1205</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1195</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power S_Q-120</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.12</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.34</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="20" sourceId="Q-133">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">3000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1335</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1325</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power S_Q-133</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.133</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.31</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="21" sourceId="Q-150">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">3000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1505</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1495</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power S_Q-150</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.15</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.28</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="22" sourceId="Q-172">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">3000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1725</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1715</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power S_Q-172</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.172</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.24</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="23" sourceId="Q-200">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">4000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power S_Q-200</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.2</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.21</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="24" sourceId="Q-240">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">4000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2405</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.2395</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power S_Q-240</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.24</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.17</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="25" sourceId="Q-80">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">not tested</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">2000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0805</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0795</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power T_Q-80</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.08</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.45</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="26" sourceId="Q-100">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 30</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">2000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power T_Q-100</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.1</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.36</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="27" sourceId="Q-120">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">2000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1205</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1195</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power T_Q-120</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.12</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.3</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="28" sourceId="Q-133">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">3000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1335</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1325</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power T_Q-133</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.133</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.28</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="29" sourceId="Q-150">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">3000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1505</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1495</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power T_Q-150</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.15</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.25</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="30" sourceId="Q-172">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">3000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1725</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1715</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power T_Q-172</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.172</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.21</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="31" sourceId="Q-200">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">4000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power T_Q-200</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.2</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.19</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="32" sourceId="Q-240">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss One Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">4000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">6500</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2405</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.2395</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss One Power T_Q-240</Shortname>
+					<ForeignProperty name="soundreduction">31</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.24</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.16</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="33" sourceId="FTV 50">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">not tested</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0505</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0495</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV_FTV 50</Shortname>
+					<ForeignProperty name="soundreduction">0</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.05</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.74</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="34" sourceId="FTV 60">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 30</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0605</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0595</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV_FTV 60</Shortname>
+					<ForeignProperty name="soundreduction">30</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.06</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.61</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="35" sourceId="FTV 80">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0805</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0795</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV_FTV 80</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.08</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.47</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="36" sourceId="FTV 100">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 90</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV_FTV 100</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.1</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.39</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="37" sourceId="FTV 120">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1205</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1195</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV_FTV 120</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.12</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.32</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="38" sourceId="FTV 133">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1335</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1325</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV_FTV 133</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.133</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.3</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="39" sourceId="FTV 150">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 180</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1505</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1495</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV_FTV 150</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.15</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.26</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="40" sourceId="FTV 172">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 180</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1725</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1715</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV_FTV 172</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.172</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.23</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="41" sourceId="FTV 200">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 240</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV_FTV 200</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.2</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.2</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="42" sourceId="FTV 240">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 240</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2405</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.2395</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV_FTV 240</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.24</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.17</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="43" sourceId="FTV 50">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">not tested</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0505</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0495</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power S_FTV 50</Shortname>
+					<ForeignProperty name="soundreduction">0</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.05</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.77</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="44" sourceId="FTV 60">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 30</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0605</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0595</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power S_FTV 60</Shortname>
+					<ForeignProperty name="soundreduction">30</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.06</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.65</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="45" sourceId="FTV 80">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0805</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0795</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power S_FTV 80</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.08</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.5</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="46" sourceId="FTV 100">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 90</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power S_FTV 100</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.1</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.41</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="47" sourceId="FTV 120">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1205</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1195</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power S_FTV 120</Shortname>
+					<ForeignProperty name="soundreduction">33</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.12</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.34</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="48" sourceId="FTV 133">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1335</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1325</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power S_FTV 133</Shortname>
+					<ForeignProperty name="soundreduction">34</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.133</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.31</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="49" sourceId="FTV 150">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 180</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1505</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1495</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power S_FTV 150</Shortname>
+					<ForeignProperty name="soundreduction">35</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.15</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.28</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="50" sourceId="FTV 172">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 180</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1725</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1715</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power S_FTV 172</Shortname>
+					<ForeignProperty name="soundreduction">36</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.172</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.24</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="51" sourceId="FTV 200">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 240</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power S_FTV 200</Shortname>
+					<ForeignProperty name="soundreduction">37</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.2</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.21</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="52" sourceId="FTV 240">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power S</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 240</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2405</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.2395</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power S_FTV 240</Shortname>
+					<ForeignProperty name="soundreduction">38</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.24</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.17</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="53" sourceId="FTV 50">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">not tested</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0505</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0495</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power T_FTV 50</Shortname>
+					<ForeignProperty name="soundreduction">0</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.05</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.69</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="54" sourceId="FTV 60">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 30</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0605</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0595</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power T_FTV 60</Shortname>
+					<ForeignProperty name="soundreduction">30</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.06</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.58</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="55" sourceId="FTV 80">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0805</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0795</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power T_FTV 80</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.08</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.45</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="56" sourceId="FTV 100">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 90</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power T_FTV 100</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.1</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.36</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="57" sourceId="FTV 120">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1205</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1195</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power T_FTV 120</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.12</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.3</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="58" sourceId="FTV 133">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1335</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1325</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power T_FTV 133</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.133</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.28</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="59" sourceId="FTV 150">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 180</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1505</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1495</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power T_FTV 150</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.15</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.25</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="60" sourceId="FTV 172">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 180</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1725</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1715</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power T_FTV 172</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.172</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.21</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="61" sourceId="FTV 200">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 240</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power T_FTV 200</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.2</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.1</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="62" sourceId="FTV 240">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>FTV Power T</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 240</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2405</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.2395</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>FTV Power T_FTV 240</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.24</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.16</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="63" sourceId="SNV 60">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>SNV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">REI 30</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0605</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0595</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>SNV 60</Shortname>
+					<ForeignProperty name="soundreduction">0</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.06</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.6</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="64" sourceId="SNV 80">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>SNV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">REI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.0805</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0795</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>SNV 80</Shortname>
+					<ForeignProperty name="soundreduction">30</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.08</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.47</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="65" sourceId="SNV 100">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>SNV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">REI 90</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.0995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>SNV 100</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.1</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.38</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="66" sourceId="SNV 120">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>SNV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">REI 120</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1205</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1195</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>SNV 120</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.12</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.32</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="67" sourceId="SNV 150">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>SNV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">REI 180</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1505</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1495</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>SNV 150</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.15</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.26</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="68" sourceId="SNV 172">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>SNV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">REI 180</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.1725</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1715</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>SNV 172</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.172</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.23</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="69" sourceId="SNV 200">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Trimoterm</ForeignProperty>
+					<Sourcecatagory>SNV</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">REI 180</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">6000</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">14000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.2005</ForeignProperty>
+					<ForeignProperty name="minlength">530</ForeignProperty>
+					<ForeignProperty name="minthickness">0.1995</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>SNV 200</Shortname>
+					<ForeignProperty name="soundreduction">32</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.2</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.2</Uvalue>
+					<ForeignProperty name="waterpermeability">1200</ForeignProperty>
+				</Construction>
+				<Construction id="70" sourceId="QAO">
+					<Classification>
+						<Code>20 05 01 01</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss Air - opaque</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0</ForeignProperty>
+					<ForeignProperty name="length">3200</ForeignProperty>
+					<ForeignProperty name="ltvalue">0</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">4000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.143</ForeignProperty>
+					<ForeignProperty name="minlength">1250</ForeignProperty>
+					<ForeignProperty name="minthickness">0.143</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss Air Opaque</Shortname>
+					<ForeignProperty name="soundreduction">46</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.143</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.25</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="71" sourceId="QATT-3">
+					<Classification>
+						<Code>20 05 01 03</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss Air - Transparent 3</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0.25</ForeignProperty>
+					<ForeignProperty name="length">3200</ForeignProperty>
+					<ForeignProperty name="ltvalue">35</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">4000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.143</ForeignProperty>
+					<ForeignProperty name="minlength">1250</ForeignProperty>
+					<ForeignProperty name="minthickness">0.143</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss Air Transparent 3</Shortname>
+					<ForeignProperty name="soundreduction">46</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.143</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.45</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+				<Construction id="72" sourceId="QATT-5">
+					<Classification>
+						<Code>20 05 01 03</Code>
+						<Table>121</Table>
+					</Classification>
+					<ForeignProperty name="conductiontoground">0</ForeignProperty>
+					<ForeignProperty name="cumbustibilityinscore">non-combustible</ForeignProperty>
+					<ForeignProperty name="elementfamily">Qbiss</ForeignProperty>
+					<Sourcecatagory>Qbiss Air - Tansparent 5</Sourcecatagory>
+					<ForeignProperty name="external">1</ForeignProperty>
+					<ForeignProperty name="fireresitanceclass">EI 60</ForeignProperty>
+					<ForeignProperty name="gvalue">0.1</ForeignProperty>
+					<ForeignProperty name="length">3200</ForeignProperty>
+					<ForeignProperty name="ltvalue">15</ForeignProperty>
+					<Sourceidentification>Trimo</Sourceidentification>
+					<ForeignProperty name="maxlength">4000</ForeignProperty>
+					<ForeignProperty name="maxthickness">0.143</ForeignProperty>
+					<ForeignProperty name="minlength">1250</ForeignProperty>
+					<ForeignProperty name="minthickness">0.143</ForeignProperty>
+					<ForeignProperty name="profiletype"/>
+					<Shortname>Qbiss Air Tansparent 5</Shortname>
+					<ForeignProperty name="soundreduction">46</ForeignProperty>
+					<ForeignProperty name="standards"/>
+					<Thickness unit="Meters">0.143</Thickness>
+					<ForeignProperty name="underground">0</ForeignProperty>
+					<Uvalue unit="WPerSquareMeterK">0.27</Uvalue>
+					<ForeignProperty name="waterpermeability">900</ForeignProperty>
+				</Construction>
+			</Constructions>
+		</j:jelly>
+	</return>
+</ns2:getConListResponse>

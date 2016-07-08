@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="5.6.7">
+
+	<ProjectInfo>
+        <DisplayName>Natural_stone_36cm</DisplayName>
+    </ProjectInfo>
+	
+    <!--List of all materials used in this construction-->
+    <Materials>
+		<MaterialReference displayName="SANDSTONE COTTA">../DB_Materials/material_219.m6</MaterialReference>
+		<MaterialReference displayName="COMPOUND MORTAR">../DB_Materials/material_990.m6</MaterialReference>
+		<MaterialReference displayName="FLOATING SCREED">../DB_Materials/material_69.m6</MaterialReference>
+		<MaterialReference displayName="PE FOIL">../DB_Materials/material_174.m6</MaterialReference>
+		<MaterialReference displayName="EPS IMPACT SOUND INSULATION">../DB_Materials/material_996.m6</MaterialReference>
+		<MaterialReference displayName="EPS">../DB_Materials/material_186.m6</MaterialReference>
+		<MaterialReference displayName="CONCRETE WITH STEEL">../DB_Materials/material_997.m6</MaterialReference>
+    </Materials>
+
+    <!--Discretization data (grid and sketches)-->
+    <Discretization geometryType="2D">
+		<XSteps unit="m">0.020 0.010 0.070 0.0002 0.020 0.030 0.210</XSteps>
+    </Discretization>
+
+    <!--List of all assignments of materials and conditions-->
+    <Assignments>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="SANDSTONE COTTA">219</Reference>
+			<IBK:Range>0 0 0 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="COMPOUND MORTAR">990</Reference>
+			<IBK:Range>1 0 1 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="FLOATING SCREED">69</Reference>
+			<IBK:Range>2 0 2 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="PE FOIL">174</Reference>
+			<IBK:Range>3 0 3 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="EPS IMPACT SOUND INSULATION">996</Reference>
+			<IBK:Range>4 0 4 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="EPS">186</Reference>
+			<IBK:Range>5 0 5 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="CONCRETE WITH STEEL">997</Reference>
+			<IBK:Range>6 0 6 0</IBK:Range>
+		</Assignment>
+    </Assignments>
+
+</DelphinProject>

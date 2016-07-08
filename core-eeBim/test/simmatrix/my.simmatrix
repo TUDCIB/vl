@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<SimulationMatrix id="1" type="SensitivityAnalysis">
+  <Targets>
+    <TargetList id="yxcvbnm">
+      <Target>dfdfsdf423fgh</Target>
+    </TargetList>
+    <TargetList id="asdfghj">
+      <Target type="Storey">gffggdferr65</Target>
+      <Target>ghfghfghf42343</Target>
+      <Target>ghbnbnvuz78</Target>
+    </TargetList>
+    <TargetList id="qwertzz">
+      <Target type="Building">kljkljiuoo9</Target>
+    </TargetList>
+  </Targets>
+  <Variables>
+    <WindowTypeVariables>
+      <WindowType name="http://siies/resources/DB_Windows/DoubleLowE_1_4.xml">
+        <WindowTypeVariant id="Mrd4Yq7ebQC333">
+          <ThermalTransmittance unit="W/m2K">1.2</ThermalTransmittance>
+        </WindowTypeVariant>
+        <WindowTypeVariant id="SgVy6st56uXfpY">
+          <ThermalTransmittance unit="W/m2K">2.1</ThermalTransmittance>
+        </WindowTypeVariant>
+        <WindowTypeVariant id="H8MkpQdc5bh7RK">
+          <ThermalTransmittance unit="W/m2K">1.8</ThermalTransmittance>
+        </WindowTypeVariant>
+      </WindowType>
+    </WindowTypeVariables>
+  </Variables>
+  <Combinations>
+    <Combination id="C_0000001">
+      <Variant VREF="Mrd4Yq7ebQC333"/>
+    </Combination>
+    <Combination id="C_0000002">
+      <Variant VREF="SgVy6st56uXfpY"/>
+    </Combination>
+    <Combination id="C_0000003">
+      <Variant VREF="H8MkpQdc5bh7RK"/>
+    </Combination>
+  </Combinations>
+</SimulationMatrix>

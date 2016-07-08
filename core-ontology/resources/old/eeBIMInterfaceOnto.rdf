@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://ontology.cib.bau.tu-dresden/eeBIMInterfaceOnto#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://ontology.cib.bau.tu-dresden/eeBIMInterfaceOnto">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <owl:imports rdf:resource="http://ontology.cib.bau.tu-dresden/ClimateOnto"/>
+    <owl:imports rdf:resource="http://ontology.cib.bau.tu-dresden/ISESOnto"/>
+    <owl:imports rdf:resource="http://bci53.cib.bau.tu-dresden.de/ontology/IfcOWL"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="eeBIMBuildingElement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://iai.org/ifcOWL#IfcBuildingElement"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="eeBIMInterfaceRoot"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="U-Value">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="eeThermalMaterialProperties"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#eeThermalMaterialProperties">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="MaterialProperties"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LivingRoom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Resistence">
+    <rdfs:subClassOf rdf:resource="#eeThermalMaterialProperties"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SeperatingWallStandardCase">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="WallStandardCase"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SpecificHeatCapacity">
+    <rdfs:subClassOf rdf:resource="#eeThermalMaterialProperties"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DoorStandardCase">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://iai.org/ifcOWL#IfcDoor"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#eeBIMBuildingElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcRelConnects"/>
+  <owl:Class rdf:about="#eeBIMInterfaceRoot">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ThermalAbsorptance">
+    <rdfs:subClassOf rdf:resource="#eeThermalMaterialProperties"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Passage">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="RoofSeperatingSlabStandardCase">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="SlabStandardCase"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcMaterialProperties"/>
+  <owl:Class rdf:about="#MaterialProperties">
+    <rdfs:subClassOf rdf:resource="http://iai.org/ifcOWL#IfcMaterialProperties"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="eeBIMProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="VisibleAbsorptance">
+    <rdfs:subClassOf rdf:resource="#eeThermalMaterialProperties"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcProperty"/>
+  <owl:Class rdf:ID="Cellar">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cellar</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="BuildingEnvelope">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="eeBIMSpatialZone"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Roughness">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="eeGeneralMaterialProperties"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#eeGeneralMaterialProperties">
+    <rdfs:subClassOf rdf:resource="#MaterialProperties"/>
+  </owl:Class>
+  <owl:Class rdf:ID="WorkRoom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="R-Value">
+    <rdfs:subClassOf rdf:resource="#eeThermalMaterialProperties"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TechnicalRoom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="RoofStandardCase">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://iai.org/ifcOWL#IfcRoof"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#eeBIMBuildingElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Emittance">
+    <rdfs:subClassOf rdf:resource="#eeThermalMaterialProperties"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SolarAbsorptance">
+    <rdfs:subClassOf rdf:resource="#eeThermalMaterialProperties"/>
+  </owl:Class>
+  <owl:Class rdf:about="#WallStandardCase">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://iai.org/ifcOWL#IfcWall"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#eeBIMBuildingElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CellarSeperatingSlabStandardCase">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#SlabStandardCase"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Absorptance">
+    <rdfs:subClassOf rdf:resource="#eeThermalMaterialProperties"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Reflectance">
+    <rdfs:subClassOf rdf:resource="#eeThermalMaterialProperties"/>
+  </owl:Class>
+  <owl:Class rdf:ID="IndoorWindowStandardCase">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="WindowStandardCase"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="OutdoorSlabStandardCase">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#SlabStandardCase"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="OutdoorWindowStandardCase">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#WindowStandardCase"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="RoomSeperatingSlabStandardCase">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#SlabStandardCase"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="OutdoorWallSoilAdjacencyStandardCase">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="OutdoorWallStandardCase"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ThermalConductivity">
+    <rdfs:subClassOf rdf:resource="#eeThermalMaterialProperties"/>
+  </owl:Class>
+  <owl:Class rdf:about="#OutdoorWallStandardCase">
+    <rdfs:subClassOf rdf:resource="#WallStandardCase"/>
+  </owl:Class>
+  <owl:Class rdf:ID="eeBIMPropertySet">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://iai.org/ifcOWL#IfcPropertySet"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#eeBIMInterfaceRoot"/>
+  </owl:Class>
+  <owl:Class rdf:about="#WindowStandardCase">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://iai.org/ifcOWL#IfcWindow"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#eeBIMBuildingElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Storage">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="FacadeElementStandardCase">
+    <rdfs:subClassOf rdf:resource="#eeBIMBuildingElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="eeBIMThermalZone">
+    <rdfs:subClassOf rdf:resource="#eeBIMInterfaceRoot"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcSlab"/>
+  <owl:Class rdf:ID="eeBIMRelConnects">
+    <rdfs:subClassOf rdf:resource="http://iai.org/ifcOWL#IfcRelConnects"/>
+    <rdfs:subClassOf rdf:resource="#eeBIMInterfaceRoot"/>
+  </owl:Class>
+  <owl:Class rdf:about="#eeBIMProperty">
+    <rdfs:subClassOf rdf:resource="http://iai.org/ifcOWL#IfcProperty"/>
+    <rdfs:subClassOf rdf:resource="#eeBIMInterfaceRoot"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Attic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Attic</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="StairwellWallStandardCase">
+    <rdfs:subClassOf rdf:resource="#WallStandardCase"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://ontology.cib.bau.tu-dresden/ClimateOnto#OutdoorClimateElement"/>
+  <owl:Class rdf:about="#SlabStandardCase">
+    <rdfs:subClassOf rdf:resource="#eeBIMBuildingElement"/>
+    <rdfs:subClassOf rdf:resource="http://iai.org/ifcOWL#IfcSlab"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Transmittance">
+    <rdfs:subClassOf rdf:resource="#eeThermalMaterialProperties"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Room">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="eeBIMSpatialStructureElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#eeBIMSpatialZone">
+    <rdfs:subClassOf rdf:resource="#eeBIMInterfaceRoot"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SoilSeperatingSlabStandardCase">
+    <rdfs:subClassOf rdf:resource="#SlabStandardCase"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ThermalEnvelope">
+    <rdfs:subClassOf rdf:resource="#eeBIMThermalZone"/>
+  </owl:Class>
+  <owl:Class rdf:ID="RelRoomAdjacency">
+    <rdfs:subClassOf rdf:resource="#eeBIMRelConnects"/>
+  </owl:Class>
+  <owl:Class rdf:about="#eeBIMSpatialStructureElement">
+    <rdfs:subClassOf rdf:resource="http://iai.org/ifcOWL#IfcSpatialStructureElement"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ee BIMSpatial structure element</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#eeBIMSpatialZone"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MassDensity">
+    <rdfs:subClassOf rdf:resource="#eeGeneralMaterialProperties"/>
+  </owl:Class>
+  <owl:Class rdf:ID="FacadeStandardCase">
+    <rdfs:subClassOf rdf:resource="#eeBIMBuildingElement"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasAssociatedOutdoorClimate">
+    <rdfs:range rdf:resource="http://ontology.cib.bau.tu-dresden/ClimateOnto#OutdoorClimateElement"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="hasAssociatedClimate"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="http://iai.org/ifcOWL#IfcSite"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasAdjacentRoom">
+    <rdfs:domain rdf:resource="#Room"/>
+    <rdfs:range rdf:resource="#RelRoomAdjacency"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasAssociatedClimate">
+    <rdfs:subPropertyOf rdf:resource="http://ontology.cib.bau.tu-dresden/ISESOnto#hasLinkedModelElement"/>
+    <rdfs:domain rdf:resource="http://ontology.cib.bau.tu-dresden/ISESOnto#BIMModelElement"/>
+    <rdfs:range rdf:resource="http://ontology.cib.bau.tu-dresden/ISESOnto#ClimateModelElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasAssociatedIndoorClimate">
+    <rdfs:domain rdf:resource="#Room"/>
+    <rdfs:range rdf:resource="http://ontology.cib.bau.tu-dresden/ClimateOnto#IndoorClimateElement"/>
+    <rdfs:subPropertyOf rdf:resource="#hasAssociatedClimate"/>
+  </owl:ObjectProperty>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

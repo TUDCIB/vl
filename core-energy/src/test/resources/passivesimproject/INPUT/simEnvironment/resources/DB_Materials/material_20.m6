@@ -1,0 +1,18 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = Surface coating plaster
+    RHO                      = 1388 kg/m3
+    CE                       = 850 J/kgK
+    LAMBDA                   = 0.75 W/mK
+    OPOR                     = 0.44 m3/m3
+    OEFF                     = 0.43 m3/m3
+    AW                       = 0.03 kg/m2s05
+    MEW                      = 32.83 -
+    KLEFF                    = 6.91831e-12 s
+    OCAP                     = 0.25 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 02 - Plaster and Mortar
+    COLOR                    = 10485760

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="Combustible.1.0.0.ecore#/"
+    outputs="CombustibleXML.xsd#/">
+  <nested inputs="Combustible.1.0.0.ecore#/" outputs="CombustibleXML.xsd#/">
+    <nested inputs="Combustible.1.0.0.ecore#//CombustibleContainer" outputs="CombustibleXML.xsd#//CombustibleContainer;XSDComplexTypeDefinition">
+      <nested inputs="Combustible.1.0.0.ecore#//CombustibleContainer/combustibles"
+          outputs="CombustibleXML.xsd#//CombustibleContainer;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"/>
+    </nested>
+    <nested inputs="Combustible.1.0.0.ecore#//CombustibleContainer" outputs="CombustibleXML.xsd#//CombustibleContainer;XSDElementDeclaration"/>
+    <nested inputs="Combustible.1.0.0.ecore#//Combustible" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1">
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/id" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse"/>
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/name" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse=1"/>
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/unit" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse=2"/>
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/heatingValueHi" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse=3"/>
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/usefulHeatHs" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse=4"/>
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/ratioHsToHi" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse=5"/>
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/pricePerKWH" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse=6"/>
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/pricePerUnit" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse=7"/>
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/basePricePerAnno" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse=8"/>
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/storageYield" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse=9"/>
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/primaryEnergyFactor" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse=10"/>
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/emissionCO2" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse=11"/>
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/emissionSO2" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse=12"/>
+      <nested inputs="Combustible.1.0.0.ecore#//Combustible/emissionNOX" outputs="CombustibleXML.xsd#//Combustible;XSDComplexTypeDefinition=1/XSDAttributeUse=13"/>
+    </nested>
+    <nested inputs="Combustible.1.0.0.ecore#//Combustible" outputs="CombustibleXML.xsd#//Combustible;XSDElementDeclaration=1"/>
+  </nested>
+</xsd2ecore:XSD2EcoreMappingRoot>

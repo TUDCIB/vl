@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="5.6.7">
+	<ProjectInfo>        
+		<DisplayName>walltypeTICS</DisplayName>    
+	</ProjectInfo>
+	
+    <!--List of all materials used in this construction-->
+    <Materials>
+		<MaterialReference displayName="CONCRETE KASSEL">${Material Database}/material_569.m6</MaterialReference>
+		<MaterialReference displayName="EPS">${Material Database}/material_186.m6</MaterialReference>
+		<MaterialReference displayName="CLIMATE	PLASTER">${Material Database}/material_125.m6</MaterialReference>
+    </Materials>
+
+    <!--Discretization data (grid and sketches)-->
+    <Discretization geometryType="2D">
+		<XSteps unit="m">0.200 0.120 0.010</XSteps>
+    </Discretization>
+
+    <!--List of all assignments of materials and conditions-->
+    <Assignments>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="CONCRETE KASSEL">569</Reference>
+			<IBK:Range>0 0 0 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="EPS">186</Reference>
+			<IBK:Range>1 0 1 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="CLIMATE	PLASTER">125</Reference>
+			<IBK:Range>2 0 2 0</IBK:Range>
+		</Assignment>
+    </Assignments>
+	<Costs>48.0</Costs>
+</DelphinProject>

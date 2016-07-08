@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>de.tudresden.bau.cib.vl.core.database.domain.User</value>
+				<value>de.tudresden.bau.cib.vl.core.database.domain.Session</value>
+				<value>de.tudresden.bau.cib.vl.core.database.domain.FileInformation</value>
+				<value>de.tudresden.bau.cib.vl.core.database.domain.UserRepository</value>
+				<value>de.tudresden.bau.cib.vl.core.database.domain.Project</value>
+				<value>de.tudresden.bau.cib.vl.core.database.domain.SimulationProject</value>
+				<value>de.tudresden.bau.cib.vl.core.database.domain.OptimizationSimulationProject</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.HSQLDialect
+				</prop>
+				<!-- prop key="hibernate.hbm2ddl.auto">create</prop -->
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.jdbc.batch_size">0</prop>
+				<prop key="hibernate.show_sql">false</prop> <!-- True means write it to console -->
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.cache.use_second_level_cache">
+					false
+				</prop>
+				<prop key="hibernate.cache.use_query_cache">false</prop>
+				<prop key="hibernate.cache.provider_class">
+					net.sf.ehcache.hibernate.SingletonEhCacheProvider
+				</prop>
+			</props>
+		</property>
+
+	</bean>
+	
+	<!-- mit externen Properties ... -->
+	<bean id="dataSource"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass" value="#{osgiConfigurationService.getProperty('db.driverClass')}" />
+		<property name="jdbcUrl" value="#{osgiConfigurationService.getProperty('db.url')}" />
+		<property name="user" value="#{osgiConfigurationService.getProperty('db.username')}" />
+		<property name="password" value="#{osgiConfigurationService.getProperty('db.password')}" />
+	</bean>
+</beans>
+

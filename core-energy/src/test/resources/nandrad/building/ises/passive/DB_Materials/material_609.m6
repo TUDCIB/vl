@@ -1,0 +1,21 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = PAVATEX BITUMINOUS SHEETING
+    RHO                      = 381.269 kg/m3
+    CE                       = 1000 J/kgK
+    LAMBDA                   = 0.23 W/mK
+    OPOR                     = 0.665553 m3/m3
+    OEFF                     = 0.34512 m3/m3
+	OCAP                	 = 0.1 m3/m3
+    AW                       = 0.001 kg/m2s05
+    MEW                      = 187.533 -
+    KLEFF                    = 1e-015 s
+    OCAP                     = 0.35762 m3/m3
+	O80                		 = 0.000335291 m3/m3
+	SD                       = 0.09 m
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 12 - Foils and Waterproofing Products
+    COLOR                    = 10485760

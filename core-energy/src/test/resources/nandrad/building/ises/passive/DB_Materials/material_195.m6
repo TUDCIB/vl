@@ -1,0 +1,14 @@
+;          
+;          
+ 
+     [GENERAL]
+       NAME               = Heralan-TW
+       RHO                = 25.000 kg/m3
+       CE                 = 900.00 J/kgK
+       LAMBDA             = 0.041 W/mK
+ 
+     [IDENTIFICATION]
+       SOURCE             = oebox Export
+       CATEGORY           = 6
+       COLOR              = 4227327
+

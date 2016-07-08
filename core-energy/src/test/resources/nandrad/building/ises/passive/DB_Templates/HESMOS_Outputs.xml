@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Contains definitions of output files and grids for outputs.-->
+<Outputs>
+	<!--General parameters-->
+	<IBK:Unit name="TimeUnit">d</IBK:Unit>
+	<IBK:Flag name="BinaryFormat">false</IBK:Flag>
+	<!--List of all Output schedules-->
+	<OutputGrids>
+		<OutputGrid name="Hourly">
+			<Interval>
+				<IBK:Parameter name="StepSize" unit="h">1</IBK:Parameter>
+			</Interval>
+		</OutputGrid>
+	</OutputGrids>
+	
+	<!--List of all Output Definitions-->
+	<OutputDefinitions>
+
+		<!-- Climatic Data Outputs. -->
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Location</ObjectList>
+			<Quantity>Temperature</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Location</ObjectList>
+			<Quantity>SWRadDirectHorizontal</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Location</ObjectList>
+			<Quantity>SWRadDiffuseHorizontal</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Location</ObjectList>
+			<Quantity>RelativeHumidity</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Location</ObjectList>
+			<Quantity>Azimuth</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Location</ObjectList>
+			<Quantity>Declination</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Location</ObjectList>
+			<Quantity>DewPointTemperature</Quantity>
+		</OutputDefinition>
+		
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Location</ObjectList>
+			<Quantity>SWRadGlobalHorizontal</Quantity>
+		</OutputDefinition>
+
+		<!-- Output of all quantities calculated inside the room. -->
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>AirTemperature</Quantity>
+		</OutputDefinition>
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>OperativeTemperature</Quantity>
+		</OutputDefinition>
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>RadiantTemperature</Quantity>
+		</OutputDefinition>
+		
+		<!-- Scheduled quantities. -->
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>HeatingSetPointTemperature</Quantity>
+		</OutputDefinition>
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>CoolingSetPointTemperature</Quantity>
+		</OutputDefinition>
+		
+		<!-- Calculated fluxes. -->
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>ConstructionHeatConductionGains</Quantity>
+		</OutputDefinition>
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>HeatingConvectiveGains</Quantity>
+		</OutputDefinition>
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>HeatingRadiantGains</Quantity>
+		</OutputDefinition>
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>HeatingGains</Quantity>
+		</OutputDefinition>
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>CoolingGains</Quantity>
+		</OutputDefinition>
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>WindowHeatTransmissionGains</Quantity>
+		</OutputDefinition>
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>WindowSWRadGains</Quantity>
+		</OutputDefinition>
+
+		<!-- Schedule fluxes. -->
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>EquipmentHeatLoad</Quantity>
+		</OutputDefinition>
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>LightingHeatLoad</Quantity>
+		</OutputDefinition>
+		<OutputDefinition>
+			<Grid>Hourly</Grid>
+			<ObjectList>Active zones</ObjectList>
+			<Quantity>OccupancyHeatLoad</Quantity>
+		</OutputDefinition>
+	
+	</OutputDefinitions>
+</Outputs>

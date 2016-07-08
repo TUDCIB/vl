@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start='180' duration='30'/>
+<Position latitude='45.62' longitude='8.73'/>
+<Description langid='de'>Mailand, Italien, Europa</Description>
+<Description langid='en'>Milan, Italy, Europe</Description>
+</ClimateDataLocation>

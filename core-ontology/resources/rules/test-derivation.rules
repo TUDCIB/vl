@@ -1,0 +1,5 @@
+// @id: derivationrules @name: Derivation rule set @description: Specifies derivation rules @end
+@prefix BIMOnto: http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMOnto#
+[transitiveSubClass: 	(?a rdfs:subClassOf ?b) (?b rdfs:subClassOf ?c) -> (?a rdfs:subClassOf ?c)]
+[transitiveSubType: 	(?a rdf:type ?b) (?b rdf:type ?c) -> (?a rdf:type ?c)]

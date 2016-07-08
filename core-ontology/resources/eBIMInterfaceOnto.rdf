@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://openeebim.bau.tu-dresden.de/dev/ontology/eBIMInterfaceOnto#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:BIMOnto="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://openeebim.bau.tu-dresden.de/dev/ontology/eBIMInterfaceOnto">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <owl:imports rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="IndoorBuildingElement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="eBIMBuildingElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Kitchen">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="IndoorWindow">
+    <rdfs:subClassOf rdf:resource="#IndoorBuildingElement"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Window"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="HeatedRoom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Stairwell">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#eBIMBuildingElement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuildingElement"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="eBIMInterfaceRoot"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="UnheatedRoomSeparatingWall">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Wall"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="StairwellWall">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Wall"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="BuildingEnvelope">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="eBIMSpatialZone"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Slab">
+    <rdfs:subClassOf rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcSlab"/>
+    <rdfs:subClassOf rdf:resource="#eBIMBuildingElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="OutdoorWall">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="OutdoorBuildingElement"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Wall"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#OutdoorBuildingElement">
+    <rdfs:subClassOf rdf:resource="#eBIMBuildingElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="#eBIMSpatialZone">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="eBIMSpatialElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="IndoorWall">
+    <rdfs:subClassOf rdf:resource="#IndoorBuildingElement"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Wall"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Door">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcDoor"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#eBIMBuildingElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="RoomSeparatingSlab">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="IndoorSlab"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="OutdoorDoor">
+    <rdfs:subClassOf rdf:resource="#OutdoorBuildingElement"/>
+    <rdfs:subClassOf rdf:resource="#Door"/>
+  </owl:Class>
+  <owl:Class rdf:ID="OpenRoom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="eBIMSpace"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="FacadeElement">
+    <rdfs:subClassOf rdf:resource="#OutdoorBuildingElement"/>
+    <rdfs:subClassOf rdf:resource="#eBIMBuildingElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="UnheatedRoom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PitchedRoof">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Roof"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#eBIMSpace">
+    <rdfs:subClassOf rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcSpace"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="eBIMSpatialStructureElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="OutdoorWallSoilAdjacency">
+    <rdfs:subClassOf rdf:resource="#OutdoorWall"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcWindow"/>
+  <owl:Class rdf:ID="FlatRoof">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Roof"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Wall">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcWall"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#eBIMBuildingElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Laboratory">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="NoRoom">
+    <rdfs:subClassOf rdf:resource="#eBIMSpace"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SoilSeparatingSlab">
+    <rdfs:subClassOf rdf:resource="#IndoorBuildingElement"/>
+    <rdfs:subClassOf rdf:resource="#RoomSeparatingSlab"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ClassRoom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="IndoorDoor">
+    <rdfs:subClassOf rdf:resource="#IndoorDoor"/>
+    <rdfs:subClassOf rdf:resource="#Door"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Passage">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="eeBIMThermalZone">
+    <rdfs:subClassOf rdf:resource="#eBIMSpatialZone"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Roof">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcRoof"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#OutdoorBuildingElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Window">
+    <rdfs:subClassOf rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcWindow"/>
+    <rdfs:subClassOf rdf:resource="#eBIMBuildingElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Elevator">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcPropertySet"/>
+  <owl:Class rdf:ID="CellarSeparatingSlab">
+    <rdfs:subClassOf rdf:resource="#IndoorBuildingElement"/>
+    <rdfs:subClassOf rdf:resource="#RoomSeparatingSlab"/>
+  </owl:Class>
+  <owl:Class rdf:about="#eBIMSpatialStructureElement">
+    <rdfs:subClassOf rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcSpatialStructureElement"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#eBIMSpatialElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Bathroom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="HeatedRoomSeparatingWall">
+    <rdfs:subClassOf rdf:resource="#Wall"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Office">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Storage">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#eBIMInterfaceRoot">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="#IndoorSlab">
+    <rdfs:subClassOf rdf:resource="#IndoorBuildingElement"/>
+    <rdfs:subClassOf rdf:resource="#Slab"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MeetingRoom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SeparatingWall">
+    <rdfs:subClassOf rdf:resource="#Wall"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BedRoom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="TechnicalRoom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Room"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Basement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="OutdoorSlab"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="OutdoorWindow">
+    <rdfs:subClassOf rdf:resource="#OutdoorBuildingElement"/>
+    <rdfs:subClassOf rdf:resource="#Window"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Room">
+    <rdfs:subClassOf rdf:resource="#eBIMSpace"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DwellingRoom">
+    <rdfs:subClassOf rdf:resource="#Room"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ThermalEnvelope">
+    <rdfs:subClassOf rdf:resource="#eeBIMThermalZone"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SportsHall">
+    <rdfs:subClassOf rdf:resource="#Room"/>
+  </owl:Class>
+  <owl:Class rdf:about="#eBIMSpatialElement">
+    <rdfs:subClassOf rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcSpatialElement"/>
+    <rdfs:subClassOf rdf:resource="#eBIMInterfaceRoot"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Facade">
+    <rdfs:subClassOf rdf:resource="#OutdoorBuildingElement"/>
+    <rdfs:subClassOf rdf:resource="#eBIMBuildingElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="#OutdoorSlab">
+    <rdfs:subClassOf rdf:resource="#OutdoorBuildingElement"/>
+    <rdfs:subClassOf rdf:resource="#Slab"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasAdjacentRoom">
+    <rdfs:domain rdf:resource="#Room"/>
+  </owl:ObjectProperty>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

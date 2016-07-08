@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConstructionTypeList>
+    <ConstructionType name="de:Muschelkalkwand, 48 cm|en:Shell limestone wall, 48 cm" id="1">
+        <Layers>
+            <Layer materialId="500" d="0.48"/>
+        </Layers>
+    </ConstructionType>
+    <ConstructionType name="de:Klinker-Ziegelwand, 51 cm|en:Clincker-brick wall, 51 cm" id="2">
+        <Layers>
+            <Layer materialId="104" d="0.01"/>
+            <Layer materialId="105" d="0.08"/>
+            <Layer materialId="148" d="0.02"/>
+            <Layer materialId="102" d="0.38"/>
+            <Layer materialId="147" d="0.02"/>
+        </Layers>
+    </ConstructionType>
+    <ConstructionType name="de:Innen gedämmte Ziegelwand, 46 cm|en:Inside insulated brick wall, 46 cm" id="3">
+        <Layers>
+            <Layer materialId="104" d="0.12"/>
+            <Layer materialId="147" d="0.01"/>
+            <Layer materialId="101" d="0.28"/>
+            <Layer materialId="147" d="0.01"/>
+            <Layer materialId="37" d="0.03"/>
+            <Layer materialId="51" d="0.02"/>
+        </Layers>
+    </ConstructionType>
+    <ConstructionType name="de:Innen gedämmte Muschelkalk-Vollziegelwand, 58 cm|en:Inside insulated shell-limestone-brick wall" id="4">
+        <Layers>
+            <Layer materialId="500" d="0.33"/>
+            <Layer materialId="97" d="0.115"/>
+            <Layer materialId="151" d="0.015"/>
+            <Layer materialId="178" d="0.12"/>
+            <Layer materialId="51" d="0.04"/>
+        </Layers>
+    </ConstructionType>
+    <ConstructionType name="de:WDVS Mauerwerk, 25 cm|en:ETICS brickwork , 25 cm" id="5">
+        <Layers>
+            <Layer materialId="48" d="0.015"/>
+            <Layer materialId="188" d="0.06"/>
+            <Layer materialId="97" d="0.17"/>
+            <Layer materialId="71" d="0.01"/>
+        </Layers>
+    </ConstructionType>
+    <ConstructionType name="de:Beton-Sandwichwand, 23 cm|en:Concrete -sandwich wall, 23 cm" id="6">
+        <Layers>
+            <Layer materialId="55" d="0.06"/>
+            <Layer materialId="189" d="0.05"/>
+            <Layer materialId="55" d="0.12"/>
+        </Layers>
+    </ConstructionType>
+    <ConstructionType name="de:Porenbetonwand, 36,5 cm|en:Porous concrete, 36,5 cm" id="7">
+        <Layers>
+            <Layer materialId="7" d="0.365"/>
+        </Layers>
+    </ConstructionType>
+    <ConstructionType name="de:Gedämmtes zweischaliges Ziegelmauerwerk, sanierter Altbau, 38 cm|en:Cavity wall insulated, historical, 38 cm" id="8">
+        <Layers>
+            <Layer materialId="53" d="0.011"/>
+            <Layer materialId="18" d="0.05"/>
+            <Layer materialId="282" d="0.1"/>
+            <Layer materialId="97" d="0.24"/>
+            <Layer materialId="151" d="0.02"/>
+        </Layers>
+    </ConstructionType>
+
+    <ConstructionType name="de:Leichte Trennwand,  10 cm|en:Light weight internal wall, 10 cm" id="9" type="Inside">
+        <Layers>
+            <Layer materialId="166" d="0.03"/>
+            <Layer materialId="81" d="0.04"/>
+            <Layer materialId="166" d="0.03"/>
+        </Layers>
+    </ConstructionType>
+    <ConstructionType name="de:Betonfußboden / Kellerdecke, 20 cm|en:Concrete slab over basement, 20 cm" id="11" type="FixedTemperature">
+        <Layers>
+            <Layer materialId="58" d="0.2"/>
+        </Layers>
+    </ConstructionType>
+    <ConstructionType name="de:Ziegelwand, Altbau, 36 cm|en:Brick wall, historical, 36 cm" id="12" type="Outside">
+        <Layers>
+            <Layer materialId="48" d="0.02"/>
+            <Layer materialId="106" d="0.36"/>
+            <Layer materialId="151" d="0.015"/>
+        </Layers>
+    </ConstructionType>
+</ConstructionTypeList>

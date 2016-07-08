@@ -1,0 +1,15 @@
+[Material]
+  
+  [GENERAL]
+  NAME                     = Glas
+  RHO                      = 2400 kg/m3
+  CE                       = 1000 J/kgK
+  OPOR                = 1.6e-006 m3/m3
+  OEFF                = 1.5e-006 m3/m3
+  OCAP                = 1.4e-006 m3/m3
+  O80                 = 1.5e-008 m3/m3
+  LAMBDA                   = 0.8 W/mK
+  AW                       = 1e-006 kg/m2s05
+  MEW                      = 200000 -
+  KLEFF                    = 0 s
+

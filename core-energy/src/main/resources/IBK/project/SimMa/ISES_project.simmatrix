@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="ASCII"?>
+<SimulationMatrix id="sm-1c07d045-528d-4500-9d77-a5e6593d2e6b" type="DesignAlternatives">
+  <Targets>
+    <TargetList id="185742245">
+      <Target type="Space">2YLIiQ__9CzgmWFyiYCtlL</Target>
+      <Target type="Space">3RnOa$s$rFQQabBa_tBrPe</Target>
+      <Target type="Space">1uvz6C9ur7hRwKJZvRzsab</Target>
+    </TargetList>
+  </Targets>
+  <Variables>
+    <WeatherVariables>
+      <WeatherDataSetVariant id="98576159">http://130.208.198.50:8080/dfservice/dm/open/69/GETID/8</WeatherDataSetVariant>
+      <WeatherDataSetVariant id="1906555550">http://130.208.198.50:8080/dfservice/dm/open/69/GETID/9</WeatherDataSetVariant>
+    </WeatherVariables>
+    <ConstructionTypeVariables>
+      <ConstructionType source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4137">
+        <ConstructionTypeVariant id="950573662">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.027" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="2137073127">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.018" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="1362678941">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.032" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="895654912">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.02" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="1993800546">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.03" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="13858714">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.03" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="410314003">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.026" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="1991749931">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.021" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="2118906190">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.029" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="1362231920">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.018" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="1638234956">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.032" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="240223150">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.02" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="1576276523">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.03" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="585391005">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.02" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="1816276303">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.027" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+        <ConstructionTypeVariant id="1564538416">
+          <Layer thickness="0.15" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4271</Layer>
+          <Layer thickness="0.025" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4236</Layer>
+          <Layer thickness="0.027" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4281</Layer>
+          <Layer thickness="0.009" unit="m">http://130.208.198.50:8080/dfservice/dm/open/45/GETID/4190</Layer>
+        </ConstructionTypeVariant>
+      </ConstructionType>
+    </ConstructionTypeVariables>
+    <WindowTypeVariables>
+      <WindowType name="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4288">
+        <WindowTypeVariant id="1895848598">
+          <GlassFraction unit="Frac">1.154</GlassFraction>
+        </WindowTypeVariant>
+        <WindowTypeVariant id="1585164694">
+          <GlassFraction unit="Frac">0.1</GlassFraction>
+        </WindowTypeVariant>
+        <WindowTypeVariant id="385196492">
+          <GlassFraction unit="Frac">1.3</GlassFraction>
+        </WindowTypeVariant>
+        <WindowTypeVariant id="1567823095">
+          <GlassFraction unit="Frac">0.3</GlassFraction>
+        </WindowTypeVariant>
+        <WindowTypeVariant id="784745366">
+          <GlassFraction unit="Frac">1.1</GlassFraction>
+        </WindowTypeVariant>
+        <WindowTypeVariant id="613734639">
+          <GlassFraction unit="Frac">0.677</GlassFraction>
+        </WindowTypeVariant>
+        <WindowTypeVariant id="1796116687">
+          <GlassFraction unit="Frac">0.501</GlassFraction>
+        </WindowTypeVariant>
+        <WindowTypeVariant id="1547039352">
+          <GlassFraction unit="Frac">0.352</GlassFraction>
+        </WindowTypeVariant>
+        <WindowTypeVariant id="268851630">
+          <GlassFraction unit="Frac">0.856</GlassFraction>
+        </WindowTypeVariant>
+        <WindowTypeVariant id="2071259724">
+          <GlassFraction unit="Frac">0.569</GlassFraction>
+        </WindowTypeVariant>
+      </WindowType>
+    </WindowTypeVariables>
+  </Variables>
+  <AssignmentGroups>
+    <Elements>
+      <ElementGroup id="1064303590">
+        <Element>2poM5k1Zj5nPewghmb_Jpx</Element>
+        <Element>1CkLo9adjEnv5ezQFTNXzO</Element>
+        <Element>2BNYvzp0b8rRKFr0mCYELU</Element>
+        <Element>3_Xu$SxoH5hwmZWQZGKZll</Element>
+        <Element>2PiHe3$ZP8Mhb4e5QoW0oi</Element>
+        <Element>14hJLtoKL98hl7gaFhkwXa</Element>
+        <Element>0ykykd6l5EuwKYvrcU0CVb</Element>
+        <Element>2FM2FwOYT7DR59Cn_ERNO4</Element>
+        <Element>1Ug64M4Wf87RKY0W4Vigl9</Element>
+        <Element>2gAaebDRvFgOBDIYiRFWEc</Element>
+        <Element>1xcz3Atln3mxVfsxfyH6Cn</Element>
+        <Element>041FJC2YL3wwl6bi$ObaSe</Element>
+      </ElementGroup>
+      <ElementGroup id="1941010081">
+        <Element>2poM5k1Zj5nPewghmb_Jpx</Element>
+        <Element>1CkLo9adjEnv5ezQFTNXzO</Element>
+        <Element>2BNYvzp0b8rRKFr0mCYELU</Element>
+        <Element>3_Xu$SxoH5hwmZWQZGKZll</Element>
+        <Element>2PiHe3$ZP8Mhb4e5QoW0oi</Element>
+        <Element>14hJLtoKL98hl7gaFhkwXa</Element>
+        <Element>0ykykd6l5EuwKYvrcU0CVb</Element>
+        <Element>2FM2FwOYT7DR59Cn_ERNO4</Element>
+        <Element>1Ug64M4Wf87RKY0W4Vigl9</Element>
+        <Element>2gAaebDRvFgOBDIYiRFWEc</Element>
+        <Element>1xcz3Atln3mxVfsxfyH6Cn</Element>
+        <Element>041FJC2YL3wwl6bi$ObaSe</Element>
+      </ElementGroup>
+      <ElementGroup id="963016559">
+        <Element>04$IyidELDfhA2B0MLLhbi</Element>
+        <Element>3PJbr26Kv6ZQjfygw3q6HX</Element>
+        <Element>2WIbJphtP8IhVOdtnxxjv5</Element>
+        <Element>1xymcrC_zFmvy_9T3A7zB2</Element>
+        <Element>3L$Gioz8P6AA2YhRozx9cc</Element>
+        <Element>2KnXecXbH8R8WNZ2ddlpW5</Element>
+        <Element>0BqriVFAv2WwRAh7eLXPfJ</Element>
+        <Element>0mMkEymOL2NuwMQi6i4Vbx</Element>
+        <Element>0lEnlqAon1Bw4xENwJ6Yf5</Element>
+        <Element>1ZqU$nbff5iw4zVFkbxcFU</Element>
+        <Element>3PPe3DuSD2Q9dEEOUutwsr</Element>
+        <Element>2GyrJaizb1BABF3A80g1Ov</Element>
+        <Element>33yTlD3yLFpORHQds5CHGd</Element>
+      </ElementGroup>
+    </Elements>
+  </AssignmentGroups>
+  <Combinations>
+    <Combination id="50637331">
+      <Variant AREF="1064303590" VREF="1991749931"/>
+    </Combination>
+    <Combination id="151301472">
+      <Variant AREF="1064303590" VREF="950573662"/>
+    </Combination>
+    <Combination id="812762910">
+      <Variant AREF="1064303590" VREF="1993800546"/>
+    </Combination>
+    <Combination id="2090954171">
+      <Variant AREF="1064303590" VREF="410314003"/>
+    </Combination>
+    <Combination id="1123730206">
+      <Variant AREF="1064303590" VREF="895654912"/>
+    </Combination>
+    <Combination id="593250232">
+      <Variant AREF="1064303590" VREF="1362678941"/>
+    </Combination>
+    <Combination id="1323644347">
+      <Variant AREF="1064303590" VREF="2137073127"/>
+    </Combination>
+    <Combination id="224383728">
+      <Variant AREF="1064303590" VREF="13858714"/>
+    </Combination>
+    <Combination id="820638497">
+      <Variant AREF="963016559" VREF="1895848598"/>
+    </Combination>
+    <Combination id="1922958545">
+      <Variant AREF="963016559" VREF="1796116687"/>
+    </Combination>
+    <Combination id="2139079099">
+      <Variant AREF="963016559" VREF="784745366"/>
+    </Combination>
+    <Combination id="1342911179">
+      <Variant AREF="963016559" VREF="1585164694"/>
+    </Combination>
+    <Combination id="584801849">
+      <Variant AREF="963016559" VREF="1567823095"/>
+    </Combination>
+    <Combination id="1888644555">
+      <Variant AREF="963016559" VREF="268851630"/>
+    </Combination>
+    <Combination id="851667613">
+      <Variant AREF="963016559" VREF="385196492"/>
+    </Combination>
+    <Combination id="416752071">
+      <Variant AREF="963016559" VREF="2071259724"/>
+    </Combination>
+    <Combination id="82053019">
+      <Variant AREF="963016559" VREF="1547039352"/>
+    </Combination>
+    <Combination id="1729488274">
+      <Variant AREF="963016559" VREF="613734639"/>
+    </Combination>
+  </Combinations>
+</SimulationMatrix>

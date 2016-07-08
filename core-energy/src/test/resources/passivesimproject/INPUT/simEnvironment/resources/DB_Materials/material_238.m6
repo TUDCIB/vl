@@ -1,0 +1,19 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = STEEL
+    RHO                      = 7800 kg/m3
+    CE                       = 470 J/kgK
+    LAMBDA                   = 47 W/mK
+    OPOR                     = 1.5e-006 m3/m3
+    OEFF                     = 1.5e-006 m3/m3
+    AW                       = 1e-006 kg/m2s05
+    MEW                      = 200000 -
+    KLEFF                    = 0 s
+	O80                		 = 1.5e-006 m3/m3
+
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 13 - Miscellaneous
+    COLOR                    = 10485760

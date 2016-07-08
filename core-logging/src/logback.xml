@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="15 seconds">
+
+    <appender name="CONSOLE.WARN" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+           <pattern>%-70(%d{HH:mm:ss.SSS}: %-5level [%thread][%logger{0}::%M]):	%m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+	      <level>WARN</level>
+	      <onMatch>ACCEPT</onMatch>
+	      <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+	
+	<appender name="CONSOLE.ERR" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%-70(%d{HH:mm:ss.SSS}: %-5level [%thread][%logger{0}::%M]):	%m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+	      <level>ERROR</level>
+	      <onMatch>ACCEPT</onMatch>
+	      <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <appender name="CONSOLE.OUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%-70(%d{HH:mm:ss.SSS}: %-5level [%logger{0}]):	%m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>INFO</level>
+        </filter>
+    </appender>
+	
+	<appender name="DE.TUDRESDEN.BAU.CIB.FILE.DEBUG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	  	<file>${catalina.home}/logs/cib_debug.log</file>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	      <!-- daily rollover -->
+	      <fileNamePattern>${catalina.home}/logs/cib_debug.%d{yyyy-MM-dd}.log</fileNamePattern>
+	
+	      <!-- keep 30 days' worth of history -->
+	      <maxHistory>30</maxHistory>
+	    </rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+	    
+	    <encoder>
+	      <pattern>%d{HH:mm:ss.SSS}: %-5level:	%-100(%m) [%logger{0}:%L]%n</pattern>
+	    </encoder>
+	</appender>
+	
+	<appender name="DE.TUDRESDEN.BAU.CIB.FILE.TRACE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	  	<file>${catalina.home}/logs/cib_trace.log</file>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	      <!-- daily rollover -->
+	      <fileNamePattern>${catalina.home}/logs/cib_trace.%d{yyyy-MM-dd}.log</fileNamePattern>
+	
+	      <!-- keep 30 days' worth of history -->
+	      <maxHistory>30</maxHistory>
+	    </rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>TRACE</level>
+			<onMatch>ACCEPT</onMatch>
+			<!--<onMismatch>DENY</onMismatch>-->
+		</filter>
+	    
+	    <encoder>
+	      <pattern>%d{HH:mm:ss.SSS}: %-5level:	%-100(%m) [%logger{0}:%L]%n</pattern>
+	    </encoder>
+	</appender>
+	
+	<appender name="DE.TUDRESDEN.BAU.CIB.FILE.ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${catalina.home}/logs/cib_error.log</file>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	      <!-- daily rollover -->
+	      <fileNamePattern>${catalina.home}/logs/cib_error.%d{yyyy-MM-dd}.log</fileNamePattern>
+	
+	      <!-- keep 30 days' worth of history -->
+	      <maxHistory>30</maxHistory>
+	    </rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	    
+	    <encoder>
+	      <pattern>%d{HH:mm:ss.SSS}: %-5level:	%-100(%m) [%logger{0}:%L]%n</pattern>
+	    </encoder>
+	</appender>
+	
+	<appender name="DE.TUDRESDEN.BAU.CIB.FILE.INFO_WARN" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${catalina.home}/logs/cib_normal.log</file>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	      <!-- daily rollover -->
+	      <fileNamePattern>${catalina.home}/logs/cib_normal.%d{yyyy-MM-dd}.log</fileNamePattern>
+	
+	      <!-- keep 30 days' worth of history -->
+	      <maxHistory>30</maxHistory>
+	    </rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+
+	    <encoder>
+	      <pattern>%d{HH:mm:ss.SSS}: %-5level:	%-100(%m) [%logger{0}:%L]%n</pattern>
+	    </encoder>
+	</appender>
+	
+	<appender name="HIBERNATE.FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${catalina.home}/logs/hibernate.log</file>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	      <!-- daily rollover -->
+	      <fileNamePattern>${catalina.home}/logs/hibernate.%d{yyyy-MM-dd}.log</fileNamePattern>
+	
+	      <!-- keep 30 days' worth of history -->
+	      <maxHistory>30</maxHistory>
+	    </rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>TRACE</level>
+		</filter>	    
+	    <encoder>
+	      <pattern>%d{HH:mm:ss.SSS}: %-8p %-80m [%c.java:%L] %n</pattern>
+	    </encoder>
+	</appender>
+	
+	<appender name="HIBERNATE.ERROR.FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${catalina.home}/logs/hibernate_errors.log</file>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	      <!-- daily rollover -->
+	      <fileNamePattern>${catalina.home}/logs/hibernate_errors.%d{yyyy-MM-dd}.log</fileNamePattern>
+	
+	      <!-- keep 30 days' worth of history -->
+	      <maxHistory>30</maxHistory>
+	    </rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	    <encoder>
+	      <pattern>%d{HH:mm:ss.SSS}: %-8p %-80m [%c.java:%L] %n</pattern>
+	    </encoder>
+	</appender>
+	
+	<appender name="SPRING.FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${catalina.home}/logs/spring_all.log</file>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	      <!-- daily rollover -->
+	      <fileNamePattern>${catalina.home}/logs/spring_all.%d{yyyy-MM-dd}.log</fileNamePattern>
+	
+	      <!-- keep 30 days' worth of history -->
+	      <maxHistory>30</maxHistory>
+	    </rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>TRACE</level>
+		</filter>
+	    <encoder>
+	      <pattern>%d{HH:mm:ss.SSS}: %-8p %-80m [%c.java:%L] %n</pattern>
+	    </encoder>
+	</appender>
+	
+	<appender name="SPRING.ERROR.FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${catalina.home}/logs/spring_errors.log</file>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	      <!-- daily rollover -->
+	      <fileNamePattern>${catalina.home}/logs/spring_errors.%d{yyyy-MM-dd}.log</fileNamePattern>
+	
+	      <!-- keep 30 days' worth of history -->
+	      <maxHistory>30</maxHistory>
+	    </rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	    <encoder>
+	      <pattern>%d{HH:mm:ss.SSS}: %-8p %-80m [%c.java:%L] %n</pattern>
+	    </encoder>
+	</appender>
+	
+	<!-- GUI-LOG-VIEW CONFIGURATION -->	
+	<appender name="DE.TUDRESDEN.BAU.CIB.VIEW.LOG" class="ch.qos.logback.ext.spring.DelegatingLogbackAppender">
+	</appender>
+
+	<!-- Print only messages of level debug or above in the package de.tudresden.bau.cib.* -> for instance BimFiT -->
+  	<logger name="de.tudresden.bau.cib" additivity="true">
+    	<level value="all" />
+    	<appender-ref ref="DE.TUDRESDEN.BAU.CIB.FILE.DEBUG" />
+    	<!--<appender-ref ref="DE.TUDRESDEN.BAU.CIB.FILE.TRACE" />-->
+    	<appender-ref ref="DE.TUDRESDEN.BAU.CIB.FILE.INFO_WARN" />
+    	<appender-ref ref="DE.TUDRESDEN.BAU.CIB.FILE.ERROR" />
+    	<appender-ref ref="DE.TUDRESDEN.BAU.CIB.VIEW.LOG" />   	
+	</logger>
+	
+	<!-- CORE-IAS CONFIGURATION -->	
+	<logger name="eu.hesmos.ivel" additivity="true">
+    	<level value="all" />
+    	<appender-ref ref="DE.TUDRESDEN.BAU.CIB.FILE.DEBUG" />
+    	<!--<appender-ref ref="DE.TUDRESDEN.BAU.CIB.FILE.TRACE" />-->
+    	<appender-ref ref="DE.TUDRESDEN.BAU.CIB.FILE.INFO_WARN" />
+    	<appender-ref ref="DE.TUDRESDEN.BAU.CIB.FILE.ERROR" />
+	</logger>
+  	
+  	<!-- Print only messages of level all or above in the package org.hibernate* -->
+  	<logger name="org.hibernate" additivity="true">
+    	<level value="all" />
+    	<appender-ref ref="HIBERNATE.FILE" />
+    	<appender-ref ref="HIBERNATE.ERROR.FILE" />   	
+	</logger>
+	
+	<!-- Print only messages of level all or above in the package org.eclipse.gemini* -->
+	<logger name="org.eclipse.gemini" additivity="true">
+    	<level value="all" />
+    	<appender-ref ref="SPRING.FILE" />
+    	<appender-ref ref="SPRING.ERROR.FILE" />
+	</logger>
+	
+	<!-- Print only messages of level all or above in the package org.springframework* -->
+	<logger name="org.springframework" additivity="true">
+    	<level value="all" />
+    	<appender-ref ref="SPRING.FILE" />
+    	<appender-ref ref="SPRING.ERROR.FILE" />
+	</logger>
+    
+	<root level="WARN,ERROR">
+		<appender-ref ref="CONSOLE.ERR"/>
+		<!--<appender-ref ref="CONSOLE.OUT"/>-->
+		<appender-ref ref="CONSOLE.WARN"/>
+	</root>
+</configuration>

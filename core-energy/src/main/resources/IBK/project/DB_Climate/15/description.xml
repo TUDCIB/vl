@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<Position latitude="48.14" longitude="11.58"/>
+<Description langid="de">München, Deutschland</Description>
+<Description langid="en">Munich, Germany</Description>
+</ClimateDataLocation>

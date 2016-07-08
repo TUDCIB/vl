@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<Position latitude='48.58' longitude='13.47'/>
+<Description langid='de'>Testreferenzjahr, Deutschland, Europa, TRY2010 13 Jahr 00000K 0 00409m</Description>
+<Description langid='en'>Test reference year, Germany, Europe, TRY2010 13 Jahr 00000K 0 00409m</Description>
+</ClimateDataLocation>

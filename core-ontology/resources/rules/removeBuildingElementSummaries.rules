@@ -1,0 +1,6 @@
+// @id: removeBuildingElementSummaries @name: Remove the building element summaries @description: Remove summaries  @end
+@prefix BIMOnto: http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMOnto#
+
+// initial settings
+[removeExistingSummary:(?be rdf:type BIMOnto:IfcBuildingElement) (?be eeBIM:hasSummary ?s) -> remove(1)]

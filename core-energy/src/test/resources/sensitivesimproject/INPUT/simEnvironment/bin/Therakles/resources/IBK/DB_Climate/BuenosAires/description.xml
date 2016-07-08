@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start='0' duration='30'/>
+<Position latitude='-34.82' longitude='301.47'/>
+<Description langid='de'>Buenos Aires, Argentinien, Südamerika</Description>
+<Description langid='en'>Buenos Aires, Argentina, SouthAmerica</Description>
+</ClimateDataLocation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="5.6.7">
+	<ProjectInfo>        
+		<DisplayName>walltypeSteelCover</DisplayName>    
+	</ProjectInfo>
+    <!--List of all materials used in this construction-->
+    <Materials>
+		<MaterialReference displayName="CONCRETE KASSEL">${Material Database}/material_569.m6</MaterialReference>
+		<MaterialReference displayName="MINERAL WOOL">${Material Database}/material_282.m6</MaterialReference>
+		<MaterialReference displayName="AIR GAP">${Material Database}/material_1000.m6</MaterialReference>
+		<MaterialReference displayName="STEEL">${Material Database}/material_238.m6</MaterialReference>
+    </Materials>
+
+    <!--Discretization data (grid and sketches)-->
+    <Discretization geometryType="2D">
+		<XSteps unit="m">0.200 0.100 0.020 0.040</XSteps>
+    </Discretization>
+
+    <!--List of all assignments of materials and conditions-->
+    <Assignments>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="CONCRETE KASSEL">569</Reference>
+			<IBK:Range>0 0 0 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="MINERAL WOOL">282</Reference>
+			<IBK:Range>1 0 1 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="AIR GAP">1000</Reference>
+			<IBK:Range>2 0 2 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="STEEL">238</Reference>
+			<IBK:Range>3 0 3 0</IBK:Range>
+		</Assignment>
+    </Assignments>
+	<Costs>183.0</Costs>
+</DelphinProject>

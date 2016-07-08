@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+  
+  <!-- initialize the Virtual Laboratory -->
+    <bean name="entryPoint" class="de.tudresden.bau.cib.vl.core.platform.VirtualLaboratoryImpl"
+        init-method="start" destroy-method="stop" lazy-init="false">
+        <property name="configuration" ref="osgiConfigurationService"/>
+  	</bean>
+	
+	<!-- BUSINESS PROCESS (Activiti) -->  
+
+  	<bean id="repositoryService" factory-bean="processEngine" factory-method="getRepositoryService" />
+  	<bean id="runtimeService" factory-bean="processEngine" factory-method="getRuntimeService" />
+  	<bean id="historyService" factory-bean="processEngine" factory-method="getHistoryService" />
+  	<bean id="taskService" factory-bean="processEngine" factory-method="getTaskService" />
+	
+	<bean id="businessProcessService" class="de.tudresden.bau.cib.vl.core.service.impl.BusinessProcessServiceImpl">
+		<property name="repositoryService" ref="repositoryService"/>
+		<property name="runtimeService" ref="runtimeService"/>
+		<property name="historyService" ref="historyService"/>
+		<property name="taskService" ref="taskService"/>
+	</bean>
+     
+	<bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">
+		<property name="databaseSchemaUpdate" value="true"/>
+		<property name="history" value="full" />
+	</bean>
+	<!-- 
+	<bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
+    	<property name="dataSource" ref="dataSource" />
+    	<property name="transactionManager" ref="transactionManager" />
+    	<property name="databaseSchemaUpdate" value="true" />
+    	<property name="jobExecutorActivate" value="false" />
+  	</bean>
+  	-->
+	
+	<bean id="processEngine" class="org.activiti.spring.ProcessEngineFactoryBean">
+    	<property name="processEngineConfiguration" ref="processEngineConfiguration" />
+  	</bean> 
+  	
+	<!--
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+        <property name="driverClass" value="${activiti.db.driverClass}" />
+		<property name="url" value="${activiti.db.url}" />
+		<property name="user" value="${activiti.db.username}" />
+		<property name="password" value="${activiti.db.password}" />
+    </bean>
+    
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    	<property name="dataSource" ref="dataSource" />
+  	</bean>
+    
+	<bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
+	    <property name="dataSource" ref="dataSource" />
+	    <property name="transactionManager" ref="transactionManager" />
+	    <property name="databaseSchemaUpdate" value="true" />
+	    <property name="jobExecutorActivate" value="false" />
+	</bean> 	
+	-->		
+	
+	<bean id="fileService"
+		class="de.tudresden.bau.cib.vl.core.service.impl.FileServiceImpl">
+		<property name="configuration" ref="osgiConfigurationService" />
+	</bean>
+	
+	<!-- DATABASE -->
+	
+	<import resource="databaseContext.xml"/>
+	<import resource="transactionContext.xml"/>
+
+
+	<!-- Data Access Objects -->
+	<bean name="userDao"
+        class="de.tudresden.bau.cib.vl.core.database.dao.hibernate.UserDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean name="sessionDao"
+        class="de.tudresden.bau.cib.vl.core.database.dao.hibernate.SessionDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean name="userRepositoryDao"
+        class="de.tudresden.bau.cib.vl.core.database.dao.hibernate.UserRepositoryDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean name="fileInformationDao"
+        class="de.tudresden.bau.cib.vl.core.database.dao.hibernate.FileInformationDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean name="projectDao"
+        class="de.tudresden.bau.cib.vl.core.database.dao.hibernate.ProjectDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <!-- Data Access Services -->
+    <bean name="userService" class="de.tudresden.bau.cib.vl.core.service.impl.UserServiceImpl">
+		<property name="userDao" ref="userDao"/> 
+    	<property name="fileInformationDao" ref="fileInformationDao"/>
+    	<property name="userRepositoryDao" ref="userRepositoryDao"/> 
+    	<property name="fileService" ref="fileService" />
+    	<property name="configuration" ref="osgiConfigurationService" />
+    	<property name="sessionDao" ref="sessionDao" />
+    	<property name="projectDao" ref="projectDao" />
+    </bean>
+</beans>

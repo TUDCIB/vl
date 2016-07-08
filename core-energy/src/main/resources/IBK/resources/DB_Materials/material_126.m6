@@ -1,0 +1,15 @@
+
+[GENERAL]
+  NAME                     = CLIMATE PLASTER
+  RHO                      = 845 kg/m3
+  CE                       = 810 J/kgK
+  OPOR                	   = 0.681480 m3/m3
+  OEFF                     = 0.399 m3/m3
+  OCAP                     = 0.2717 m3/m3
+  O80                      = 0.0441555 m3/m3
+  LAMBDA                   = 0.1679 W/mK
+  AW                       = 0.172228 kg/m2s05
+  MEW                      = 8.84084 -
+  KLEFF                    = 1.41998e-009 s
+  LAMBDA_DESIGN            = 0.3 W/mK
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start='160' duration='30'/>
+<Position latitude='30.13' longitude='31.40'/>
+<Description langid='de'>Kairo, Ägypten, Afrika</Description>
+<Description langid='en'>Cairo, Egypt, Africa</Description>
+</ClimateDataLocation>

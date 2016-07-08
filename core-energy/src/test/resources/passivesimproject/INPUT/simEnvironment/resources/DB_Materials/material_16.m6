@@ -1,0 +1,17 @@
+
+     [GENERAL]
+       NAME               = PSFoam-expanded
+       FLAGS              = WATERTIGHT VAPORTIGHT 
+
+       RHO                =     3.4000000000e+01 kg/m3
+       CE                 =     1.3000000000e+03 J/kgK
+       OPOR               =     9.4000000000e-01 m3/m3
+       OEFF               =     9.3500000000e-01 m3/m3
+       LAMBDA             =     4.0000000000e-02 W/mK
+       OCAP               =     1.0000000000e-03 m3/m3
+       O80                =     1.0896409102e-03 m3/m3
+
+     [IDENTIFICATION]
+       SOURCE             = TU Dresden
+       CATEGORY           = Insulations
+       COLOR              = 16740207

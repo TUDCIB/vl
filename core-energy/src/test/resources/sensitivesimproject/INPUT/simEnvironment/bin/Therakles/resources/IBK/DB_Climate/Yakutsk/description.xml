@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start='175' duration='20'/>
+<Position latitude='62.08' longitude='129.75'/>
+<Description langid='en'>Yakutsk, Russland, Asien</Description>
+<Description langid='de'>Yakutsk, Russia, Asia</Description>
+</ClimateDataLocation>

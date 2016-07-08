@@ -1,0 +1,13 @@
+          
+ 
+     [GENERAL]
+       NAME               = Sarnafil TG 66
+       RHO                = 1000.000 kg/m3
+       CE                 = 1700.00 J/kgK
+       LAMBDA             = 0.200 W/mK
+ 
+     [IDENTIFICATION]
+       SOURCE             = oebox Export
+       CATEGORY           = 12
+       COLOR              = 4227327
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<Position latitude="27.95" longitude="277,54"/>
+<SummerDesignDays start="210" duration="40"/>
+<Description langid="de">Tampa, Florida, USA</Description>
+<Description langid="en">Tampa, Florida, USA</Description>
+</ClimateDataLocation>

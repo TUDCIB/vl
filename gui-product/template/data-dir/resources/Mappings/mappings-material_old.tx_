@@ -1,0 +1,21 @@
+BP-REINF. CONCR.	material_1.m6
+CO-REINF. CONCR.	material_2.m6
+EW-REINF. CONCR.	material_3.m6
+FAC-MW-JOINT	material_4.m6
+FC BALCONY	material_5.m6
+FD-SL1-FL	material_6.m6
+Fireplace glass not analyzed	material_7.m6
+Fireplace not analyzed	material_7.m6
+GD-SECT-1	material_8.m6
+ID-SLIDING-MS-WD	material_9.m6
+ID-WD	material_10.m6
+IW-BRICK	material_11.m6
+IW-GYPSUM BOARD	material_12.m6
+IW-WOOD	material_13.m6
+Insulation not analyzed	material_14.m6
+Profile wall	material_15.m6
+ROOF SEALING	material_16.m6
+S-SLAB	material_17.m6
+SB- REINF. CONCR.	material_18.m6
+Spiral stair	material_19.m6
+XXX-SURFACE-VER	material_20.m6

@@ -1,0 +1,17 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = SAND
+    RHO                      = 1513 kg/m3
+    CE                       = 805 J/kgK
+    LAMBDA                   = 1.22 W/mK
+    OPOR                     = 0.43 m3/m3
+    OEFF                     = 0.43 m3/m3
+    AW                       = 0.0166667 kg/m2s05
+    MEW                      = 15 -
+	O80                		 = 0.0441035 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 5 - Concrete Containing Building Materials
+    COLOR                    = 10485760

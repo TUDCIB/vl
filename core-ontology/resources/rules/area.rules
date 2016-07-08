@@ -1,0 +1,123 @@
+// @id: areas @name: Calculate ares rule set @description: Calculates the areas of building elements, building enevelope, building window area and spaces  @end
+@prefix BIMOnto: http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMOnto#
+
+
+// initial settings
+[removeExistingWindowArea:(?building rdf:type BIMOnto:IfcBuilding) replaceAllWith(?building, eeBIM:windowArea, "0.0"^^http://www.w3.org/2001/XMLSchema#double) -> print(windowArea replaced with "0.0")]
+[removeExistingBuildingEnvelopeArea:(?building rdf:type BIMOnto:IfcBuilding) replaceAllWith(?building, eeBIM:buildingEnvelopeArea, "0.0"^^http://www.w3.org/2001/XMLSchema#double) -> print(buildingEnvelopeArea replaced with "0.0")]
+[removeExistingDwellingAreas:(?building rdf:type BIMOnto:IfcBuilding) replaceAllWith(?building, eeBIM:dwellingArea, "0.0"^^http://www.w3.org/2001/XMLSchema#double) -> print(dwellingArea replaced with "0.0")]
+
+// Currently important because in the model are only direct rdf:type but we also need the super class information
+[buildingElementDerivationA: 	(?a rdf:type BIMOnto:IfcWindow) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationB: 	(?a rdf:type BIMOnto:IfcWallStandardCase) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationC: 	(?a rdf:type BIMOnto:IfcColumn) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationD: 	(?a rdf:type BIMOnto:IfcSlab) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationE: 	(?a rdf:type BIMOnto:IfcWall) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+
+// assign areas from PropertySets as direct eeBIM properties -> currently only GrossSideArea
+[buildingelementAreas:
+			(?relation rdf:type BIMOnto:IfcRelDefinesByProperties)
+			(?relation BIMOnto:RelatingPropertyDefinition ?propertyQuantitySet)
+			(?propertyQuantitySet BIMOnto:Quantities ?quantityArea)
+			(?relation BIMOnto:RelatedObjects ?element)
+			(?quantityArea BIMOnto:Name ?labelInst)
+			(?labelInst BIMOnto:StringValue "GrossSideArea"^^xsd:string)
+			(?quantityArea BIMOnto:AreaValue ?valueInst)
+			(?valueInst BIMOnto:FloatValue ?value)
+			->
+			(?element eeBIM:area ?value)]				
+
+// calculate building window area	
+[windowAreas:
+			(?window rdf:type BIMOnto:IfcWindow)
+			(?window BIMOnto:ProvidesBoundaries ?sb)
+			(?sb BIMOnto:Description ?descInst)
+			(?descInst BIMOnto:StringValue ?description)
+			regex(?description, "2[ab] , #spaceboundary_area=(.*)", ?result)
+			strToDouble(?result, ?resValue)
+			->
+			(?window eeBIM:area ?resValue)]	
+
+[spaceArea:
+			(?relation rdf:type BIMOnto:IfcRelDefinesByProperties)
+			(?relation BIMOnto:RelatedObjects ?space)
+			(?space rdf:type BIMOnto:IfcSpace)		
+			(?relation BIMOnto:RelatingPropertyDefinition ?quantitySet)
+			(?quantitySet BIMOnto:Quantities ?quantityHeight)
+			(?quantityHeight BIMOnto:Name ?labelHeight)
+			(?labelHeight BIMOnto:StringValue "FinishCeilingHigh"^^xsd:string)
+			(?quantityHeight BIMOnto:LengthValue ?heightInst)
+			(?heightInst BIMOnto:FloatValue ?height)
+			(?quantitySet BIMOnto:Quantities ?quantityVolume)
+			(?quantityVolume BIMOnto:Name ?labelVolume)
+			(?labelVolume BIMOnto:StringValue "GrossVolume"^^xsd:string)
+			(?quantityVolume BIMOnto:VolumeValue ?volumeInst)
+			(?volumeInst BIMOnto:FloatValue ?volume)
+			quotient(?volume, ?height, ?area)
+			->
+			(?space eeBIM:area ?area)]
+			
+[buildingWindowArea:
+			(?building rdf:type BIMOnto:IfcBuilding)
+			(?building eeBIM:windowArea ?oldArea)
+			(?element rdf:type BIMOnto:IfcWindow)	
+			(?element BIMOnto:ProvidesBoundaries ?sb)
+			(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+			(?element eeBIM:area ?value)
+			sum(?oldArea, ?value, ?newArea)	
+			noValue(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot)
+			-> 
+			remove(1)
+			(?building eeBIM:windowArea ?newArea)
+			(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot)
+			]
+
+// the flag must be deleted because if it is present the area value rule is executed only once
+[deleteWindowAreaFlag:
+			(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot) 
+			-> 
+			remove(0) 
+			(?building rdf:type BIMOnto:IfcBuilding)]
+			
+[buildingEnvelopeArea:
+			(?building rdf:type BIMOnto:IfcBuilding)
+			(?building eeBIM:buildingEnvelopeArea ?oldArea)
+			(?element rdf:type BIMOnto:IfcBuildingElement)
+//			noValue(?element rdf:type BIMOnto:IfcSlab)
+			(?element BIMOnto:ProvidesBoundaries ?sb)
+			(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")		
+			(?element eeBIM:area ?value)
+			sum(?oldArea, ?value, ?newArea)	
+			noValue(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot)
+			-> 
+			remove(1)
+			(?building eeBIM:buildingEnvelopeArea ?newArea)
+			(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot)
+			]
+// the flag must be deleted because if it is present the area value rule is executed only once
+[deleteBuildingEnvelopeAreaFlag:
+			(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot) 
+			-> 
+			remove(0) 
+			(?building rdf:type BIMOnto:IfcBuilding)]
+						
+[dwellingArea:
+			(?building rdf:type BIMOnto:IfcBuilding)
+			(?building eeBIM:dwellingArea ?oldValue)
+			(?space rdf:type BIMOnto:IfcSpace)
+			(?space eeBIM:area ?area)
+			sum(?area, ?oldValue, ?newDwellingArea)
+			noValue(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot)
+			-> 
+			remove(1)
+			(?building eeBIM:dwellingArea ?newDwellingArea)
+			(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot)
+			]
+
+// the flag must be deleted because if it is present the area value rule is executed only once		
+[deleteDwellingAreaFlag:
+			(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot) 
+			-> 
+			remove(0) 
+			(?building rdf:type BIMOnto:IfcBuilding)]

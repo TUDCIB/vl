@@ -1,0 +1,21 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = COMPOUND MORTAR
+    RHO                      = 1100 kg/m3
+    CE                       = 850 J/kgK
+    LAMBDA                   = 0.7 W/mK
+    OPOR                     = 0.12 m3/m3
+    OEFF                     = 0.111 m3/m3
+	OCAP                	 = 0.1 m3/m3
+    AW                       = 0.001 kg/m2s05
+    MEW                      = 500 -
+    KLEFF                    = 1.22473e-011 s
+	DLEFF					 = 1.5e-010 m2/s
+    OCAP                     = 0.35762 m3/m3
+	O80                		 = 0.0098 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 2 - Plaster and Mortar
+    COLOR                    = 10485760

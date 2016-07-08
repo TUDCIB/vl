@@ -1,0 +1,18 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = FILL PERLITE
+    RHO                      = 90 kg/m3
+    CE                       = 1000 J/kgK
+    LAMBDA                   = 0.05 W/mK
+    OPOR                     = 0.47 m3/m3
+    OEFF                     = 0.47 m3/m3
+    AW                       = 1.757 kg/m2s05
+    MEW                      = 3 -
+    KLEFF                    = 0 s
+	O80                		 = 0.004 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 6 - Insulation Materials
+    COLOR                    = 10485760

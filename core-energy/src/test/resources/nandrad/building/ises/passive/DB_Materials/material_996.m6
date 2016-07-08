@@ -1,0 +1,19 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = EPS IMPACT SOUND INSULATION
+    RHO                      = 27 kg/m3
+    CE                       = 1450 J/kgK
+    LAMBDA                   = 0.04 W/mK
+    OPOR                     = 0.935 m3/m3
+    OEFF                     = 0.935 m3/m3
+	OCAP                	 = 0.0007 m3/m3
+    AW                       = 1e-005 kg/m2s05
+    MEW                      = 50 -
+    KLEFF                    = 0 s
+	O80                		 = 0.0006 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 6 - Insulation Materials
+    COLOR                    = 10485760

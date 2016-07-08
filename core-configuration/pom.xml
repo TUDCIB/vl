@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>de.tudresden.bau.cib.vl</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>core-configuration</artifactId>
+  <packaging>eclipse-plugin</packaging>
+  <name>Configuration</name>
+  <version>1.0.0-SNAPSHOT</version>
+  
+  <properties>
+  		<target-directory>${basedir}/target</target-directory>
+  		<runtime-data>${basedir}/runtime-data</runtime-data>
+		<runtime-data-config>${runtime-data}/config</runtime-data-config>
+		<target-runtime-data>${target-directory}/runtime-data</target-runtime-data>
+		<target-runtime-data-config>${target-runtime-data}/config</target-runtime-data-config>
+		<vl-config-file>vl.properties</vl-config-file>
+		<!-- MUST BE SET CORRECTLY! -->
+		<production-site>http://141.30.143.53:8080/ises/</production-site>
+		<production-base-path>D:/Daten/tomcat-data/ises</production-base-path>
+		<development-site>http://127.0.0.1:9090/ivel/</development-site>
+		<development-base-path>D:/Daten/tomcat-data/vl</development-base-path>
+  </properties>
+  
+  <build>
+  	<plugins>
+  			<!-- Modify configuration files e.g. change URL from development to production -->
+			<plugin>
+				<groupId>com.google.code.maven-replacer-plugin</groupId>
+				<artifactId>replacer</artifactId>
+				<version>1.5.3</version>
+				<executions>
+					<execution>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>replace</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<file>${runtime-data-config}/${vl-config-file}</file>
+					<outputFile>${target-runtime-data-config}/${vl-config-file}</outputFile>
+					<replacements>
+					<!-- replace base URL -->
+						<replacement>
+							<token>${development-site}</token>
+							<value>${production-site}</value>
+						</replacement>
+						<!-- replace base path on remote machine -->
+						<replacement>
+							<token>${development-base-path}</token>
+							<value>${production-base-path}</value>
+						</replacement>
+					</replacements>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.4.3</version>
+				<executions>
+					<!-- Copy runtime data -->
+					<execution>
+						<id>copy-runtime-data</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${target-runtime-data}</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${runtime-data}</directory>
+									<includes>
+										<include>*/**</include>
+									</includes>
+									<!-- already copied and modified in maven-replacer-plugin -->
+									<excludes>
+										<exclude>${vl-config-file}</exclude>
+									</excludes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+  	</plugins>
+  </build>
+</project>

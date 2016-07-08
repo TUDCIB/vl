@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpaceTypeProperties>
+    <SpaceType name="LivingArea">
+        <!--<ShortDescription lang="en">Living area</ShortDescription>-->
+        <!--<LongDescription lang="en">Living area, regular</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="Lounge">
+        <!--<ShortDescription lang="en">Lounge</ShortDescription>-->
+        <!--<LongDescription lang="en">Lounge, regular</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="WaitingRoom">
+        <!--<ShortDescription lang="en">Waiting room</ShortDescription>-->
+        <!--<LongDescription lang="en">Waiting room, regular</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="DiningArea">
+        <!--<ShortDescription lang="en">Dining area</ShortDescription>-->
+        <!--<LongDescription lang="en">Dining area, regular</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="DetainingRoom">
+        <!--<ShortDescription lang="en">Detaining room</ShortDescription>-->
+        <!--<LongDescription lang="en">Detaining room, regular</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="StandardOffice">
+        <!--<ShortDescription lang="en">Standard office</ShortDescription>-->
+        <!--<LongDescription lang="en">Standard office (several persons, regular)</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="MeetingRoom">
+        <!--<ShortDescription lang="en">Meeting room</ShortDescription>-->
+        <!--<LongDescription lang="en">Meeting room (several persons, regular)</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="TechnicalDrawingRoom">
+        <!--<ShortDescription lang="en">Technical drawing room</ShortDescription>-->
+        <!--<LongDescription lang="en">Technical drawing room (several persons, regular)</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="TicketHall">
+        <!--<ShortDescription lang="en">Ticket Hall</ShortDescription>-->
+        <!--<LongDescription lang="en">Ticket Hall</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="OfficeEquipmentRoom">
+        <!--<ShortDescription lang="en">Office Equipment Room</ShortDescription>-->
+        <!--<LongDescription lang="en">Office Equipment Room</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="Workshop">
+        <!--<ShortDescription lang="en">Workshop</ShortDescription>-->
+        <!--<LongDescription lang="en">Workshop</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="CommonLab">
+        <!--<ShortDescription lang="en">Common Lab</ShortDescription>-->
+        <!--<LongDescription lang="en">Common Lab, regular</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="PlantAnimalBreedingLab">
+        <!--<ShortDescription lang="en">Plant-Animal Breeding Lab</ShortDescription>-->
+        <!--<LongDescription lang="en">Plant-Animal Breeding Lab</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="Kitchen">
+        <!--<ShortDescription lang="en">Kitchen</ShortDescription>-->
+        <!--<LongDescription lang="en">Kitchen, not inside a flat</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="SpecialLab">
+        <!--<ShortDescription lang="en">Special Lab</ShortDescription>-->
+        <!--<LongDescription lang="en">Special Lab, regular</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="CommonStore">
+        <!--<ShortDescription lang="en">Common Store</ShortDescription>-->
+        <!--<LongDescription lang="en">Common Store</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="CollectionRoom">
+        <!--<ShortDescription lang="en">Collection Store</ShortDescription>-->
+        <!--<LongDescription lang="en">Collection Store</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="ColdStore">
+        <!--<ShortDescription lang="en">Cold Store</ShortDescription>-->
+        <!--<LongDescription lang="en">Cold Store</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">None</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="ShowRoom">
+        <!--<ShortDescription lang="en">Show Room</ShortDescription>-->
+        <!--<LongDescription lang="en">Show Room, sales room</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="ClassRoom">
+        <!--<ShortDescription lang="en">Class room</ShortDescription>-->
+        <!--<LongDescription lang="en">Class room in schools and universities, regular</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="SportsHall">
+        <!--<ShortDescription lang="en">Sports Hall</ShortDescription>-->
+        <!--<LongDescription lang="en">Sports Hall</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">AirTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="TreatmentRoom">
+        <!--<ShortDescription lang="en">Treatment room</ShortDescription>-->
+        <!--<LongDescription lang="en">Treatment room</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="BedRoom">
+        <!--<ShortDescription lang="en">Bed room</ShortDescription>-->
+        <!--<LongDescription lang="en">Bed room, sickroom</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="Sanitary">
+        <!--<ShortDescription lang="en">Sanitary area</ShortDescription>-->
+        <!--<LongDescription lang="en">Sanitary area for vehicles</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="Cloakroom">
+        <!--<ShortDescription lang="en">Sanitary area</ShortDescription>-->
+        <!--<LongDescription lang="en">Sanitary area for vehicles</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="CarParkingSpace">
+        <!--<ShortDescription lang="en">Car Parking Space</ShortDescription>-->
+        <!--<LongDescription lang="en">Car Parking Space, area for vehicles</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="CirculationArea">
+        <!--<ShortDescription lang="en">Circulation area</ShortDescription>-->
+        <!--<LongDescription lang="en">Circulation area for vehicles</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">None</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="TechnicalRoom">
+        <!--<ShortDescription lang="en">Technical Room</ShortDescription>-->
+        <!--<LongDescription lang="en">Technical Room</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="TechnicalRoomElectrical">
+        <!--<ShortDescription lang="en">Technical Room</ShortDescription>-->
+        <!--<LongDescription lang="en">Technical Room, electrical</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="TechnicalRoomCommunication">
+        <!--<ShortDescription lang="en">Technical Room</ShortDescription>-->
+        <!--<LongDescription lang="en">Technical Room, communication devices</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="Elevator">
+        <!--<ShortDescription lang="en">Elevator drain</ShortDescription>-->
+        <!--<LongDescription lang="en">Elevator drain</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">None</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="CorridorStaircase">
+        <!--<ShortDescription lang="en">Corridor Staircase</ShortDescription>-->
+        <!--<LongDescription lang="en">Corridor Staircase</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">OperativeTemperature</IBK:String>
+    </SpaceType>
+    <SpaceType name="Drain">
+        <!--<ShortDescription lang="en">Drain</ShortDescription>-->
+        <!--<LongDescription lang="en">Drain</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">None</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+    <SpaceType name="CommonRoom">
+        <!--<ShortDescription lang="en">Common Room</ShortDescription>-->
+        <!--<LongDescription lang="en">Common Room</LongDescription>-->
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:String name="HeatingControlMode">OperativeTemperature</IBK:String>
+        <IBK:String name="CoolingControlMode">None</IBK:String>
+    </SpaceType>
+</SpaceTypeProperties>

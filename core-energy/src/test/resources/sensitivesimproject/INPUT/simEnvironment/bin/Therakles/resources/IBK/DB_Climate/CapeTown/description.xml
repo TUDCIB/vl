@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start='10' duration='30'/>
+<Position latitude='-33.98' longitude='18.60'/>
+<Description langid='de'>Kapstadt, Südafrica, Afrika</Description>
+<Description langid='en'>Cape Town, South Africa, Africa</Description>
+</ClimateDataLocation>

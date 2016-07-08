@@ -1,0 +1,14 @@
+;          
+;          
+ 
+     [GENERAL]
+       NAME               = Sarnafil TU 222
+       RHO                = 530.000 kg/m3
+       CE                 = 1680.00 J/kgK
+       LAMBDA             = 0.220 W/mK
+ 
+     [IDENTIFICATION]
+       SOURCE             = oebox Export
+       CATEGORY           = 12
+       COLOR              = 4227327
+

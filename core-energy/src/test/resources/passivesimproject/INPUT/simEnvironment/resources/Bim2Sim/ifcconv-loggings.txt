@@ -1,0 +1,38 @@
+2013-05-24 01:00:58,733	IfcConverter	INFO		IFC file is: D:/Nutzer/ken/data/VirtualLaboratory/temp/1_1369393220444\tempModel.ifc
+2013-05-24 01:00:58,734	IfcConverter	INFO		NANDRAD file to create is: D:/Nutzer/ken/data/VirtualLaboratory/temp/1_1369393220444\1_1369393220444.nandrad
+2013-05-24 01:00:58,735	IfcConverter	INFO		Directory for Construction type files is: D:/Nutzer/ken/data/VirtualLaboratory/temp/1_1369393220444\DB_Constructions\
+2013-05-24 01:01:06,999	IfcConverter	WARNING	[de.graviss.ifc.ibk.NandradConverter::convertIfc]	[Mode -not strict-] Area of space  A1.3.27 Klassenzimmer is 0. Converter set it per default to 20 qm.
+2013-05-24 01:01:07,190	IfcConverter	INFO		-> checking space boundary # 100 / 2781 ---
+2013-05-24 01:01:07,191	IfcConverter	INFO		-> checking space boundary # 200 / 2781 ---
+2013-05-24 01:01:07,252	IfcConverter	INFO		-> checking space boundary # 300 / 2781 ---
+2013-05-24 01:01:07,253	IfcConverter	INFO		-> checking space boundary # 400 / 2781 ---
+2013-05-24 01:01:07,258	IfcConverter	INFO		-> checking space boundary # 500 / 2781 ---
+2013-05-24 01:01:07,258	IfcConverter	INFO		-> checking space boundary # 600 / 2781 ---
+2013-05-24 01:01:07,309	IfcConverter	INFO		-> checking space boundary # 700 / 2781 ---
+2013-05-24 01:01:07,316	IfcConverter	INFO		-> checking space boundary # 800 / 2781 ---
+2013-05-24 01:01:07,316	IfcConverter	INFO		-> checking space boundary # 900 / 2781 ---
+2013-05-24 01:01:07,317	IfcConverter	INFO		-> checking space boundary # 1000 / 2781 ---
+2013-05-24 01:01:07,405	IfcConverter	WARNING	[de.graviss.ifc.ibk.NandradConverter::addEmbeddedObject]	[Mode -not strict-] Area of  Window  is 0 qm. Converter set it per default to 1 qm.
+2013-05-24 01:01:07,467	IfcConverter	WARNING	[de.graviss.ifc.ibk.NandradConverter::addEmbeddedObject]	[Mode -not strict-] Area of  Window  is 0 qm. Converter set it per default to 1 qm.
+2013-05-24 01:01:07,485	IfcConverter	WARNING	[de.graviss.ifc.ibk.NandradConverter::addEmbeddedObject]	[Mode -not strict-] Area of  Window  is 0 qm. Converter set it per default to 1 qm.
+2013-05-24 01:01:07,502	IfcConverter	WARNING	[de.graviss.ifc.ibk.NandradConverter::addEmbeddedObject]	[Mode -not strict-] Area of  Window  is 0 qm. Converter set it per default to 1 qm.
+2013-05-24 01:01:07,571	IfcConverter	WARNING	[de.graviss.ifc.ibk.NandradConverter::addEmbeddedObject]	[Mode -not strict-] Area of  Window  is 0 qm. Converter set it per default to 1 qm.
+2013-05-24 01:01:07,589	IfcConverter	WARNING	[de.graviss.ifc.ibk.NandradConverter::addEmbeddedObject]	[Mode -not strict-] Embedded object ( Window ) not added to project because area of embedded object (26.419999999999998) is greater than the wall area (31.03)
+2013-05-24 01:01:07,589	IfcConverter	INFO		-> checking space boundary # 1100 / 2781 ---
+2013-05-24 01:01:07,595	IfcConverter	INFO		-> checking space boundary # 1200 / 2781 ---
+2013-05-24 01:01:07,595	IfcConverter	INFO		-> checking space boundary # 1300 / 2781 ---
+2013-05-24 01:01:07,596	IfcConverter	INFO		-> checking space boundary # 1400 / 2781 ---
+2013-05-24 01:01:07,601	IfcConverter	INFO		-> checking space boundary # 1500 / 2781 ---
+2013-05-24 01:01:07,602	IfcConverter	INFO		-> checking space boundary # 1600 / 2781 ---
+2013-05-24 01:01:07,602	IfcConverter	INFO		-> checking space boundary # 1700 / 2781 ---
+2013-05-24 01:01:07,603	IfcConverter	INFO		-> checking space boundary # 1800 / 2781 ---
+2013-05-24 01:01:07,604	IfcConverter	INFO		-> checking space boundary # 1900 / 2781 ---
+2013-05-24 01:01:07,605	IfcConverter	INFO		-> checking space boundary # 2000 / 2781 ---
+2013-05-24 01:01:07,652	IfcConverter	INFO		-> checking space boundary # 2100 / 2781 ---
+2013-05-24 01:01:07,652	IfcConverter	INFO		-> checking space boundary # 2200 / 2781 ---
+2013-05-24 01:01:07,653	IfcConverter	INFO		-> checking space boundary # 2300 / 2781 ---
+2013-05-24 01:01:07,658	IfcConverter	INFO		-> checking space boundary # 2400 / 2781 ---
+2013-05-24 01:01:07,706	IfcConverter	INFO		-> checking space boundary # 2500 / 2781 ---
+2013-05-24 01:01:07,707	IfcConverter	INFO		-> checking space boundary # 2600 / 2781 ---
+2013-05-24 01:01:07,758	IfcConverter	INFO		-> checking space boundary # 2700 / 2781 ---
+2013-05-24 01:01:07,867	IfcConverter	INFO		System.exit( 0 )

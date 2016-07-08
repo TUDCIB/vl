@@ -1,0 +1,13 @@
+         
+ 
+     [GENERAL]
+       NAME               = NOVOtan ® complite
+       RHO                = 980.000 kg/m3
+       CE                 = 1260.00 J/kgK
+       LAMBDA             = 0.500 W/mK
+ 
+     [IDENTIFICATION]
+       SOURCE             = oebox Export
+       CATEGORY           = 12
+       COLOR              = 4227327
+

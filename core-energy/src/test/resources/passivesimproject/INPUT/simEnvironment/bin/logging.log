@@ -1,0 +1,7 @@
+2015-04-22 16:47:41 INFO  IfcMain:98 - Path of Bim2Sim: D:\Nutzer\ken\Workspaces\VirtualLaboratory\master\core-energy\resources\IBK
+2015-04-22 16:47:41 INFO  IfcMain:100 - Path of bin: D:\Nutzer\ken\Workspaces\VirtualLaboratory\master\core-energy\resources
+2015-04-22 16:47:41 INFO  IfcMain:102 - Path of Parent: D:\Nutzer\ken\Workspaces\VirtualLaboratory\master\core-energy
+2015-04-22 16:47:41 INFO  IfcMain:104 - Path of project: D:\Nutzer\ken\Workspaces\VirtualLaboratory\master\core-energy\project
+2015-04-22 16:47:41 INFO  IfcMain:106 - Path of Ifc: D:\Nutzer\ken\Workspaces\VirtualLaboratory\master\core-energy\project\ISES_project.ifc
+2015-04-22 16:47:41 INFO  IfcMain:108 - Path of Linkmodel: D:\Nutzer\ken\Workspaces\VirtualLaboratory\master\core-energy\projectISES_project.rdf
+2015-04-22 16:47:41 ERROR IfcMain:131 - The first argument [IFC file] is not a valid directory!

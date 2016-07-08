@@ -1,0 +1,150 @@
+ConstructionInstance.SurfaceTemperatureA 	[C] 	Surface temperature at interface A.
+ConstructionInstance.SurfaceTemperatureB 	[C] 	Surface temperature at interface B.
+EmbeddedObject.Area            	[m2] 	Window area.
+EmbeddedObject.GlassFraction   	[---] 	Frame factor [1 - no frame, 0 - all frame].
+EmbeddedObject.HeatTransmission 	[W/m2] 	Heat transmission flux density.
+EmbeddedObject.HeatTransmissionFlux 	[W] 	Heat transmission flux.
+EmbeddedObject.SWRadAdsorbed   	[W/m2] 	Adsorbed heat flux by short wave radiation at the window surface  (flux density).
+EmbeddedObject.SWRadAdsorbedFlux 	[W] 	Adsorbed heat flux by short wave radiation at the window surface  (flux).
+EmbeddedObject.SWRadImposed    	[W/m2] 	Heat flux by short wave radiation at the window surface  (flux density).
+EmbeddedObject.ShadingFactor   	[---] 	Shading factor (between 0...1).
+EmbeddedObject.SolarHeatGainCoefficient 	[---] 	Constant transmissibility [0 - opaque, 1 - fully translucent].
+EmbeddedObject.ThermalTransmittance 	[W/m2K] 	Effective heat transfer coefficient (area-weighted U-value of frame and glass).
+Global.DensityDryAir           	[kg/m3] 	Density of dry air.
+Global.DensityWater            	[kg/m3] 	Density of water.
+Global.GasConstantDryAir       	[J/kgK] 	Gas constant for dry air.
+Global.GasConstantVapor        	[J/kgK] 	Gas constant for water vapour.
+Global.Gravity                 	[m/s2] 	Gravitational constant.
+Global.SpecificHeatCapacityDryAir 	[J/kgK] 	Specific heat capacity of dry air.
+Global.SpecificHeatCapacityIce 	[J/kgK] 	Specific heat capacity of ice.
+Global.SpecificHeatCapacityWater 	[J/kgK] 	Specific heat capacity of of the water vapour.
+Global.SpecificHeatCrystallizationIce 	[J/kgK] 	Specific heat of crystallization of the ice with respect to reference temperature of 0K.
+Global.SpecificHeatEvaporationVapor 	[J/kg] 	Specific heat of evaporation of the water vapour with respect to reference temperature of 0K.
+Global.WaterVaporDiffusivity   	[m2/s] 	Water vapor diffusivity in air.
+Interface.AbsorptionCoefficient 	[---] 	Solar Absorption coefficient [0,...,1].
+Interface.Area                 	[m2] 	Surface netto area
+Interface.Emissivity           	[---] 	Long wave Emissivity [0,...,1] calculated from model.
+Interface.HeatConduction       	[W/m2] 	Heat conduction (flux density).
+Interface.HeatConductionFlux   	[W] 	Heat conduction (flux).
+Interface.HeatTransferCoefficient 	[W/m2K] 	Heat transfer coefficient calculated from model.
+Interface.LWRadAdsorbed        	[W/m2] 	Long wave radiation adsorbed (flux density).
+Interface.LWRadBalance         	[W/m2] 	Long wave radiation balance (flux density).
+Interface.LWRadBalanceFlux     	[W] 	Long wave radiation balance (flux).
+Interface.LWRadEmitted         	[W/m2] 	Long wave radiation emitted (flux density).
+Interface.SWRadAdsorbed        	[W/m2] 	Adsorbed heat flux by short wave radiation at the wall surface  (flux density).
+Interface.SWRadAdsorbedFlux    	[W] 	Adsorbed heat flux by short wave radiation at the window surface  (flux).
+Interface.SWRadImposed         	[W/m2] 	Heat flux by short wave radiation at the wall surface  (flux density).
+Interface.SurfaceTemperature   	[C] 	Surface temperature.
+Location.Albedo                	[---] 	Albedo value of the surrounding [0..1].
+Location.Azimuth               	[Deg] 	Solar azimuth (0 - north).
+Location.CloudCover            	[-] 	Cloud coverage.
+Location.Declination           	[Deg] 	Solar declination (0 - north).
+Location.DewPointTemperature   	[C] 	Dew point temperature.
+Location.Elevation             	[Deg] 	Solar elevation (0 - at horizont, 90 - directly above).
+Location.LWRadFromGround       	[W/m2] 	Ground emission.
+Location.LWRadFromSky          	[W/m2] 	Sky counter radiation / emission.
+Location.Latitude              	[Deg] 	Latitude.
+Location.Orientation           	[Deg] 	Orientation of the building (0 deg - north).
+Location.Precipitation         	[mm/h] 	Precipitation.
+Location.RainHorizontal        	[kg/m2s] 	Rain flux density on horiontal area.
+Location.RelativeHumidity      	[%] 	Relative humidity.
+Location.SWRadDiffuseHorizontal 	[W/m2] 	Diffuse short-wave radiation flux density on horizontal surface.
+Location.SWRadDirectHorizontal 	[W/m2] 	Direct short-wave radiation flux density on horizontal surface.
+Location.SWRadGlobalHorizontal 	[W/m2] 	Global short-wave radiation flux density on horizontal surface.
+Location.Temperature           	[C] 	Outside temperature.
+Location.TotalPressure         	[kPa] 	Total Pressure.
+Location.WindDirection         	[Deg] 	Wind direction (0 - north).
+Location.WindVelocity          	[m/s] 	Wind velocity.
+Model.ConvectiveHeatingFlux    	[W] 	Heat flux by convective heating.
+Model.CoolingFlux              	[W] 	Negative heat flux.
+Model.MaximumCoolingPower      	[J/s] 	
+Model.MaximumHeatingPower      	[J/s] 	
+Model.RadiantHeatingFlux       	[W] 	Heat flux by radiant heating.
+Model.RadiationLoadFraction    	[---] 	
+Schedule.BedRoom:CoolingSetPointTemperature 	[C] 	BedRoom:CoolingSetPointTemperature
+Schedule.BedRoom:HeatingSetPointTemperature 	[C] 	BedRoom:HeatingSetPointTemperature
+Schedule.CarParkingSpace:CoolingSetPointTemperature 	[C] 	CarParkingSpace:CoolingSetPointTemperature
+Schedule.CarParkingSpace:HeatingSetPointTemperature 	[C] 	CarParkingSpace:HeatingSetPointTemperature
+Schedule.CirculationArea:CoolingSetPointTemperature 	[C] 	CirculationArea:CoolingSetPointTemperature
+Schedule.CirculationArea:HeatingSetPointTemperature 	[C] 	CirculationArea:HeatingSetPointTemperature
+Schedule.ClassRoom:CoolingSetPointTemperature 	[C] 	ClassRoom:CoolingSetPointTemperature
+Schedule.ClassRoom:HeatingSetPointTemperature 	[C] 	ClassRoom:HeatingSetPointTemperature
+Schedule.Cloakroom:CoolingSetPointTemperature 	[C] 	Cloakroom:CoolingSetPointTemperature
+Schedule.Cloakroom:HeatingSetPointTemperature 	[C] 	Cloakroom:HeatingSetPointTemperature
+Schedule.ColdStore:CoolingSetPointTemperature 	[C] 	ColdStore:CoolingSetPointTemperature
+Schedule.CollectionRoom:CoolingSetPointTemperature 	[C] 	CollectionRoom:CoolingSetPointTemperature
+Schedule.CollectionRoom:HeatingSetPointTemperature 	[C] 	CollectionRoom:HeatingSetPointTemperature
+Schedule.CommonLab:CoolingSetPointTemperature 	[C] 	CommonLab:CoolingSetPointTemperature
+Schedule.CommonLab:HeatingSetPointTemperature 	[C] 	CommonLab:HeatingSetPointTemperature
+Schedule.CommonRoom:CoolingSetPointTemperature 	[C] 	CommonRoom:CoolingSetPointTemperature
+Schedule.CommonRoom:HeatingSetPointTemperature 	[C] 	CommonRoom:HeatingSetPointTemperature
+Schedule.CommonStore:CoolingSetPointTemperature 	[C] 	CommonStore:CoolingSetPointTemperature
+Schedule.CommonStore:HeatingSetPointTemperature 	[C] 	CommonStore:HeatingSetPointTemperature
+Schedule.CorridorStaircase:CoolingSetPointTemperature 	[C] 	CorridorStaircase:CoolingSetPointTemperature
+Schedule.CorridorStaircase:HeatingSetPointTemperature 	[C] 	CorridorStaircase:HeatingSetPointTemperature
+Schedule.DetainingRoom:CoolingSetPointTemperature 	[C] 	DetainingRoom:CoolingSetPointTemperature
+Schedule.DetainingRoom:HeatingSetPointTemperature 	[C] 	DetainingRoom:HeatingSetPointTemperature
+Schedule.DiningArea:CoolingSetPointTemperature 	[C] 	DiningArea:CoolingSetPointTemperature
+Schedule.DiningArea:HeatingSetPointTemperature 	[C] 	DiningArea:HeatingSetPointTemperature
+Schedule.Drain:CoolingSetPointTemperature 	[C] 	Drain:CoolingSetPointTemperature
+Schedule.Drain:HeatingSetPointTemperature 	[C] 	Drain:HeatingSetPointTemperature
+Schedule.Elevator:CoolingSetPointTemperature 	[C] 	Elevator:CoolingSetPointTemperature
+Schedule.Elevator:HeatingSetPointTemperature 	[C] 	Elevator:HeatingSetPointTemperature
+Schedule.Kitchen:CoolingSetPointTemperature 	[C] 	Kitchen:CoolingSetPointTemperature
+Schedule.Kitchen:HeatingSetPointTemperature 	[C] 	Kitchen:HeatingSetPointTemperature
+Schedule.LivingArea:HeatingSetPointTemperature 	[C] 	LivingArea:HeatingSetPointTemperature
+Schedule.Lounge:CoolingSetPointTemperature 	[C] 	Lounge:CoolingSetPointTemperature
+Schedule.Lounge:HeatingSetPointTemperature 	[C] 	Lounge:HeatingSetPointTemperature
+Schedule.MeetingRoom:CoolingSetPointTemperature 	[C] 	MeetingRoom:CoolingSetPointTemperature
+Schedule.MeetingRoom:HeatingSetPointTemperature 	[C] 	MeetingRoom:HeatingSetPointTemperature
+Schedule.OfficeEquipmentRoom:CoolingSetPointTemperature 	[C] 	OfficeEquipmentRoom:CoolingSetPointTemperature
+Schedule.OfficeEquipmentRoom:HeatingSetPointTemperature 	[C] 	OfficeEquipmentRoom:HeatingSetPointTemperature
+Schedule.PlantAnimalBreedingLab:CoolingSetPointTemperature 	[C] 	PlantAnimalBreedingLab:CoolingSetPointTemperature
+Schedule.PlantAnimalBreedingLab:HeatingSetPointTemperature 	[C] 	PlantAnimalBreedingLab:HeatingSetPointTemperature
+Schedule.Sanitary:CoolingSetPointTemperature 	[C] 	Sanitary:CoolingSetPointTemperature
+Schedule.Sanitary:HeatingSetPointTemperature 	[C] 	Sanitary:HeatingSetPointTemperature
+Schedule.ShowRoom:CoolingSetPointTemperature 	[C] 	ShowRoom:CoolingSetPointTemperature
+Schedule.ShowRoom:HeatingSetPointTemperature 	[C] 	ShowRoom:HeatingSetPointTemperature
+Schedule.SpecialLab:CoolingSetPointTemperature 	[C] 	SpecialLab:CoolingSetPointTemperature
+Schedule.SpecialLab:HeatingSetPointTemperature 	[C] 	SpecialLab:HeatingSetPointTemperature
+Schedule.SportsHall:CoolingSetPointTemperature 	[C] 	SportsHall:CoolingSetPointTemperature
+Schedule.SportsHall:HeatingSetPointTemperature 	[C] 	SportsHall:HeatingSetPointTemperature
+Schedule.StandardOffice:CoolingSetPointTemperature 	[C] 	StandardOffice:CoolingSetPointTemperature
+Schedule.StandardOffice:HeatingSetPointTemperature 	[C] 	StandardOffice:HeatingSetPointTemperature
+Schedule.TechnicalDrawingRoom:CoolingSetPointTemperature 	[C] 	TechnicalDrawingRoom:CoolingSetPointTemperature
+Schedule.TechnicalDrawingRoom:HeatingSetPointTemperature 	[C] 	TechnicalDrawingRoom:HeatingSetPointTemperature
+Schedule.TechnicalRoom:CoolingSetPointTemperature 	[C] 	TechnicalRoom:CoolingSetPointTemperature
+Schedule.TechnicalRoom:HeatingSetPointTemperature 	[C] 	TechnicalRoom:HeatingSetPointTemperature
+Schedule.TechnicalRoomCommunication:CoolingSetPointTemperature 	[C] 	TechnicalRoomCommunication:CoolingSetPointTemperature
+Schedule.TechnicalRoomCommunication:HeatingSetPointTemperature 	[C] 	TechnicalRoomCommunication:HeatingSetPointTemperature
+Schedule.TechnicalRoomElectrical:CoolingSetPointTemperature 	[C] 	TechnicalRoomElectrical:CoolingSetPointTemperature
+Schedule.TechnicalRoomElectrical:HeatingSetPointTemperature 	[C] 	TechnicalRoomElectrical:HeatingSetPointTemperature
+Schedule.TicketHall:CoolingSetPointTemperature 	[C] 	TicketHall:CoolingSetPointTemperature
+Schedule.TicketHall:HeatingSetPointTemperature 	[C] 	TicketHall:HeatingSetPointTemperature
+Schedule.TreatmentRoom:CoolingSetPointTemperature 	[C] 	TreatmentRoom:CoolingSetPointTemperature
+Schedule.TreatmentRoom:HeatingSetPointTemperature 	[C] 	TreatmentRoom:HeatingSetPointTemperature
+Schedule.WaitingRoom:CoolingSetPointTemperature 	[C] 	WaitingRoom:CoolingSetPointTemperature
+Schedule.WaitingRoom:HeatingSetPointTemperature 	[C] 	WaitingRoom:HeatingSetPointTemperature
+Schedule.Workshop:CoolingSetPointTemperature 	[C] 	Workshop:CoolingSetPointTemperature
+Schedule.Workshop:HeatingSetPointTemperature 	[C] 	Workshop:HeatingSetPointTemperature
+Zone.AirTemperature            	[C] 	Room air temperature.
+Zone.CompleteLoads             	[W] 	Sum of all loads.
+Zone.ConstructionHeatConductionGains 	[W] 	Heat loads by heat conduction through all enclosing walls.
+Zone.CoolingGains              	[W] 	Heat loss by cooling.
+Zone.HeatCapacityAdditionalMass 	[J/K] 	Heat capacity of additional furniture.
+Zone.HeatingConvectiveGains    	[W] 	Heat loads by convective heating.
+Zone.HeatingGains              	[W] 	Cummulative heat flux.
+Zone.HeatingRadiantGains       	[W] 	Heat flux by radiant heating.
+Zone.InternalEnergy            	[W] 	Internal energy of the room.
+Zone.LWRadHeatingWalls         	[W/m2] 	Long wave radiation flux towards all wall surfaces (flux density).
+Zone.LWRadUserLoadsWalls       	[W/m2] 	Long wave radiation flux towards all wall surfaces (flux density).
+Zone.OperativeTemperature      	[C] 	Operative temperature of the room.
+Zone.RadiantTemperature        	[C] 	Mean surface temperature of all surfaces facing the room.
+Zone.RadiationLoadFraction     	[%] 	Percentage of solar radiation gains attributed direcly to current room.
+Zone.SWRadWalls                	[W/m2] 	Short wave radiation toward all walls (flux density).
+Zone.UserConvectiveGains       	[W] 	Convective heat flux by users.
+Zone.UserGains                 	[W] 	Heat gains by occupancy.
+Zone.UserRadiantGains          	[W] 	Radiant heat flux by users.
+Zone.Volume                    	[m3] 	Room air volume.
+Zone.WindowHeatTransmissionGains 	[W] 	Heat loads by heat transmission through all windows of a room.
+Zone.WindowSWRadGains          	[W] 	Heat loads by short wave radiation through all windows of a room.

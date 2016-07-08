@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <!-- HSQLDB connection in MemoryDB <property name="connection.driver_class">org.hsqldb.jdbcDriver</property> 
+			<property name="connection.url">jdbc:hsqldb:mem:gtc</property> <property 
+			name="connection.username">sa</property> <property name="connection.password"></property> 
+ HSQLDB connection on ServerDB -->
+  <property name="connection.driver_class">org.hsqldb.jdbcDriver</property>
+  <property name="connection.url">jdbc:hsqldb:file:/D:/Daten/tomcat-data/vl/db/vl.db</property>
+  <property name="connection.username">sa</property>
+  <property name="connection.password"/>
+  <property name="HSQL">org.hibernate.dialect.HSQLDialect</property>
+
+  <!-- this will show us all sql statements -->
+  <property name="hibernate.show_sql">false</property>
+  <!-- this will create the database tables for us -->
+  <property name="hibernate.hbm2ddl.auto">create-drop</property>
+  <!-- creates the schema, destroying previous data. 
+ <property name="hibernate.hbm2ddl.auto">update</property> 
+ update the schema 
+<property name="hibernate.connection.pool_size">8</property> -->
+  <property name="connection.autocommit">false</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.HSQLDialect</property>
+  <property name="hibernate.connection.driver_class">org.hsqldb.jdbcDriver</property>
+  <property name="hibernate.connection.url">jdbc:hsqldb:file:/D:/Daten/tomcat-data/vl/db/vl.db</property>
+  <property name="hibernate.connection.username">sa</property>
+  <mapping class="de.tudresden.bau.cib.vl.core.database.domain.User"/>
+  <mapping class="de.tudresden.bau.cib.vl.core.database.domain.Session"/>
+  <mapping class="de.tudresden.bau.cib.vl.core.database.domain.FileInformation"/>
+  <mapping class="de.tudresden.bau.cib.vl.core.database.domain.UserRepository"/>
+  <mapping class="de.tudresden.bau.cib.vl.core.database.domain.RuntimeUserModel"/>
+  <mapping class="de.tudresden.bau.cib.vl.core.database.domain.SimulationInformation"/>
+ </session-factory>
+</hibernate-configuration>

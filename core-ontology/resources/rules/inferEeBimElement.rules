@@ -1,0 +1,48 @@
+//* @id: infereBIMelements @name: Infer eBIM rule set @description: Infer eBIM elements @end
+@prefix BIMOnto: http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#
+@prefix eBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eBIMInterfaceOnto#
+[isDoor: 	(?s rdf:type BIMOnto:IfcDoor) -> (?s rdf:type eBIM:DoorStandardCase)]
+[isRoof: 	(?s rdf:type BIMOnto:IfcRoof) -> (?s rdf:type eBIM:RoofStandardCase)]
+[isSlab: 	(?s rdf:type BIMOnto:IfcSlab) -> (?s rdf:type eBIM:SlabStandardCase)]
+[isWall: 	(?s rdf:type BIMOnto:IfcWall) -> (?s rdf:type eBIM:WallStandardCase)]
+[isWindow: 	(?s rdf:type BIMOnto:IfcWindow) -> (?s rdf:type eBIM:WindowStandardCase)]
+[isOutdoorWall: 	
+		(?element rdf:type BIMOnto:IfcWallStandardCase), 
+		(?boundary rdf:type BIMOnto:IfcRelSpaceBoundary),  
+		(?boundary BIMOnto:RelatedBuildingElement ?element), 
+		(?boundary BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")
+		-> (?element rdf:type eBIM:OutdoorWallStandardCase)]
+[isOutdoorSlab: 	
+		(?element rdf:type BIMOnto:IfcSlab), 
+		(?boundary rdf:type BIMOnto:IfcRelSpaceBoundary),  
+		(?boundary BIMOnto:RelatedBuildingElement ?element), 
+		(?boundary BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")
+		-> (?element rdf:type eBIM:OutdoorSlabStandardCase)]
+[isOutdoorWindow: 	
+		(?element rdf:type BIMOnto:IfcWindow), 
+		(?boundary rdf:type BIMOnto:IfcRelSpaceBoundary),  
+		(?boundary BIMOnto:RelatedBuildingElement ?element), 
+		(?boundary BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")
+		-> (?element rdf:type eBIM:OutdoorWindowStandardCase)]
+[isIndoorWindow: 	
+		(?element rdf:type BIMOnto:IfcWindow), 
+		(?boundary rdf:type BIMOnto:IfcRelSpaceBoundary),  
+		(?boundary BIMOnto:RelatedBuildingElement ?element), 
+		(?boundary BIMOnto:IfcInternalOrExternalEnum "INTERNAL")
+		-> (?element rdf:type eBIM:IndoorWindowStandardCase)]
+[isFacadeElement: 	
+		(?element rdf:type BIMOnto:IfcBuildingElement), 
+		noValue(?element rdf:type BIMOnto:IfcSlab), 
+		noValue(?element rdf:type BIMOnto:IfcRoof), 
+		(?boundary rdf:type BIMOnto:IfcRelSpaceBoundary), 
+		(?boundary BIMOnto:RelatedBuildingElement ?element), 
+		(?boundary BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")
+		-> (?element rdf:type eBIM:FacadeElementStandardCase)]
+[isFacadeElement2: 	
+		(?element rdf:type BIMOnto:IfcWallStandardCase), 
+		noValue(?element rdf:type BIMOnto:IfcSlab), 
+		noValue(?element rdf:type BIMOnto:IfcRoof), 
+		(?boundary rdf:type BIMOnto:IfcRelSpaceBoundary), 
+		(?boundary BIMOnto:RelatedBuildingElement ?element), 
+		(?boundary BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")
+		-> (?element rdf:type eBIM:FacadeElementStandardCase)]

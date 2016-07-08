@@ -1,0 +1,6 @@
+// @id: removeBuildingElementSummaries @name: Remove the building element summaries @description: Remove summaries  @end
+@prefix ifcOWL: http://openeebim.bau.tu-dresden.de/dev/ontology/ifcOWL#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBim#
+
+// initial settings
+[removeExistingSummary:(?be rdf:type ifcOWL:IfcBuildingElement) (?be eeBIM:hasSummary ?s) -> remove(1)]

@@ -1,0 +1,20 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = MINERAL WOOL
+    RHO                      = 30 kg/m3
+    CE                       = 840 J/kgK
+    LAMBDA                   = 0.04 W/mK
+    OPOR                     = 0.92 m3/m3
+    OEFF                     = 0.9 m3/m3
+	OCAP                	 = 0.9 m3/m3
+    AW                       = 0 kg/m2s05
+    MEW                      = 1 -
+    KLEFF                    = 0 s
+	KG                       = 0.0001 s
+	O80                		 = 0.00016 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 6 - Insulation Materials
+    COLOR                    = 10485760

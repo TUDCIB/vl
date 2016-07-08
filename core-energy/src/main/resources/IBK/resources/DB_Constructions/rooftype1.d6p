@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="5.6.7">
+	<ProjectInfo>
+        <DisplayName>rooftype 1</DisplayName>
+    </ProjectInfo>
+    <!--List of all materials used in this construction-->
+    <Materials>
+		<MaterialReference displayName="CONCRETE WITH STEEL">${Material Database}/material_997.m6</MaterialReference>
+		<MaterialReference displayName="BITUMEN">${Material Database}/material_28.m6</MaterialReference>
+		<MaterialReference displayName="EPS">${Material Database}/material_186.m6</MaterialReference>
+		<MaterialReference displayName="BITUMEN ROOF SHEETING">${Material Database}/material_26.m6</MaterialReference>
+		<MaterialReference displayName="PAVATEX BITUMINOUS SHEETING">${Material Database}/material_609.m6</MaterialReference>
+		<MaterialReference displayName="VULCANIZED RUBBER">${Material Database}/material_262.m6</MaterialReference>
+		<MaterialReference displayName="SAND">${Material Database}/material_396.m6</MaterialReference>
+    </Materials>
+
+    <!--Discretization data (grid and sketches)-->
+    <Discretization geometryType="2D">
+		<XSteps unit="m">0.300 0.004 0.160 0.003 0.005 0.010 0.080</XSteps>
+    </Discretization>
+
+    <!--List of all assignments of materials and conditions-->
+    <Assignments>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="CONCRETE WITH STEEL">997</Reference>
+			<IBK:Range>0 0 0 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="BITUMEN">28</Reference>
+			<IBK:Range>1 0 1 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="EPS">186</Reference>
+			<IBK:Range>2 0 2 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="BITUMEN ROOF SHEETING">26</Reference>
+			<IBK:Range>3 0 3 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="PAVATEX BITUMINOUS SHEETING">609</Reference>
+			<IBK:Range>4 0 4 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="VULCANIZED RUBBER">262</Reference>
+			<IBK:Range>5 0 5 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="SAND">396</Reference>
+			<IBK:Range>6 0 6 0</IBK:Range>
+		</Assignment>
+    </Assignments>
+	<Costs>57.0</Costs>
+</DelphinProject>

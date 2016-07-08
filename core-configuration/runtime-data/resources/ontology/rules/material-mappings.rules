@@ -1,0 +1,12 @@
+//* @id: materialmappings @name: Material Mapping Rules rule set @description: Maps material information @end
+@prefix ifcOWL: http://openeebim.bau.tu-dresden.de/dev/ontology/ifcOWL#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMInterfaceOnto#
+
+[reinf_concrete:	
+	(?relAssocMat rdf:type ifcOWL:IfcRelAssociatesMaterial) (?relAssocMat ifcOWL:RelatingMaterial ?relatingMatLayer) (?relAssocMat ifcOWL:RelatedObjects ?be) 
+	(?relatingMatLayer rdf:type ifcOWL:IfcMaterialLayer) (?relatingMatLayer ifcOWL:Material ?mat)
+	(?relatingMatLayer ifcOWL:TotalThickness ?thickness)
+	(?be rdf:type ifcOWL:IfcBuildingElement)	
+	(?mat rdf:type ifcOWL:IfcMaterial) (?mat ifcOWL:Name ?name) (?name ifcOWL:StringValue "BP-REINF. CONCR.\\") 
+		-> (?rv rdf:type eeBIM:R-Value) quotient(?thickness, 2.3, ?r_floatvalue) (?rv ifcOWL:FloatValue ?r_floatvalue) (?rv ifcOWL:Material ?mat)
+]

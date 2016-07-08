@@ -1,0 +1,20 @@
+;          Für MAUERWERK - Stampflehm
+;      
+
+     [GENERAL]
+       NAME               = Insulation Loam (Corc)
+       RHO                =     3.6810000000e+02 kg/m3
+       CE                 =     1.0000000000e+03 J/kgK
+       OPOR               =     3.0000000000e-01 m3/m3
+       OEFF               =     2.9000000000e-01 m3/m3
+       MEW                =     7.6974000000e+00 -
+       AW                 =     5.4903000000e-02 kg/m2s05
+       KLEFF                 =     2.4746570675e-10 s
+       LAMBDA             =     8.0000000000e-02 W/mK
+       OCAP               =     2.8366700000e-01 m3/m3
+       O80                =     1.1609608472e-02 m3/m3
+
+     [IDENTIFICATION]
+       SOURCE             = TU Dresden
+       CATEGORY           = Loam
+       COLOR              = 11448063

@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ClimateOnto="http://ontology.cib.bau.tu-dresden/ClimateOnto#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ifcOWL="http://bci53.cib.bau.tu-dresden.de/ontology/IfcOWL#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://ontology.cib.bau.tu-dresden/ISESOnto#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://ontology.cib.bau.tu-dresden/ISESOnto">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://ontology.cib.bau.tu-dresden/eeBIMInterfaceOnto"/>
+    <owl:imports rdf:resource="http://ontology.cib.bau.tu-dresden/MaterialMetaDataOnto"/>
+    <owl:imports rdf:resource="http://ontology.cib.bau.tu-dresden/ClimateOnto"/>
+    <owl:imports rdf:resource="http://ontology.cib.bau.tu-dresden/ClimateMetaDataOnto"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+  </owl:Ontology>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+  <owl:Class rdf:ID="IBKInputElement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="SoftwareInputElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MetaDataCheck">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ProcessStep"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AbstractLinkCheck">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ProcessStep"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="UsageDataFileReference">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="MetaDataElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ValueRangeCheck">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ProcessStep"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MaterialMetaData">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#MetaDataElement"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:ID="MaterialDataFileReference"/>
+          <owl:Class rdf:ID="MaterialDataProfileReference"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Ventilation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="RoomUsageElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#RoomUsageElement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="UsageModelElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AnalyseSystem">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="AnalyseSystemElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ConcreteLinkCheck">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ProcessStep"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#SoftwareInputElement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="EnvironmentElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#MetaDataElement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="StructureElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DiscreteUsageSchedule">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="UsageScheduleElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="NandradToolElement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="SoftwareToolElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcRelConnects"/>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcElementComponent"/>
+  <owl:Class rdf:about="#AnalyseSystemElement">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcMaterialProperties"/>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcProperty"/>
+  <owl:Class rdf:ID="Heating">
+    <rdfs:subClassOf rdf:resource="#RoomUsageElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BIMDataProfileReference">
+    <rdfs:subClassOf rdf:resource="#MetaDataElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="#StructureElement">
+    <rdfs:subClassOf rdf:resource="#AnalyseSystemElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BIMDataFileReference">
+    <rdfs:subClassOf rdf:resource="#MetaDataElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="StructureModel">
+    <rdfs:subClassOf rdf:resource="#StructureElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="eeBIMInterfaceModelElement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ElementaryModelElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#ProcessStep">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ControlElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ClimateMetaDataElement">
+    <rdfs:subClassOf rdf:resource="#MetaDataElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="#MaterialDataProfileReference">
+    <rdfs:subClassOf rdf:resource="#MetaDataElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcBuildingElement"/>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcRoot">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="BIMModelElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#MaterialDataFileReference">
+    <rdfs:subClassOf rdf:resource="#MetaDataElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcSpace"/>
+  <owl:Class rdf:ID="ENeVCheck">
+    <rdfs:subClassOf rdf:resource="#ProcessStep"/>
+  </owl:Class>
+  <owl:Class rdf:about="#ElementaryModelElement">
+    <rdfs:subClassOf rdf:resource="#StructureElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Occupancy">
+    <rdfs:subClassOf rdf:resource="#RoomUsageElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="eeBIMModel">
+    <rdfs:subClassOf rdf:resource="#ElementaryModelElement"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#BIMModelElement"/>
+          <owl:Class rdf:about="#eeBIMInterfaceModelElement"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcWall"/>
+  <owl:Class rdf:about="#ControlElement">
+    <rdfs:subClassOf rdf:resource="#AnalyseSystemElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ControlModel">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="#ControlElement"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:ID="Process"/>
+          <owl:Class rdf:about="#ProcessStep"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="eeBIMLinking">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Process"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="WindowsOpening">
+    <rdfs:subClassOf rdf:resource="#RoomUsageElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BIMMetaData">
+    <rdfs:subClassOf rdf:resource="#MetaDataElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="#UsageScheduleElement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#UsageModelElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcCurtainWall"/>
+  <owl:Class rdf:ID="UsageMetaData">
+    <rdfs:subClassOf rdf:resource="#MetaDataElement"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#UsageDataFileReference"/>
+          <owl:Class rdf:ID="UsageDataProfileReference"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#UsageModelElement">
+    <rdfs:subClassOf rdf:resource="#ElementaryModelElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Lighting">
+    <rdfs:subClassOf rdf:resource="#RoomUsageElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SoftwareOutputElement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EnvironmentElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="InputCheck">
+    <rdfs:subClassOf rdf:resource="#ProcessStep"/>
+  </owl:Class>
+  <owl:Class rdf:about="#EnvironmentElement">
+    <rdfs:subClassOf rdf:resource="#AnalyseSystemElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="#UsageDataProfileReference">
+    <rdfs:subClassOf rdf:resource="#MetaDataElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Cooling">
+    <rdfs:subClassOf rdf:resource="#RoomUsageElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ValueDependencyCheck">
+    <rdfs:subClassOf rdf:resource="#ProcessStep"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ClimateModelElement">
+    <rdfs:subClassOf rdf:resource="#ElementaryModelElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ContinuousUsageSchedule">
+    <rdfs:subClassOf rdf:resource="#UsageScheduleElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Process">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="#ControlElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="#SoftwareToolElement">
+    <rdfs:subClassOf rdf:resource="#EnvironmentElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="#BIMModelElement">
+    <rdfs:subClassOf rdf:resource="#ElementaryModelElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://iai.org/ifcOWL#IfcPropertySet"/>
+  <owl:ObjectProperty rdf:ID="hasReferencedMetaDataElement">
+    <rdfs:range rdf:resource="#MetaDataElement"/>
+    <rdfs:domain rdf:resource="#ElementaryModelElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasSoftwareDataElement">
+    <rdfs:domain rdf:resource="#SoftwareToolElement"/>
+    <rdfs:range rdf:resource="#SoftwareInputElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="climateSoftwareInput">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="structuralSoftwareInput"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="#SoftwareInputElement"/>
+    <rdfs:range rdf:resource="http://ontology.cib.bau.tu-dresden/ClimateOnto#OutdoorClimateElement"/>
+    <rdfs:range rdf:resource="http://ontology.cib.bau.tu-dresden/ClimateOnto#IndoorClimateElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="associatedSoftwareInput">
+    <rdfs:domain rdf:resource="#SoftwareToolElement"/>
+    <rdfs:range rdf:resource="#SoftwareInputElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#structuralSoftwareInput">
+    <rdfs:range rdf:resource="#StructureModel"/>
+    <rdfs:domain rdf:resource="#SoftwareInputElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasEnvironment">
+    <rdfs:domain rdf:resource="#ProcessStep"/>
+    <rdfs:range rdf:resource="#EnvironmentElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasLinkedModelElement">
+    <rdfs:range rdf:resource="#ElementaryModelElement"/>
+    <rdfs:domain rdf:resource="#ElementaryModelElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="associatedSoftwareOutput">
+    <rdfs:domain rdf:resource="#SoftwareToolElement"/>
+    <rdfs:range rdf:resource="#SoftwareOutputElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="materialSoftwareInput">
+    <rdfs:range rdf:resource="http://ontology.cib.bau.tu-dresden/eeBIMInterfaceOnto#MaterialProperties"/>
+    <rdfs:subPropertyOf rdf:resource="#structuralSoftwareInput"/>
+    <rdfs:domain rdf:resource="#SoftwareInputElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasStructure">
+    <rdfs:range rdf:resource="#StructureElement"/>
+    <rdfs:domain rdf:resource="#ProcessStep"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasSuccessor">
+    <rdfs:domain rdf:resource="#ProcessStep"/>
+    <rdfs:range rdf:resource="#ProcessStep"/>
+    <rdfs:domain rdf:resource="#Process"/>
+    <rdfs:range rdf:resource="#Process"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="bimSoftwareInput">
+    <rdfs:range rdf:resource="http://ontology.cib.bau.tu-dresden/eeBIMInterfaceOnto#eeBIMSpatialZone"/>
+    <rdfs:range rdf:resource="http://ontology.cib.bau.tu-dresden/eeBIMInterfaceOnto#eeBIMBuildingElement"/>
+    <rdfs:subPropertyOf rdf:resource="#structuralSoftwareInput"/>
+    <rdfs:range rdf:resource="http://iai.org/ifcOWL#IfcBuildingElement"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="usageScheduleYear">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="#UsageScheduleElement"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="softwareOutputDataFileURI">
+    <rdfs:domain rdf:resource="#SoftwareOutputElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasDatatype">
+    <rdfs:domain rdf:resource="#MaterialMetaData"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="isCorrect"/>
+  <owl:DatatypeProperty rdf:ID="softwareToolURI">
+    <rdfs:domain rdf:resource="#SoftwareToolElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="date">
+    <rdfs:domain rdf:resource="http://ontology.cib.bau.tu-dresden/eeBIMInterfaceOnto#MaterialProperties"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="productID">
+    <rdfs:domain rdf:resource="http://ontology.cib.bau.tu-dresden/eeBIMInterfaceOnto#MaterialProperties"/>
+    <rdfs:domain rdf:resource="#MaterialMetaData"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="producer">
+    <rdfs:domain rdf:resource="http://ontology.cib.bau.tu-dresden/eeBIMInterfaceOnto#MaterialProperties"/>
+    <rdfs:domain rdf:resource="#MaterialMetaData"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="usageScheduleTime">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="#UsageScheduleElement"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="softwareInputDataFileURI">
+    <rdfs:domain rdf:resource="#UsageDataFileReference"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="isAveraged">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="country">
+    <rdfs:domain rdf:resource="http://ontology.cib.bau.tu-dresden/eeBIMInterfaceOnto#MaterialProperties"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="isAlternative">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="#ProcessStep"/>
+    <rdfs:domain rdf:resource="#Process"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="category">
+    <rdfs:domain rdf:resource="http://ontology.cib.bau.tu-dresden/eeBIMInterfaceOnto#MaterialProperties"/>
+    <rdfs:domain rdf:resource="#MaterialMetaData"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <rdf:Description rdf:about="http://ontology.cib.bau.tu-dresden/ClimateMetaDataOnto#ClimateMetaDataRoot">
+    <rdfs:subClassOf rdf:resource="#ClimateMetaDataElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ontology.cib.bau.tu-dresden/eeBIMInterfaceOnto#eeBIMInterfaceRoot">
+    <rdfs:subClassOf rdf:resource="#eeBIMInterfaceModelElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ontology.cib.bau.tu-dresden/ClimateOnto#ClimateRoot">
+    <rdfs:subClassOf rdf:resource="#ClimateModelElement"/>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

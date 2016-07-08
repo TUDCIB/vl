@@ -1,0 +1,21 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = GYPSUM BOARD
+    RHO                      = 860 kg/m3
+    CE                       = 860 J/kgK
+    LAMBDA                   = 0.25 W/mK
+    OPOR                     = 0.67 m3/m3
+    OEFF                     = 0.559 m3/m3
+	OCAP					 = 0.5 m3/m3
+    AW                       = 0.270 kg/m2s05
+    MEW                      = 10 -
+    KLEFF                    = 6.26e-009 s
+	DLEFF					 = 4.5e-006 m2/s
+    OCAP                     = 0.5 m3/m3
+	O80                		 = 0.0077 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 7 - Building Boards
+    COLOR                    = 10485760

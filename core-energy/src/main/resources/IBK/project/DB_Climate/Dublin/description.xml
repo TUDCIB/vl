@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start='175' duration='12'/>
+<Position latitude='53.43' longitude='353.75'/>
+<Description langid='de'>Dublin, Irland, Europa</Description>
+<Description langid='en'>Dublin, Ireland, Europe</Description>
+</ClimateDataLocation>

@@ -1,0 +1,48 @@
+//* @id: infereebimelements @name: Infer eeBim rule set @description: Infer eeBim elements @end
+@prefix ifcOWL: http://openeebim.bau.tu-dresden.de/dev/ontology/ifcOWL#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMInterfaceOnto#
+[isDoor: 	(?s rdf:type ifcOWL:IfcDoor) -> (?s rdf:type eeBIM:DoorStandardCase)]
+[isRoof: 	(?s rdf:type ifcOWL:IfcRoof) -> (?s rdf:type eeBIM:RoofStandardCase)]
+[isSlab: 	(?s rdf:type ifcOWL:IfcSlab) -> (?s rdf:type eeBIM:SlabStandardCase)]
+[isWall: 	(?s rdf:type ifcOWL:IfcWall) -> (?s rdf:type eeBIM:WallStandardCase)]
+[isWindow: 	(?s rdf:type ifcOWL:IfcWindow) -> (?s rdf:type eeBIM:WindowStandardCase)]
+[isOutdoorWall: 	
+		(?element rdf:type ifcOWL:IfcWallStandardCase), 
+		(?boundary rdf:type ifcOWL:IfcRelSpaceBoundary),  
+		(?boundary ifcOWL:RelatedBuildingElement ?element), 
+		(?boundary ifcOWL:IfcInternalOrExternalEnum "EXTERNAL")
+		-> (?element rdf:type eeBIM:OutdoorWallStandardCase)]
+[isOutdoorSlab: 	
+		(?element rdf:type ifcOWL:IfcSlab), 
+		(?boundary rdf:type ifcOWL:IfcRelSpaceBoundary),  
+		(?boundary ifcOWL:RelatedBuildingElement ?element), 
+		(?boundary ifcOWL:IfcInternalOrExternalEnum "EXTERNAL")
+		-> (?element rdf:type eeBIM:OutdoorSlabStandardCase)]
+[isOutdoorWindow: 	
+		(?element rdf:type ifcOWL:IfcWindow), 
+		(?boundary rdf:type ifcOWL:IfcRelSpaceBoundary),  
+		(?boundary ifcOWL:RelatedBuildingElement ?element), 
+		(?boundary ifcOWL:IfcInternalOrExternalEnum "EXTERNAL")
+		-> (?element rdf:type eeBIM:OutdoorWindowStandardCase)]
+[isIndoorWindow: 	
+		(?element rdf:type ifcOWL:IfcWindow), 
+		(?boundary rdf:type ifcOWL:IfcRelSpaceBoundary),  
+		(?boundary ifcOWL:RelatedBuildingElement ?element), 
+		(?boundary ifcOWL:IfcInternalOrExternalEnum "INTERNAL")
+		-> (?element rdf:type eeBIM:IndoorWindowStandardCase)]
+[isFacadeElement: 	
+		(?element rdf:type ifcOWL:IfcBuildingElement), 
+		noValue(?element rdf:type ifcOWL:IfcSlab), 
+		noValue(?element rdf:type ifcOWL:IfcRoof), 
+		(?boundary rdf:type ifcOWL:IfcRelSpaceBoundary), 
+		(?boundary ifcOWL:RelatedBuildingElement ?element), 
+		(?boundary ifcOWL:IfcInternalOrExternalEnum "EXTERNAL")
+		-> (?element rdf:type eeBIM:FacadeElementStandardCase)]
+[isFacadeElement2: 	
+		(?element rdf:type ifcOWL:IfcWallStandardCase), 
+		noValue(?element rdf:type ifcOWL:IfcSlab), 
+		noValue(?element rdf:type ifcOWL:IfcRoof), 
+		(?boundary rdf:type ifcOWL:IfcRelSpaceBoundary), 
+		(?boundary ifcOWL:RelatedBuildingElement ?element), 
+		(?boundary ifcOWL:IfcInternalOrExternalEnum "EXTERNAL")
+		-> (?element rdf:type eeBIM:FacadeElementStandardCase)]

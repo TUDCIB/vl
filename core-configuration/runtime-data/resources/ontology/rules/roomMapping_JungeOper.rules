@@ -1,0 +1,27 @@
+//* @id: roommappingjungeoper @name: Room Mapping Rules rule set for Junge Oper @description: Maps occupancy information to rooms @end
+@prefix ifcOWL: http://openeebim.bau.tu-dresden.de/dev/ontology/ifcOWL#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMInterfaceOnto#
+[TechnicalRoom1: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 001") -> (?s rdf:type eeBIM:TechnicalRoom)]	
+[TechnicalRoom2: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 002") -> (?s rdf:type eeBIM:TechnicalRoom)]	
+[TechnicalRoom3: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 005") -> (?s rdf:type eeBIM:TechnicalRoom)]	
+[TechnicalRoom4: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 006") -> (?s rdf:type eeBIM:TechnicalRoom)]	
+[TechnicalRoom5: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 104") -> (?s rdf:type eeBIM:TechnicalRoom)]	
+
+[WorkRoom1: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 003") -> (?s rdf:type eeBIM:WorkRoom)]	
+[WorkRoom2: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 101") -> (?s rdf:type eeBIM:WorkRoom)]	
+[WorkRoom3: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 103") -> (?s rdf:type eeBIM:WorkRoom)]	
+[WorkRoom4: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 201") -> (?s rdf:type eeBIM:WorkRoom)]	
+[WorkRoom5: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 203") -> (?s rdf:type eeBIM:WorkRoom)]	
+[WorkRoom6: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 204") -> (?s rdf:type eeBIM:WorkRoom)]	
+[WorkRoom7: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 301") -> (?s rdf:type eeBIM:WorkRoom)]	
+[WorkRoom8: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 302") -> (?s rdf:type eeBIM:WorkRoom)]	
+[WorkRoom9: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 401") -> (?s rdf:type eeBIM:WorkRoom)]	
+[WorkRoom9: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 403") -> (?s rdf:type eeBIM:WorkRoom)]	
+
+[Passage1: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 004") -> (?s rdf:type eeBIM:Passage)]
+[Passage2: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 102") -> (?s rdf:type eeBIM:Passage)]
+[Passage3: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 106") -> (?s rdf:type eeBIM:Passage)]
+[Passage4: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 303") -> (?s rdf:type eeBIM:Passage)]
+		
+[Storage1: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 105") -> (?s rdf:type eeBIM:Storage)]
+[Storage2: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "R 202") -> (?s rdf:type eeBIM:Storage)]

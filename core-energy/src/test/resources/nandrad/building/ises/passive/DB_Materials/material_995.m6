@@ -1,0 +1,19 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = REGUPOL BA
+    RHO                      = 550 kg/m3
+    CE                       = 1500 J/kgK
+    LAMBDA                   = 0.14 W/mK
+    OPOR                     = 0.92 m3/m3
+    OEFF                     = 0.92 m3/m3
+	OCAP                	 = 0.0007 m3/m3
+    AW                       = 0.0001 kg/m2s05
+    MEW                      = 104 -
+    KLEFF                    = 0 s
+	O80                		 = 0.001 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 6 - Insulation Materials
+    COLOR                    = 10485760

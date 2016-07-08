@@ -1,0 +1,40 @@
+// @id: energysavingspossiblecheck @name: Energy savings rule set @description: Evaluates if energy savings are possible @end
+@prefix BIMOnto: http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMOnto#
+
+[energyConsumptionForCentralHotWater: 
+			(?building rdf:type BIMOnto:IfcBuilding) (?building eeBIM:combustibleConsumption ?combCons) 
+			(?building eeBIM:hasHeatingSystem ?hvac) (?combustible rdf:type eeBIM:Combustible) 
+			(?hvac eeBIM:hasCombustible ?combustible) (?combustible eeBIM:combustibleFactor ?combFactor)
+			product(?combCons, ?combFactor, ?energyConsumption) 
+			-> (?building, eeBIM:energyConsumption, ?energyConsumption)]
+[heatingEnergyConsumption_WithCentralHotWater:
+			(?building rdf:type BIMOnto:IfcBuilding) (?building eeBIM:hasWaterPreparation ?centralHotWater)
+			(?building eeBIM:energyConsumption ?energyConsumption)
+			(?building eeBIM:personLoad ?load)
+			product(?load,1000,?kWHLoad)
+			difference(?energyConsumption, ?kWHLoad, ?difference)
+			-> (?building eeBIM:heatingEnergyConsumption ?difference)]
+[heatingEnergyConsumption_WithoutCentralHotWater:
+			(?building rdf:type BIMOnto:IfcBuilding) (?building eeBIM:hasWaterPreparation ?centralHotWater)
+			noValue(?centralHotWater rdf:type eeBIM:CentralHotWaterPreparation)
+			(?building eeBIM:energyConsumption ?energyConsumption)
+			-> (?building eeBIM:heatingEnergyConsumption ?energyConsumption)]
+[energyCharacteristic:
+			(?building rdf:type BIMOnto:IfcBuilding) (?building eeBIM:dwellingArea ?dwellingArea)
+			(?building eeBIM:heatingEnergyConsumption ?heatingEnergyConsumption)
+			quotient(?heatingEnergyConsumption, ?dwellingArea, ?characteristic)
+			-> (?building eeBIM:energyCharacteristic ?characteristic)]
+[possibleSavings:
+			(?building rdf:type BIMOnto:IfcBuilding) (?building eeBIM:energyCharacteristic ?characteristic)
+			greaterThan(?characteristic, 150)
+			-> (?building eeBIM:hasSummary eeBIM:EnergySavingsPossible)]
+[urgentNeedForAction:
+			(?building rdf:type BIMOnto:IfcBuilding) (?building eeBIM:energyCharacteristic ?characteristic)
+			greaterThan(?characteristic, 250)
+			-> (?summary eeBIM:hasSummary eeBIM:UrgentNeedForAction)]
+[noNeedForAction:
+			(?building rdf:type BIMOnto:IfcBuilding) (?building eeBIM:energyCharacteristic ?characteristic)
+			lessThan(?characteristic, 150)
+			-> (?building eeBIM:hasSummary eeBIM:NoNeedForAction)]
+			

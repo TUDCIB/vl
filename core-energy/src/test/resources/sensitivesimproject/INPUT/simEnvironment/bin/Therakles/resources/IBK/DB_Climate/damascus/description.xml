@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start="170" duration="20"/>
+<Position latitude="33.5" longitude="36.25"/>
+<Description langid="de">Damaskus, Syrien</Description>
+<Description langid="en">Damascus, Syria</Description>
+</ClimateDataLocation>

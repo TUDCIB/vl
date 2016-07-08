@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>de.tudresden.bau.cib.vl</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>core-ontology</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>eclipse-plugin</packaging>
+  <name>Ontology</name>
+  <!-- 
+  <build>
+  	<pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.m2e</groupId>
+				<artifactId>lifecycle-mapping</artifactId>
+				<version>1.0.0</version>
+				<configuration>
+					<lifecycleMappingMetadata>
+						<pluginExecutions>
+							<pluginExecution>
+								<pluginExecutionFilter>
+									<groupId>org.codehaus.mojo</groupId>
+									<artifactId>exec-maven-plugin</artifactId>
+									<versionRange>[1.0.0,)</versionRange>
+									<goals>
+										<goal>java</goal>
+										<goal>add-source</goal>
+									</goals>
+								</pluginExecutionFilter>
+								<action>
+									<execute />
+								</action>
+							</pluginExecution>
+						</pluginExecutions>
+					</lifecycleMappingMetadata>
+				</configuration>
+			</plugin>
+		</plugins>
+	</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+						<configuration>
+							<mainClass>jena.schemagen</mainClass>
+							<commandlineArgs>
+								-TODO-inference \
+								-i ${basedir}/resources/metamodel.owl \
+								-e RDF/XML \
+								-TODO-package org.example.ont \
+								-o ${project.build.directory}/generated-sources/java \
+							</commandlineArgs>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>add-source</id>
+						<goals>
+							<goal>add-source</goal>
+						</goals>
+						<configuration>
+							<sources>
+								<source>${project.build.directory}/generated-sources/java</source>
+							</sources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+  </build>
+  -->
+  <!--
+  <dependencies>
+  	<dependency>
+  		<groupId>org.apache.jena</groupId>
+  		<artifactId>jena-core</artifactId>
+  		<version>2.7.0-incubating</version>
+  	</dependency>
+  </dependencies>
+  -->
+</project>

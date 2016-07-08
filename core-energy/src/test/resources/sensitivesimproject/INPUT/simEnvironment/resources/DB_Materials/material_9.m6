@@ -1,0 +1,19 @@
+    
+
+     [GENERAL]
+       NAME               = Concrete_C20_25
+       RHO                =     2.3202000000e+03 kg/m3
+       CE                 =     8.5000000000e+02 J/kgK
+       OPOR               =     1.4300000000e-01 m3/m3
+       OEFF               =     1.4299000000e-01 m3/m3
+       MEW                =     1.1000000000e+02 -
+       AW                 =     2.0000000000e-02 kg/m2s05
+       KLEFF                 =     4.4010000000e-11 s
+       LAMBDA             =     2.1000000000e+00 W/mK
+       OCAP               =     1.3600000000e-01 m3/m3
+       O80                =     5.8205895345e-02 m3/m3
+
+     [IDENTIFICATION]
+       SOURCE             = TU Dresden
+       CATEGORY           = Concrete
+       COLOR              = 16714153

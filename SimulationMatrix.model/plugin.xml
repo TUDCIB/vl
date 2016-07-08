@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated SimulationMatrix -->
+      <package
+            uri="file:/D:/Nutzer/ken/Workspaces/VirtualLaboratory/SimulationMatrix/schema/SimMatrix_ISES_PREFINAL.xsd"
+            class="de.tudresden.bau.cib.simmatrix.simmatrixPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated SimulationMatrix -->
+      <parser
+            type="simmatrix"
+            class="de.tudresden.bau.cib.simmatrix.util.simmatrixResourceFactoryImpl"/>
+   </extension>
+
+</plugin>

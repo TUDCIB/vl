@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<bean class="ch.qos.logback.ext.spring.ApplicationContextHolder"/>
+	
+	<bean id="DE.TUDRESDEN.BAU.CIB.VIEW.LOG" name="DE.TUDRESDEN.BAU.CIB.VIEW.LOG" class="de.tudresden.bau.cib.vl.gui.core.logging.LoggingAppender" 
+		init-method="start" destroy-method="stop" >
+        <property name="context" value="#{ T(org.slf4j.LoggerFactory).getILoggerFactory() }"/>
+    </bean>
+    
+    <bean name="serviceRegistry"
+		class="de.tudresden.bau.cib.vl.gui.core.ServiceRegistry">		
+		<property name="userService" ref="osgiUserService" />
+		<property name="fileService" ref="osgiFileService" />
+	</bean>
+	
+	<!-- VIEW beans with Spring Extension Factory -->
+	<!-- The business logic comes mainly from the backend through Spring. 
+		 Dependency injection cannot be used due to the RAP SessionSingletonBase of the Controller for the View.
+		 Hence, we are using the SpringExtensionFactory from Martin Lippert to inject backend services directly in the view and 
+		 let the view instantiate the controller to share data among multiple views. -->
+	<bean id="fileView" class="de.tudresden.bau.cib.vl.gui.core.view.UserProjectView"
+	    parent="baseViewBean">
+	    <property name="userService" ref="osgiUserService" />
+		<property name="bimFitService" ref="osgiBimFitService" />
+		<property name="fileService" ref="osgiFileService" />
+		<property name="ontologyService" ref="osgiOntologyService" />
+		<property name="configurationService" ref="osgiConfigurationService" />
+		<!--<property name="controller" ref="projectController" />-->
+	</bean>
+	
+	<!-- Base bean for every view bean. This guarantees the correct instantiation 
+	of the view controller with the communication service. -->
+	<bean id="baseViewBean" abstract="true" init-method="initController" scope="prototype">
+	</bean>
+
+	<bean id="logView" class="de.tudresden.bau.cib.vl.gui.core.view.LogView"
+	    scope="prototype">
+		<property name="appender" ref="DE.TUDRESDEN.BAU.CIB.VIEW.LOG"/>
+	</bean>
+
+</beans>

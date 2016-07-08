@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns2:getMatByIdResponse xmlns:ns2="http://ises.ibk.materialservice/">
+	<return>
+		<j:jelly xmlns:j='jelly:core' xmlns:ises='jelly:ises.dataframework.stp.tags.IsesTagLibray'>
+			<Material id="1" sourceId="1">
+				<SpecificHeat>840</SpecificHeat>
+				<ForeignProperty name="categoryid">5</ForeignProperty>
+				<Classification>
+					<Code/>
+					<Table/>
+				</Classification>
+				<ForeignProperty name="colour">12632256</ForeignProperty>
+				<Conductivity>0.16</Conductivity>
+				<ForeignProperty name="defaultthickness">0.01</ForeignProperty>
+				<Density>500</Density>
+				<ForeignProperty name="description"/>
+				<ForeignProperty name="detailed">1</ForeignProperty>
+				<ForeignProperty name="issystem">0</ForeignProperty>
+				<MaterialClass/>
+				<Name>Aerated Concrete Slab</Name>
+				<ForeignProperty name="roughness">3-Rough</ForeignProperty>
+				<Resistance>0.15</Resistance>
+				<Shortname/>
+				<ForeignProperty name="simple">0</ForeignProperty>
+				<ForeignProperty name="solarabsorptance">0.6</ForeignProperty>
+				<ForeignProperty name="source"/>
+				<ForeignProperty name="texture">1</ForeignProperty>
+				<ForeignProperty name="thermalabsorptance">0.9</ForeignProperty>
+				<ForeignProperty name="visibleabsorptance">0.6</ForeignProperty>
+			</Material>
+		</j:jelly>
+	</return>
+</ns2:getMatByIdResponse>

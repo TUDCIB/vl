@@ -1,0 +1,139 @@
+<ns2:getConMatByIdResponse xmlns:ns2="http://ises.ibk.materialservice/">
+	<return>
+		<j:jelly xmlns:j='jelly:core' xmlns:ises='jelly:ises.dataframework.stp.tags.IsesTagLibray'>
+			<Construction id="4278" sourceId="4278">
+				<ForeignProperty name="bsrvalue">2.670029388</ForeignProperty>
+				<ForeignProperty name="bsuvalue">0.374527713</ForeignProperty>
+				<ForeignProperty name="bsuvaluesurfacetosurface">0.399995304</ForeignProperty>
+				<Sourcecatagory>1</Sourcecatagory>
+				<Classification>
+					<Code/>
+					<Table/>
+				</Classification>
+				<ForeignProperty name="cm">4.913460255</ForeignProperty>
+				<ForeignProperty name="cm2">7</ForeignProperty>
+				<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+				<Description>U-value difficult to estimate because of the large number of trade-off options available. Cm = 7 (allowing for purlins etc.).</Description>
+				<ForeignProperty name="hci">2.151907682</ForeignProperty>
+				<ForeignProperty name="hco">19.87000084</ForeignProperty>
+				<ForeignProperty name="hideinlists">0</ForeignProperty>
+				<ForeignProperty name="insidetexture">230</ForeignProperty>
+				<ForeignProperty name="involvesmetalcladding">1</ForeignProperty>
+				<ForeignProperty name="issystem">0</ForeignProperty>
+				<ForeignProperty name="lrl">2.670029375</ForeignProperty>
+				<Name>1. Metal cladding wall, 2006 Part L</Name>
+				<ForeignProperty name="numberlayers">3</ForeignProperty>
+				<ForeignProperty name="outsidetexture">230</ForeignProperty>
+				<ForeignProperty name="paramselected">0</ForeignProperty>
+				<ForeignProperty name="radi">5.540400028</ForeignProperty>
+				<ForeignProperty name="rado">5.129999638</ForeignProperty>
+				<ForeignProperty name="rvalue">2.670029375</ForeignProperty>
+				<ForeignProperty name="sbemtype"/>
+				<Shortname/>
+				<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+				<Sourceidentification>AD-L2A (2006) / UK NCM</Sourceidentification>
+				<ForeignProperty name="sri">0.13</ForeignProperty>
+				<ForeignProperty name="sro">0.04</ForeignProperty>
+				<ForeignProperty name="thickness">0.102500002</ForeignProperty>
+				<ForeignProperty name="url">2.670029402</ForeignProperty>
+				<Uvalue unit="WPerSquareMeterK">0.374527715</Uvalue>
+				<ForeignProperty name="uvaluesurfacetosurface">0.3999953</ForeignProperty>
+				<Layers>
+					<Layer id="3601" order="1">
+						<ForeignProperty name="constructionid">4278</ForeignProperty>
+						<Material materialIdRef="4294"/>
+						<Thickness unit="Meters">0.0015</Thickness>
+					</Layer>
+					<Layer id="3602" order="2">
+						<ForeignProperty name="constructionid">4278</ForeignProperty>
+						<Material materialIdRef="4299"/>
+						<Thickness unit="Meters">0.1</Thickness>
+					</Layer>
+					<Layer id="3603" order="3">
+						<ForeignProperty name="constructionid">4278</ForeignProperty>
+						<Material materialIdRef="4209"/>
+						<Thickness unit="Meters">0.001</Thickness>
+					</Layer>
+				</Layers>
+			</Construction>
+			<Material id="4294" sourceId="4294">
+				<SpecificHeat unit="JPerKgK">880</SpecificHeat>
+				<ForeignProperty name="categoryid">8</ForeignProperty>
+				<Classification>
+					<Code/>
+					<Table/>
+				</Classification>
+				<ForeignProperty name="colour">0</ForeignProperty>
+				<Conductivity unit="WPerMeterK">160</Conductivity>
+				<Thickness unit="Meters">0.0015</Thickness>
+				<Density unit="KgPerCubicM">2800</Density>
+				<ForeignProperty name="description">1.5 mm aluminium sheet</ForeignProperty>
+				<ForeignProperty name="detailed">1</ForeignProperty>
+				<ForeignProperty name="issystem">0</ForeignProperty>
+				<MaterialClass/>
+				<Name>Aluminium sheet, 1.5mm</Name>
+				<ForeignProperty name="roughness">3-Rough</ForeignProperty>
+				<Resistance unit="SquareMeterKPerW">0.18</Resistance>
+				<Shortname/>
+				<ForeignProperty name="simple">0</ForeignProperty>
+				<SolarAbsorptance>0.4</SolarAbsorptance>
+				<ForeignProperty name="source">UK NCM</ForeignProperty>
+				<ForeignProperty name="texture">230</ForeignProperty>
+				<ThermalAbsorptance>0.9</ThermalAbsorptance>
+				<VisibleAbsorptance>0.4</VisibleAbsorptance>
+			</Material>
+			<Material id="4299" sourceId="4299">
+				<SpecificHeat unit="JPerKgK">1030</SpecificHeat>
+				<ForeignProperty name="categoryid">7</ForeignProperty>
+				<Classification>
+					<Code/>
+					<Table/>
+				</Classification>
+				<ForeignProperty name="colour">0</ForeignProperty>
+				<Conductivity unit="WPerMeterK">0.04</Conductivity>
+				<Thickness unit="Meters">0.1</Thickness>
+				<Density unit="KgPerCubicM">12</Density>
+				<ForeignProperty name="description">100 mm mineral wool insulation</ForeignProperty>
+				<ForeignProperty name="detailed">1</ForeignProperty>
+				<ForeignProperty name="issystem">0</ForeignProperty>
+				<MaterialClass/>
+				<Name>Min wool quilt, 100 mm</Name>
+				<ForeignProperty name="roughness">3-Rough</ForeignProperty>
+				<Resistance unit="SquareMeterKPerW">0.18</Resistance>
+				<Shortname/>
+				<ForeignProperty name="simple">0</ForeignProperty>
+				<SolarAbsorptance>0.6</SolarAbsorptance>
+				<ForeignProperty name="source">UK NCM</ForeignProperty>
+				<ForeignProperty name="texture">207</ForeignProperty>
+				<ThermalAbsorptance>0.9</ThermalAbsorptance>
+				<VisibleAbsorptance>0.6</VisibleAbsorptance>
+			</Material>
+			<Material id="4209" sourceId="4209">
+				<SpecificHeat unit="JPerKgK">450</SpecificHeat>
+				<ForeignProperty name="categoryid">8</ForeignProperty>
+				<Classification>
+					<Code/>
+					<Table/>
+				</Classification>
+				<ForeignProperty name="colour">0</ForeignProperty>
+				<Conductivity unit="WPerMeterK">50</Conductivity>
+				<Thickness unit="Meters">0.001</Thickness>
+				<Density unit="KgPerCubicM">7800</Density>
+				<ForeignProperty name="description">Mild steel. Conductivity either 50 or 60.</ForeignProperty>
+				<ForeignProperty name="detailed">1</ForeignProperty>
+				<ForeignProperty name="issystem">0</ForeignProperty>
+				<MaterialClass/>
+				<Name>Mild steel</Name>
+				<ForeignProperty name="roughness">3-Rough</ForeignProperty>
+				<Resistance unit="SquareMeterKPerW">0.18</Resistance>
+				<Shortname/>
+				<ForeignProperty name="simple">0</ForeignProperty>
+				<SolarAbsorptance>0.4</SolarAbsorptance>
+				<ForeignProperty name="source">BR 443 / UK NCM</ForeignProperty>
+				<ForeignProperty name="texture">230</ForeignProperty>
+				<ThermalAbsorptance>0.9</ThermalAbsorptance>
+				<VisibleAbsorptance>0.4</VisibleAbsorptance>
+			</Material>
+		</j:jelly>
+	</return>
+</ns2:getConMatByIdResponse>

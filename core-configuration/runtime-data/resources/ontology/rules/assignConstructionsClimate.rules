@@ -1,0 +1,75 @@
+// @id: assignResources @name: Assign default resources rule set @description: Assignment of default climate and constructions  @end
+@prefix ifcOWL: http://openeebim.bau.tu-dresden.de/dev/ontology/ifcOWL#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBim#
+
+// Currently important because in the model are only direct rdf:type but we also need the super class information
+[buildingElementDerivationA: 	(?a rdf:type ifcOWL:IfcWindow) -> (?a rdf:type ifcOWL:IfcBuildingElement)]
+[buildingElementDerivationB: 	(?a rdf:type ifcOWL:IfcWallStandardCase) -> (?a rdf:type ifcOWL:IfcBuildingElement)]
+[buildingElementDerivationC: 	(?a rdf:type ifcOWL:IfcColumn) -> (?a rdf:type ifcOWL:IfcBuildingElement)]
+[buildingElementDerivationD: 	(?a rdf:type ifcOWL:IfcSlab) -> (?a rdf:type ifcOWL:IfcBuildingElement)]
+[buildingElementDerivationE: 	(?a rdf:type ifcOWL:IfcWall) -> (?a rdf:type ifcOWL:IfcBuildingElement)]
+[buildingElementDerivationF: 	(?a rdf:type ifcOWL:IfcWallStandardCase) -> (?a rdf:type ifcOWL:IfcWall)]
+
+// initial settings
+[removeExistingConstructions:(?element rdf:type ifcOWL:IfcBuildingElement) replaceAllWith(?element, eeBIM:hasConstruction, null) -> print(constructions deleted)]
+[removeExistingClimate:(?site rdf:type ifcOWL:IfcSite) replaceAllWith(?site, eeBIM:hasClimate, null) -> print(climate deleted)]
+
+[assignInnerWallConstructions:
+			(?element rdf:type ifcOWL:IfcWall)			
+			(?sb rdf:type ifcOWL:IfcRelSpaceBoundary) 
+			(?sb ifcOWL:RelatedBuildingElement ?element) 	
+			(?sb ifcOWL:IfcInternalOrExternalEnum "INTERNAL")	
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/27>)
+			]
+[assignOuterWallConstructions:
+			(?element rdf:type ifcOWL:IfcWall)			
+			(?sb rdf:type ifcOWL:IfcRelSpaceBoundary) 
+			(?sb ifcOWL:RelatedBuildingElement ?element) 	
+			(?sb ifcOWL:IfcInternalOrExternalEnum "EXTERNAL")	
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4401>)
+			]
+[assignInnerSlabConstructions:
+			(?element rdf:type ifcOWL:IfcSlab)			
+			(?sb rdf:type ifcOWL:IfcRelSpaceBoundary) 
+			(?sb ifcOWL:RelatedBuildingElement ?element) 	
+			(?sb ifcOWL:IfcInternalOrExternalEnum "INTERNAL")	
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4305>)
+			]
+[assignOuterSlabConstructions:
+			(?element rdf:type ifcOWL:IfcSlab)			
+			(?sb rdf:type ifcOWL:IfcRelSpaceBoundary) 
+			(?sb ifcOWL:RelatedBuildingElement ?element) 	
+			(?sb ifcOWL:IfcInternalOrExternalEnum "EXTERNAL")	
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4305>)
+			]
+[assignInnerWindowConstructions:
+			(?element rdf:type ifcOWL:IfcWindow)			
+			(?sb rdf:type ifcOWL:IfcRelSpaceBoundary) 
+			(?sb ifcOWL:RelatedBuildingElement ?element) 	
+			(?sb ifcOWL:IfcInternalOrExternalEnum "INTERNAL")	
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4481>)
+			]
+[assignOuterWindowConstructions:
+			(?element rdf:type ifcOWL:IfcWindow)			
+			(?sb rdf:type ifcOWL:IfcRelSpaceBoundary) 
+			(?sb ifcOWL:RelatedBuildingElement ?element) 	
+			(?sb ifcOWL:IfcInternalOrExternalEnum "EXTERNAL")	
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4481>)
+			]
+[assignColumnConstructions:
+			(?element rdf:type ifcOWL:IfcColumn)			
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4305>)
+			]
+			
+[assignClimate:
+			(?site rdf:type ifcOWL:IfcSite)			
+			-> 
+			(?site eeBIM:hasClimate <http://130.208.198.50:8080/dfservice/dm/open/69/GETID/7>)
+			]

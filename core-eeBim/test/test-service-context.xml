@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:activiti="http://www.activiti.org/schema/spring/config"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+				http://www.springframework.org/schema/beans/spring-beans.xsd
+				http://www.springframework.org/schema/spring/config
+                http://www.springframework.org/schema/spring/config/spring-config.xsd">
+
+
+	<bean id="configuration"
+		class="de.tudresden.bau.cib.vl.core.configuration.Configuration">		
+        <!-- PRODUCTION MODE -->       
+        <property name="configDirectoryPath" 
+        	value="D:/Daten/tomcat-data/vl/config"/>
+	</bean>
+	
+	<bean id="fileService" class = "de.tudresden.bau.cib.vl.core.service.impl.FileServiceImpl">
+		<property name="configuration" ref="configuration" />
+	</bean>
+
+	<bean id="dataResourceServiceClient" class="de.tudresden.bau.cib.vl.core.model.eeBim.service.impl.DataResourceServiceImpl">
+		<property name="configurationService" ref="configuration" />
+		<property name="fileService" ref="fileService" />
+	</bean>
+</beans>

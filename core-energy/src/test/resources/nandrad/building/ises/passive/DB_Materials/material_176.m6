@@ -1,0 +1,14 @@
+;          
+;          
+ 
+     [GENERAL]
+       NAME               = steinopor 700 EPS-W20
+       RHO                = 20.000 kg/m3
+       CE                 = 1400.00 J/kgK
+       LAMBDA             = 0.038 W/mK
+ 
+     [IDENTIFICATION]
+       SOURCE             = oebox Export
+       CATEGORY           = 6
+       COLOR              = 4227327
+

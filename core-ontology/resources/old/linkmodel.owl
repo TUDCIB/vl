@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://ontology.cib.bau.tu-dresden.de/linkmodel#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ontology="http://dbpedia.org/ontology/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://ontology.cib.bau.tu-dresden.de/linkmodel">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://dbpedia.org/ontology/"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:ID="VisualizationObject">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="LinkObject">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <rdf:Property rdf:about="http://www.w3.org/2002/07/owl#hasVisualization">
+    <rdfs:range rdf:resource="#VisualizationObject"/>
+    <rdfs:domain rdf:resource="#LinkObject"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2002/07/owl#linkWith">
+    <rdfs:range rdf:resource="#LinkObject"/>
+    <rdfs:domain rdf:resource="#LinkObject"/>
+  </rdf:Property>
+  <owl:DatatypeProperty rdf:about="http://www.w3.org/2002/07/owl#hasUUID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#LinkObject"/>
+  </owl:DatatypeProperty>
+  <LinkObject rdf:ID="IfcWindow_1">
+    <owl:linkWith>
+      <LinkObject rdf:ID="WindowCosts_3">
+        <owl:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Costs_jhqaujh5</owl:hasUUID>
+      </LinkObject>
+    </owl:linkWith>
+    <owl:hasVisualization>
+      <VisualizationObject rdf:ID="RegularWindowVisualization"/>
+    </owl:hasVisualization>
+    <owl:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >06qYwGh41CyhYZhR6sErPy</owl:hasUUID>
+  </LinkObject>
+  <LinkObject rdf:ID="IfcWall_2">
+    <owl:linkWith>
+      <LinkObject rdf:ID="WallCosts_5">
+        <owl:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Costs_sjirujh7</owl:hasUUID>
+      </LinkObject>
+    </owl:linkWith>
+    <owl:hasVisualization>
+      <VisualizationObject rdf:ID="RegularWallVisualization"/>
+    </owl:hasVisualization>
+    <owl:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2iPCG777z1ZxcyPb8vD1sv</owl:hasUUID>
+  </LinkObject>
+  <LinkObject rdf:ID="IfcWall_1">
+    <owl:linkWith>
+      <LinkObject rdf:ID="WallCosts_1">
+        <owl:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Costs_jherujh3</owl:hasUUID>
+      </LinkObject>
+    </owl:linkWith>
+    <owl:hasVisualization rdf:resource="#RegularWallVisualization"/>
+    <owl:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >0rA8XT78999RYduatI3lyK</owl:hasUUID>
+  </LinkObject>
+  <ontology:Colour rdf:about="http://dbpedia.org/ontology/White">
+    <ontology:cmykCoordinateBlack rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >0</ontology:cmykCoordinateBlack>
+    <ontology:hsvCoordinateValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >100</ontology:hsvCoordinateValue>
+    <ontology:rgbCoordinateRed rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    >255</ontology:rgbCoordinateRed>
+    <ontology:hsvCoordinateSaturation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >0</ontology:hsvCoordinateSaturation>
+    <ontology:rgbCoordinateGreen rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    >255</ontology:rgbCoordinateGreen>
+    <ontology:cmykCoordinateYellow rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >0</ontology:cmykCoordinateYellow>
+    <ontology:hsvCoordinateHue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >100</ontology:hsvCoordinateHue>
+    <ontology:cmykCoordinateMagenta rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >0</ontology:cmykCoordinateMagenta>
+    <ontology:rgbCoordinateBlue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    >255</ontology:rgbCoordinateBlue>
+    <ontology:cmykCoordinateCyanic rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >0</ontology:cmykCoordinateCyanic>
+  </ontology:Colour>
+  <ontology:Colour rdf:about="http://dbpedia.org/ontology/Black">
+    <ontology:rgbCoordinateBlue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    >0</ontology:rgbCoordinateBlue>
+    <ontology:cmykCoordinateYellow rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >0</ontology:cmykCoordinateYellow>
+    <ontology:hsvCoordinateValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >0</ontology:hsvCoordinateValue>
+    <ontology:rgbCoordinateGreen rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    >0</ontology:rgbCoordinateGreen>
+    <ontology:hsvCoordinateHue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >0</ontology:hsvCoordinateHue>
+    <ontology:cmykCoordinateCyanic rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >0</ontology:cmykCoordinateCyanic>
+    <ontology:hsvCoordinateSaturation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >0</ontology:hsvCoordinateSaturation>
+    <ontology:cmykCoordinateBlack rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >100</ontology:cmykCoordinateBlack>
+    <ontology:rgbCoordinateRed rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    >0</ontology:rgbCoordinateRed>
+    <ontology:cmykCoordinateMagenta rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >0</ontology:cmykCoordinateMagenta>
+  </ontology:Colour>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

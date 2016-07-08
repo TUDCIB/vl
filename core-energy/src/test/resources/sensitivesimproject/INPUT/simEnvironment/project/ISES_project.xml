@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<NandradProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fileVersion="1.0" xsi:schemaLocation="http://www.bauklimatik-dresden.de DynRoomProject.xsd">
+  <!-- General Project Information about author, date, project ID etc. -->
+  <ProjectInfo created="2015-04-23" lastEdited="2015-04-23">
+    <Comment> Created by BIM2SIM-Converter </Comment>
+  </ProjectInfo>
+  <!-- DirectoryPlaceholders section defines strings to be substituted with directories -->
+  <DirectoryPlaceholders>
+    <Placeholder name="Database Root">${Project Directory}</Placeholder>
+    <Placeholder name="Templates">${Project Directory}\DB_Templates</Placeholder>
+    <Placeholder name="Climate Database">${Project Directory}\DB_Climate</Placeholder>
+    <Placeholder name="Material Database">${Project Directory}\DB_Materials</Placeholder>
+    <Placeholder name="Construction Database">${Project Directory}\DB_Constructions</Placeholder>
+  </DirectoryPlaceholders>
+  <!-- Database section selects all external data definition files. -->
+  <Database>
+    <ConstructionTypes>
+      <!-- Construction type consists of material layers from right to left. -->
+      <ConstructionTypeReference displayName="ASHRAEHandbookWall13BrickWallsBrickR5insulationboardsheathingR11battinsulationgypboard_2013">${Construction Database}\ASHRAEHandbookWall13BrickWallsBrickR5insulationboardsheathingR11battinsulationgypboard_2013_1.d6p</ConstructionTypeReference>
+      <ConstructionTypeReference displayName="CombinedflatroofStateoftheartHeavyweightdatamodifiedwhenloadedtofile_1760">${Construction Database}\CombinedflatroofStateoftheartHeavyweightdatamodifiedwhenloadedtofile_1760_2.d6p</ConstructionTypeReference>
+      <ConstructionTypeReference displayName="WallUninsulatedMediumweightdatamodifiedwhenloadedtofile_1005">${Construction Database}\WallUninsulatedMediumweightdatamodifiedwhenloadedtofile_1005_3.d6p</ConstructionTypeReference>
+      <ConstructionTypeReference displayName="GroundfloorslabEnergycodestandardMediumweightdatamodifiedwhenloadedtofile_1507">${Construction Database}\GroundfloorslabEnergycodestandardMediumweightdatamodifiedwhenloadedtofile_1507_4.d6p</ConstructionTypeReference>
+    </ConstructionTypes>
+  </Database>
+  <!-- Default parameter values. -->
+  <ParametrizationDefaults mode="Lazy">
+    <!-- Initial temperature -->
+    <IBK:Parameter name="Temperature" unit="C">15</IBK:Parameter>
+    <!-- Extra heat capacity in J/K. -->
+    <IBK:Parameter name="HeatCapacity" unit="J/K">50</IBK:Parameter>
+    <!-- Global heat transfer coefficient [W/m2K] -->
+    <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">20</IBK:Parameter>
+    <!-- Global heat transfer coefficient [W/m2K] for interfaces to ambient zone (zone ID = 0) -->
+    <IBK:Parameter name="Ambient.HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+    <!-- Global adsorption coefficient [0..1]  for interfaces to ambient zone (zone ID = 0) -->
+    <IBK:Parameter name="AbsorptionCoefficient" unit="---">0.5</IBK:Parameter>
+    <!-- Global adsorption.ambient coefficient [0..1]  for interfaces to ambient zone (zone ID = 0) -->
+    <IBK:Parameter name="Ambient.AbsorptionCoefficient" unit="---">0.5</IBK:Parameter>
+    <!-- Long wave emissivity -->
+    <IBK:Parameter name="Emissivity" unit="---">0.5</IBK:Parameter>
+  </ParametrizationDefaults>
+  <!-- Parameters that are independent of individual model parameter blocks that influence behavior of implicit models. -->
+  <SolverParameter>
+    <IBK:Parameter name="MaxTimeStep" unit="s">30</IBK:Parameter>
+    <IBK:Parameter name="MinTimeStep" unit="s">0.0001</IBK:Parameter>
+    <IBK:Parameter name="AbsTol" unit="---">1e-005</IBK:Parameter>
+    <IBK:Parameter name="MaxKrylovDim" unit="---">100</IBK:Parameter>
+    <IBK:Parameter name="LESBandWidth" unit="---">15</IBK:Parameter>
+    <IBK:Parameter name="PreBandWidth" unit="---">1</IBK:Parameter>
+    <IBK:Parameter name="PreILUWidth" unit="---">1</IBK:Parameter>
+    <IBK:Parameter name="DiscDetailLevel" unit="---">0</IBK:Parameter>
+  </SolverParameter>
+  <!-- Location section contains parameters to calculate the radiation influences of the building -->
+  <Location>
+    <IBK:Parameter name="Latitude" unit="Deg">51.05</IBK:Parameter>
+    <IBK:Parameter name="Longitude" unit="Deg">13.7355</IBK:Parameter>
+    <IBK:Parameter name="Orientation" unit="Deg">90</IBK:Parameter>
+    <IBK:Parameter name="Albedo" unit="---">0.2</IBK:Parameter>
+    <IBK:Parameter name="Altitude" unit="m">80</IBK:Parameter>
+    <ClimateReference displayName="ClimateReference" id="15">${Climate Database}/TRY_07</ClimateReference>
+  </Location>
+  <!-- Zones section contains list of defined thermal zones. -->
+  <Zones>
+    <Zone displayName="102 RAZSTAVNI PROSTOR {Id:Ifc=2qMSi4FTvDU8POjELB7zDc}" fromElement="2qMSi4FTvDU8POjELB7zDc" id="1" type="Active">
+      <!--ifcId: 2qMSi4FTvDU8POjELB7zDc-->
+      <SpaceTypeName>Drain</SpaceTypeName>
+      <IBK:Parameter name="Area" unit="m2">78.59</IBK:Parameter>
+      <IBK:Parameter name="Height" unit="m">4.1</IBK:Parameter>
+    </Zone>
+    <Zone displayName="107 VOID {Id:Ifc=1LucRZ9$X9meq7YqLAAjVc}" fromElement="1LucRZ9$X9meq7YqLAAjVc" id="2" type="Active">
+      <!--ifcId: 1LucRZ9$X9meq7YqLAAjVc-->
+      <SpaceTypeName>Drain</SpaceTypeName>
+      <IBK:Parameter name="Area" unit="m2">15.95</IBK:Parameter>
+      <IBK:Parameter name="Height" unit="m">4.1</IBK:Parameter>
+    </Zone>
+    <Zone displayName="106 VOID {Id:Ifc=3qtxaEPJf6neDaITnKKVBE}" fromElement="3qtxaEPJf6neDaITnKKVBE" id="3" type="Active">
+      <!--ifcId: 3qtxaEPJf6neDaITnKKVBE-->
+      <SpaceTypeName>Drain</SpaceTypeName>
+      <IBK:Parameter name="Area" unit="m2">12.83</IBK:Parameter>
+      <IBK:Parameter name="Height" unit="m">4.1</IBK:Parameter>
+    </Zone>
+    <Zone displayName="104 GARDEROBA {Id:Ifc=0O8xNO1vn6iBNxcFc0MpGy}" fromElement="0O8xNO1vn6iBNxcFc0MpGy" id="4" type="Active">
+      <!--ifcId: 0O8xNO1vn6iBNxcFc0MpGy-->
+      <SpaceTypeName>Drain</SpaceTypeName>
+      <IBK:Parameter name="Area" unit="m2">39.86</IBK:Parameter>
+      <IBK:Parameter name="Height" unit="m">4.1</IBK:Parameter>
+    </Zone>
+    <Zone displayName="101 PISARNA DIREKTOR {Id:Ifc=1uvz6C9ur7hRwKJZvRzsab}" fromElement="1uvz6C9ur7hRwKJZvRzsab" id="5" type="Active">
+      <!--ifcId: 1uvz6C9ur7hRwKJZvRzsab-->
+      <SpaceTypeName>Drain</SpaceTypeName>
+      <IBK:Parameter name="Area" unit="m2">107.38</IBK:Parameter>
+      <IBK:Parameter name="Height" unit="m">4.1</IBK:Parameter>
+    </Zone>
+    <Zone displayName="105 PISARNA ZAPOSLENI {Id:Ifc=2YLIiQ__9CzgmWFyiYCtlL}" fromElement="2YLIiQ__9CzgmWFyiYCtlL" id="6" type="Active">
+      <!--ifcId: 2YLIiQ__9CzgmWFyiYCtlL-->
+      <SpaceTypeName>Drain</SpaceTypeName>
+      <IBK:Parameter name="Area" unit="m2">77.88</IBK:Parameter>
+      <IBK:Parameter name="Height" unit="m">4.1</IBK:Parameter>
+    </Zone>
+    <Zone displayName="103 WC M {Id:Ifc=3RnOa$s$rFQQabBa_tBrPe}" fromElement="3RnOa$s$rFQQabBa_tBrPe" id="7" type="Active">
+      <!--ifcId: 3RnOa$s$rFQQabBa_tBrPe-->
+      <SpaceTypeName>Drain</SpaceTypeName>
+      <IBK:Parameter name="Area" unit="m2">39.37</IBK:Parameter>
+      <IBK:Parameter name="Height" unit="m">4.1</IBK:Parameter>
+    </Zone>
+  </Zones>
+  <!--ConstructionInstances section contains all construction elements including embedded objects-->
+  <ConstructionInstances>
+    <ConstructionInstance fromElement="2gAaebDRvFgOBDIYiRFWEc" id="8" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">3.05</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="9" location="A">
+          <!-- 107 VOID -->
+          <ZoneID>2</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="10" location="B">
+          <!-- 102 RAZSTAVNI PROSTOR -->
+          <ZoneID>1</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1RHWgkUDjAquizg5tQAde4" id="11" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1760">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">5.91</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>2</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="12" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="13" location="B">
+          <!-- 104 GARDEROBA -->
+          <ZoneID>4</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="2BNYvzp0b8rRKFr0mCYELU" id="14" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1005">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Area" unit="m2">4.92</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <ConstructionTypeID>3</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="15" location="A">
+          <!-- 107 VOID -->
+          <ZoneID>2</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="16" location="B">
+          <!-- 105 PISARNA ZAPOSLENI -->
+          <ZoneID>6</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="2PiHe3$ZP8Mhb4e5QoW0oi" id="17" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">13.75</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="18" location="A">
+          <!-- 105 PISARNA ZAPOSLENI -->
+          <ZoneID>6</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="19" location="B">
+          <!-- 102 RAZSTAVNI PROSTOR -->
+          <ZoneID>1</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="2gAaebDRvFgOBDIYiRFWEc" id="20" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">0.41</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="21" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="22" location="B">
+          <!-- 105 PISARNA ZAPOSLENI -->
+          <ZoneID>6</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="0MGQzb2Tb3493hDT4qcLzT" id="23" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1507">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">180.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">22.02</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>4</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="24" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="25" location="B">
+          <!-- 102 RAZSTAVNI PROSTOR -->
+          <ZoneID>1</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1xcz3Atln3mxVfsxfyH6Cn" id="26" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Area" unit="m2">5.93</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">1.5708</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="27" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="28" location="B">
+          <!-- 107 VOID -->
+          <ZoneID>2</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="29">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">2.88</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="2gAaebDRvFgOBDIYiRFWEc" id="30" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">0.16</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="31" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="32" location="B">
+          <!-- 105 PISARNA ZAPOSLENI -->
+          <ZoneID>6</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1CkLo9adjEnv5ezQFTNXzO" id="33" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Inclination" unit="Deg">4.7124</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">4.38</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="34" location="A">
+          <!-- 106 VOID -->
+          <ZoneID>3</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="35" location="B">
+          <!-- 102 RAZSTAVNI PROSTOR -->
+          <ZoneID>1</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="36">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">2.88</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1Ug64M4Wf87RKY0W4Vigl9" id="37" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Inclination" unit="Deg">4.7124</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">25.08</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="38" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="39" location="B">
+          <!-- 101 PISARNA DIREKTOR -->
+          <ZoneID>5</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="40">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">0.36</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="2PiHe3$ZP8Mhb4e5QoW0oi" id="41" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">9.88</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="42" location="A">
+          <!-- 103 WC M -->
+          <ZoneID>7</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="43" location="B">
+          <!-- 102 RAZSTAVNI PROSTOR -->
+          <ZoneID>1</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="14hJLtoKL98hl7gaFhkwXa" id="44" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1005">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Area" unit="m2">23.64</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <ConstructionTypeID>3</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="45" location="A">
+          <!-- 101 PISARNA DIREKTOR -->
+          <ZoneID>5</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="46" location="B">
+          <!-- 102 RAZSTAVNI PROSTOR -->
+          <ZoneID>1</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="0ykykd6l5EuwKYvrcU0CVb" id="47" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">3.1416</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">21.959999999999997</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="48" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="49" location="B">
+          <!-- 105 PISARNA ZAPOSLENI -->
+          <ZoneID>6</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="50">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">2.88</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="3_Xu$SxoH5hwmZWQZGKZll" id="51" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">4.7124</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">10.05</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="52" location="A">
+          <!-- 104 GARDEROBA -->
+          <ZoneID>4</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="53" location="B">
+          <!-- 105 PISARNA ZAPOSLENI -->
+          <ZoneID>6</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="041FJC2YL3wwl6bi$ObaSe" id="54" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1005">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Inclination" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">4.92</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <ConstructionTypeID>3</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="55" location="A">
+          <!-- 106 VOID -->
+          <ZoneID>3</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="56" location="B">
+          <!-- 101 PISARNA DIREKTOR -->
+          <ZoneID>5</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1RHWgkUDjAquizg5tQAde4" id="57" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1760">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">22.02</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>2</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="58" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="59" location="B">
+          <!-- 102 RAZSTAVNI PROSTOR -->
+          <ZoneID>1</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="0MGQzb2Tb3493hDT4qcLzT" id="60" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1507">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">180.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">42.54</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>4</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="61" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="62" location="B">
+          <!-- 101 PISARNA DIREKTOR -->
+          <ZoneID>5</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="2poM5k1Zj5nPewghmb_Jpx" id="63" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Inclination" unit="Deg">1.5708</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">4.38</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="64" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="65" location="B">
+          <!-- 106 VOID -->
+          <ZoneID>3</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="66">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">2.88</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="05MJEG7hn3juwhO4JIN_si" id="67" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1005">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">9.88</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">3.1416</IBK:Parameter>
+      <ConstructionTypeID>3</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="68" location="A">
+          <!-- 103 WC M -->
+          <ZoneID>7</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="69" location="B">
+          <!-- 104 GARDEROBA -->
+          <ZoneID>4</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="3_Xu$SxoH5hwmZWQZGKZll" id="70" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">4.7124</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">9.8</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="71" location="A">
+          <!-- 103 WC M -->
+          <ZoneID>7</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="72" location="B">
+          <!-- 105 PISARNA ZAPOSLENI -->
+          <ZoneID>6</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1RHWgkUDjAquizg5tQAde4" id="73" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1760">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">0.44</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>2</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="74" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="75" location="B">
+          <!-- 106 VOID -->
+          <ZoneID>3</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1RHWgkUDjAquizg5tQAde4" id="76" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1760">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">5.76</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>2</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="77" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="78" location="B">
+          <!-- 103 WC M -->
+          <ZoneID>7</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1RHWgkUDjAquizg5tQAde4" id="79" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1760">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">42.54</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>2</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="80" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="81" location="B">
+          <!-- 101 PISARNA DIREKTOR -->
+          <ZoneID>5</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="2FM2FwOYT7DR59Cn_ERNO4" id="82" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">31.849999999999998</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="83" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="84" location="B">
+          <!-- 101 PISARNA DIREKTOR -->
+          <ZoneID>5</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="85">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">2.88</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="0MGQzb2Tb3493hDT4qcLzT" id="86" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1507">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">180.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">0.44</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>4</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="87" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="88" location="B">
+          <!-- 106 VOID -->
+          <ZoneID>3</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1RHWgkUDjAquizg5tQAde4" id="89" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1760">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">0.89</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>2</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="90" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="91" location="B">
+          <!-- 107 VOID -->
+          <ZoneID>2</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1RHWgkUDjAquizg5tQAde4" id="92" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1760">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">22.49</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>2</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="93" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="94" location="B">
+          <!-- 105 PISARNA ZAPOSLENI -->
+          <ZoneID>6</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1xcz3Atln3mxVfsxfyH6Cn" id="95" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Area" unit="m2">22.58</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">1.5708</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="96" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="97" location="B">
+          <!-- 105 PISARNA ZAPOSLENI -->
+          <ZoneID>6</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="98">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">2.88</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="0MGQzb2Tb3493hDT4qcLzT" id="99" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1507">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">180.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">5.91</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>4</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="100" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="101" location="B">
+          <!-- 104 GARDEROBA -->
+          <ZoneID>4</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="3QU4OQnQ9FUw4KtJgRe4Hs" id="102" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Inclination" unit="Deg">3.1416</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">4.92</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="103" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="104" location="B">
+          <!-- 106 VOID -->
+          <ZoneID>3</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1CkLo9adjEnv5ezQFTNXzO" id="105" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Inclination" unit="Deg">4.7124</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">3.29</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="106" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="107" location="B">
+          <!-- 101 PISARNA DIREKTOR -->
+          <ZoneID>5</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="108">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">2.88</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1Ug64M4Wf87RKY0W4Vigl9" id="109" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Inclination" unit="Deg">4.7124</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">10.41</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="110" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="111" location="B">
+          <!-- 104 GARDEROBA -->
+          <ZoneID>4</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="112">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">0.36</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1CkLo9adjEnv5ezQFTNXzO" id="113" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Inclination" unit="Deg">4.7124</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">3.09</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="114" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="115" location="B">
+          <!-- 101 PISARNA DIREKTOR -->
+          <ZoneID>5</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="116">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">2.88</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="0MGQzb2Tb3493hDT4qcLzT" id="117" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1507">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">180.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">5.76</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>4</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="118" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="119" location="B">
+          <!-- 103 WC M -->
+          <ZoneID>7</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="2PiHe3$ZP8Mhb4e5QoW0oi" id="120" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">0.0</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="121" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="122" location="B">
+          <!-- 102 RAZSTAVNI PROSTOR -->
+          <ZoneID>1</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="0MGQzb2Tb3493hDT4qcLzT" id="123" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1507">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">180.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">22.49</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>4</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="124" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="125" location="B">
+          <!-- 105 PISARNA ZAPOSLENI -->
+          <ZoneID>6</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1CkLo9adjEnv5ezQFTNXzO" id="126" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Inclination" unit="Deg">4.7124</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">3.08</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="127" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="128" location="B">
+          <!-- 102 RAZSTAVNI PROSTOR -->
+          <ZoneID>1</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="129">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">2.88</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="0ykykd6l5EuwKYvrcU0CVb" id="130" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">3.1416</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">12.760000000000002</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="131" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="132" location="B">
+          <!-- 104 GARDEROBA -->
+          <ZoneID>4</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="133">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">2.88</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="0MGQzb2Tb3493hDT4qcLzT" id="134" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/1507">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">180.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">0.89</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0</IBK:Parameter>
+      <ConstructionTypeID>4</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="135" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="136" location="B">
+          <!-- 107 VOID -->
+          <ZoneID>2</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="2KJf65a9j5Xu5pe$jpJFzK" id="137" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">0.41</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">1.5708</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="138" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="139" location="B">
+          <!-- 102 RAZSTAVNI PROSTOR -->
+          <ZoneID>1</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="3_Xu$SxoH5hwmZWQZGKZll" id="140" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">4.7124</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">0.0</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="141" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="142" location="B">
+          <!-- 105 PISARNA ZAPOSLENI -->
+          <ZoneID>6</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1CkLo9adjEnv5ezQFTNXzO" id="143" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Inclination" unit="Deg">4.7124</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">13.129999999999999</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="144" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="145" location="B">
+          <!-- 102 RAZSTAVNI PROSTOR -->
+          <ZoneID>1</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="146">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">2.88</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1Ug64M4Wf87RKY0W4Vigl9" id="147" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Inclination" unit="Deg">4.7124</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">10.16</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="148" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="149" location="B">
+          <!-- 103 WC M -->
+          <ZoneID>7</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="150">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">0.36</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="1Ug64M4Wf87RKY0W4Vigl9" id="151" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Inclination" unit="Deg">4.7124</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">16.02</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="152" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="153" location="B">
+          <!-- 102 RAZSTAVNI PROSTOR -->
+          <ZoneID>1</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="154">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">0.36</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="2KJf65a9j5Xu5pe$jpJFzK" id="155" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">4.92</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">1.5708</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="156" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="157" location="B">
+          <!-- 107 VOID -->
+          <ZoneID>2</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="2gAaebDRvFgOBDIYiRFWEc" id="158" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Inclination" unit="Deg">0.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">0.25</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="159" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="160" location="B">
+          <!-- 102 RAZSTAVNI PROSTOR -->
+          <ZoneID>1</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+    </ConstructionInstance>
+    <ConstructionInstance fromElement="2poM5k1Zj5nPewghmb_Jpx" id="161" source="http://130.208.198.50:8080/dfservice/dm/open/74/GETID/2013">
+      <!--IfcID of Wall: -->
+      <IBK:Parameter name="Inclination" unit="Deg">1.5708</IBK:Parameter>
+      <IBK:Parameter name="Orientation" unit="Deg">90.0</IBK:Parameter>
+      <IBK:Parameter name="Area" unit="m2">27.4</IBK:Parameter>
+      <ConstructionTypeID>1</ConstructionTypeID>
+      <Interfaces>
+        <Interface id="162" location="A">
+          <!-- External interface - outside of a construction -->
+          <ZoneID>0</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">25</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+        <Interface id="163" location="B">
+          <!-- 101 PISARNA DIREKTOR -->
+          <ZoneID>5</ZoneID>
+          <HeatConduction model="Constant">
+            <IBK:Parameter name="HeatTransferCoefficient" unit="W/m2K">8</IBK:Parameter>
+          </HeatConduction>
+        </Interface>
+      </Interfaces>
+      <EmbeddedObjects>
+        <EmbeddedObject id="164">
+          <!-- Window -->
+          <IBK:Parameter name="Area" unit="m2">2.88</IBK:Parameter>
+          <Window model="Constant">
+            <IBK:Parameter name="GlassFraction" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ThermalTransmittance" unit="W/m2K">1.5</IBK:Parameter>
+            <IBK:Parameter name="SolarHeatGainCoefficient" unit="---">0.8</IBK:Parameter>
+            <IBK:Parameter name="ShadingFactor" unit="---">0.3</IBK:Parameter>
+          </Window>
+        </EmbeddedObject>
+      </EmbeddedObjects>
+    </ConstructionInstance>
+  </ConstructionInstances>
+  <ObjectLists>
+    <ObjectList name="Location">
+      <FilterType>Location</FilterType>
+    </ObjectList>
+    <ObjectList name="Active zones">
+      <FilterType>Zone</FilterType>
+      <FilterID>*</FilterID>
+    </ObjectList>
+    <ObjectList name="Active surfaces">
+      <FilterType>Interface</FilterType>
+      <FilterID>*</FilterID>
+    </ObjectList>
+    <ObjectList name="Active constructions">
+      <FilterType>ConstructionInstance</FilterType>
+      <FilterID>*</FilterID>
+    </ObjectList>
+    <ObjectList name="Active models">
+      <FilterType>Model</FilterType>
+      <FilterID>*</FilterID>
+    </ObjectList>
+    <ObjectList name="Active windows">
+      <FilterType>EmbeddedObject</FilterType>
+      <FilterID>*</FilterID>
+    </ObjectList>
+  </ObjectLists>
+  <Models>
+    <Model displayName="Standard ventilation" id="1" model="CoolingModelIdeal">
+      <IBK:String name="Comment">Cooling Model with ideal control: P-Control Element</IBK:String>
+      <IBK:Parameter name="MaximumCoolingPower" unit="W">8000</IBK:Parameter>
+      <ImplicitModelFeedback>
+        <ObjectListName>Active zones</ObjectListName>
+        <Quantity>CoolingFlux</Quantity>
+        <Operation>Add</Operation>
+      </ImplicitModelFeedback>
+    </Model>
+    <Model displayName="Standard heating" id="2" model="HeatingModelIdeal">
+      <IBK:String name="Comment">Heating Model with ideal control: P-Control Element</IBK:String>
+      <IBK:Parameter name="MaximumHeatingPower" unit="W">9000</IBK:Parameter>
+      <IBK:Parameter name="RadiationLoadFraction" unit="---">0.1</IBK:Parameter>
+      <ImplicitModelFeedback>
+        <ObjectListName>Active zones</ObjectListName>
+        <Quantity>ConvectiveHeatingFlux</Quantity>
+        <Operation>Add</Operation>
+      </ImplicitModelFeedback>
+      <ImplicitModelFeedback>
+        <ObjectListName>Active zones</ObjectListName>
+        <Quantity>RadiantHeatingFlux</Quantity>
+        <Operation>Add</Operation>
+      </ImplicitModelFeedback>
+    </Model>
+  </Models>
+  <OutputsReference>${Templates}/HESMOS_Outputs.xml</OutputsReference>
+  <SchedulesReference>${Templates}/HESMOS_Schedules.xml</SchedulesReference>
+  <SpaceTypesReference>${Templates}/HESMOS_SpaceTypes.xml</SpaceTypesReference>
+</NandradProject>

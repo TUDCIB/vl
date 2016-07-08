@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schedules id="1" name="BAM-AKS">
+	<Default>
+		<WeekDays>Mon,Tue,Wed,Thr,Fri</WeekDays>
+		<WeekEndDays>Sat,Sun</WeekEndDays>
+		<Holidays>1.5., 8.5., 1.6., 3.10., 17.6. </Holidays>
+	</Default>
+
+	<!-- Minimalistisches Beispiel für Heizung aller Zonen -->
+	<!-- Heizung hat zwei Zustände, an und aus 0/1 -->
+	<ScheduleGroup spaceType="LivingArea">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">6</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">23</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="Lounge">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="WaitingRoom">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="DiningArea">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="DetainingRoom">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">6</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">23</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="MeetingRoom">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="TechnicalDrawingRoom">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="TicketHall">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">6</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">22</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="StandardOffice">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="OfficeEquipmentRoom">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">30</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="Workshop">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="CommonLab">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="PlantAnimalBreedingLab">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="Kitchen">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="SpecialLab">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="CommonStore">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">15</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">15</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">15</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="CollectionRoom">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="ColdStore">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">7</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="ShowRoom">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="ClassRoom">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7.833</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">17</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="SportsHall">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">6</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">16</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"               unit="h">18</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">20</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">16</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">10</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">10</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="Holiday">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">10</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">10</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="CommonRoom">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"               unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">18</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="TreatmentRoom">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"               unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">22</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">20</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="Holiday">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">17</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">17</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="BedRoom">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">6</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"               unit="h">18</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">22</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="Sanitary">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"               unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="Cloakroom">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"               unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">22</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">20</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">16</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="CarParkingSpace">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">5</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"               unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">5</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">5</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">5</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="CirculationArea">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="End"              	unit="h">7</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">5</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="End"               unit="h">17</IBK:Parameter>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">5</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">5</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+		<Schedule type="WeekEnd">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">5</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="TechnicalRoom">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">15</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="TechnicalRoomElectrical">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">5</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="TechnicalRoomCommunication">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">18</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="Elevator">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">5</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">28</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+	<ScheduleGroup spaceType="CorridorStaircase">
+		<Schedule type="AllDays">
+			<DailyCycle>
+				<Interval>
+					<IBK:Parameter name="HeatingSetPointTemperature"	unit="C">15</IBK:Parameter>
+					<IBK:Parameter name="CoolingSetPointTemperature"	unit="C">26</IBK:Parameter>
+				</Interval>
+			</DailyCycle>
+		</Schedule>
+	</ScheduleGroup>
+
+</Schedules>

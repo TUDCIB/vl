@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start="192" duration="20"/>
+<Position latitude="40.4" longitude="356.3"/>
+<Description langid="en">Madrid (Barajas), Spain</Description>
+<Description langid="de">Madrid (Barajas), Spanien</Description>
+</ClimateDataLocation>

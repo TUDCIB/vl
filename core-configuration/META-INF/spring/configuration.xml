@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+ 
+	<bean id="configuration"
+		class="de.tudresden.bau.cib.vl.core.configuration.Configuration">
+		
+        <!-- PRODUCTION MODE -->
+        
+        <property name="configDirectoryPath" 
+        	value="D:/Nutzer/ken/Workspaces/VirtualLaboratory/master/core-configuration/config"/>
+        
+        	
+        <!-- 
+        <property name="configDirectoryPath" 
+        	value="D:/Daten/tomcat-data/vl/config"/>
+        	-->
+        
+        <!-- 
+        <property name="configDirectoryPath" 
+        	value="data/config"/>     
+        -->  	
+	</bean>
+
+</beans>

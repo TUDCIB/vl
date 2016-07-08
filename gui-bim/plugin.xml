@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <!-- BimView initialized by Spring -->
+      <view
+            category="bimview"
+            class="org.eclipse.springframework.util.SpringExtensionFactory:ifc3DView"
+            icon="resources/icons/16x16/designer.png"
+            id="de.tudresden.bau.cib.vl.gui.bim.ui.view.main.Ifc3DView"
+            name="%BIMView_name"
+            restorable="true">
+	  </view>
+	  <view
+         category="bimview"
+         class="org.eclipse.springframework.util.SpringExtensionFactory:semanticView"
+         icon="resources/icons/16x16/folder_home.png"
+         id="de.tudresden.bau.cib.vl.gui.bim.ui.view.support.IFCTreeView"
+         name="%SemanticView_name"
+         restorable="true">
+	  </view>
+      <view
+            category="bimview"
+            class="org.eclipse.springframework.util.SpringExtensionFactory:ontologyView"
+            icon="resources/icons/16x16/rdf_extensions16.png"
+            id="de.tudresden.bau.cib.vl.gui.bim.ui.view.main.OntologyView"
+            name="%OntologyView_name"
+            restorable="true">
+   </view>
+      <category
+            id="bimview"
+            name="BIM Views">
+      </category>
+ 
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="vl.perspective">
+         <view
+               closeable="true"
+               id="de.tudresden.bau.cib.vl.gui.bim.ui.view.support.IFCTreeView"
+               minimized="false"
+               moveable="true"
+               ratio="0.2f"
+               relationship="right"
+               relative="de.tudresden.bau.cib.vl.gui.core.view.UserProjectView"
+               visible="true">
+         </view>
+         <view
+               closeable="true"
+               id="de.tudresden.bau.cib.vl.gui.bim.ui.view.main.Ifc3DView"
+               minimized="false"
+               moveable="true"
+               ratio="0.3f"
+               relationship="right"
+               relative="de.tudresden.bau.cib.vl.gui.bim.ui.view.support.IFCTreeView"
+               visible="true">
+         </view>
+         <view
+               closeable="true"
+               id="de.tudresden.bau.cib.vl.gui.bim.ui.view.main.OntologyView"
+               minimized="false"
+               moveable="true"
+               ratio="0.3f"
+               relationship="right"
+               relative="de.tudresden.bau.cib.vl.gui.core.ui.view.support.ProgressView"
+               visible="true">
+         </view>      
+ 
+      </perspectiveExtension>
+         
+   </extension>
+
+</plugin>

@@ -1,0 +1,20 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = CONCRETE KASSEL
+    RHO                      = 2400 kg/m3
+    CE                       = 1000 J/kgK
+    LAMBDA                   = 2.1 W/mK
+    OPOR                     = 0.22 m3/m3
+    OEFF                     = 0.2199 m3/m3
+	OCAP                	 = 0.167 m3/m3
+    AW                       = 0.0135155 kg/m2s05
+    MEW                      = 76.1225 -
+    KLEFF                    = 2.71201e-010 s
+    OCAP                     = 0.167 m3/m3
+	O80                		 = 0.10227 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 5 - Concrete Containing Building Materials
+    COLOR                    = 10485760

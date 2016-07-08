@@ -1,0 +1,481 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://ontology.cib.bau.tu-dresden/ClimateOnto#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:ISESOnto="http://ontology.cib.bau.tu-dresden/ISESOnto#"
+  xml:base="http://ontology.cib.bau.tu-dresden/ClimateOnto">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+  </owl:Ontology>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Meter"/>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Percent"/>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Degree"/>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Celsius"/>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Pascal"/>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Day"/>
+  <owl:Class rdf:ID="ContryISOCode">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ClimateZoneProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="climateStringValue"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DaysSinceLastSnowfall">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="climateIntegerValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ClimateProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateIntegerValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Day"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ZenithIlluminance">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Illuminance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="HorizontalVisibility">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="climateFloatValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateFloatValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Meter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Longitude">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateZoneProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateFloatValue"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateFloatValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Degree"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="TotalSkyCover">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Temperature">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateFloatValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateFloatValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Celsius"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DiffuseHorizontalIlluminance">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Illuminance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="WindDirection">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ClimateZone">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateZoneProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateStringValue"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Enthalpy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="RelativeHumidity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DiffuseHorizontalRadiation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Radiation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="InfraredSkyTemperature">
+    <rdfs:subClassOf rdf:resource="#Temperature"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Illuminance">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="StationIdentifier">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateZoneProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DewPointTemperature">
+    <rdfs:subClassOf rdf:resource="#Temperature"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Country">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateZoneProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateStringValue"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="City">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateZoneProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateStringValue"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CeilingHeight">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Zip">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateZoneProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Beam">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DryBulbTemperature">
+    <rdfs:subClassOf rdf:resource="#Temperature"/>
+  </owl:Class>
+  <owl:Class rdf:ID="LiquidPrecipitationQuantity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="OpaqueSkyCover">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LiquidPrecipitationDepth">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ExtraterrestrialDirectNormalRadiation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Radiation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="WetBulbTemparature">
+    <rdfs:subClassOf rdf:resource="#Temperature"/>
+  </owl:Class>
+  <owl:Class rdf:ID="GroundTemperatureMonthly">
+    <rdfs:subClassOf rdf:resource="#Temperature"/>
+  </owl:Class>
+  <owl:Class rdf:ID="GlobalHorizontalRadiation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Radiation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="GlobalHorizontalIlluminance">
+    <rdfs:subClassOf rdf:resource="#Illuminance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ExtraterrestrialHorizontalRadiation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Radiation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Density">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Elevation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateZoneProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SnowDepth">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="IndoorClimateElement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ClimateRoot"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DirectNormalRadiation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Radiation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="TimeZone">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateZoneProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#ClimateZoneProperty">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateRoot"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DirectNormalIlluminance">
+    <rdfs:subClassOf rdf:resource="#Illuminance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DaylightSaving">
+    <rdfs:subClassOf rdf:resource="#ClimateZoneProperty"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PrecipitableWater">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="HumidityRatio">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AtmosphericPressure">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateFloatValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateFloatValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Pascal"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="OutdoorClimateElement">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateRoot"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Radiation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#ClimateProperty">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ClimateRoot"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Latitude">
+    <rdfs:subClassOf rdf:resource="#ClimateZoneProperty"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateFloatValue"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateFloatValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Degree"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PresentWeather">
+    <rdfs:subClassOf rdf:resource="#ClimateProperty"/>
+  </owl:Class>
+  <owl:Class rdf:ID="WindSpeed">
+    <rdfs:subClassOf rdf:resource="#ClimateProperty"/>
+  </owl:Class>
+  <owl:Class rdf:ID="StationName">
+    <rdfs:subClassOf rdf:resource="#ClimateZoneProperty"/>
+  </owl:Class>
+  <owl:Class rdf:about="#ClimateRoot">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BroadbandAerosolOpticalDepth">
+    <rdfs:subClassOf rdf:resource="#ClimateProperty"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ClearnessMonthly">
+    <rdfs:subClassOf rdf:resource="#ClimateProperty"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Albedo">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateFloatValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#ClimateProperty"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#climateFloatValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Percent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasGeographicClimateProperty">
+    <rdfs:range rdf:resource="#ClimateZoneProperty"/>
+    <rdfs:domain rdf:resource="#OutdoorClimateElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasIndoorClimateProperty">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="hasClimateProperty"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="#IndoorClimateElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasOutdoorClimateProperty">
+    <rdfs:range rdf:resource="#AtmosphericPressure"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#hasClimateProperty"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="#Albedo"/>
+    <rdfs:range rdf:resource="#WindSpeed"/>
+    <rdfs:domain rdf:resource="#OutdoorClimateElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasClimateProperty">
+    <rdfs:range rdf:resource="#ClimateProperty"/>
+    <rdfs:domain rdf:resource="#IndoorClimateElement"/>
+    <rdfs:domain rdf:resource="#OutdoorClimateElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasReferencedClimateMetaData">
+    <rdfs:range rdf:resource="http://ontology.cib.bau.tu-dresden/ClimateMetaDataOnto#ClimateMetaData"/>
+    <rdfs:domain rdf:resource="#OutdoorClimateElement"/>
+    <rdfs:domain rdf:resource="#IndoorClimateElement"/>
+    <rdfs:subPropertyOf rdf:resource="http://ontology.cib.bau.tu-dresden/ISESOnto#hasReferencedMetaDataElement"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="climateValue">
+    <rdfs:domain rdf:resource="#ClimateZoneProperty"/>
+    <rdfs:domain rdf:resource="#ClimateProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#climateFloatValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:subPropertyOf rdf:resource="#climateValue"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="climateMeasuringTime">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="#IndoorClimateElement"/>
+    <rdfs:domain rdf:resource="#OutdoorClimateElement"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#climateStringValue">
+    <rdfs:subPropertyOf rdf:resource="#climateValue"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="climateMeasuringYear">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="#IndoorClimateElement"/>
+    <rdfs:domain rdf:resource="#OutdoorClimateElement"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#climateIntegerValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:subPropertyOf rdf:resource="#climateValue"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="climateMeasuringType">
+    <rdfs:domain rdf:resource="#OutdoorClimateElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#IndoorClimateElement"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

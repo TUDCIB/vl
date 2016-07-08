@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start='90' duration='20'/>
+<Position latitude='19.12' longitude='72.85'/>
+<Description langid='de'>Bombay, Indien, Asien</Description>
+<Description langid='en'>Bombay, India, Asia</Description>
+</ClimateDataLocation>

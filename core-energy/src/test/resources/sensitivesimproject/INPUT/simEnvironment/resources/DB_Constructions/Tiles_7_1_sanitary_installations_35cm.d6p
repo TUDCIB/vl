@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="5.6.7">
+
+	<ProjectInfo>
+        <DisplayName>Tiles_7_1_sanitary_installations_35cm</DisplayName>
+    </ProjectInfo>
+
+    <!--List of all materials used in this construction-->
+    <Materials>
+		<MaterialReference displayName="TILES WITH MORTAR">${Material Database}/material_247.m6</MaterialReference>
+		<MaterialReference displayName="FLOATING SCREED">${Material Database}/material_69.m6</MaterialReference>
+		<MaterialReference displayName="PE FOIL">${Material Database}/material_174.m6</MaterialReference>
+		<MaterialReference displayName="EPS IMPACT SOUND INSULATION">${Material Database}/material_996.m6</MaterialReference>
+		<MaterialReference displayName="EPS">${Material Database}/material_186.m6</MaterialReference>
+    </Materials>
+
+    <!--Discretization data (grid and sketches)-->
+    <Discretization geometryType="2D">
+		<XSteps unit="m">0.010 0.0648 0.0002 0.020 0.050</XSteps>
+    </Discretization>
+
+    <!--List of all assignments of materials and conditions-->
+    <Assignments>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="TILES WITH MORTAR">247</Reference>
+			<IBK:Range>0 0 0 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="FLOATING SCREED">69</Reference>
+			<IBK:Range>1 0 1 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="PE FOIL">174</Reference>
+			<IBK:Range>2 0 2 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="EPS IMPACT SOUND INSULATION">996</Reference>
+			<IBK:Range>3 0 3 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="EPS">186</Reference>
+			<IBK:Range>4 0 4 0</IBK:Range>
+		</Assignment>
+    </Assignments>
+	<Costs>0.0</Costs>
+</DelphinProject>

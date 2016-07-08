@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.7"?>
+<plugin>
+   <extension-point id="de.tudresden.bau.cib.vl.gui.extensionpoints.definitions.login" name="Login" schema="schema/de.tudresden.bau.cib.vl.gui.extensionpoints.definitions.login.exsd"/>
+
+   <extension
+         id="application"
+	     point="org.eclipse.core.runtime.applications">
+	<application
+	          cardinality="singleton-global"
+	          thread="main"
+	          visible="true">
+	      <run
+	            class="de.tudresden.bau.cib.vl.gui.core.Application">
+	      </run>
+   	</application>
+   </extension>
+   
+   <!-- DEFAULT PERSPECTIVE -->	
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="de.tudresden.bau.cib.vl.gui.core.Perspective"
+            id="vl.perspective"
+            name="BIM Perspective">
+      </perspective>
+   </extension>
+   
+  <!-- =================================
+  		VIEWS
+  		 ================================= -->
+  	<extension
+         point="org.eclipse.ui.views">
+      <!-- FileView initialized by Spring -->
+      <view
+            category="org.eclipse.ui"
+            class="org.eclipse.springframework.util.SpringExtensionFactory:fileView"
+            icon="resources/icons/22x22/folder_open.png"
+            id="de.tudresden.bau.cib.vl.gui.core.view.UserProjectView"
+            name="%FileView_name"
+            restorable="true">
+      </view>
+      <view
+            category="org.eclipse.ui"
+            class="org.eclipse.springframework.util.SpringExtensionFactory:logView"
+            icon="resources/icons/16x16/message.png"
+            id="de.tudresden.bau.cib.vl.gui.core.ui.view.additional_bottom.LogView"
+            name="%LogView_name">
+      </view>
+      <view
+         name="%ProgressView_name"
+         icon="resources/icons/16x16/pview.gif"
+         category="org.eclipse.ui"
+         class="org.eclipse.ui.ExtensionFactory:progressView"
+         id="de.tudresden.bau.cib.vl.gui.core.ui.view.support.ProgressView"
+         restorable="true">
+   	  </view>
+ 
+      
+   </extension>
+   
+      <extension
+         id="products"
+         name="products"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="gui-rcp-app.application"
+            name="VL GUI RCP Product">
+         <property
+               name="appName"
+               value="VL GUI RCP Product">
+         </property>
+         <property
+               name="windowImages"
+               value="/gui-rcp-product/product/logo_blau_16.png,/gui-rcp-product/product/logo_blau_32.png,/gui-rcp-product/product/logo_blau_48.png,/gui-rcp-product/product/logo_blau_64.png,/gui-rcp-product/product/logo_blau_128.png">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="000000">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="407,370,600,20">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="405,395,600,15">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+         <property
+               name="aboutImage"
+               value="/gui-rcp-product/product/logo_blau_64.png">
+         </property>
+         <property
+               name="aboutText"
+               value="Virtual energy laboratory for BIM based information, simulation and evaluation.&#x0A;Copyright (C) 2010-2015, TU Dresden Institute of Construction Informatics. All rights reserved.&#x0A;We kindly acknowledge the support of the European Commission to the projects HESMOS (GA-nr. 260088) and ISES (GA-nr. 288819).&#x0A;&#x0A;This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License &#x0A;as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&#x0A;This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty &#x0A;of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.&#x0A;You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.&#x0A;&#x0A;Redistribution and use of virtual laboratory in source and binary forms, with or without modification, are permitted provided that the &#x0A;following conditions are met:&#x0A;Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.  &#x0A;Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer &#x0A;in the documentation and/or other materials provided with the distribution.  &#x0A;THIS SOFTWARE IS PROVIDED BY THE FREEBSD PROJECT “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, &#x0A;THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD &#x0A;PROJECT OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, &#x0A;BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER &#x0A;CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING &#x0A;IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#x0A;The views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as &#x0A;representing any other official policies, either expressed or implied of the HESMOS Research Project or the European Commission.">
+         </property>
+      </product>
+   </extension>
+   
+    <!-- ================================= 
+          User Management            
+         ================================= -->
+   <extension
+   		id="loginDialog"
+   		name="Login Dialog"
+         point="de.tudresden.bau.cib.vl.gui.extensionpoints.definitions.login">
+      <client
+            class="de.tudresden.bau.cib.vl.gui.core.controller.LoginController">
+      </client>
+   </extension>
+	
+   <!-- Add views to perspective -->
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="vl.perspective">
+         <view
+               closeable="false"
+               id="de.tudresden.bau.cib.vl.gui.core.view.UserProjectView"
+               minimized="false"
+               moveable="false"
+               ratio="0.1f"
+               relationship="bottom"
+               relative="org.eclipse.ui.editorss"
+               visible="true">
+         </view>
+         <view
+               closeable="true"
+               id="de.tudresden.bau.cib.vl.gui.core.ui.view.additional_bottom.LogView"
+               moveable="true"
+               relationship="fast"
+               visible="false">
+         </view>
+         <view
+               closeable="false"
+               id="de.tudresden.bau.cib.vl.gui.core.ui.view.support.ProgressView"
+               minimized="false"
+               ratio="0.7f"
+               relationship="bottom"
+               relative="de.tudresden.bau.cib.vl.gui.core.view.UserProjectView"
+               visible="true">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   
+ <!-- ================================= 
+          Menu            
+         ================================= -->
+   
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu">
+        <menu
+               id="fileMenu"
+               label="File">
+            <command
+                  commandId="de.tudresden.cib.bau.vl.gui.commands.Exit"
+                  label="Exit"
+                  style="push"
+                  tooltip="Exit the application">
+            </command>
+         </menu>
+         <menu
+            id="window"
+            label="Window">
+            <command
+               commandId="org.eclipse.ui.views.showView"
+               label="Show View"
+               style="push">
+         	</command>
+      	</menu>
+      	<menu
+            id="perspective"
+            label="Perspective">
+         	<command
+               commandId="org.eclipse.ui.perspectives.showPerspective"
+               label="Show Perspective"
+               style="push">
+         	</command>
+      	</menu>
+      	<menu
+               id="vl.menu.help"
+               label="%menu.help.label">
+            <command
+                  commandId="org.eclipse.ui.help.aboutAction"
+                  label="%command.help.about.label"
+                  style="push"
+                  tooltip="%command.help.about.tooltip">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+
+<!-- ================================= 
+          Commands            
+         ================================= -->
+ 
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="de.tudresden.bau.cib.vl.gui.core.handler.ExitHandler"
+            id="de.tudresden.cib.bau.vl.gui.commands.Exit"
+            name="Exit">
+      </command>
+      <command
+            id="org.eclipse.ui.help.aboutAction"
+            name="AboutAction">
+      </command>
+   </extension>
+ 
+</plugin>

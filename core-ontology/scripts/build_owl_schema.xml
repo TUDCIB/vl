@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<project name="ontology_schema" basedir="../." default="vocabularies">
+
+  <!-- properties -->
+  <property name="build.dir" value="${basedir}/target"/>
+  <property name="build.dir.generated.schema" value="${build.dir}/generated-schema"/>
+  <property name="output.dir" value="${build.dir.generated.schema}/vocabulary" />
+  <property name="package" value="de.tudresden.bau.cib.vl.core.model.ontology.vocabulary"/>
+  <property name="rdf.dir" value="resources"/>
+  <property name="scripts.dir" value="scripts"/> 
+  <property name="vocab.dir"       value="src/${package}" />
+  <property name="vocab.template"  value="${scripts.dir}/schemagen.rdf" />
+  <property name="vocab.tool"      value="jena.schemagen" />
+  <property name="lib.dir" value="lib"/> 
+  <property name="scripts.lib.dir" value="${scripts.dir}/lib"/> 
+  
+  <property name="input.file" value="eeBIMOnto.owl"/>
+  <!--<property name="input.file" value="eBIMInterfaceOnto.owl"/>-->
+
+	<path id="master-classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${scripts.lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+  <!-- Section: vocabulary generation -->
+  <target name="vocabularies" depends="exVocab" >
+  	<echo message="Vocabularies build completed"/>	
+  </target>
+
+  <target name="exVocab.check">
+    <uptodate
+       property="exVocab.nobuild"
+       srcFile="${rdf.dir}/${input.file}"
+       targetFile="${vocab.dir}/OntologyVocabulary.java" />
+  </target>
+
+  <target name="exVocab" depends="exVocab.check" unless="exVocab.nobuild">
+    <java classname="${vocab.tool}" classpathref="master-classpath" fork="yes">
+      <arg value="-i" />
+      <arg value="file:${rdf.dir}/${input.file}" />
+      <arg value="-c" />
+      <arg value="${vocab.template}" />
+      <arg value="-o" />
+      <arg value="${output.dir}" />
+      <arg value="--package" />
+      <arg value="${package}" />
+      <arg value="--classnamesuffix" />
+      <arg value="Vocabulary" />
+      <arg value="--ontology" />
+      <arg value="--owl" />
+    </java>
+  	<echo message="Vocabularies saved in ${output.dir}"/>
+  </target>
+  
+</project>

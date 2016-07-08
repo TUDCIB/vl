@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fileVersion="5.6.7" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd">
+	<ProjectInfo>
+		<DisplayName>walltypeSteel</DisplayName>
+	</ProjectInfo>
+	<Materials>
+		<MaterialReference displayName="Stahlblech. verzinkt">D:\Daten\tomcat-data\vl\resources\DB_Materials\material_2142684325.m6</MaterialReference>
+		<MaterialReference displayName="Polyurethan-Hartschaumplatten">D:\Daten\tomcat-data\vl\resources\DB_Materials\material_2142684269.m6</MaterialReference>
+		<MaterialReference displayName="Stahlblech. verzinkt">D:\Daten\tomcat-data\vl\resources\DB_Materials\material_2142684325.m6</MaterialReference>
+	</Materials>
+	<Discretization geometryType="2D">
+		<XSteps unit="m">5.0E-4 0.14 5.0E-4 </XSteps>
+	</Discretization>
+	<Assignments>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="Stahlblech. verzinkt">2142684325</Reference>
+			<IBK:Range>0 0 0 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="Polyurethan-Hartschaumplatten">2142684269</Reference>
+			<IBK:Range>1 0 1 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="Stahlblech. verzinkt">2142684325</Reference>
+			<IBK:Range>2 0 2 0</IBK:Range>
+		</Assignment>
+	</Assignments>
+	<Costs>62.0</Costs>
+</DelphinProject>

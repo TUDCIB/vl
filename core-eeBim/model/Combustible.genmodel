@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/cib.project.combustible.model/src-gen"
+    editDirectory="/cib.project.combustible.model/src-gen" editorDirectory="/cib.project.combustible.model.editor/src-gen"
+    modelPluginID="cib.project.combustible.model" modelName="Combustible" modelPluginClass="cib.project.combustible.model.Activator"
+    generateSchema="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false" interfaceNamePattern="" runtimePlatform="RCP">
+  <foreignModel>Combustible.1.0.0.ecore</foreignModel>
+  <genPackages prefix="Combustible" basePackage="cib.project.combustible.model" resource="XML"
+      disposableProviderFactory="true" contentTypeIdentifier="cib.project.combustible.model#1.0.0"
+      fileExtensions="xml" ecorePackage="Combustible.1.0.0.ecore#/">
+    <genClasses ecoreClass="Combustible.1.0.0.ecore#//CombustibleContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Combustible.1.0.0.ecore#//CombustibleContainer/combustibles"/>
+    </genClasses>
+    <genClasses ecoreClass="Combustible.1.0.0.ecore#//Combustible">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/heatingValueHi"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/usefulHeatHs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/ratioHsToHi"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/pricePerKWH"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/pricePerUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/basePricePerAnno"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/storageYield"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/primaryEnergyFactor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/emissionCO2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/emissionSO2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Combustible.1.0.0.ecore#//Combustible/emissionNOX"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

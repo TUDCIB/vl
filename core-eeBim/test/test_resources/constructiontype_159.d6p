@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<DelphinProject xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fileVersion="5.6.7" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" xmlns="http://www.bauklimatik-dresden.de">
+  <Materials>
+    <MaterialReference displayName="AW C25/30 2S">${Material Database}/material_1.m6</MaterialReference>
+    <MaterialReference displayName="MW UP8">${Material Database}/material_1.m6</MaterialReference>
+    <MaterialReference displayName="MW UP8">${Material Database}/material_1.m6</MaterialReference>
+  </Materials>
+  <Discretization>
+    <XSteps unit="m">0,240 0,180 0,110</XSteps>
+  </Discretization>
+  <Assignments>
+    <Assignment location="Element" type="Material">
+      <Reference displayName="AW C25/30 2S">1</Reference>
+      <IBK:Range>0 0 0 0</IBK:Range>
+    </Assignment>
+    <Assignment location="Element" type="Material">
+      <Reference displayName="MW UP8">1</Reference>
+      <IBK:Range>1 0 1 0</IBK:Range>
+    </Assignment>
+    <Assignment location="Element" type="Material">
+      <Reference displayName="MW UP8">1</Reference>
+      <IBK:Range>2 0 2 0</IBK:Range>
+    </Assignment>
+  </Assignments>
+</DelphinProject>

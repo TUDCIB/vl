@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMOnto#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:BIMonto="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMOnto">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <owl:imports rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Material">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Material</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Template"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ClimateLocation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Climate Location Template</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Template"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="HeatingEnergyNeedTargetValue">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="EnergyNeedTargetValue"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="EnergyNeed">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="EnergyResult"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="HeatingEnergyNeed">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="CoolingEnergyNeed"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="#EnergyNeed"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DwellingHouse">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dwelling house</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TargetValue">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Requirement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="TotalEnergyNeed">
+    <rdfs:subClassOf rdf:resource="#EnergyNeed"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Result">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Result</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Summary">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EnergyResult"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Summary</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="CoolingEnergyNeedTargetValue">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EnergyNeedTargetValue"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#EnergyResult">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Energy result</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Result"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Construction">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Construction Template</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Template"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="HeatingSystem">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Template"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Heating system</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasCombustible"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SpaceType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Space Type Template</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Template"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="TotalEnergyNeedTargetValue">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EnergyNeedTargetValue"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#CoolingEnergyNeed">
+    <rdfs:subClassOf rdf:resource="#EnergyNeed"/>
+    <owl:disjointWith rdf:resource="#HeatingEnergyNeed"/>
+  </owl:Class>
+  <owl:Class rdf:ID="HotWaterPreparation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Template"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hot water preparation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#EnergyNeedTargetValue">
+    <rdfs:subClassOf rdf:resource="#TargetValue"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EnergyDomain"/>
+  <owl:Class rdf:ID="EnergyClass">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Energy class</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#EnergyResult"/>
+  </owl:Class>
+  <owl:Class rdf:ID="NationalRegulation">
+    <rdfs:subClassOf rdf:resource="#Requirement"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Template">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Template</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="HVAC">
+    <rdfs:subClassOf rdf:resource="#EnergyDomain"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >HVAC</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="KeyPerformanceIndicator">
+    <rdfs:subClassOf rdf:resource="#Result"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EnergyPerformanceCertificate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Energy certificate</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#EnergyResult"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Combustible">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Combustible</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Template"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasResource">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has resource</rdfs:label>
+    <rdfs:range rdf:resource="#Template"/>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcRoot"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasSpaceType">
+    <rdfs:subPropertyOf rdf:resource="#hasResource"/>
+    <rdfs:range rdf:resource="#SpaceType"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has space type</rdfs:label>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcSpace"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasMaterial">
+    <rdfs:domain rdf:resource="#Construction"/>
+    <rdfs:range rdf:resource="#Material"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has material</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#hasResource"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasClimateLocation">
+    <rdfs:subPropertyOf rdf:resource="#hasResource"/>
+    <rdfs:range rdf:resource="#ClimateLocation"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has climate location</rdfs:label>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcSite"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasHeatingSystem">
+    <rdfs:range rdf:resource="#HeatingSystem"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has heating system</rdfs:label>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasCombustible">
+    <rdfs:range rdf:resource="#Combustible"/>
+    <rdfs:domain rdf:resource="#HeatingSystem"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has combustible</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasSummary">
+    <rdfs:range rdf:resource="#Summary"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has summary</rdfs:label>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcRoot"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasConstruction">
+    <rdfs:range rdf:resource="#Construction"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has construction</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#hasResource"/>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuildingElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="ruleFiredFor">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasWaterPreparation">
+    <rdfs:range rdf:resource="#HotWaterPreparation"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has water preparation</rdfs:label>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >name</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="unit">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >unit</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="region">
+    <rdfs:domain rdf:resource="#ClimateLocation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >region</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="town">
+    <rdfs:domain rdf:resource="#ClimateLocation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >town</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="isIsolated">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >is isolated</rdfs:label>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="latitude">
+    <rdfs:domain rdf:resource="#ClimateLocation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >latitude</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="buildingEnvelopeArea">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has building envelope area</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="altitude">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >altitude</rdfs:label>
+    <rdfs:domain rdf:resource="#ClimateLocation"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="windowArea">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has window area</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="albedo">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >albedo</rdfs:label>
+    <rdfs:domain rdf:resource="#ClimateLocation"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="value">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:label xml:lang="en">value</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="uValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >u value</rdfs:label>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuildingElement"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="comment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >comment</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="longitude">
+    <rdfs:domain rdf:resource="#ClimateLocation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >longitude</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="isSimplifiedEnEVPossible">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >is simplified en EVPossible</rdfs:label>
+    <rdfs:domain rdf:resource="#Summary"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="pathToTemplate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >path to template</rdfs:label>
+    <rdfs:domain rdf:resource="#Template"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="decreasedThermalBridgeOverhead">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has decreased thermal bridge overhead</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="dwellingArea">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has dwelling area</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="id">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >id</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="orientation">
+    <rdfs:domain rdf:resource="#ClimateLocation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >orientation</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="energyCharacteristic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has energy characteristic</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="personLoad">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >person load</rdfs:label>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="combustibleConsumption">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has combustible consumption</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="energyConsumption">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has energy consumption</rdfs:label>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="heatingEnergyConsumption">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has heating energy consumption</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="area">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >area</rdfs:label>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcProduct"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="type">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >type</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="overallAreaUValueProduct">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >overall area UValue sum (that means all uValues of each building element as sum)</rdfs:label>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="definition">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >definition</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Summary"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="maximumThermalTransmittanceLosses">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >maximum thermal transmittance losses</rdfs:label>
+    <rdfs:domain rdf:resource="http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#IfcBuilding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="combustibleFactor">
+    <rdfs:domain rdf:resource="#Combustible"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has combustible factor in kWh / unit</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="country">
+    <rdfs:domain rdf:resource="#ClimateLocation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >country</rdfs:label>
+  </owl:DatatypeProperty>
+  <NationalRegulation rdf:ID="LEED"/>
+  <Combustible rdf:ID="Wood">
+    <combustibleFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >5</combustibleFactor>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Wood</rdfs:label>
+  </Combustible>
+  <Summary rdf:ID="Warning">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Warning problem</rdfs:label>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Warning regarding energy behaviour</definition>
+  </Summary>
+  <EnergyClass rdf:ID="E">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >E</rdfs:label>
+  </EnergyClass>
+  <Summary rdf:ID="UrgentNeedForAction">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Urgent need for action</rdfs:label>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Urgent need for action</definition>
+  </Summary>
+  <NationalRegulation rdf:ID="EnEV2014"/>
+  <EnergyClass rdf:ID="D">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >D</rdfs:label>
+  </EnergyClass>
+  <Combustible rdf:ID="StoneCoal">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stone coal</rdfs:label>
+    <combustibleFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >8</combustibleFactor>
+  </Combustible>
+  <EnergyClass rdf:ID="B">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >B</rdfs:label>
+  </EnergyClass>
+  <EnergyClass rdf:ID="C">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C</rdfs:label>
+  </EnergyClass>
+  <Summary rdf:ID="NoNeedForAction">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >No need for action</rdfs:label>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >No need for action</definition>
+  </Summary>
+  <Summary rdf:ID="EnergySavingsPossible">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Energy savings possible</rdfs:label>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Energy savings are possible</definition>
+  </Summary>
+  <Combustible rdf:ID="DistrictHeating">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >District heating</rdfs:label>
+    <combustibleFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1</combustibleFactor>
+  </Combustible>
+  <EnergyClass rdf:ID="A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A</rdfs:label>
+  </EnergyClass>
+  <Combustible rdf:ID="Oil">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Oil</rdfs:label>
+    <combustibleFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >10</combustibleFactor>
+  </Combustible>
+  <HotWaterPreparation rdf:ID="CentralHotWaterPreparation"/>
+  <NationalRegulation rdf:ID="EnEV2007"/>
+  <Combustible rdf:ID="LiquifiedGas">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Liquified gas</rdfs:label>
+    <combustibleFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >13</combustibleFactor>
+  </Combustible>
+  <Combustible rdf:ID="Electricity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Electricity</rdfs:label>
+    <combustibleFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1</combustibleFactor>
+  </Combustible>
+  <Summary rdf:ID="Critical">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Critical problem</rdfs:label>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Critical problem regarding energy behaviour</definition>
+  </Summary>
+  <Combustible rdf:ID="BrownCoal">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Brown coal</rdfs:label>
+    <combustibleFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >6</combustibleFactor>
+  </Combustible>
+  <EnergyClass rdf:ID="G">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >G</rdfs:label>
+  </EnergyClass>
+  <Summary rdf:ID="Information">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Information</rdfs:label>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >No problem regarding energy behaviour</definition>
+  </Summary>
+  <Combustible rdf:ID="PetroleumGas">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Petroleum gas</rdfs:label>
+    <combustibleFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >10</combustibleFactor>
+  </Combustible>
+  <EnergyClass rdf:ID="F">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >F</rdfs:label>
+  </EnergyClass>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

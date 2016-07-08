@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Contains definitions of output files and grids for outputs.
+
+	Requires Definitions of the following Object Lists:
+	* Active zones         -> Zones
+	* Climate data             -> Location
+
+-->
+<Outputs>
+	<!--General parameters-->
+	<IBK:Unit name="TimeUnit">d</IBK:Unit>
+	<IBK:Flag name="BinaryFormat">false</IBK:Flag>
+
+	<!--List of all Output schedules-->
+	<OutputGrids>
+		<OutputGrid name="Hourly">
+			<Interval>
+				<IBK:Parameter name="StepSize" unit="h">1</IBK:Parameter>
+			</Interval>
+		</OutputGrid>
+		<OutputGrid name="DetailedDay">
+			<Interval>
+				<IBK:Parameter name="StepSize" unit="min">60</IBK:Parameter>
+				<IBK:Parameter name="End" unit="d">1</IBK:Parameter>
+			</Interval>
+			<Interval>
+				<IBK:Parameter name="StepSize" unit="h">1</IBK:Parameter>
+			</Interval>
+		</OutputGrid>
+	</OutputGrids>
+
+	<!--List of all Output Definitions-->
+	<OutputDefinitions>
+		<!-- Defines output using object lists to identify source objects. -->
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Active zones</ObjectListName>
+			<Quantity>Temperature</Quantity>
+		</OutputDefinition>
+
+		<!-- Climatic Data Outputs. -->
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>Temperature</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>RelativeHumidity</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>SWRadDirectHorizontal</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>SWRadDiffuseHorizontal</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>SWRadGlobal</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>CloudCover</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>TotalPressure</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>LWRadSky</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>LWRadGround</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>Precipitation</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>RainFluxDensity</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>DewPointTemperature</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>WindDirection</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>WindVelocity</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>Elevation</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>Azimuth</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Climate data</ObjectListName>
+			<Quantity>Declination</Quantity>
+		</OutputDefinition>
+
+		<!-- Defines results of implicit model generated from Zone definition. -->
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Active zones</ObjectListName>
+			<Quantity>AirTemperature</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Active zones</ObjectListName>
+			<Quantity>OperativeTemperature</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Active zones</ObjectListName>
+			<Quantity>HeatingRadiantGains</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Active zones</ObjectListName>
+			<Quantity>HeatingConvectiveGains</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Active zones</ObjectListName>
+			<Quantity>WindowSWRadGains</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Active zones</ObjectListName>
+			<Quantity>CoolingGains</Quantity>
+		</OutputDefinition>
+
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Active zones</ObjectListName>
+			<Quantity>ConstructionHeatConductionGains</Quantity>
+		</OutputDefinition>
+		
+		<!-- Vector quantity output. -->
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Active zones</ObjectListName>
+			<Quantity>qSWRad</Quantity>
+		</OutputDefinition>
+
+		<!-- Scalar Vector quantity (element by ID) output. -->
+		<OutputDefinition>
+			<OutputGridName>Hourly</OutputGridName>
+			<ObjectListName>Active zones</ObjectListName>
+			<!-- qSWRad is defined for interfaces, therefore id means interface ID -->
+			<Quantity>qSWRad[id=8]</Quantity>
+		</OutputDefinition>
+		
+	</OutputDefinitions>
+</Outputs>

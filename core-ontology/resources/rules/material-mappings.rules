@@ -1,0 +1,12 @@
+//* @id: materialmappings @name: Material Mapping Rules rule set @description: Maps material information @end
+@prefix BIMOnto: http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#
+@prefix eBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eBIMInterfaceOnto#
+
+[reinf_concrete:	
+	(?relAssocMat rdf:type BIMOnto:IfcRelAssociatesMaterial) (?relAssocMat BIMOnto:RelatingMaterial ?relatingMatLayer) (?relAssocMat BIMOnto:RelatedObjects ?be) 
+	(?relatingMatLayer rdf:type BIMOnto:IfcMaterialLayer) (?relatingMatLayer BIMOnto:Material ?mat)
+	(?relatingMatLayer BIMOnto:TotalThickness ?thickness)
+	(?be rdf:type BIMOnto:IfcBuildingElement)	
+	(?mat rdf:type BIMOnto:IfcMaterial) (?mat BIMOnto:Name ?name) (?name BIMOnto:StringValue "BP-REINF. CONCR.\\") 
+		-> (?rv rdf:type eeBIM:R-Value) quotient(?thickness, 2.3, ?r_floatvalue) (?rv BIMOnto:FloatValue ?r_floatvalue) (?rv BIMOnto:Material ?mat)
+]

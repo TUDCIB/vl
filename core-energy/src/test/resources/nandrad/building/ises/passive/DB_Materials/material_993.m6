@@ -1,0 +1,18 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = DOUBLE FLOOR
+    RHO                      = 1500 kg/m3
+    CE                       = 1000 J/kgK
+    LAMBDA                   = 0.44 W/mK
+    OPOR                     = 1.5e-006 m3/m3
+    OEFF                     = 1.5e-006 m3/m3
+    AW                       = 1e-006 kg/m2s05
+    MEW                      = 50 -
+    KLEFF                    = 0 s
+	O80                		 = 1e-008 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 13 - Miscellaneous
+    COLOR                    = 10485760

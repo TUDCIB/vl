@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IfcConverterConfig local="en-US">
+	<Space>		
+		<Parameter ifcName="GrossFloorArea" ifcUnit="m2" destUnit="m2" countDecimals="2" useParam="yes">Area</Parameter>
+		<Parameter ifcName="NetFloorArea" ifcUnit="m2" destUnit="m2" countDecimals="2" useParam="no">NGF</Parameter>
+		<Parameter ifcName="GrossVolume" ifcUnit="m3" destUnit="m3" countDecimals="2" useParam="no">Brutto-Volumen</Parameter>
+		<Parameter ifcName="NetVolume" ifcUnit="m3" destUnit="m3" countDecimals="2" useParam="no">Netto-Volumen</Parameter>
+		<Parameter ifcName="GrossWallArea" ifcUnit="m2" destUnit="m2" countDecimals="2" useParam="no">Brutto-Wandfläche</Parameter>
+		<Parameter ifcName="NetWallArea" ifcUnit="m2" destUnit="m2" countDecimals="2" useParam="no">Netto-Wandfläche</Parameter>
+		<Parameter ifcName="FinishCeilingHigh" ifcUnit="m" destUnit="m" countDecimals="2" useParam="yes">Height</Parameter>
+		<Parameter ifcName="Perimeter" ifcUnit="mm" destUnit="m" countDecimals="2" useParam="no">Umfang</Parameter>
+		<Parameter ifcName="Temperature" ifcUnit="C" destUnit="C" countDecimals="1" useParam="yes">Temperature</Parameter>
+		<Parameter ifcName="HeatCapacity" ifcUnit="J/K" destUnit="J/K" countDecimals="1" useParam="yes">HeatCapacity</Parameter>
+	</Space>
+	<Wall>		
+        <Parameter ifcName="azimuth" ifcUnit="rad" destUnit="Deg" countDecimals="2" useParam="yes">Orientation</Parameter>
+		<Parameter ifcName="tilt" ifcUnit="deg" destUnit="Deg" countDecimals="2" useParam="yes">Inclination</Parameter>        		
+		<Parameter ifcName="GrossSideArea" ifcUnit="m2" destUnit="m2" countDecimals="2" useParam="yes">Area</Parameter>
+		<Parameter ifcName="Temperature" ifcUnit="C" destUnit="C" countDecimals="1" useParam="yes">Temperature</Parameter>
+		<Parameter ifcName="GrossFloorArea" ifcUnit="m2" destUnit="m2" countDecimals="2" useParam="no">Area</Parameter>
+		<Parameter ifcName="NetFloorArea" ifcUnit="m2" destUnit="m2" countDecimals="2" useParam="no">NGF</Parameter>
+		<Parameter ifcName="GrossVolume" ifcUnit="m3" destUnit="m3" countDecimals="2" useParam="no">Brutto-Volumen</Parameter>
+		<Parameter ifcName="NetVolume" ifcUnit="m3" destUnit="m3" countDecimals="2" useParam="no">Netto-Volumen</Parameter>
+		<Parameter ifcName="GrossWallArea" ifcUnit="m2" destUnit="m2" countDecimals="2" useParam="no">Brutto-Wandfläche</Parameter>
+		<Parameter ifcName="NetWallArea" ifcUnit="m2" destUnit="m2" countDecimals="2" useParam="no">Netto-Wandfläche</Parameter>
+		<Parameter ifcName="Height" ifcUnit="mm" destUnit="m" countDecimals="2" useParam="no">Höhe</Parameter>
+		<Parameter ifcName="Perimeter" ifcUnit="mm" destUnit="m" countDecimals="2" useParam="no">Umfang</Parameter>
+		<Parameter ifcName="Length" ifcUnit="mm" destUnit="m" countDecimals="2" useParam="no">Länge</Parameter>
+		<Parameter ifcName="Width" ifcUnit="mm" destUnit="m" countDecimals="2" useParam="no">Breite</Parameter>		
+        <Parameter ifcName="NetSideArea" ifcUnit="m2" destUnit="m2" countDecimals="2" useParam="no">Netto-Seitenfläche</Parameter>
+		<Parameter ifcName="GrossFootprintArea" ifcUnit="m2" destUnit="m2" countDecimals="2" useParam="no">Konstruktionsgrundfläche</Parameter>		
+	</Wall>
+	<Door>		
+		<Parameter ifcName="Area" ifcUnit="m2" destUnit="m2" countDecimals="2" useParam="yes">Area</Parameter>
+		<Parameter ifcName="Height" ifcUnit="m" destUnit="m" countDecimals="2" useParam="yes">Height</Parameter>
+		<Parameter ifcName="Width" ifcUnit="m" destUnit="m" countDecimals="2" useParam="yes">Width</Parameter>
+	</Door>
+	<Window>		
+		<Parameter ifcName="Area" ifcUnit="m2" destUnit="m2" countDecimals="2" useParam="yes">Area</Parameter>
+		<Parameter ifcName="Height" ifcUnit="m" destUnit="m" countDecimals="2" useParam="no">Height</Parameter>
+		<Parameter ifcName="Width" ifcUnit="m" destUnit="m" countDecimals="2" useParam="no">Width</Parameter>
+	</Window>
+</IfcConverterConfig>

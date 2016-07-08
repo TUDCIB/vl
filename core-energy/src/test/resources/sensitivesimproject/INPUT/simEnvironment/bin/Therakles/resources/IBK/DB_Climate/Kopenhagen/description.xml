@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start="201" duration="14"/>
+<Position latitude="55.7" longitude="12.6"/>
+<Description langid="en">Copenhagen (Taastrup), Denmark</Description>
+<Description langid="de">Koppenhagen (Taastrup), Dänemark</Description>
+</ClimateDataLocation>

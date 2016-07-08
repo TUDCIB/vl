@@ -1,0 +1,10 @@
+//* @id: roommappingkindergarden @name: Room Mapping Rules rule set @description: Maps occupancy information to rooms @end
+@prefix BIMOnto: http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#
+@prefix eBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eBIMInterfaceOnto#
+[void: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "VOID") -> (?s rdf:type eBIM:TechnicalRoom)]	
+[wc: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "WC M") -> (?s rdf:type eBIM:LivingRoom)]	
+[rp: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "RAZSTAVNI PROSTOR") -> (?s rdf:type eBIM:Passage)]	
+[garde: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "GARDEROBA") -> (?s rdf:type eBIM:Storage)]	
+[pisaz: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "PISARNA ZAPOSLENI") -> (?s rdf:type eBIM:LivingRoom)]
+[pisad: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "PISARNA DIREKTOR") -> (?s rdf:type eBIM:LivingRoom)]	
+

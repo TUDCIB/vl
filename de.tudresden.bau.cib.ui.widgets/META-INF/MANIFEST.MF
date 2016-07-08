@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CIB RCP Widgets
+Bundle-SymbolicName: de.tudresden.bau.cib.ui.widgets.rcp;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: TU Dresden, Institute of Construction Informatics
+Require-Bundle: com.springsource.net.sf.json;bundle-version="2.2.2"
+Import-Package: org.eclipse.swt,
+ org.eclipse.swt.awt,
+ org.eclipse.swt.browser,
+ org.eclipse.swt.custom,
+ org.eclipse.swt.events,
+ org.eclipse.swt.graphics,
+ org.eclipse.swt.layout,
+ org.eclipse.swt.widgets
+Export-Package: 
+ de.tudresden.bau.cib.ui.widgets,
+ de.tudresden.bau.cib.ui.widgets.google,
+ de.tudresden.bau.cib.ui.widgets.ifcviewer,
+ de.tudresden.bau.cib.ui.widgets.notification.cache,
+ de.tudresden.bau.cib.ui.widgets.notification.notifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: lib/openifctools.com.openifcjavatoolbox_1.0.1_20111129.jar,
+ lib/openifctools.com.viewer.api.jar,
+ lib/swingx-2009_02_01.jar,
+ lib/vldocking_2.1.5.jar,
+ .,
+ lib/javaws.jar,
+ lib/j3dcore.jar,
+ lib/j3dutils.jar,
+ lib/vecmath.jar,
+ lib/images.jar

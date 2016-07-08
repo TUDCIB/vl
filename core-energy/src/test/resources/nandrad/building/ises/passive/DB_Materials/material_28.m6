@@ -1,0 +1,20 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = BITUMEN
+    RHO                      = 1200 kg/m3
+    CE                       = 2000 J/kgK
+    LAMBDA                   = 0.145 W/mK
+    OPOR                     = 0.0026 m3/m3
+    OEFF                     = 0.0025 m3/m3
+	OCAP					 = 0.0025 m3/m3
+    AW                       = 1e-010 kg/m2s05
+    MEW                      = 15000 -
+    KLEFF                    = 0 s
+    OCAP                     = 0.1 s
+	O80                		 = 1.37e-005 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 12 - Foils and Waterproofing Products
+    COLOR                    = 10485760

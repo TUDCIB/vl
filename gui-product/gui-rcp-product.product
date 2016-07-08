@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="VL GUI RCP Product" uid="gui-rcp-product" id="gui-rcp-app.products" application="gui-rcp-app.application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/gui-rcp-product/product/logo_blau_64.png"/>
+      <text>
+         Virtual energy laboratory for BIM based information, simulation and evaluation.
+Copyright (C) 2010-2015, TU Dresden Institute of Construction Informatics. All rights reserved.
+We kindly acknowledge the support of the European Commission to the projects HESMOS (GA-nr. 260088) and ISES (GA-nr. 288819).
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License 
+as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty 
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+
+Redistribution and use of virtual laboratory in source and binary forms, with or without modification, are permitted provided that the 
+following conditions are met:
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.  
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer 
+in the documentation and/or other materials provided with the distribution.  
+THIS SOFTWARE IS PROVIDED BY THE FREEBSD PROJECT “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD 
+PROJECT OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER 
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+The views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as 
+representing any other official policies, either expressed or implied of the HESMOS Research Project or the European Commission.
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-clearPersistedState</programArgs>
+      <vmArgs>-Dcatalina.home=.
+-Xmx1000m</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/gui-rcp-product/product/logo_blau_16.png" i32="/gui-rcp-product/product/logo_blau_32.png" i48="/gui-rcp-product/product/logo_blau_48.png" i64="/gui-rcp-product/product/logo_blau_64.png" i128="/gui-rcp-product/product/logo_blau_128.png"/>
+
+   <splash
+      location="gui-rcp-app" />
+   <launcher name="vellauncher">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+      <windows include="true">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
+   </vm>
+
+   <license>
+        <url>https://openeebim.bau.tu-dresden.de/</url>
+        <text>
+   Virtual energy laboratory for BIM based information, simulation and evaluation.
+Copyright (C) 2010-2015, TU Dresden Institute of Construction Informatics. All rights reserved.
+We kindly acknowledge the support of the European Commission to the projects HESMOS (GA-nr. 260088) and ISES (GA-nr. 288819).
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License 
+as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty 
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+
+Redistribution and use of virtual laboratory in source and binary forms, with or without modification, are permitted provided that the 
+following conditions are met:
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.  
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer 
+in the documentation and/or other materials provided with the distribution.  
+THIS SOFTWARE IS PROVIDED BY THE FREEBSD PROJECT “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD 
+PROJECT OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER 
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+The views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as 
+representing any other official policies, either expressed or implied of the HESMOS Research Project or the European Commission.
+         </text>
+   </license>
+
+   <plugins>
+      <plugin id="SimulationMatrix.model"/>
+      <plugin id="ch.qos.logback.classic" version="1.0.0"/>
+      <plugin id="ch.qos.logback.core" version="1.0.0.v20111214-2030"/>
+      <plugin id="com.google.guava"/>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="com.springsource.javax.mail"/>
+      <plugin id="com.springsource.javax.persistence"/>
+      <plugin id="com.springsource.net.sf.cglib"/>
+      <plugin id="com.springsource.net.sf.ezmorph"/>
+      <plugin id="com.springsource.net.sf.json"/>
+      <plugin id="com.springsource.org.aopalliance"/>
+      <plugin id="com.springsource.org.apache.commons.beanutils"/>
+      <plugin id="com.springsource.org.aspectj.weaver"/>
+      <plugin id="com.springsource.org.junit"/>
+      <plugin id="com.sun.jersey.client"/>
+      <plugin id="com.sun.jersey.contribs.jersey-multipart"/>
+      <plugin id="com.sun.jersey.core"/>
+      <plugin id="core"/>
+      <plugin id="core-bim"/>
+      <plugin id="core-configuration"/>
+      <plugin id="core-eeBim"/>
+      <plugin id="core-energy"/>
+      <plugin id="core-libraries"/>
+      <plugin id="core-logging" fragment="true"/>
+      <plugin id="core-ontology"/>
+      <plugin id="de.tudresden.bau.cib.ui.widgets.rcp"/>
+      <plugin id="gui-rcp-app"/>
+      <plugin id="gui-rcp-bim"/>
+      <plugin id="gui-rcp-gis"/>
+      <plugin id="gui-rcp-sim-energy"/>
+      <plugin id="javax.annotation"/>
+      <plugin id="javax.inject"/>
+      <plugin id="javax.servlet"/>
+      <plugin id="javax.ws.rs.jsr311-api"/>
+      <plugin id="javax.xml"/>
+      <plugin id="jcl.over.slf4j"/>
+      <plugin id="org.apache.batik.css"/>
+      <plugin id="org.apache.batik.util"/>
+      <plugin id="org.apache.batik.util.gui"/>
+      <plugin id="org.apache.commons.compress"/>
+      <plugin id="org.apache.commons.configuration"/>
+      <plugin id="org.apache.commons.io"/>
+      <plugin id="org.apache.commons.lang"/>
+      <plugin id="org.apache.commons.lang3"/>
+      <plugin id="org.apache.commons.math3"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.beans"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.filesystem"/>
+      <plugin id="org.eclipse.core.filesystem.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.net"/>
+      <plugin id="org.eclipse.core.net.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.resources"/>
+      <plugin id="org.eclipse.core.resources.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.e4.core.commands"/>
+      <plugin id="org.eclipse.e4.core.contexts"/>
+      <plugin id="org.eclipse.e4.core.di"/>
+      <plugin id="org.eclipse.e4.core.di.extensions"/>
+      <plugin id="org.eclipse.e4.core.services"/>
+      <plugin id="org.eclipse.e4.ui.bindings"/>
+      <plugin id="org.eclipse.e4.ui.css.core"/>
+      <plugin id="org.eclipse.e4.ui.css.swt"/>
+      <plugin id="org.eclipse.e4.ui.css.swt.theme"/>
+      <plugin id="org.eclipse.e4.ui.di"/>
+      <plugin id="org.eclipse.e4.ui.model.workbench"/>
+      <plugin id="org.eclipse.e4.ui.services"/>
+      <plugin id="org.eclipse.e4.ui.widgets"/>
+      <plugin id="org.eclipse.e4.ui.workbench"/>
+      <plugin id="org.eclipse.e4.ui.workbench.addons.swt"/>
+      <plugin id="org.eclipse.e4.ui.workbench.renderers.swt"/>
+      <plugin id="org.eclipse.e4.ui.workbench.swt"/>
+      <plugin id="org.eclipse.e4.ui.workbench3"/>
+      <plugin id="org.eclipse.emf.common"/>
+      <plugin id="org.eclipse.emf.databinding"/>
+      <plugin id="org.eclipse.emf.databinding.edit"/>
+      <plugin id="org.eclipse.emf.ecore"/>
+      <plugin id="org.eclipse.emf.ecore.change"/>
+      <plugin id="org.eclipse.emf.ecore.xmi"/>
+      <plugin id="org.eclipse.emf.edit"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.ds"/>
+      <plugin id="org.eclipse.equinox.event"/>
+      <plugin id="org.eclipse.equinox.launcher"/>
+      <plugin id="org.eclipse.equinox.launcher.win32.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.security"/>
+      <plugin id="org.eclipse.equinox.security.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.equinox.util"/>
+      <plugin id="org.eclipse.gemini.blueprint.core"/>
+      <plugin id="org.eclipse.gemini.blueprint.extender"/>
+      <plugin id="org.eclipse.gemini.blueprint.io"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.springframework.util"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+      <plugin id="org.jvnet.mimepull"/>
+      <plugin id="org.springframework.aop" version="3.1.1.RELEASE"/>
+      <plugin id="org.springframework.asm" version="3.1.1.RELEASE"/>
+      <plugin id="org.springframework.aspects" version="3.1.1.RELEASE"/>
+      <plugin id="org.springframework.beans" version="3.1.1.RELEASE"/>
+      <plugin id="org.springframework.context" version="3.1.1.RELEASE"/>
+      <plugin id="org.springframework.context.support" version="3.1.1.RELEASE"/>
+      <plugin id="org.springframework.core" version="3.1.1.RELEASE"/>
+      <plugin id="org.springframework.expression" version="3.1.1.RELEASE"/>
+      <plugin id="org.springframework.jdbc" version="3.1.1.RELEASE"/>
+      <plugin id="org.springframework.orm" version="3.1.1.RELEASE"/>
+      <plugin id="org.springframework.transaction" version="3.1.1.RELEASE"/>
+      <plugin id="org.tukaani.xz"/>
+      <plugin id="org.w3c.css.sac"/>
+      <plugin id="org.w3c.dom.events"/>
+      <plugin id="org.w3c.dom.smil"/>
+      <plugin id="org.w3c.dom.svg"/>
+      <plugin id="sensitivity_input"/>
+      <plugin id="slf4j.api"/>
+   </plugins>
+
+   <features>
+      <feature id="feature"/>
+      <feature id="gui-rcp-feature"/>
+   </features>
+
+   <configurations>
+      <plugin id="SimulationMatrix.model" autoStart="true" startLevel="0" />
+      <plugin id="core" autoStart="true" startLevel="0" />
+      <plugin id="core-bim" autoStart="true" startLevel="0" />
+      <plugin id="core-configuration" autoStart="true" startLevel="0" />
+      <plugin id="core-eeBim" autoStart="true" startLevel="0" />
+      <plugin id="core-energy" autoStart="true" startLevel="0" />
+      <plugin id="core-libraries" autoStart="true" startLevel="0" />
+      <plugin id="core-ontology" autoStart="true" startLevel="0" />
+      <plugin id="de.tudresden.bau.cib.ui.widgets.rcp" autoStart="true" startLevel="0" />
+      <plugin id="gui-rcp-app" autoStart="true" startLevel="0" />
+      <plugin id="gui-rcp-bim" autoStart="true" startLevel="0" />
+      <plugin id="gui-rcp-gis" autoStart="true" startLevel="0" />
+      <plugin id="gui-rcp-sim-energy" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.commands" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.contenttype" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.databinding" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.databinding.beans" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.databinding.observable" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.databinding.property" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.expressions" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.jobs" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.emf.common" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.emf.databinding" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.emf.databinding.edit" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.emf.ecore" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.emf.ecore.xmi" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.emf.edit" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.app" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.preferences" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.registry" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.equinox.util" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.gemini.blueprint.core" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.gemini.blueprint.extender" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.gemini.blueprint.io" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.osgi" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.osgi.services" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.springframework.util" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
+      <plugin id="sensitivity_input" autoStart="true" startLevel="0" />
+   </configurations>
+
+</product>

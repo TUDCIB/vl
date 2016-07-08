@@ -1,0 +1,591 @@
+<SpaceTypeProperties>
+    <SpaceType id="BathRoom">
+        <ShortDescription lang="en">Bath room</ShortDescription>
+        <LongDescription lang="en">Bath room, regular</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">24</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">1.0</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">0</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.1</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">24</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.5</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.1</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.5</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="BedRoom">
+        <ShortDescription lang="en">Bed room</ShortDescription>
+        <LongDescription lang="en">Bed room, sickroom</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">24</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">200</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">0</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.15</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.5</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.15</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.5</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="CirculationArea">
+        <ShortDescription lang="en">Circulation area</ShortDescription>
+        <LongDescription lang="en">Circulation area for vehicles</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">10</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.0</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.0</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.0</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">200</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">0</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">10</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.5</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">200</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.5</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="ClassRoom">
+        <ShortDescription lang="en">Class room</ShortDescription>
+        <LongDescription lang="en">Class room in schools and universities, regular</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">1.0</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">2</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">0</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">1.0</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.5</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.5</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="ColdStore">
+        <ShortDescription lang="en">Cold Store </ShortDescription>
+        <LongDescription lang="en">Class room in schools and universities, regular</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">-5</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">0</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.0</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.0</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.0</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">200</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">0</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">-5</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">200</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.0</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="CommonLab">
+        <ShortDescription lang="en">Common Lab</ShortDescription>
+        <LongDescription lang="en">Common Lab, regular</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">20</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">30</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">100</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.3</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.2</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.3</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.5</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="CommonRoom">
+        <ShortDescription lang="en">Common Room</ShortDescription>
+        <LongDescription lang="en">Common Room</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">20</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">30</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">100</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.3</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.2</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.3</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.5</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="CommonStore">
+        <ShortDescription lang="en">Common Store</ShortDescription>
+        <LongDescription lang="en">Common Store</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">15</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">12</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">20</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">30</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">100</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">15</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.2</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.2</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="CorridorStaircase">
+        <ShortDescription lang="en">Corridor Staircase</ShortDescription>
+        <LongDescription lang="en">Corridor Staircase</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">15</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">50</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.01</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.2</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="Drain">
+        <ShortDescription lang="en">Drain</ShortDescription>
+        <LongDescription lang="en">Drain</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">0</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">15</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">50</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.2</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="PlantAnimalBreedingLab">
+        <ShortDescription lang="en">Plant-Animal Breeding Lab</ShortDescription>
+        <LongDescription lang="en">Plant-Animal Breeding Lab</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">0</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">15</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">50</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.2</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="ShowRoom">
+        <ShortDescription lang="en">Show Room</ShortDescription>
+        <LongDescription lang="en">Show Room, sales room</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">20</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">30</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">100</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.3</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.2</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.3</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.5</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="SpecialLab">
+        <ShortDescription lang="en">Special Lab</ShortDescription>
+        <LongDescription lang="en">Special Lab</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">20</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">30</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">100</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.3</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.2</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.3</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.5</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="SportsHall">
+        <ShortDescription lang="en">Sports Hall</ShortDescription>
+        <LongDescription lang="en">Sports Hall</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">15</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">50</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.01</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">200</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">120</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.2</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="StandardOffice">
+        <ShortDescription lang="en">Standard office</ShortDescription>
+        <LongDescription lang="en">Standard office (several persons, regular</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">20</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">30</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">100</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.3</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">20</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.2</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.3</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.5</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="TechnicalRoom">
+        <ShortDescription lang="en">Technical Room</ShortDescription>
+        <LongDescription lang="en">Technical Room</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">0</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">15</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">50</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.2</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="TreatmentRoom">
+        <ShortDescription lang="en">Treatment room</ShortDescription>
+        <LongDescription lang="en">Treatment room</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">22</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">20</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">30</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">100</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.1</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">22</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.2</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">500</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.1</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.5</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="TechnicalRoom">
+        <ShortDescription lang="en">Technical Room</ShortDescription>
+        <LongDescription lang="en">Technical Room</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">0</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">15</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">50</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">100</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.2</IBK:Parameter>
+    </SpaceType>
+    <SpaceType id="Workshop">
+        <ShortDescription lang="en">Workshop</ShortDescription>
+        <LongDescription lang="en">Workshop</LongDescription>
+        <!-- Temperature control mode: 1 - Air Temperature, 2 - Operative Room Temperature -->
+        <IBK:Parameter name="TemperatureControlMode" unit="-">1</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus1" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus2" unit="C">15</IBK:Parameter>
+        <IBK:Parameter name="SetPointTemperatureStatus3" unit="C">5</IBK:Parameter>
+        <IBK:Parameter name="SetPointRelativeHumidity" unit="%">50</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus1" unit="1/h">0.5</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus2" unit="1/h">0.3</IBK:Parameter>
+        <IBK:Parameter name="SetPointVentilationRateStatus3" unit="1/h">0.1</IBK:Parameter>
+        <IBK:Parameter name="UpperLimitCO2" unit="ppm">1000</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus1" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus2" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="EquipmentHeatLoadStatus3" unit="W/m2">0</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus1" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="IlluminanceStatus2" unit="lm/m2">50</IBK:Parameter>
+        <!-- Alternative Value: HeatingLoad caused by lighting equipment -->
+        <IBK:Parameter name="LightingHeatLoad" unit="W/m2">5</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus1" unit="Person/m2">0.01</IBK:Parameter>
+        <IBK:Parameter name="OccupancyPerUnitAreaStatus2" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus1" unit="W/Person">120</IBK:Parameter>
+        <IBK:Parameter name="MetabolicRateStatus2" unit="W/Person">70</IBK:Parameter>
+        <!-- Nominal Values for performing calculations wich are standard conforming -->
+        <IBK:Parameter name="NominalRoomAirTemperature" unit="C">18</IBK:Parameter>
+        <IBK:Parameter name="NominalVentilationRate" unit="m3/hPerson">0.3</IBK:Parameter>
+        <IBK:Parameter name="NominalIlluminance" unit="lm/m2">300</IBK:Parameter>
+        <IBK:Parameter name="NominalOccupancyPerUnitArea" unit="Person/m2">0.0</IBK:Parameter>
+        <IBK:Parameter name="NominalAirChangeRate" unit="1/h">0.2</IBK:Parameter>
+    </SpaceType>
+</SpaceTypeProperties>

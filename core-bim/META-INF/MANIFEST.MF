@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: core-bim
+Bundle-SymbolicName: core-bim
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: TU Dresden, Institute of Construction Informatics
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ClassPath: .,
+ lib/BimFit-2.0.jar
+Export-Package: de.tudresden.bau.cib.exceptions.parser,
+ de.tudresden.bau.cib.filter.ifc.semantic,
+ de.tudresden.bau.cib.model,
+ de.tudresden.bau.cib.model.utility,
+ de.tudresden.bau.cib.parser,
+ de.tudresden.bau.cib.vl.core.model.bim.exception,
+ de.tudresden.bau.cib.vl.core.model.bim.ifc,
+ de.tudresden.bau.cib.vl.core.model.bim.ifc.mock,
+ de.tudresden.bau.cib.vl.core.model.bim.service,
+ de.tudresden.bau.cib.vl.core.model.bim.step,
+ jsdai.SIfc2x3,
+ jsdai.lang
+Import-Package: org.junit,
+ org.junit.rules;version="4.9.0",
+ org.slf4j;version="1.6.4"
+Require-Bundle: core;bundle-version="1.0.0"

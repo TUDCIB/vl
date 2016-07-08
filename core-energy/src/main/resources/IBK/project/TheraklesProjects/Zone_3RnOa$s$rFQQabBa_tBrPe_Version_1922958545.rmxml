@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE RoomModelProject>
+<RoomModelProject Version="1.6">
+	<Room>
+		<Geometry>
+			<Height>4.1</Height>
+			<Area>39.37</Area>
+			<Constructions>
+				<RoomConstruction>
+					<orientation>90.0</orientation>
+					<inclination>4.7124</inclination>
+					<R_ue>0.125</R_ue>
+					<R_ui>0.125</R_ui>
+					<beta_i>2e-07</beta_i>
+					<beta_e>3e-08</beta_e>
+					<ad>0.6</ad>
+					<zoneT>20.0</zoneT>
+					<zoneRH>60.0</zoneRH>
+					<AW>9.8</AW>
+					<AF>0.0</AF>
+					<constructionId>201</constructionId>
+					<windowId>0</windowId>
+					<shadingTypeId>0</shadingTypeId>
+					<type>Inside</type>
+				</RoomConstruction>
+				<RoomConstruction>
+					<orientation>90.0</orientation>
+					<inclination>0.0</inclination>
+					<R_ue>0.125</R_ue>
+					<R_ui>0.125</R_ui>
+					<beta_i>2e-07</beta_i>
+					<beta_e>3e-08</beta_e>
+					<ad>0.6</ad>
+					<zoneT>20.0</zoneT>
+					<zoneRH>60.0</zoneRH>
+					<AW>9.88</AW>
+					<AF>0.0</AF>
+					<constructionId>202</constructionId>
+					<windowId>0</windowId>
+					<shadingTypeId>0</shadingTypeId>
+					<type>Inside</type>
+				</RoomConstruction>
+				<RoomConstruction>
+					<orientation>90.0</orientation>
+					<inclination>3.1416</inclination>
+					<R_ue>0.125</R_ue>
+					<R_ui>0.125</R_ui>
+					<beta_i>2e-07</beta_i>
+					<beta_e>3e-08</beta_e>
+					<ad>0.6</ad>
+					<zoneT>20.0</zoneT>
+					<zoneRH>60.0</zoneRH>
+					<AW>9.88</AW>
+					<AF>0.0</AF>
+					<constructionId>203</constructionId>
+					<windowId>0</windowId>
+					<shadingTypeId>0</shadingTypeId>
+					<type>Inside</type>
+				</RoomConstruction>
+				<RoomConstruction>
+					<orientation>90.0</orientation>
+					<inclination>4.7124</inclination>
+					<R_ue>0.125</R_ue>
+					<R_ui>0.04</R_ui>
+					<beta_i>2e-07</beta_i>
+					<beta_e>3e-08</beta_e>
+					<ad>0.6</ad>
+					<zoneT>20.0</zoneT>
+					<zoneRH>60.0</zoneRH>
+					<AW>0.36</AW>
+					<AF>0.36</AF>
+					<constructionId>204</constructionId>
+					<windowId>201</windowId>
+					<shadingTypeId>0</shadingTypeId>
+					<type>Inside</type>
+				</RoomConstruction>
+				<RoomConstruction>
+					<orientation>0.0</orientation>
+					<inclination>0</inclination>
+					<R_ue>0.125</R_ue>
+					<R_ui>0.04</R_ui>
+					<beta_i>2e-07</beta_i>
+					<beta_e>3e-08</beta_e>
+					<ad>0.6</ad>
+					<zoneT>20.0</zoneT>
+					<zoneRH>60.0</zoneRH>
+					<AW>5.76</AW>
+					<AF>0.0</AF>
+					<constructionId>205</constructionId>
+					<windowId>0</windowId>
+					<shadingTypeId>0</shadingTypeId>
+					<type>Inside</type>
+				</RoomConstruction>
+				<RoomConstruction>
+					<orientation>180.0</orientation>
+					<inclination>0</inclination>
+					<R_ue>0.125</R_ue>
+					<R_ui>0.04</R_ui>
+					<beta_i>2e-07</beta_i>
+					<beta_e>3e-08</beta_e>
+					<ad>0.6</ad>
+					<zoneT>20.0</zoneT>
+					<zoneRH>60.0</zoneRH>
+					<AW>5.76</AW>
+					<AF>0.0</AF>
+					<constructionId>206</constructionId>
+					<windowId>0</windowId>
+					<shadingTypeId>0</shadingTypeId>
+					<type>Inside</type>
+				</RoomConstruction>
+			</Constructions>
+		</Geometry>
+		<ClimateLocation>ISES_climate</ClimateLocation>
+		<HeatingModel modelType="SIMPLE" name="SimpleHeating">
+			<MaxPower>0.0</MaxPower>
+			<ScheduleSetPoints type="DAILY_WEEK">
+				<WeekDaySchedule></WeekDaySchedule>
+				<WeekEndSchedule></WeekEndSchedule>
+				<WeekEndDays>Sat Sun</WeekEndDays>
+			</ScheduleSetPoints>
+		</HeatingModel>
+		<CoolingModel modelType="SIMPLE" name="SimpleProportionalCoolingModel">
+			<MaxPower>0.0</MaxPower>
+			<SupplyTemperature>0.0</SupplyTemperature>
+			<MaxSupplyFlowRate>0.0</MaxSupplyFlowRate>
+			<HeatRecoveryEfficiency>0.0</HeatRecoveryEfficiency>
+			<HeatRecoverySetpoint>0.0</HeatRecoverySetpoint>
+			<ScheduleSetPoints type="DAILY_WEEK">
+				<WeekDaySchedule></WeekDaySchedule>
+				<WeekEndSchedule></WeekEndSchedule>
+				<WeekEndDays>Sat Sun</WeekEndDays>
+			</ScheduleSetPoints>
+			<ScheduleHumiditySetPoints type="CONSTANT">
+				<ConstantValue>0.0</ConstantValue>
+			</ScheduleHumiditySetPoints>
+			<ScheduleVentilationRates type="CONSTANT">
+				<ConstantValue>0.0</ConstantValue>
+			</ScheduleVentilationRates>
+		</CoolingModel>
+		<NaturalVentilationModel name="NatVentilationAirChangeRates">
+			<ScheduleAirChangeRates type="DAILY_WEEK">
+				<WeekDaySchedule></WeekDaySchedule>
+				<WeekEndSchedule></WeekEndSchedule>
+				<WeekEndDays>Sat Sun</WeekEndDays>
+			</ScheduleAirChangeRates>
+		</NaturalVentilationModel>
+		<UserLoads name="UsageAreaRelatedEquipLoads">
+			<PersonLoad>80.0</PersonLoad>
+			<ScheduleOccupancy type="CONSTANT">
+				<ConstantValue>0.0</ConstantValue>
+			</ScheduleOccupancy>
+			<ScheduleEquipmentLoad type="DAILY_WEEK">
+				<WeekDaySchedule></WeekDaySchedule>
+				<WeekEndSchedule></WeekEndSchedule>
+				<WeekEndDays>Sat Sun</WeekEndDays>
+			</ScheduleEquipmentLoad>
+		</UserLoads>
+		<ShadingControlModel modelType="NONE" name="">
+			<MaxRadiationIntensityHorizontal>250.0</MaxRadiationIntensityHorizontal>
+			<MaxRadiationIntensityWest>250.0</MaxRadiationIntensityWest>
+			<MaxRadiationIntensitySouth>250.0</MaxRadiationIntensitySouth>
+			<MaxRadiationIntensityNorth>250.0</MaxRadiationIntensityNorth>
+			<MaxRadiationIntensityEast>250.0</MaxRadiationIntensityEast>
+			<ScheduleShadingDegree type="CONSTANT">
+				<ConstantValue>1.0</ConstantValue>
+			</ScheduleShadingDegree>
+		</ShadingControlModel>
+		<SimulationParameter>
+			<TInitial>20.0</TInitial>
+			<Albedo>0.2</Albedo>
+			<GammaHC>0.5</GammaHC>
+			<GammaRad>0.5</GammaRad>
+			<AdditionalMassHeatCapacity>1000.0</AdditionalMassHeatCapacity>
+			<AdditionalMass>0.0</AdditionalMass>
+		</SimulationParameter>
+	</Room>
+	<EmbeddedDataBase>
+		<Materials>
+			<Material HPCM="0.0" TPCMLow="0.0" cT="0.79" category="14" id="201" lambda="0.89" mu="0.0" name="de:4inbrick|en:4inbrick" rho="1920" w80="0.0" wsat="0.0"/>
+			<Material HPCM="0.0" TPCMLow="0.0" cT="1000" category="14" id="202" lambda="0.3" mu="0.0" name="de:Airgap10mm|en:Airgap10mm" rho="1000" w80="0.0" wsat="0.0"/>
+			<Material HPCM="0.0" TPCMLow="0.0" cT="1.21" category="14" id="203" lambda="0.03" mu="0.0" name="de:R51ininsulationboard|en:R51ininsulationboard" rho="43" w80="0.0" wsat="0.0"/>
+			<Material HPCM="0.0" TPCMLow="0.0" cT="1.3" category="14" id="204" lambda="0.07" mu="0.0" name="de:12infiberboardsheathing|en:12infiberboardsheathing" rho="400" w80="0.0" wsat="0.0"/>
+			<Material HPCM="0.0" TPCMLow="0.0" cT="0.96" category="14" id="205" lambda="0.05" mu="0.0" name="de:R11312inbattinsulation|en:R11312inbattinsulation" rho="19" w80="0.0" wsat="0.0"/>
+			<Material HPCM="0.0" TPCMLow="0.0" cT="1.09" category="14" id="206" lambda="0.16" mu="0.0" name="de:58ingypboard|en:58ingypboard" rho="800" w80="0.0" wsat="0.0"/>
+			<Material HPCM="0.0" TPCMLow="0.0" cT="1000" category="14" id="207" lambda="0.7" mu="0.0" name="de:Asphalt|en:Asphalt" rho="2100" w80="0.0" wsat="0.0"/>
+			<Material HPCM="0.0" TPCMLow="0.0" cT="840" category="14" id="208" lambda="0.04" mu="0.0" name="de:MWGlassWoolrolls|en:MWGlassWoolrolls" rho="12" w80="0.0" wsat="0.0"/>
+			<Material HPCM="0.0" TPCMLow="0.0" cT="1000" category="14" id="209" lambda="0.3" mu="0.0" name="de:Airgapandgt25mm|en:Airgapandgt25mm" rho="1000" w80="0.0" wsat="0.0"/>
+			<Material HPCM="0.0" TPCMLow="0.0" cT="896" category="14" id="210" lambda="0.25" mu="0.0" name="de:Plasterboard|en:Plasterboard" rho="2800" w80="0.0" wsat="0.0"/>
+		</Materials>
+		<ConstructionTypes>
+			<ConstructionType id="201" name="de:Construction_3_Xu$SxoH5hwmZWQZGKZll|en:Construction_3_Xu$SxoH5hwmZWQZGKZll">
+				<Layers>
+					<Layer d="0.1016" materialId="201"/>
+					<Layer d="0.16002" materialId="202"/>
+					<Layer d="0.0254" materialId="203"/>
+					<Layer d="0.0127" materialId="204"/>
+					<Layer d="0.089408" materialId="205"/>
+					<Layer d="0.015875" materialId="206"/>
+				</Layers>
+			</ConstructionType>
+			<ConstructionType id="202" name="de:Construction_2PiHe3$ZP8Mhb4e5QoW0oi|en:Construction_2PiHe3$ZP8Mhb4e5QoW0oi">
+				<Layers>
+					<Layer d="0.1016" materialId="201"/>
+					<Layer d="0.16002" materialId="202"/>
+					<Layer d="0.0254" materialId="203"/>
+					<Layer d="0.0127" materialId="204"/>
+					<Layer d="0.089408" materialId="205"/>
+					<Layer d="0.015875" materialId="206"/>
+				</Layers>
+			</ConstructionType>
+			<ConstructionType id="203" name="de:Construction_05MJEG7hn3juwhO4JIN_si|en:Construction_05MJEG7hn3juwhO4JIN_si">
+				<Layers/>
+			</ConstructionType>
+			<ConstructionType id="204" name="de:Construction_1Ug64M4Wf87RKY0W4Vigl9|en:Construction_1Ug64M4Wf87RKY0W4Vigl9">
+				<Layers>
+					<Layer d="0.1016" materialId="201"/>
+					<Layer d="0.16002" materialId="202"/>
+					<Layer d="0.0254" materialId="203"/>
+					<Layer d="0.0127" materialId="204"/>
+					<Layer d="0.089408" materialId="205"/>
+					<Layer d="0.015875" materialId="206"/>
+				</Layers>
+			</ConstructionType>
+			<ConstructionType id="205" name="de:Construction_1RHWgkUDjAquizg5tQAde4|en:Construction_1RHWgkUDjAquizg5tQAde4">
+				<Layers>
+					<Layer d="0.01" materialId="207"/>
+					<Layer d="0.1" materialId="208"/>
+					<Layer d="0.2" materialId="209"/>
+					<Layer d="0.013" materialId="210"/>
+				</Layers>
+			</ConstructionType>
+			<ConstructionType id="206" name="de:Construction_0MGQzb2Tb3493hDT4qcLzT|en:Construction_0MGQzb2Tb3493hDT4qcLzT">
+				<Layers/>
+			</ConstructionType>
+		</ConstructionTypes>
+		<WindowTypes>
+			<WindowType U="1.5" f="0.499" g="0.8" id="201" name="de:Fenstertyp|en:Window type">
+				<LinearSpline name="RelativeSHGC">
+					<X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+					<Y unit="%">100 100 100 100 98 94 86 69 37 0</Y>
+				</LinearSpline>
+			</WindowType>
+		</WindowTypes>
+		<ShadingTypes/>
+	</EmbeddedDataBase>
+</RoomModelProject>

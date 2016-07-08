@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:activiti="http://www.activiti.org/schema/spring/config"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+				http://www.springframework.org/schema/beans/spring-beans.xsd
+				http://www.springframework.org/schema/spring/config
+                http://www.springframework.org/schema/spring/config/spring-config.xsd">
+
+	
+	<bean id="businessProcessService" class="de.tudresden.bau.cib.vl.core.service.impl.BusinessProcessServiceImpl">
+		<property name="repositoryService" ref="repositoryService"/>
+		<property name="runtimeService" ref="runtimeService"/>
+		<property name="historyService" ref="historyService"/>
+		<property name="taskService" ref="taskService"/>
+	</bean>
+	
+	<bean id="fileService"
+		class="de.tudresden.bau.cib.vl.core.service.impl.FileServiceImpl">
+		<property name="configuration" ref="configurationService" />
+	</bean>
+
+	<bean id="ontologyService" class="de.tudresden.bau.cib.vl.core.model.ontology.service.impl.OntologyServiceImpl">
+		<property name="configurationService" ref="configurationService" />
+		<property name="fileService" ref="fileService" />
+	</bean>
+	
+	<bean id="configurationService"
+		class="de.tudresden.bau.cib.vl.core.configuration.Configuration">
+		
+        <!-- PRODUCTION MODE -->
+        
+        <property name="configDirectoryPath" 
+        	value="../core-configuration/config"/>
+        
+        	
+        <!-- DEPLOYMENT MODE ON BCI 53-->
+        <!-- 
+        <property name="configDirectoryPath" 
+        	value="D:/Daten/tomcat-data/vl/config"/>
+        	-->
+	</bean>
+    
+    
+	<bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">
+		<property name="databaseSchemaUpdate" value="true"/>
+		<property name="history" value="full" />
+	</bean>
+	
+    <!-- 
+	<bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
+	    <property name="dataSource" ref="dataSource" />
+	    <property name="transactionManager" ref="transactionManager" />
+	    <property name="databaseSchemaUpdate" value="true" />
+	    <property name="jobExecutorActivate" value="false" />
+	</bean>
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+        <property name="driverClass" value="org.h2.Driver" />
+        <property name="url" value="jdbc:h2:file:/D:/Daten/tomcat-data/vl/db/activiti.db" />
+        <property name="username" value="sa" />
+        <property name="password" value="" />
+    </bean>
+    
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    	<property name="dataSource" ref="dataSource" />
+  	</bean>
+	-->
+  	
+	
+	<bean id="processEngine" class="org.activiti.spring.ProcessEngineFactoryBean">
+    	<property name="processEngineConfiguration" ref="processEngineConfiguration" />
+  	</bean> 	
+  
+  	<bean id="repositoryService" factory-bean="processEngine" factory-method="getRepositoryService" />
+  	<bean id="runtimeService" factory-bean="processEngine" factory-method="getRuntimeService" />
+  	<bean id="historyService" factory-bean="processEngine" factory-method="getHistoryService" />
+	<bean id="taskService" factory-bean="processEngine" factory-method="getTaskService" />
+	
+</beans>

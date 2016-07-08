@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- VIEW beans with Spring Extension Factory -->
+	<!-- The business logic comes mainly from the backend through Spring. 
+		 Dependency injection cannot be used due to the RAP SessionSingletonBase of the Controller for the View.
+		 Hence, we are using the SpringExtensionFactory from Martin Lippert to inject backend services directly in the view and 
+		 let the view instantiate the controller to share data among multiple views. -->
+	
+	<!-- Base bean for every view bean. This guarantees the correct instantiation 
+	of the view controller with the communication service. -->
+	<bean id="baseViewBean" abstract="true" init-method="initController" scope="prototype">
+	</bean>
+	
+	<bean id="resourceView" class="de.tudresden.bau.cib.vl.gui.simulation.energy.view.ResourceView"
+		parent="baseViewBean">
+		<property name="templateService" ref="osgiResourceService" />
+	</bean>
+	
+	<bean id="processView" class="de.tudresden.bau.cib.vl.gui.simulation.energy.view.ProcessView"
+		parent="baseViewBean">
+		<property name="configurationService" ref="osgiConfigurationService" />
+		<property name="spaceBoundaryService" ref="osgiSpaceBoundaryService" />
+		<property name="ontologyService" ref="osgiOntologyService" />
+		<property name="userService" ref="osgiUserService" />
+		<property name="fileService" ref="osgiFileService" />		
+		<!-- will be replaced by NMI resource service -->
+		<property name="resourceService" ref="osgiResourceService" />
+		<property name="bimFitService" ref="osgiBimFitService" />
+		<property name="simulationMatrixService" ref="osgiSimMatrixService" />
+		<property name="energySimulationService" ref="osgiEnergySimulationService" />
+		<!-- <property name="energySimulationService" ref="remoteEnergySimulationService" />-->
+	</bean>	
+	
+	<bean id="simResultView" class="de.tudresden.bau.cib.vl.gui.simulation.energy.view.SimulationResultView"
+		parent="baseViewBean">	
+		<property name="decisionService" ref="osgiDecisionMakingService" />	
+		<property name="configurationService" ref="osgiConfigurationService" />
+	</bean>
+	
+	
+ 	<bean id="variationView" class="de.tudresden.bau.cib.vl.gui.simulation.energy.view.VariationView"
+	    parent="baseViewBean">
+	    <property name="templateService" ref="osgiResourceService" />		    
+	</bean>
+
+</beans>

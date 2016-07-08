@@ -1,0 +1,18 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = Brick Joens
+    RHO                      = 1788 kg/m3
+    CE                       = 868 J/kgK
+    LAMBDA                   = 0.87 W/mK
+    OPOR                     = 0.36 m3/m3
+    OEFF                     = 0.35 m3/m3
+    AW                       = 0.227 kg/m2s05
+    MEW                      = 14.2 -
+    KLEFF                    = 2.34423e-09 s
+    OCAP                     = 0.25 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 03 - Building Brick
+    COLOR                    = 11448063

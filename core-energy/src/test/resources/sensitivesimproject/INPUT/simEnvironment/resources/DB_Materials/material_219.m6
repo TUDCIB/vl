@@ -1,0 +1,20 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = SANDSTONE COTTA
+    RHO                      = 1940 kg/m3
+    CE                       = 830 J/kgK
+    LAMBDA                   = 2.43 W/mK
+    OPOR                     = 0.267 m3/m3
+    OEFF                     = 0.23 m3/m3
+	OCAP					 = 0.151 m3/m3
+    AW                       = 0.0703 kg/m2s05
+    MEW                      = 19 -
+    KLEFF                    = 4.931e-009 s
+	O80                		 = 0.0085 m3/m3
+
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 4 - Natural Stones
+    COLOR                    = 10485760

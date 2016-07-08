@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" fileVersion="5.6.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema" schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd">
+   <ProjectInfo>
+      <DisplayName>Castconcretewallinternalinsulation</DisplayName>
+      <Comment>This template was made by ResCon</Comment>
+   </ProjectInfo>
+   <!--List of all materials used in this construction-->
+   <Materials>
+      <MaterialReference displayName="Plasterboardceiling">${Material Database}/Plasterboardceiling_4190.m6</MaterialReference>
+      <MaterialReference displayName="Airlayer25mmwall">${Material Database}/Airlayer25mmwall_4236.m6</MaterialReference>
+      <MaterialReference displayName="Concretenofines150mm">${Material Database}/Concretenofines150mm_4271.m6</MaterialReference>
+      <MaterialReference displayName="EPS25mm">${Material Database}/EPS25mm_4281.m6</MaterialReference>
+   </Materials>
+   <!--Discretization data (grid and sketches)-->
+   <Discretization geometryType="2D">
+      <XSteps unit="m">0.15 0.025 0.025 0.0095</XSteps>
+   </Discretization>
+   <!--List of all assignments of materials and conditions-->
+   <Assignments>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="Concretenofines150mm">4271</Reference>
+         <IBK:Range>0 0 0 0</IBK:Range>
+      </Assignment>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="Airlayer25mmwall">4236</Reference>
+         <IBK:Range>1 0 1 0</IBK:Range>
+      </Assignment>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="EPS25mm">4281</Reference>
+         <IBK:Range>2 0 2 0</IBK:Range>
+      </Assignment>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="Plasterboardceiling">4190</Reference>
+         <IBK:Range>3 0 3 0</IBK:Range>
+      </Assignment>
+   </Assignments>
+</DelphinProject>

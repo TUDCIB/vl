@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start="170" duration="20"/>
+<Position latitude="51" longitude="7"/>
+<Description langid="de">Essen, Deutschland</Description>
+<Description langid="en">Essen, Germany</Description>
+</ClimateDataLocation>

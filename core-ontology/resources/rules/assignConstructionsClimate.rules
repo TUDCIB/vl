@@ -1,0 +1,75 @@
+// @id: assignResources @name: Assign default resources rule set @description: Assignment of default climate and constructions  @end
+@prefix BIMOnto: http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMOnto#
+
+// Currently important because in the model are only direct rdf:type but we also need the super class information
+[buildingElementDerivationA: 	(?a rdf:type BIMOnto:IfcWindow) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationB: 	(?a rdf:type BIMOnto:IfcWallStandardCase) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationC: 	(?a rdf:type BIMOnto:IfcColumn) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationD: 	(?a rdf:type BIMOnto:IfcSlab) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationE: 	(?a rdf:type BIMOnto:IfcWall) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationF: 	(?a rdf:type BIMOnto:IfcWallStandardCase) -> (?a rdf:type BIMOnto:IfcWall)]
+
+// initial settings
+[removeExistingConstructions:(?element rdf:type BIMOnto:IfcBuildingElement) replaceAllWith(?element, eeBIM:hasConstruction, null) -> print(constructions deleted)]
+[removeExistingClimate:(?site rdf:type BIMOnto:IfcSite) replaceAllWith(?site, eeBIM:hasClimate, null) -> print(climate deleted)]
+
+[assignInnerWallConstructions:
+			(?element rdf:type BIMOnto:IfcWall)			
+			(?sb rdf:type BIMOnto:IfcRelSpaceBoundary) 
+			(?sb BIMOnto:RelatedBuildingElement ?element) 	
+			(?sb BIMOnto:IfcInternalOrExternalEnum "INTERNAL")	
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/27>)
+			]
+[assignOuterWallConstructions:
+			(?element rdf:type BIMOnto:IfcWall)			
+			(?sb rdf:type BIMOnto:IfcRelSpaceBoundary) 
+			(?sb BIMOnto:RelatedBuildingElement ?element) 	
+			(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4401>)
+			]
+[assignInnerSlabConstructions:
+			(?element rdf:type BIMOnto:IfcSlab)			
+			(?sb rdf:type BIMOnto:IfcRelSpaceBoundary) 
+			(?sb BIMOnto:RelatedBuildingElement ?element) 	
+			(?sb BIMOnto:IfcInternalOrExternalEnum "INTERNAL")	
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4305>)
+			]
+[assignOuterSlabConstructions:
+			(?element rdf:type BIMOnto:IfcSlab)			
+			(?sb rdf:type BIMOnto:IfcRelSpaceBoundary) 
+			(?sb BIMOnto:RelatedBuildingElement ?element) 	
+			(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4305>)
+			]
+[assignInnerWindowConstructions:
+			(?element rdf:type BIMOnto:IfcWindow)			
+			(?sb rdf:type BIMOnto:IfcRelSpaceBoundary) 
+			(?sb BIMOnto:RelatedBuildingElement ?element) 	
+			(?sb BIMOnto:IfcInternalOrExternalEnum "INTERNAL")	
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4481>)
+			]
+[assignOuterWindowConstructions:
+			(?element rdf:type BIMOnto:IfcWindow)			
+			(?sb rdf:type BIMOnto:IfcRelSpaceBoundary) 
+			(?sb BIMOnto:RelatedBuildingElement ?element) 	
+			(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")	
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4481>)
+			]
+[assignColumnConstructions:
+			(?element rdf:type BIMOnto:IfcColumn)			
+			-> 
+			(?element eeBIM:hasConstruction <http://130.208.198.50:8080/dfservice/dm/open/74/GETID/4305>)
+			]
+			
+[assignClimate:
+			(?site rdf:type BIMOnto:IfcSite)			
+			-> 
+			(?site eeBIM:hasClimate <http://130.208.198.50:8080/dfservice/dm/open/69/GETID/7>)
+			]

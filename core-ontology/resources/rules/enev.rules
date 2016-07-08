@@ -1,0 +1,152 @@
+// @id: enev @name: EnEV rule set @description: Evaluates if building keep regulation requirements [based on area calculation] @end
+@prefix BIMOnto: http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMOnto#
+
+// Currently important because in the model are only direct rdf:type but we also need the super class information
+[buildingElementDerivationA: 	(?a rdf:type BIMOnto:IfcWindow) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationB: 	(?a rdf:type BIMOnto:IfcWallStandardCase) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationC: 	(?a rdf:type BIMOnto:IfcColumn) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationD: 	(?a rdf:type BIMOnto:IfcSlab) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+[buildingElementDerivationE: 	(?a rdf:type BIMOnto:IfcWall) -> (?a rdf:type BIMOnto:IfcBuildingElement)]
+
+[dwellingHouse:
+			(?building rdf:type eeBIM:DwellingHouse) 
+			<-
+			(?building rdf:type BIMOnto:IfcBuilding)
+			noValue(?room rdf:type eeBIM:WorkRoom)]
+			
+[simplifiedEnEVPossible:
+			(?summary eeBIM:isSimplifiedEnEVPossible "true"^^xsd:boolean) 
+			<-
+			(?building eeBIM:hasSummary ?summary)
+			(?building rdf:type eeBIM:DwellingHouse)
+			(?building eeBIM:windowArea ?wArea) 
+			(?building eeBIM:buildingEnvelopeArea ?beArea)		
+			quotient(?wArea, ?beArea, ?percentage) 
+			product(?percentage, 100, ?percentageDecimal) 
+			lessThan(?percentageDecimal, 30)
+			(?building eeBIM:decreasedThermalBridgeOverhead 0.05)]
+			
+[simplifiedEnEVNotPossible1:
+			(?summary eeBIM:isSimplifiedEnEVPossible "false"^^xsd:boolean) 
+			<-
+			(?building eeBIM:hasSummary ?summary)
+			(?building eeBIM:windowArea ?wArea) 
+			(?building eeBIM:buildingEnvelopeArea ?beArea)		
+			quotient(?wArea, ?beArea, ?percentage) 
+			product(?percentage, 100, ?percentageDecimal) 
+			greaterThan(?percentageDecimal, 30)
+			(?building eeBIM:decreasedThermalBridgeOverhead 0.05)]
+			
+//[simplifiedEnEVNotPossible2:
+//			(?summary eeBIM:isSimplifiedEnEVPossible "false"^^xsd:boolean) 
+//			<-
+//			(?building eeBIM:hasSummary ?summary)
+//			noValue(?building eeBIM:decreasedThermalBridgeOverhead 0.05)]
+
+//[simplifiedEnEVNotPossible3:
+//			(?summary eeBIM:isSimplifiedEnEVPossible "false"^^xsd:boolean) 
+//			<-
+//			(?building eeBIM:hasSummary ?summary)
+//			noValue(?building rdf:type eeBIM:DwellingHouse)]
+
+// assign areas from PropertySets as direct eeBIM properties -> currently only GrossSideArea
+[elementAreas:
+			(?relation rdf:type BIMOnto:IfcRelDefinesByProperties)
+			(?relation BIMOnto:RelatingPropertyDefinition ?propertyQuantitySet)
+			(?propertyQuantitySet BIMOnto:Quantities ?quantityArea)
+			(?relation BIMOnto:RelatedObjects ?element)
+			(?quantityArea BIMOnto:Name ?labelInst)
+			(?labelInst BIMOnto:StringValue "GrossSideArea"^^xsd:string)
+			(?quantityArea BIMOnto:AreaValue ?valueInst)
+			(?valueInst BIMOnto:FloatValue ?value)
+			->
+			(?element eeBIM:area ?value) ]
+
+// analyze isolation
+[analyzeHtMaxIsolatedAndGreaterThan350:
+			(?building eeBIM:maximumThermalTransmittanceLosses 0.50) 
+			<-
+			(?building rdf:type BIMOnto:IfcBuilding) 
+			(?building eeBIM:dwellingArea ?dwellingArea)
+			(?building eeBIM:isIsolated "true"^^xsd:boolean) 
+			greaterThan(?dwellingArea, 350)]			
+
+// calculates the sum of the building element area that separates the building zone to the external environment 
+// multiplied with uValue per each building element for the whole building
+// a flag (eeBIM:ruleFiredFor) is used to avoid an infinite cycle (because the rule is started every time from new if there is a new fact)
+//[calculateAreaUValueProduct:
+//			(?building rdf:type BIMOnto:IfcBuilding) 
+//			(?building eeBIM:overallAreaUValueProduct ?overallValue)
+//			(?el rdf:type BIMOnto:IfcBuildingElement)
+//			noValue(?el rdf:type BIMOnto:IfcSlab)
+//			(?el BIMOnto:ProvidesBoundaries ?sb)	
+//			(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")
+//			(?el eeBIM:area ?area) 
+//			(?el eeBIM:uValue ?uValue)
+//			product(?uValue,?area,?au) 
+//			sum(?au,?overallValue,?newOverallValue)
+//			noValue(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot)
+//			->
+//			remove(1)
+//			(?building eeBIM:overallAreaUValueProduct ?newOverallValue)
+//			(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot)
+//			]
+// calculates the sum based on the assigned constructions
+[calculateAreaUValueProductFromConstruction:
+			(?building rdf:type BIMOnto:IfcBuilding) 
+			(?building eeBIM:overallAreaUValueProduct ?overallValue)
+			(?el rdf:type BIMOnto:IfcBuildingElement)
+			noValue(?el rdf:type BIMOnto:IfcSlab)
+			(?el BIMOnto:ProvidesBoundaries ?sb)	
+			(?sb BIMOnto:IfcInternalOrExternalEnum "EXTERNAL")
+			(?el eeBIM:hasConstruction ?construction)
+			(?construction eeBIM:uValue ?uValue)
+			(?el eeBIM:area ?area) 
+			product(?uValue,?area,?au) 
+			sum(?au,?overallValue,?newOverallValue)
+			noValue(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot)
+			->
+			remove(1)
+			(?building eeBIM:overallAreaUValueProduct ?newOverallValue)
+			(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot)
+			]
+
+// the flag must be deleted because if it is present the calculateAreaUValueProduct rule is executed only once
+[deleteFlag:
+			(?building eeBIM:ruleFiredFor BIMOnto:IfcRoot) 
+			-> 
+			remove(0) 
+			(?building rdf:type BIMOnto:IfcBuilding)]
+
+// thermal transmittance failed			
+[thermalTransmittanceCheckFailed:
+			(?summary eeBIM:definition "Thermal insulation check failed!") 
+			<-
+			(?building rdf:type BIMOnto:IfcBuilding) 
+			(?summary rdf:type eeBIM:Summary)
+			(?building eeBIM:hasSummary ?summary) 
+			(?building eeBIM:maximumThermalTransmittanceLosses ?Htmax)
+			(?building eeBIM:decreasedThermalBridgeOverhead ?overhead)
+			(?building eeBIM:overallAreaUValueProduct ?overallAUValue) 
+			(?building eeBIM:buildingEnvelopeArea ?area)
+			product(?overhead, ?area, ?product)
+			sum(?overallAUValue,?product,?Ht)
+			quotient(?Ht,?area, ?Hactt)
+			greaterThan(?Hactt, ?Htmax)]
+			
+[thermalTransmittanceCheckSuccessfully:
+			(?summary eeBIM:definition "Thermal insulation check successfully!") 
+			<-
+			(?building rdf:type BIMOnto:IfcBuilding) 
+			(?summary rdf:type eeBIM:Summary)
+			(?building eeBIM:hasSummary ?summary) 
+			(?building eeBIM:maximumThermalTransmittanceLosses ?Htmax)
+			(?building eeBIM:decreasedThermalBridgeOverhead ?overhead)
+			(?building eeBIM:overallAreaUValueProduct ?overallAUValue) 
+			(?building eeBIM:buildingEnvelopeArea ?area)
+			product(?overhead, ?area, ?product)
+			sum(?overallAUValue,?product,?Ht)
+			quotient(?Ht,?area, ?Hactt)
+			lessThan(?Hactt, ?Htmax)]
+			

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" fileVersion="5.6.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd">
+   <ProjectInfo>
+      <DisplayName>Lightweight2x25mmgypsumplasterboardwith100mmcavity</DisplayName>
+      <Comment>This template was made by ResCon</Comment>
+   </ProjectInfo>
+   <!--List of all materials used in this construction-->
+   <Materials>
+      <MaterialReference displayName="Airgap10mm">${Material Database}/Airgap10mm_105.m6</MaterialReference>
+      <MaterialReference displayName="GypsumPlasterboard">${Material Database}/GypsumPlasterboard_27.m6</MaterialReference>
+   </Materials>
+   <!--Discretization data (grid and sketches)-->
+   <Discretization geometryType="2D">
+      <XSteps unit="m">0.025 0.1 0.025</XSteps>
+   </Discretization>
+   <!--List of all assignments of materials and conditions-->
+   <Assignments>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="GypsumPlasterboard">27</Reference>
+         <IBK:Range>0 0 0 0</IBK:Range>
+      </Assignment>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="Airgap10mm">105</Reference>
+         <IBK:Range>1 0 1 0</IBK:Range>
+      </Assignment>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="GypsumPlasterboard">27</Reference>
+         <IBK:Range>2 0 2 0</IBK:Range>
+      </Assignment>
+   </Assignments>
+</DelphinProject>

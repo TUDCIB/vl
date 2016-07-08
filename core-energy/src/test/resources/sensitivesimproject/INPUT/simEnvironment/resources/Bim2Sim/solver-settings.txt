@@ -1,0 +1,12 @@
+Integrator	CVODE
+LESSolver	GMRES
+Preconditioner	Band
+AbsTol	1e-005
+MaxTimeStep	30
+MinTimeStep	0.0001
+IterativeSolverConvCoeff	0.001
+MaxKrylovDim	100
+LESBandWidth	15
+PreBandWidth	1
+PreILUWidth	1
+DiscDetailLevel	0

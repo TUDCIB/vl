@@ -1,0 +1,18 @@
+D6OARLZ! 006.000
+TYPE          = REFERENCE
+PROJECT_FILE  = D:/Nutzer/ken/Workspaces/VirtualLaboratory/master/core-energy/test/resources/passivesimproject/INPUT/simEnvironment/project/ISES_project_passive.xml
+CREATED       = Thu Apr 23 14:00:11 2015
+GEO_FILE      = 
+GEO_FILE_HASH = 0
+QUANTITY      = 1 '102 RAZSTAVNI PROSTOR {Id:Ifc=2qMSi4FTvDU8POjELB7zDc}' | 2 '107 VOID {Id:Ifc=1LucRZ9$X9meq7YqLAAjVc}' | 3 '106 VOID {Id:Ifc=3qtxaEPJf6neDaITnKKVBE}' | 4 '104 GARDEROBA {Id:Ifc=0O8xNO1vn6iBNxcFc0MpGy}' | 5 '101 PISARNA DIREKTOR {Id:Ifc=1uvz6C9ur7hRwKJZvRzsab}' | 6 '105 PISARNA ZAPOSLENI {Id:Ifc=2YLIiQ__9CzgmWFyiYCtlL}' | 7 '103 WC M {Id:Ifc=3RnOa$s$rFQQabBa_tBrPe}'
+QUANTITY_KW   = OperativeTemperature
+SPACE_TYPE    = SINGLE
+TIME_TYPE     = NONE
+VALUE_UNIT    = C
+TIME_UNIT     = d
+START_YEAR    = 2011
+INDICES       = 1 2 3 4 5 6 7 
+
+0            	15             	15             	15             	15             	15             	15             	15             	
+0.0416667    	14.6962        	13.9442        	13.7422        	14.5522        	14.6656        	14.6625        	14.9648        	
+0.0833333    	14.5604        	13.5702        	13.3098        	14.3678        	14.5043        	14.501         	14.9254        	

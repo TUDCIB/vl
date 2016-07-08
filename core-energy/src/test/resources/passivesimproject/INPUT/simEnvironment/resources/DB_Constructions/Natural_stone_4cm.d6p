@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="5.6.7">
+
+	<ProjectInfo>
+        <DisplayName>Natural_stone_4cm</DisplayName>
+    </ProjectInfo>
+	
+    <!--List of all materials used in this construction-->
+    <Materials>
+		<MaterialReference displayName="SANDSTONE COTTA">../DB_Materials/material_219.m6</MaterialReference>
+		<MaterialReference displayName="COMPOUND MORTAR">../DB_Materials/material_990.m6</MaterialReference>
+		<MaterialReference displayName="AIR GAP">../DB_Materials/material_1000.m6</MaterialReference>
+    </Materials>
+
+    <!--Discretization data (grid and sketches)-->
+    <Discretization geometryType="2D">
+		<XSteps unit="m">0.030 0.010 2.000</XSteps>
+    </Discretization>
+
+    <!--List of all assignments of materials and conditions-->
+    <Assignments>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="SANDSTONE COTTA">219</Reference>
+			<IBK:Range>0 0 0 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="COMPOUND MORTAR">990</Reference>
+			<IBK:Range>1 0 1 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="AIR GAP">1000</Reference>
+			<IBK:Range>2 0 2 0</IBK:Range>
+		</Assignment>
+    </Assignments>
+
+</DelphinProject>

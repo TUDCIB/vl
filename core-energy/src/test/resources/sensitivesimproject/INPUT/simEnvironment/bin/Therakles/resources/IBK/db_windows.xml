@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<WindowTypes>
+    <WindowType id="1" name="de:Reflektionsglas, doppelt, Edelmetallbelag (VDI 2078)|en:Reflection glazing, double, precious metal coating (VDI 2078)" f="0.6" g="0.3915" U="0.8">
+		<LinearSpline name="RelativeSHGC">
+            <X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+            <Y unit="%">100 100 100 100 98 94 86 69 37 0</Y>
+		</LinearSpline>
+	</WindowType>
+    <WindowType id="2" name="de:Reflektionsglas, doppelt (VDI 2078)|en:Reflection glazing, double (VDI 2078)" f="0.7" g="0.4785" U="0.8">
+        <LinearSpline name="RelativeSHGC">
+            <X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+            <Y unit="%">100 100 100 100 98 94 86 69 37 0</Y>
+        </LinearSpline>
+	</WindowType>
+    <WindowType id="3" name="de:Reflektionsglas, einfach (VDI 2078)|en:Reflection glazing, single (VDI 2078)" f="0.7" g="0.5655" U="0.8">
+        <LinearSpline name="RelativeSHGC">
+            <X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+            <Y unit="%">100 100 100 100 98 94 86 69 37 0</Y>
+        </LinearSpline>
+	</WindowType>
+    <WindowType id="4" name="de:Absorptionsglas, vorgehängte Scheibe (VDI 2078)|en:Absorption glazing, curtain type (VDI 2078)" f="0.7" g="0.4785" U="1.2">
+        <LinearSpline name="RelativeSHGC">
+            <X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+            <Y unit="%">100 100 100 100 98 94 86 69 37 0</Y>
+        </LinearSpline>
+	</WindowType>
+    <WindowType id="5" name="de:Absorptionsglas, doppelt (VDI 2078)|en:Absorption glazing, double (VDI 2078)" f="0.7" g="0.5655" U="1.2">
+        <LinearSpline name="RelativeSHGC">
+            <X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+            <Y unit="%">100 100 100 100 98 94 86 69 37 0</Y>
+        </LinearSpline>
+	</WindowType>
+    <WindowType id="6" name="de:Absorptionsglas, einfach (VDI 2078)|en: Absorption glazing, single(VDI 2078)" f="0.7" g="0.6525" U="1.8">
+        <LinearSpline name="RelativeSHGC">
+            <X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+            <Y unit="%">100 100 100 100 98 94 86 69 37 0</Y>
+        </LinearSpline>
+	</WindowType>
+    <WindowType id="7" name="de:Dreifachverglasung (VDI 2078)|en:Triple glazing (VDI 2078)" f="0.7" g="0.65" U="1.2">
+        <LinearSpline name="RelativeSHGC">
+            <X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+            <Y unit="%">100 100 100 98 95 90 77 56 26 0</Y>
+        </LinearSpline>
+    </WindowType>
+    <WindowType id="8" name="de:Dreifachverglasung, hochwertig|en:Triple glazing high quality " f="0.7" g="0.65" U="0.7">
+        <LinearSpline name="RelativeSHGC">
+            <X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+            <Y unit="%">100 100 100 98 95 90 77 56 26 0</Y>
+        </LinearSpline>
+    </WindowType>
+    <WindowType id="9" name="de:Doppelverglasung (VDI 2078)|en:Double glazing (VDI 2078)" f="0.7" g="0.75" U="2.8">
+        <LinearSpline name="RelativeSHGC">
+            <X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+            <Y unit="%">100 100 100 100 98 94 86 69 37 0</Y>
+        </LinearSpline>
+	</WindowType>
+    <WindowType id="10" name="de:Doppelverglasung, Wärmeschutz|en: Double glazing, insulation glazing" f="0.7" g="0.75" U="1.3">
+        <LinearSpline name="RelativeSHGC">
+            <X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+            <Y unit="%">100 100 100 100 98 94 86 69 37 0</Y>
+        </LinearSpline>
+	</WindowType>
+    <WindowType id="11" name="de:Einfachverglasung (VDI 2078)|en:Single glazing (VDI 2078)" f="0.7" g="0.968" U="5.2">
+        <LinearSpline name="RelativeSHGC">
+            <X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+            <Y unit="%">100 100 100 100 98 94 86 69 37 0</Y>
+        </LinearSpline>
+	</WindowType>
+    <WindowType id="12" name="de:Dreifachverglasung U_0.5 G_0.47|en:Triple-Layer U_0.5 SHGC_0.47" f="0.71" g="0.47" U="0.48">
+        <LinearSpline name="RelativeSHGC">
+            <X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+            <Y unit="%">100 100 100 98 95 90 77 56 26 0</Y>
+        </LinearSpline>
+    </WindowType>
+    <WindowType id="13" name="de:Zweifachverglasung U_1.1 G_0.6|en:Double U_1.1 SHGC_0.6" f="0.8" g="0.6" U="1.1">
+        <LinearSpline name="RelativeSHGC">
+            <X unit="Deg">0 10 20 30 40 50 60 70 80 90</X>
+            <Y unit="%">100 100 100 100 98 94 86 69 37 0</Y>
+        </LinearSpline>
+    </WindowType> 	
+</WindowTypes>

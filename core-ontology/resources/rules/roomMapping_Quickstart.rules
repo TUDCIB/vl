@@ -1,0 +1,13 @@
+//* @id: roommappingquickstart @name: ISES Room Mapping Rules rule set for Quickstart project @description: Maps occupancy information to rooms @end
+@prefix BIMOnto: http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#
+@prefix eBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eBIMInterfaceOnto#
+[Dining: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "DINING") -> (?s rdf:type eBIM:LivingRoom)]
+[Living: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "LIVING") -> (?s rdf:type eBIM:LivingRoom)]
+[Guest: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "GUEST") -> (?s rdf:type eBIM:LivingRoom)]
+[Bedroom3: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "BEDROOM 3") -> (?s rdf:type eBIM:LivingRoom)]
+[Bedroom2: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "BEDROOM 2") -> (?s rdf:type eBIM:LivingRoom)]
+[Bedroom1: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "BEDROOM 1") -> (?s rdf:type eBIM:LivingRoom)]
+[isStair: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "STAIR") -> (?s rdf:type eBIM:Passage)]
+[isHall: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "HALL") -> (?s rdf:type eBIM:Passage)]
+[Entrance: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "ENTRANCE") -> (?s rdf:type eBIM:Passage)]
+[isTechnicalRoom: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "UTILITY ROOM") -> (?s rdf:type eBIM:TechnicalRoom)]

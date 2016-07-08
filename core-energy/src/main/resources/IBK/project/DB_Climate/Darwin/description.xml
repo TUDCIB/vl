@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<SummerDesignDays start='315' duration='10'/>
+<Position latitude='-12.40' longitude='130.87'/>
+<Description langid='de'>Darwin, Australien, Südwestpazifik</Description>
+<Description langid='en'>Darwin, Australia, SouthWestPacific</Description>
+</ClimateDataLocation>

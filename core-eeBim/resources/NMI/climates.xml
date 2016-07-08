@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns2:getWeatherFileListResponse xmlns:ns2="http://ises.weatherfile.cmsservice/">
+	<return>
+		<j:jelly xmlns:j='jelly:core' xmlns:ises='jelly:ises.dataframework.stp.tags.IsesTagLibray'>
+			<Climatezones>
+				<WeatherDataZone id="1">
+					<Latitude>65.667</Latitude>
+					<Longitude>-18.067</Longitude>
+					<City>Akureyri</City>
+					<ContryISOCode>IS</ContryISOCode>
+					<Country>Iceland</Country>
+					<DaylightSaving/>
+					<Elevation>27</Elevation>
+					<ForeignProperty name="latitude">65°40'N</ForeignProperty>
+					<ForeignProperty name="longitude">18°06'W</ForeignProperty>
+					<StationIdentifier>41539</StationIdentifier>
+					<StationName/>
+					<Timezone>0</Timezone>
+					<Zip/>
+					<WeatherData id="3">
+						<ForeignProperty name="cimatezoneid">1</ForeignProperty>
+						<WeatherDataFileUri>
+							<Domain>IBRIEXWEB</Domain>
+							<Filestore>ftp://130.208.198.50/climatefilestore</Filestore>
+							<Password>isesuser.55</Password>
+							<Username>isesuser</Username>
+							<WeatherFileUri>/IS/SPtMasterTable_41539_TMY2.tm2</WeatherFileUri>
+						</WeatherDataFileUri>
+						<EventDescription>Typical Meteorological Year </EventDescription>
+						<EventType>ReferenceYear</EventType>
+						<ProfileType>TMY2</ProfileType>
+					</WeatherData>
+				</WeatherDataZone>
+				<WeatherDataZone id="2">
+					<Latitude>64.133</Latitude>
+					<Longitude>-21.9</Longitude>
+					<City>Reykjavik</City>
+					<ContryISOCode>IS</ContryISOCode>
+					<Country>Iceland</Country>
+					<DaylightSaving/>
+					<Elevation>61</Elevation>
+					<ForeignProperty name="latitude">64°10'N</ForeignProperty>
+					<ForeignProperty name="longitude">21°57'W</ForeignProperty>
+					<StationIdentifier>37231</StationIdentifier>
+					<StationName/>
+					<Timezone>0</Timezone>
+					<Zip/>
+					<WeatherData id="1">
+						<ForeignProperty name="cimatezoneid">2</ForeignProperty>
+						<WeatherDataFileUri>
+							<Domain>IBRIEXWEB</Domain>
+							<Filestore>ftp://130.208.198.50/climatefilestore</Filestore>
+							<Password>isesuser.55</Password>
+							<Username>isesuser</Username>
+							<WeatherFileUri>/IS/ISL_Reykjavik.040300_IWEC.zip</WeatherFileUri>
+						</WeatherDataFileUri>
+						<EventDescription>Typical Meteorological Year </EventDescription>
+						<EventType>ReferenceYear</EventType>
+						<ProfileType>IWEC</ProfileType>
+					</WeatherData>
+					<WeatherData id="2">
+						<ForeignProperty name="cimatezoneid">2</ForeignProperty>
+						<WeatherDataFileUri>
+							<Domain>IBRIEXWEB</Domain>
+							<Filestore>ftp://130.208.198.50/climatefilestore</Filestore>
+							<Password>isesuser.55</Password>
+							<Username>isesuser</Username>
+							<WeatherFileUri>/IS/SPtMasterTable_37231_TMY2.tm2</WeatherFileUri>
+						</WeatherDataFileUri>
+						<EventDescription>Typical Meteorological Year </EventDescription>
+						<EventType>ReferenceYear</EventType>
+						<ProfileType>TMY2</ProfileType>
+					</WeatherData>
+				</WeatherDataZone>
+				<WeatherDataZone id="5">
+					<Latitude>38.067</Latitude>
+					<Longitude>23.55</Longitude>
+					<City>Athens</City>
+					<ContryISOCode>GR</ContryISOCode>
+					<Country>Greece</Country>
+					<DaylightSaving/>
+					<Elevation>31</Elevation>
+					<ForeignProperty name="latitude"/>
+					<ForeignProperty name="longitude"/>
+					<StationIdentifier>43854</StationIdentifier>
+					<StationName/>
+					<Timezone>0</Timezone>
+					<Zip/>
+					<WeatherData id="4">
+						<ForeignProperty name="cimatezoneid">5</ForeignProperty>
+						<WeatherDataFileUri>
+							<Domain>IBRIEXWEB</Domain>
+							<Filestore>ftp://130.208.198.50/climatefilestore</Filestore>
+							<Password>isesuser.55</Password>
+							<Username>isesuser</Username>
+							<WeatherFileUri>/GR/SPtMasterTable_43854_TMY2.tm2</WeatherFileUri>
+						</WeatherDataFileUri>
+						<EventDescription>Typical Meteorological Year </EventDescription>
+						<EventType>ReferenceYear</EventType>
+						<ProfileType>TMY2</ProfileType>
+					</WeatherData>
+					<WeatherData id="7">
+						<ForeignProperty name="cimatezoneid">5</ForeignProperty>
+						<WeatherDataFileUri>
+							<Domain/>
+							<Filestore>jdbc:mysql://50.97.55.6:3306/energyco_ises</Filestore>
+							<Password>ises2013</Password>
+							<Username>energyco_ises</Username>
+							<WeatherFileUri>1</WeatherFileUri>
+						</WeatherDataFileUri>
+						<EventDescription>Noa Climate Database</EventDescription>
+						<EventType>QueryData</EventType>
+						<ProfileType>TRY</ProfileType>
+					</WeatherData>
+				</WeatherDataZone>
+				<WeatherDataZone id="6">
+					<Latitude>60.41</Latitude>
+					<Longitude>25.05</Longitude>
+					<City>Helsinki</City>
+					<ContryISOCode>FI</ContryISOCode>
+					<Country>Finland</Country>
+					<DaylightSaving/>
+					<Elevation>28</Elevation>
+					<ForeignProperty name="latitude"/>
+					<ForeignProperty name="longitude"/>
+					<StationIdentifier>654193</StationIdentifier>
+					<StationName/>
+					<Timezone>0</Timezone>
+					<Zip/>
+					<WeatherData id="5">
+						<ForeignProperty name="cimatezoneid">6</ForeignProperty>
+						<WeatherDataFileUri>
+							<Domain>IBRIEXWEB</Domain>
+							<Filestore>ftp://130.208.198.50/climatefilestore</Filestore>
+							<Password>isesuser.55</Password>
+							<Username>isesuser</Username>
+							<WeatherFileUri>/FI/SPtMasterTable_654193_TMY2.tm2</WeatherFileUri>
+						</WeatherDataFileUri>
+						<EventDescription>Typical Meteorological Year </EventDescription>
+						<EventType>ReferenceYear</EventType>
+						<ProfileType>TMY2</ProfileType>
+					</WeatherData>
+				</WeatherDataZone>
+				<WeatherDataZone id="7">
+					<Latitude>51.117</Latitude>
+					<Longitude>13.767</Longitude>
+					<City>Dresden</City>
+					<ContryISOCode>GE</ContryISOCode>
+					<Country>Germany</Country>
+					<DaylightSaving/>
+					<Elevation>226</Elevation>
+					<ForeignProperty name="latitude"/>
+					<ForeignProperty name="longitude"/>
+					<StationIdentifier>42402</StationIdentifier>
+					<StationName/>
+					<Timezone>0</Timezone>
+					<Zip/>
+					<WeatherData id="6">
+						<ForeignProperty name="cimatezoneid">7</ForeignProperty>
+						<WeatherDataFileUri>
+							<Domain>IBRIEXWEB</Domain>
+							<Filestore>ftp://130.208.198.50/climatefilestore</Filestore>
+							<Password>isesuser.55</Password>
+							<Username>isesuser</Username>
+							<WeatherFileUri>/GE/SPtMasterTable_42402_TMY2.tm2</WeatherFileUri>
+						</WeatherDataFileUri>
+						<EventDescription>Typical Meteorological Year </EventDescription>
+						<EventType>ReferenceYear</EventType>
+						<ProfileType>TMY2</ProfileType>
+					</WeatherData>
+				</WeatherDataZone>
+			</Climatezones>
+		</j:jelly>
+	</return>
+</ns2:getWeatherFileListResponse>

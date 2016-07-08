@@ -1,0 +1,19 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = WOOD WOOL CEMENT BOARD
+    RHO                      = 180 kg/m3
+    CE                       = 1470 J/kgK
+    LAMBDA                   = 0.06 W/mK
+    OPOR                     = 0.9308 m3/m3
+    OEFF                     = 0.34 m3/m3
+	OCAP					 = 0.34 m3/m3
+    AW                       = 0.0089 kg/m2s05
+    MEW                      = 4.9 -
+    KLEFF                    = 1.6834e-008 s
+	O80                		 = 0.0258 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = TU Dresden
+    CLASSIFICATION           = 6 - Insulation Materials
+    COLOR                    = 10485760

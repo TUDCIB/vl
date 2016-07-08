@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="15 seconds">
+
+    <appender name="CONSOLE.DEBUG" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{dd-MM-yyyy HH:mm:ss.SSS}: %-8p %-80m [%c.java:%L] %n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+	      <level>DEBUG</level>
+	      <onMatch>ACCEPT</onMatch>
+	      <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+    
+    <appender name="CONSOLE.WARN" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{dd-MM-yyyy HH:mm:ss.SSS}: %-8p %-80m [%c.java:%L] %n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+	      <level>WARN</level>
+	      <onMatch>ACCEPT</onMatch>
+	      <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+	
+	<appender name="CONSOLE.ERR" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{dd-MM-yyyy HH:mm:ss.SSS}: %-8p %-80m [%c.java:%L] %n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+	      <level>ERROR</level>
+	      <onMatch>ACCEPT</onMatch>
+	      <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <appender name="CONSOLE.OUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{dd-MM-yyyy HH:mm:ss.SSS}: %-8p %-80m [%c.java:%L] %n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>INFO</level>
+        </filter>
+    </appender>
+    
+    	<root level="INFO, DEBUG, WARN,ERROR">
+    	<!--<appender-ref ref="CONSOLE.DEBUG" />-->
+		<appender-ref ref="CONSOLE.ERR"/>
+		<!--<appender-ref ref="CONSOLE.OUT"/>-->
+		<!--<appender-ref ref="CONSOLE.WARN"/>-->
+	</root>
+  	
+</configuration>

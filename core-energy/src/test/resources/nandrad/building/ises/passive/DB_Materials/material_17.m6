@@ -1,0 +1,20 @@
+[MATERIAL]
+
+  [GENERAL]
+    NAME                     = Wood Fibreboard
+
+    RHO                      = 300 kg/m3
+    CE                       = 1880 J/kgK
+    LAMBDA                   = 0.05 W/mK
+    OPOR                     = 0.42 m3/m3
+    OEFF                     = 0.4 m3/m3
+    AW                       = 0.0674 kg/m2s05
+    MEW                      = 5 -
+    DLEFF                    = 2.83923e-08 m2/s
+    OCAP                     = 0.4 m3/m3
+    O80                      = 0.0527665 m3/m3
+
+  [IDENTIFICATION]
+    SOURCE                   = IEA Annex 24
+    CLASSIFICATION           = Wood
+    COLOR                    = 6750054

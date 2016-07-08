@@ -1,0 +1,11 @@
+CombinationID, KPI_1.0.1_Net annual natural ventilation heat loss_(kWh/m2a),KPI_1.0.2_Net annual internal equipment heat gains_(kWh/m2a),KPI_1.0.3_Net annual transmission heat losses_(kWh/m2a),KPI_1.0.4_Net annual solar heat gains_(kWh/m2a),KPI_1.1.1_Net annual energy consumption of the heating system_(kWh/m2a),KPI_1.1.2_Net annual energy consumption of the cooling system_(kWh/m2a),KPI_1.2.1_Final annual energy consumption of the heating system_(kWh/m2a),KPI_1.2.2_Final annual energy consumption of the cooling system_(kWh/m2a),KPI_1.3.1_Primary energy consumption for heating and cooling_(kWh/m2a),KPI_1.4.1_Annual average of operative temperature_(degC),KPI_1.4.2_Number of annual discomfort hours via EN 15251_()
+1013527399,23.57,23.49,-0.01,0.00,0.00,-0.00,20.00,-0.00,94.47,16.15,7690.00
+1031803512,23.57,23.49,-0.01,0.00,0.00,-0.00,20.00,-0.00,94.47,16.15,7690.00
+1142353997,23.57,23.49,-0.01,0.00,0.00,-0.00,20.00,-0.00,94.47,16.15,7690.00
+1411841948,23.57,23.49,-0.01,0.00,0.00,-0.00,20.00,-0.00,94.47,16.15,7690.00
+1440607983,23.57,23.49,-0.01,0.00,0.00,-0.00,20.00,-0.00,94.47,16.15,7690.00
+1698932796,23.57,23.49,-0.01,0.00,0.00,-0.00,20.00,-0.00,94.47,16.15,7690.00
+204045310,23.57,23.49,-0.01,0.00,0.00,-0.00,20.00,-0.00,94.47,16.15,7690.00
+486962245,23.57,23.49,-0.01,0.00,0.00,-0.00,20.00,-0.00,94.47,16.15,7690.00
+608838988,23.57,23.49,-0.01,0.00,0.00,-0.00,20.00,-0.00,94.47,16.15,7690.00
+783184152,23.57,23.49,-0.01,0.00,0.00,-0.00,20.00,-0.00,94.47,16.15,7690.00

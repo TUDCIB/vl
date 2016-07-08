@@ -1,0 +1,27 @@
+//* @id: roommappingjungeoper @name: Room Mapping Rules rule set for Junge Oper @description: Maps occupancy information to rooms @end
+@prefix BIMOnto: http://openeebim.bau.tu-dresden.de/dev/ontology/BIMOnto#
+@prefix eBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eBIMInterfaceOnto#
+[TechnicalRoom1: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 001") -> (?s rdf:type eBIM:TechnicalRoom)]	
+[TechnicalRoom2: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 002") -> (?s rdf:type eBIM:TechnicalRoom)]	
+[TechnicalRoom3: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 005") -> (?s rdf:type eBIM:TechnicalRoom)]	
+[TechnicalRoom4: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 006") -> (?s rdf:type eBIM:TechnicalRoom)]	
+[TechnicalRoom5: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 104") -> (?s rdf:type eBIM:TechnicalRoom)]	
+
+[WorkRoom1: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 003") -> (?s rdf:type eBIM:WorkRoom)]	
+[WorkRoom2: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 101") -> (?s rdf:type eBIM:WorkRoom)]	
+[WorkRoom3: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 103") -> (?s rdf:type eBIM:WorkRoom)]	
+[WorkRoom4: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 201") -> (?s rdf:type eBIM:WorkRoom)]	
+[WorkRoom5: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 203") -> (?s rdf:type eBIM:WorkRoom)]	
+[WorkRoom6: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 204") -> (?s rdf:type eBIM:WorkRoom)]	
+[WorkRoom7: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 301") -> (?s rdf:type eBIM:WorkRoom)]	
+[WorkRoom8: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 302") -> (?s rdf:type eBIM:WorkRoom)]	
+[WorkRoom9: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 401") -> (?s rdf:type eBIM:WorkRoom)]	
+[WorkRoom9: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 403") -> (?s rdf:type eBIM:WorkRoom)]	
+
+[Passage1: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 004") -> (?s rdf:type eBIM:Passage)]
+[Passage2: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 102") -> (?s rdf:type eBIM:Passage)]
+[Passage3: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 106") -> (?s rdf:type eBIM:Passage)]
+[Passage4: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 303") -> (?s rdf:type eBIM:Passage)]
+		
+[Storage1: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 105") -> (?s rdf:type eBIM:Storage)]
+[Storage2: 	(?s rdf:type BIMOnto:IfcSpace) (?s BIMOnto:LongName ?ln) (?ln BIMOnto:StringValue "R 202") -> (?s rdf:type eBIM:Storage)]

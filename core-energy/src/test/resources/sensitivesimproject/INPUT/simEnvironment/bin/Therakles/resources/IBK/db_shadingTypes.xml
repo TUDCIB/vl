@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<ShadingTypes>
+    <ShadingType id="1" name="de:Jalousien und Stoffe geringer Transparenz, außen|en:Blinds and fabrics, low transparency, outside" model="Constant" z="0.25"/>
+    <ShadingType id="2" name="de:Jalousien und Stoffe höherer Transparenz, außen|en:Blinds and fabrics, high transparency, outside" model="Constant" z="0.4"/>
+    <ShadingType id="3" name="de:Vordächer, Loggien|en:Canopies and Loggias" model="Constant" z="0.5"/>
+    <ShadingType id="4" name="de:Stoffmarkisen, oben und seitlich ventiliert (VDI 2087)|en:Fabric blinds, ventilated on top and sides (VDI 2087)" model="Constant" z="0.3"/>
+    <ShadingType id="5" name="de:Stoffmarkisen, oben und seitlich anliegend (VDI 2087)|en:Fabric blinds, not ventilated (VDI 2087)" model="Constant" z="0.4"/>
+    <ShadingType id="6" name="de:Jalousien, zwischen den Scheiben (VDI 2087)|en:Blinds between glas panes (VDI 2087)" model="Constant" z="0.5"/>
+    <ShadingType id="7" name="de:Jalousien, innen (VDI 2087)|en:Blinds inside (VDI 2087)" model="Constant" z="0.7"/>
+    <ShadingType id="8" name="de:Vorhänge, innen (VDI 2087)|en:Curtain inside (VDI 2087)" model="Constant" z="0.5"/>
+    <ShadingType id="9" name="de:Kunststofffolien, absorbierend, innen (VDI 2087)|en:Plastic film absorbing inside (VDI 2087)" model="Constant" z="0.7"/>
+    <ShadingType id="10" name="de:Kunststofffolien, metallisch reflektierend, innen (VDI 2087)|en:Plastic film reflective inside (VDI 2087)" model="Constant" z="0.7"/>
+</ShadingTypes>

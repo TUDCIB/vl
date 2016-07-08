@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="5.6.7">
+
+<ProjectInfo>
+        <DisplayName>Linoleum_on_doublefloor_36cm</DisplayName>
+</ProjectInfo>
+
+    <!--List of all materials used in this construction-->
+    <Materials>
+		<MaterialReference displayName="LINOLEUM">${Material Database}/material_155.m6</MaterialReference>
+		<MaterialReference displayName="DOUBLE FLOOR">${Material Database}/material_993.m6</MaterialReference>
+    </Materials>
+
+    <!--Discretization data (grid and sketches)-->
+    <Discretization geometryType="2D">
+		<XSteps unit="m">0.005 0.145</XSteps>
+    </Discretization>
+
+    <!--List of all assignments of materials and conditions-->
+    <Assignments>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="LINOLEUM">155</Reference>
+			<IBK:Range>0 0 0 0</IBK:Range>
+		</Assignment>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="DOUBLE FLOOR">993</Reference>
+			<IBK:Range>1 0 1 0</IBK:Range>
+		</Assignment>
+    </Assignments>
+	<Costs>0.0</Costs>
+</DelphinProject>

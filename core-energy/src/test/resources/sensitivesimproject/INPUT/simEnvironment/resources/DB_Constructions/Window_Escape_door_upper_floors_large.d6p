@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="5.6.7">
+
+	<ProjectInfo>
+        <DisplayName>Window Escape door upper floors_large</DisplayName>
+    </ProjectInfo>
+	
+    <!--List of all materials used in this construction-->
+    <Materials>
+		<MaterialReference displayName="Escape door upper floors_large">D:\Nutzer\ken\data\VirtualLaboratory\resources\DB_Materials\material_Escape_door_upper_floors_large.m6</MaterialReference>
+    </Materials>
+
+    <!--Discretization data (grid and sketches)-->
+    <Discretization geometryType="2D">
+		<XSteps unit="m">0.2</XSteps>
+    </Discretization>
+
+    <!--List of all assignments of materials and conditions-->
+    <Assignments>
+		<Assignment location="Element" type="Material">
+			<Reference displayName="Glass - Escape door upper floors_large">Escape_door_upper_floors_large</Reference>
+			<IBK:Range>0 0 0 0</IBK:Range>
+		</Assignment>
+    </Assignments>
+	<Costs>430.0</Costs>
+
+</DelphinProject>

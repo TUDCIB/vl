@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fileVersion="5.6.7" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd">
+
+    <!--List of all materials used in this construction-->
+    <Materials>
+    <MaterialReference displayName="StB">${Material Database}/material_1.m6</MaterialReference>
+     </Materials>
+
+    <!--Discretization data (grid and sketches)-->
+    <Discretization geometryType="2D">
+    <XSteps unit="m">180.000</XSteps>
+     </Discretization>
+
+    <!--List of all assignments of materials and conditions-->
+    <Assignments>
+    <Assignment location="Element" type="Material">
+               <Reference displayName="StB">1</Reference>
+               <IBK:Range>0 0 0 0</IBK:Range>
+          </Assignment>
+     </Assignments>
+
+</DelphinProject>

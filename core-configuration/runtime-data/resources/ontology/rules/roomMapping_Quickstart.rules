@@ -1,0 +1,13 @@
+//* @id: roommappingquickstart @name: ISES Room Mapping Rules rule set for Quickstart project @description: Maps occupancy information to rooms @end
+@prefix ifcOWL: http://openeebim.bau.tu-dresden.de/dev/ontology/ifcOWL#
+@prefix eeBIM: http://openeebim.bau.tu-dresden.de/dev/ontology/eeBIMInterfaceOnto#
+[Dining: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "DINING") -> (?s rdf:type eeBIM:LivingRoom)]
+[Living: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "LIVING") -> (?s rdf:type eeBIM:LivingRoom)]
+[Guest: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "GUEST") -> (?s rdf:type eeBIM:LivingRoom)]
+[Bedroom3: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "BEDROOM 3") -> (?s rdf:type eeBIM:LivingRoom)]
+[Bedroom2: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "BEDROOM 2") -> (?s rdf:type eeBIM:LivingRoom)]
+[Bedroom1: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "BEDROOM 1") -> (?s rdf:type eeBIM:LivingRoom)]
+[isStair: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "STAIR") -> (?s rdf:type eeBIM:Passage)]
+[isHall: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "HALL") -> (?s rdf:type eeBIM:Passage)]
+[Entrance: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "ENTRANCE") -> (?s rdf:type eeBIM:Passage)]
+[isTechnicalRoom: 	(?s rdf:type ifcOWL:IfcSpace) (?s ifcOWL:LongName ?ln) (?ln ifcOWL:StringValue "UTILITY ROOM") -> (?s rdf:type eeBIM:TechnicalRoom)]

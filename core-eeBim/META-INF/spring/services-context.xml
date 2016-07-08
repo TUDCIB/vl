@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- SERVICES -->   	
+  	<bean name="templateService"
+  		class="de.tudresden.bau.cib.vl.core.model.eeBim.service.impl.TemplateServiceImpl">  
+		<property name="configurationService" ref="osgiConfigurationService" />
+		<property name="fileService" ref="osgiFileService" />
+		<property name="userService" ref="osgiUserService" />
+  	</bean>
+  	
+  	<bean id="resourceService"
+		class="de.tudresden.bau.cib.vl.core.model.eeBim.service.impl.DataResourceServiceImpl">
+		<property name="configurationService" ref="osgiConfigurationService" />
+		<property name="fileService" ref="osgiFileService" />
+	</bean>
+  	
+</beans>

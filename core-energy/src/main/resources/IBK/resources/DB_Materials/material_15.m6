@@ -1,0 +1,20 @@
+     
+
+     [GENERAL]
+       NAME               = Gypsum Board
+       RHO                =     8.5000000000e+02 kg/m3
+       CE                 =     8.5000000000e+02 J/kgK
+       OPOR               =     6.5000000000e-01 m3/m3
+       OEFF               =     5.5100000000e-01 m3/m3
+       MEW                =     1.0000000000e+01 -
+       AW                 =     2.7700000000e-01 kg/m2s05
+       KLEFF                 =     6.2600642599e-09 s
+       DLEFF                 =     4.5000000000e-06 m2/s
+       LAMBDA             =     2.0000000000e-01 W/mK
+       OCAP               =     4.0000000000e-01 m3/m3
+       O80                =     7.1654470352e-03 m3/m3
+
+     [IDENTIFICATION]
+       SOURCE             = TU Dresden
+       CATEGORY           = Gypsum
+       COLOR              = 4227327

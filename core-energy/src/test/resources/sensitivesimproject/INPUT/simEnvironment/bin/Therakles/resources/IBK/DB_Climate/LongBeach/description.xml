@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ClimateLocationDescription>
+<ClimateDataLocation>
+<Position latitude="33.50" longitude="241,89"/>
+<SummerDesignDays start="210" duration="40"/>
+<Description langid="de">Long Beach, Kalifornien, USA</Description>
+<Description langid="en">Long Beach, California, USA</Description>
+</ClimateDataLocation>

@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>de.tudresden.bau.cib.vl</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>vl-gui-rcp-parent</artifactId>
+	<packaging>pom</packaging>
+	<name>VL GUI RCP Parent</name>
+
+	<properties>
+	</properties>
+
+	<organization>
+		<name>TU Dresden, Institute of Construction Informatics</name>
+		<url>http://tu-dresden.de/die_tu_dresden/fakultaeten/fakultaet_bauingenieurwesen/cib/index_html/document_view?set_language=en</url>
+	</organization>
+
+	<!-- ============================================= -->
+	<!-- Basic configuration: SCM, devs etc. -->
+	<!-- ============================================= -->
+
+	<scm>
+		<connection>scm:https://fusionforge.zih.tu-dresden.de/svn/cibdev/trunk/Gemeinsam/VirtualLaboratory/vl-gui-rcp</connection>
+		<developerConnection>scm:https://fusionforge.zih.tu-dresden.de/svn/cibdev/trunk/Gemeinsam/VirtualLaboratory/vl-gui-rcp</developerConnection>
+		<url>https://fusionforge.zih.tu-dresden.de/svn/cibdev/trunk/Gemeinsam/VirtualLaboratory/vl-gui-rcp</url>
+	</scm>
+
+	<developers>
+		<developer>
+			<id>KEN</id>
+			<name>Ken Baumgärtel</name>
+			<email>ken.baumgaertel at tu-dresden.de</email>
+			<organization>TU Dresden, Institute of Construction Informatics</organization>
+			<organizationUrl>http://www.tu-dresden.de</organizationUrl>
+			<roles>
+				<role>Project Admin</role>
+				<role>Developer</role>
+			</roles>
+			<timezone>0</timezone>
+		</developer>
+
+	</developers>
+
+	<!-- FILL IN LICENSE TEXT <licenses> <license> <name>Eclipse Public License, 
+		Version 1.0</name> <url>http://www.eclipse.org/legal/epl-v10.html</url> </license> 
+		<license> <name>Apache License, Version 2.0</name> <url>http://www.apache.org/licenses/LICENSE-2.0</url> 
+		</license> </licenses> -->
+
+	<!-- =================================================== -->
+	<!-- Project Modules, Dependencies, Plugins and Profiles -->
+	<!-- =================================================== -->
+
+	<modules>
+		<module>gui-rcp-bim</module>
+		<module>gui-rcp-gis</module>
+		<module>gui-rcp-app</module>
+		<module>gui-rcp-sim-energy</module>
+		<module>de.tudresden.bau.cib.ui.widgets.rcp</module>
+		<!-- Product -->
+		<module>gui-rcp-product-feature</module>
+		<module>gui-rcp-product</module>
+		<module>../master</module>
+	</modules>
+	
+</project>

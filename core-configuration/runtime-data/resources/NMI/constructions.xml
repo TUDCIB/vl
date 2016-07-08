@@ -1,0 +1,1749 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns2:getConListResponse xmlns:ns2="http://ises.ibk.materialservice/">
+	<return>
+		<j:jelly xmlns:ises="jelly:ises.dataframework.stp.tags.IsesTagLibray" xmlns:j="jelly:core">
+			<Constructions>
+				<Construction id="5" sourceId="5">
+					<ForeignProperty name="bsrvalue">1.644088727</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.608239679</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.678385234</ForeignProperty>
+					<Sourcecatagory>1</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">24.69999886</ForeignProperty>
+					<ForeignProperty name="cm2">24.69999886</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">1.64408871</ForeignProperty>
+					<Name>Brickwork single leaf construction eps insulation &amp;amp; render</Name>
+					<ForeignProperty name="numberlayers">4</ForeignProperty>
+					<ForeignProperty name="outsidetexture">128</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">1.644088702</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.291999998</Thickness>
+					<ForeignProperty name="url">1.644088745</ForeignProperty>
+					<Uvalue>0.608239688</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.678385228</ForeignProperty>
+					<Layers>
+						<Layer id="2272" order="1">
+							<Material materialIdRef="17"/>
+							<Thickness>0.019</Thickness>
+						</Layer>
+						<Layer id="2273" order="2">
+							<Material materialIdRef="14"/>
+							<Thickness>0.04</Thickness>
+						</Layer>
+						<Layer id="2274" order="3">
+							<Material materialIdRef="6"/>
+							<Thickness>0.22</Thickness>
+						</Layer>
+						<Layer id="2275" order="4">
+							<Material materialIdRef="26"/>
+							<Thickness>0.013</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="8" sourceId="8">
+					<ForeignProperty name="bsrvalue">2.155488726</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.463931909</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.503654328</ForeignProperty>
+					<Sourcecatagory>1</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">60</ForeignProperty>
+					<ForeignProperty name="cm2">60</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">2.155488722</ForeignProperty>
+					<Name>Lightweight concrete block poly insulation &amp;amp; plasterboard</Name>
+					<ForeignProperty name="numberlayers">3</ForeignProperty>
+					<ForeignProperty name="outsidetexture">1</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">2.15548875</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.235000003</Thickness>
+					<ForeignProperty name="url">2.155488729</ForeignProperty>
+					<Uvalue>0.463931904</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.503654327</ForeignProperty>
+					<Layers>
+						<Layer id="2283" order="1">
+							<Material materialIdRef="12"/>
+							<Thickness>0.2</Thickness>
+						</Layer>
+						<Layer id="2284" order="2">
+							<Material materialIdRef="28"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+						<Layer id="2285" order="3">
+							<Material materialIdRef="27"/>
+							<Thickness>0.01</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="10" sourceId="10">
+					<ForeignProperty name="bsrvalue">1.353499554</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.738825511</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.844951719</ForeignProperty>
+					<Sourcecatagory>1</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">136</ForeignProperty>
+					<ForeignProperty name="cm2">136</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">1.353499576</ForeignProperty>
+					<Name>Brick cavity with mineral insulation &amp;amp; lightweight plaster</Name>
+					<ForeignProperty name="numberlayers">5</ForeignProperty>
+					<ForeignProperty name="outsidetexture">8</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">1.353499627</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.398</Thickness>
+					<ForeignProperty name="url">1.353499532</ForeignProperty>
+					<Uvalue>0.738825472</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.844951682</ForeignProperty>
+					<Layers>
+						<Layer id="2290" order="1">
+							<Material materialIdRef="5"/>
+							<Thickness>0.105</Thickness>
+						</Layer>
+						<Layer id="2291" order="2">
+							<Material materialIdRef="105"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+						<Layer id="2292" order="3">
+							<Material materialIdRef="23"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+						<Layer id="2293" order="4">
+							<Material materialIdRef="6"/>
+							<Thickness>0.105</Thickness>
+						</Layer>
+						<Layer id="2294" order="5">
+							<Material materialIdRef="26"/>
+							<Thickness>0.013</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="19" sourceId="19">
+					<ForeignProperty name="bsrvalue">2.48151321</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.402979922</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.432617046</ForeignProperty>
+					<Sourcecatagory>1</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">136</ForeignProperty>
+					<ForeignProperty name="cm2">136</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">2.481513158</ForeignProperty>
+					<Name>Brick mineral insulation thermolite block &amp;amp; l/w plaster</Name>
+					<ForeignProperty name="numberlayers">4</ForeignProperty>
+					<ForeignProperty name="outsidetexture">8</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">2.481513297</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.318000004</Thickness>
+					<ForeignProperty name="url">2.481513262</ForeignProperty>
+					<Uvalue>0.402979908</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.432617022</ForeignProperty>
+					<Layers>
+						<Layer id="2329" order="1">
+							<Material materialIdRef="4"/>
+							<Thickness>0.105</Thickness>
+						</Layer>
+						<Layer id="2330" order="2">
+							<Material materialIdRef="23"/>
+							<Thickness>0.05</Thickness>
+						</Layer>
+						<Layer id="2331" order="3">
+							<Material materialIdRef="12"/>
+							<Thickness>0.15</Thickness>
+						</Layer>
+						<Layer id="2332" order="4">
+							<Material materialIdRef="26"/>
+							<Thickness>0.013</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="21" sourceId="21">
+					<ForeignProperty name="bsrvalue">0.391052633</ForeignProperty>
+					<ForeignProperty name="bsuvalue">2.557200532</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">4.523809522</ForeignProperty>
+					<Sourcecatagory>6</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">70.26599884</ForeignProperty>
+					<ForeignProperty name="cm2">70.26599884</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.45960045</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">3</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.391052632</ForeignProperty>
+					<Name>Solid hardwood door (normally hung)</Name>
+					<ForeignProperty name="numberlayers">1</ForeignProperty>
+					<ForeignProperty name="outsidetexture">3</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.540400028</ForeignProperty>
+					<ForeignProperty name="rvalue">0.391052632</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>4.2</Thickness>
+					<ForeignProperty name="url">0.391052634</ForeignProperty>
+					<Uvalue>2.557200537</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">4.523809521</ForeignProperty>
+					<Layers>
+						<Layer id="2336" order="1">
+							<Material materialIdRef="108"/>
+							<Thickness>0.042</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="26" sourceId="26">
+					<ForeignProperty name="bsrvalue">0.858815789</ForeignProperty>
+					<ForeignProperty name="bsuvalue">1.164394056</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">1.451766971</ForeignProperty>
+					<Sourcecatagory>2</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">60</ForeignProperty>
+					<ForeignProperty name="cm2">60</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.45960045</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.858815789</ForeignProperty>
+					<Name>100mm lightweight concrete block (plastered both sides)</Name>
+					<ForeignProperty name="numberlayers">3</ForeignProperty>
+					<ForeignProperty name="outsidetexture">1</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.540400028</ForeignProperty>
+					<ForeignProperty name="rvalue">0.858815817</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.126000002</Thickness>
+					<ForeignProperty name="url">0.858815789</ForeignProperty>
+					<Uvalue>1.164394018</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">1.451766895</ForeignProperty>
+					<Layers>
+						<Layer id="2351" order="1">
+							<Material materialIdRef="26"/>
+							<Thickness>0.013</Thickness>
+						</Layer>
+						<Layer id="2352" order="2">
+							<Material materialIdRef="12"/>
+							<Thickness>0.1</Thickness>
+						</Layer>
+						<Layer id="2353" order="3">
+							<Material materialIdRef="26"/>
+							<Thickness>0.013</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="27" sourceId="27">
+					<ForeignProperty name="bsrvalue">0.51999999</ForeignProperty>
+					<ForeignProperty name="bsuvalue">1.923076958</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">2.857142881</ForeignProperty>
+					<Sourcecatagory>2</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">22.5</ForeignProperty>
+					<ForeignProperty name="cm2">22.5</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.45960045</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.52</ForeignProperty>
+					<Name>Lightweight 2 x 25mm gypsum plasterboard with 100mm cavity</Name>
+					<ForeignProperty name="numberlayers">3</ForeignProperty>
+					<ForeignProperty name="outsidetexture">1</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.540400028</ForeignProperty>
+					<ForeignProperty name="rvalue">0.520000009</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.200000007</Thickness>
+					<ForeignProperty name="url">0.519999981</ForeignProperty>
+					<Uvalue>1.92307689</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">2.857142784</ForeignProperty>
+					<Layers>
+						<Layer id="2354" order="1">
+							<Material materialIdRef="27"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+						<Layer id="2355" order="2">
+							<Material materialIdRef="105"/>
+							<Thickness>0.1</Thickness>
+						</Layer>
+						<Layer id="2356" order="3">
+							<Material materialIdRef="27"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="28" sourceId="28">
+					<ForeignProperty name="bsrvalue">0.720000014</ForeignProperty>
+					<ForeignProperty name="bsuvalue">1.388888861</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">1.818181798</ForeignProperty>
+					<Sourcecatagory>2</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">3.600000143</ForeignProperty>
+					<ForeignProperty name="cm2">0</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.45960045</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">129</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.72</ForeignProperty>
+					<Name>Lightweight 2 x 12mm fibreboard with 100mm cavity</Name>
+					<ForeignProperty name="numberlayers">3</ForeignProperty>
+					<ForeignProperty name="outsidetexture">129</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.540400028</ForeignProperty>
+					<ForeignProperty name="rvalue">0.720000012</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.174000006</Thickness>
+					<ForeignProperty name="url">0.720000029</ForeignProperty>
+					<Uvalue>1.388888866</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">1.818181779</ForeignProperty>
+					<Layers>
+						<Layer id="2357" order="1">
+							<Material materialIdRef="19"/>
+							<Thickness>0.012</Thickness>
+						</Layer>
+						<Layer id="2358" order="2">
+							<Material materialIdRef="105"/>
+							<Thickness>0.1</Thickness>
+						</Layer>
+						<Layer id="2359" order="3">
+							<Material materialIdRef="19"/>
+							<Thickness>0.012</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="29" sourceId="29">
+					<ForeignProperty name="bsrvalue">0.350069679</ForeignProperty>
+					<ForeignProperty name="bsuvalue">2.856574161</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">4.760325098</ForeignProperty>
+					<Sourcecatagory>5</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">115.5</ForeignProperty>
+					<ForeignProperty name="cm2">115.5</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">4.459599972</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">127</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.350069686</ForeignProperty>
+					<Name>Flat roof - 19mm asphalt on 75mm screed</Name>
+					<ForeignProperty name="numberlayers">2</ForeignProperty>
+					<ForeignProperty name="outsidetexture">62</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">0.35006969</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.1</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>9.4</Thickness>
+					<ForeignProperty name="url">0.350069672</ForeignProperty>
+					<Uvalue>2.856574073</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">4.760325016</ForeignProperty>
+					<Layers>
+						<Layer id="2360" order="1">
+							<Material materialIdRef="4"/>
+							<Thickness>0.019</Thickness>
+						</Layer>
+						<Layer id="2361" order="2">
+							<Material materialIdRef="29"/>
+							<Thickness>0.075</Thickness>
+						</Layer>
+						<Layer id="2362" order="3">
+							<Material materialIdRef="7"/>
+							<Thickness>0.15</Thickness>
+						</Layer>
+						<Layer id="2363" order="4">
+							<Material materialIdRef="25"/>
+							<Thickness>0.013</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="31" sourceId="31">
+					<ForeignProperty name="bsrvalue">0.290745498</ForeignProperty>
+					<ForeignProperty name="bsuvalue">3.439434167</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">6.633697289</ForeignProperty>
+					<Sourcecatagory>5</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">84.90000153</ForeignProperty>
+					<ForeignProperty name="cm2">84.90000153</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">4.459599972</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">127</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.290745499</ForeignProperty>
+					<Name>Flat roof - 25mm stone chippings on 19mm asphalt on 40mm screed</Name>
+					<ForeignProperty name="numberlayers">3</ForeignProperty>
+					<ForeignProperty name="outsidetexture">99</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">0.290745496</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.1</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>8.4</Thickness>
+					<ForeignProperty name="url">0.290745497</ForeignProperty>
+					<Uvalue>3.43943419</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">6.633697361</ForeignProperty>
+					<Layers>
+						<Layer id="2367" order="1">
+							<Material materialIdRef="30"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+						<Layer id="2368" order="2">
+							<Material materialIdRef="4"/>
+							<Thickness>0.019</Thickness>
+						</Layer>
+						<Layer id="2369" order="3">
+							<Material materialIdRef="29"/>
+							<Thickness>0.04</Thickness>
+						</Layer>
+						<Layer id="2370" order="4">
+							<Material materialIdRef="10"/>
+							<Thickness>0.15</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="33" sourceId="33">
+					<ForeignProperty name="bsrvalue">2.830924969</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.353241436</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.375809174</ForeignProperty>
+					<Sourcecatagory>1</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">7.5</ForeignProperty>
+					<ForeignProperty name="cm2">7.5</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">2.830924949</ForeignProperty>
+					<Name>Lightweight curtain wall insulated to 2000 regs</Name>
+					<ForeignProperty name="numberlayers">3</ForeignProperty>
+					<ForeignProperty name="outsidetexture">11</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">2.830924796</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.107</Thickness>
+					<ForeignProperty name="url">2.830924988</ForeignProperty>
+					<Uvalue>0.353241457</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.375809193</ForeignProperty>
+					<Layers>
+						<Layer id="2375" order="1">
+							<Material materialIdRef="102"/>
+							<Thickness>0.006</Thickness>
+						</Layer>
+						<Layer id="2376" order="2">
+							<Material materialIdRef="103"/>
+							<Thickness>0.088</Thickness>
+						</Layer>
+						<Layer id="2377" order="3">
+							<Material materialIdRef="27"/>
+							<Thickness>0.013</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="34" sourceId="34">
+					<ForeignProperty name="bsrvalue">0.38380953</ForeignProperty>
+					<ForeignProperty name="bsuvalue">2.605459013</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">4.101562522</ForeignProperty>
+					<Sourcecatagory>5</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">39.89999771</ForeignProperty>
+					<ForeignProperty name="cm2">39.89999771</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">4.459599972</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">129</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.383809524</ForeignProperty>
+					<Name>Flat roof - 19mm asphalt on 13mm fibreboard</Name>
+					<ForeignProperty name="numberlayers">2</ForeignProperty>
+					<ForeignProperty name="outsidetexture">62</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">0.383809525</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.1</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>3.2</Thickness>
+					<ForeignProperty name="url">0.383809537</ForeignProperty>
+					<Uvalue>2.60545905</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">4.101562481</ForeignProperty>
+					<Layers>
+						<Layer id="2378" order="1">
+							<Material materialIdRef="4"/>
+							<Thickness>0.019</Thickness>
+						</Layer>
+						<Layer id="2379" order="2">
+							<Material materialIdRef="19"/>
+							<Thickness>0.013</Thickness>
+						</Layer>
+						<Layer id="2380" order="3">
+							<Material materialIdRef="105"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+						<Layer id="2381" order="4">
+							<Material materialIdRef="27"/>
+							<Thickness>0.01</Thickness>
+						</Layer>
+						<Layer id="2382" order="5">
+							<Material materialIdRef="2"/>
+							<Thickness>0</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="36" sourceId="36">
+					<ForeignProperty name="bsrvalue">1.598888881</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.625434332</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.720000014</ForeignProperty>
+					<Sourcecatagory>13</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">0.840000033</ForeignProperty>
+					<ForeignProperty name="cm2">0</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">0.34195292</ForeignProperty>
+					<ForeignProperty name="hco">19.45960045</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">207</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">1.598888889</ForeignProperty>
+					<Name>Roofspace floor insulation 50mm</Name>
+					<ForeignProperty name="numberlayers">1</ForeignProperty>
+					<ForeignProperty name="outsidetexture">207</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.540400028</ForeignProperty>
+					<ForeignProperty name="rvalue">1.598888955</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.17</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>5</Thickness>
+					<ForeignProperty name="url">1.598888874</ForeignProperty>
+					<Uvalue>0.625434303</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.719999966</ForeignProperty>
+					<Layers>
+						<Layer id="2386" order="1">
+							<Material materialIdRef="21"/>
+							<Thickness>0.05</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="37" sourceId="37">
+					<ForeignProperty name="bsrvalue">2.987777744</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.334696917</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.360000007</ForeignProperty>
+					<Sourcecatagory>13</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">1.680000067</ForeignProperty>
+					<ForeignProperty name="cm2">0</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">0.34195292</ForeignProperty>
+					<ForeignProperty name="hco">19.45960045</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">207</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">2.987777778</ForeignProperty>
+					<Name>Roofspace floor insulation 100mm</Name>
+					<ForeignProperty name="numberlayers">1</ForeignProperty>
+					<ForeignProperty name="outsidetexture">207</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.540400028</ForeignProperty>
+					<ForeignProperty name="rvalue">2.98777791</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.17</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.100000001</Thickness>
+					<ForeignProperty name="url">2.98777771</ForeignProperty>
+					<Uvalue>0.334696899</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.359999983</ForeignProperty>
+					<Layers>
+						<Layer id="2387" order="1">
+							<Material materialIdRef="21"/>
+							<Thickness>0.1</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="38" sourceId="38">
+					<ForeignProperty name="bsrvalue">1.008809545</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.991267385</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">1.151000276</ForeignProperty>
+					<Sourcecatagory>5</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">39.89999771</ForeignProperty>
+					<ForeignProperty name="cm2">39.89999771</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">4.459599972</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">207</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">1.008809524</ForeignProperty>
+					<Name>Flat roof with 19mm asphalt on 13mm fibreboard on 25mm eps slab</Name>
+					<ForeignProperty name="numberlayers">3</ForeignProperty>
+					<ForeignProperty name="outsidetexture">62</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">1.008809525</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.1</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>5.7</Thickness>
+					<ForeignProperty name="url">1.008809566</ForeignProperty>
+					<Uvalue>0.991267405</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">1.151000273</ForeignProperty>
+					<Layers>
+						<Layer id="2388" order="1">
+							<Material materialIdRef="4"/>
+							<Thickness>0.019</Thickness>
+						</Layer>
+						<Layer id="2389" order="2">
+							<Material materialIdRef="19"/>
+							<Thickness>0.013</Thickness>
+						</Layer>
+						<Layer id="2390" order="3">
+							<Material materialIdRef="14"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+						<Layer id="2391" order="4">
+							<Material materialIdRef="105"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+						<Layer id="2392" order="5">
+							<Material materialIdRef="27"/>
+							<Thickness>0.01</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="49" sourceId="49">
+					<ForeignProperty name="bsrvalue">0.484465415</ForeignProperty>
+					<ForeignProperty name="bsuvalue">2.064130834</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">3.180000027</ForeignProperty>
+					<Sourcecatagory>15</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">310</ForeignProperty>
+					<ForeignProperty name="cm2">310</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">127</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.484465409</ForeignProperty>
+					<Name>Cultivated clay soil (0.5m)</Name>
+					<ForeignProperty name="numberlayers">1</ForeignProperty>
+					<ForeignProperty name="outsidetexture">127</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">0.484465404</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.5</Thickness>
+					<ForeignProperty name="url">0.48446542</ForeignProperty>
+					<Uvalue>2.06413088</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">3.180000053</ForeignProperty>
+					<Layers>
+						<Layer id="2410" order="1">
+							<Material materialIdRef="60"/>
+							<Thickness>0.5</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="53" sourceId="53">
+					<ForeignProperty name="bsrvalue">3.972044762</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.251759499</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.260957281</ForeignProperty>
+					<Sourcecatagory>5</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">39.89999771</ForeignProperty>
+					<ForeignProperty name="cm2">39.89999771</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">4.459599972</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">207</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">3.972044818</ForeignProperty>
+					<Name>Flat roof U-value = 0.25 W/m2K</Name>
+					<ForeignProperty name="numberlayers">3</ForeignProperty>
+					<ForeignProperty name="outsidetexture">62</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">3.972044665</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.1</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.154000001</Thickness>
+					<ForeignProperty name="url">3.972044706</ForeignProperty>
+					<Uvalue>0.251759505</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.260957292</ForeignProperty>
+					<Layers>
+						<Layer id="2416" order="1">
+							<Material materialIdRef="4"/>
+							<Thickness>0.019</Thickness>
+						</Layer>
+						<Layer id="2417" order="2">
+							<Material materialIdRef="19"/>
+							<Thickness>0.013</Thickness>
+						</Layer>
+						<Layer id="2418" order="3">
+							<Material materialIdRef="103"/>
+							<Thickness>0.122</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="56" sourceId="56">
+					<ForeignProperty name="bsrvalue">0.275263159</ForeignProperty>
+					<ForeignProperty name="bsuvalue">3.632887172</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">9.499999965</ForeignProperty>
+					<Sourcecatagory>7</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">33.45999908</ForeignProperty>
+					<ForeignProperty name="cm2">33.45999908</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">143</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.275263158</ForeignProperty>
+					<Name>Wooden window frame</Name>
+					<ForeignProperty name="numberlayers">1</ForeignProperty>
+					<ForeignProperty name="outsidetexture">143</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">0.275263159</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>2</Thickness>
+					<ForeignProperty name="url">0.27526316</ForeignProperty>
+					<Uvalue>3.632887179</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">9.499999929</ForeignProperty>
+					<Layers>
+						<Layer id="2425" order="1">
+							<Material materialIdRef="52"/>
+							<Thickness>0.02</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="61" sourceId="61">
+					<ForeignProperty name="bsrvalue">0.275263159</ForeignProperty>
+					<ForeignProperty name="bsuvalue">3.632887172</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">9.499999965</ForeignProperty>
+					<Sourcecatagory>7</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">33.45999908</ForeignProperty>
+					<ForeignProperty name="cm2">33.45999908</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">3</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.275263158</ForeignProperty>
+					<Name>Painted Wooden window frame</Name>
+					<ForeignProperty name="numberlayers">1</ForeignProperty>
+					<ForeignProperty name="outsidetexture">3</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">0.275263159</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>2</Thickness>
+					<ForeignProperty name="url">0.27526316</ForeignProperty>
+					<Uvalue>3.632887179</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">9.499999929</ForeignProperty>
+					<Layers>
+						<Layer id="2437" order="1">
+							<Material materialIdRef="108"/>
+							<Thickness>0.02</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="93" sourceId="93">
+					<ForeignProperty name="bsrvalue">0.960444447</ForeignProperty>
+					<ForeignProperty name="bsuvalue">1.041184634</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">1.265111057</ForeignProperty>
+					<Sourcecatagory>2</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">10.80000019</ForeignProperty>
+					<ForeignProperty name="cm2">10.80000019</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.45960045</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.960444444</ForeignProperty>
+					<Name>2 x 12mm plasterboard leaves with 25mm glass wool in cavity</Name>
+					<ForeignProperty name="numberlayers">3</ForeignProperty>
+					<ForeignProperty name="outsidetexture">1</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.540400028</ForeignProperty>
+					<ForeignProperty name="rvalue">0.960444478</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>4.9</Thickness>
+					<ForeignProperty name="url">0.96044445</ForeignProperty>
+					<Uvalue>1.0411846</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">1.265110994</ForeignProperty>
+					<Layers>
+						<Layer id="2492" order="1">
+							<Material materialIdRef="27"/>
+							<Thickness>0.012</Thickness>
+						</Layer>
+						<Layer id="2493" order="2">
+							<Material materialIdRef="21"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+						<Layer id="2494" order="3">
+							<Material materialIdRef="27"/>
+							<Thickness>0.012</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="101" sourceId="101">
+					<ForeignProperty name="bsrvalue">6.420735327</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.155745401</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.159981179</ForeignProperty>
+					<Sourcecatagory>1</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">136</ForeignProperty>
+					<ForeignProperty name="cm2">136</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">6.420735294</ForeignProperty>
+					<Name>Super insulated brick/block external wall</Name>
+					<ForeignProperty name="numberlayers">4</ForeignProperty>
+					<ForeignProperty name="outsidetexture">8</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">6.420735182</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.424999996</Thickness>
+					<ForeignProperty name="url">6.420735359</ForeignProperty>
+					<Uvalue>0.155745405</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.159981182</ForeignProperty>
+					<Layers>
+						<Layer id="2514" order="1">
+							<Material materialIdRef="5"/>
+							<Thickness>0.105</Thickness>
+						</Layer>
+						<Layer id="2515" order="2">
+							<Material materialIdRef="103"/>
+							<Thickness>0.2</Thickness>
+						</Layer>
+						<Layer id="2516" order="3">
+							<Material materialIdRef="11"/>
+							<Thickness>0.105</Thickness>
+						</Layer>
+						<Layer id="2517" order="4">
+							<Material materialIdRef="66"/>
+							<Thickness>0.015</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="109" sourceId="109">
+					<ForeignProperty name="bsrvalue">1.155096298</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.865728686</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.985128204</ForeignProperty>
+					<Sourcecatagory>9</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">141.4700012</ForeignProperty>
+					<ForeignProperty name="cm2">0</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">4.459599972</ForeignProperty>
+					<ForeignProperty name="hco">19.45960045</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">1.155096304</ForeignProperty>
+					<Name>Insulated ground floor slab (30mm insulation + 150mm cast concrete)</Name>
+					<ForeignProperty name="numberlayers">2</ForeignProperty>
+					<ForeignProperty name="outsidetexture">207</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.540400028</ForeignProperty>
+					<ForeignProperty name="rvalue">1.155096262</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.1</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.180000005</Thickness>
+					<ForeignProperty name="url">1.155096292</ForeignProperty>
+					<Uvalue>0.865728713</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.985128246</ForeignProperty>
+					<Layers>
+						<Layer id="2526" order="1">
+							<Material materialIdRef="103"/>
+							<Thickness>0.03</Thickness>
+						</Layer>
+						<Layer id="2527" order="2">
+							<Material materialIdRef="9"/>
+							<Thickness>0.15</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="139" sourceId="139">
+					<ForeignProperty name="bsrvalue">0.354210526</ForeignProperty>
+					<ForeignProperty name="bsuvalue">2.823179794</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">5.428571463</ForeignProperty>
+					<Sourcecatagory>6</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">58.55500031</ForeignProperty>
+					<ForeignProperty name="cm2">58.55500031</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.45960045</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">3</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.354210526</ForeignProperty>
+					<Name>Wooden door</Name>
+					<ForeignProperty name="numberlayers">1</ForeignProperty>
+					<ForeignProperty name="outsidetexture">3</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.540400028</ForeignProperty>
+					<ForeignProperty name="rvalue">0.354210524</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>3.5</Thickness>
+					<ForeignProperty name="url">0.354210526</ForeignProperty>
+					<Uvalue>2.823179811</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">5.428571498</ForeignProperty>
+					<Layers>
+						<Layer id="2586" order="1">
+							<Material materialIdRef="108"/>
+							<Thickness>0.035</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="140" sourceId="140">
+					<ForeignProperty name="bsrvalue">0.320120003</ForeignProperty>
+					<ForeignProperty name="bsuvalue">3.123828531</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">6.661337485</ForeignProperty>
+					<Sourcecatagory>6</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">10.52999973</ForeignProperty>
+					<ForeignProperty name="cm2">10.52999973</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.45960045</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.32012</ForeignProperty>
+					<Name>Metal door</Name>
+					<ForeignProperty name="numberlayers">3</ForeignProperty>
+					<ForeignProperty name="outsidetexture">1</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.540400028</ForeignProperty>
+					<ForeignProperty name="rvalue">0.320120006</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.156000006</Thickness>
+					<ForeignProperty name="url">0.320120007</ForeignProperty>
+					<Uvalue>3.123828506</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">6.661337332</ForeignProperty>
+					<Layers>
+						<Layer id="2587" order="1">
+							<Material materialIdRef="22"/>
+							<Thickness>0.003</Thickness>
+						</Layer>
+						<Layer id="2588" order="2">
+							<Material materialIdRef="105"/>
+							<Thickness>0.01</Thickness>
+						</Layer>
+						<Layer id="2589" order="3">
+							<Material materialIdRef="22"/>
+							<Thickness>0.003</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="200" sourceId="200">
+					<ForeignProperty name="bsrvalue">4.376666606</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.22848439</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.240000005</ForeignProperty>
+					<Sourcecatagory>13</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">1.679999948</ForeignProperty>
+					<ForeignProperty name="cm2">1.679999948</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">0.34195292</ForeignProperty>
+					<ForeignProperty name="hco">19.45960045</ForeignProperty>
+					<ForeignProperty name="hideinlists">1</ForeignProperty>
+					<ForeignProperty name="insidetexture">207</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">4.376666667</ForeignProperty>
+					<Name>Roofspace floor insulation 150mm</Name>
+					<ForeignProperty name="numberlayers">1</ForeignProperty>
+					<ForeignProperty name="outsidetexture">207</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.540400028</ForeignProperty>
+					<ForeignProperty name="rvalue">4.376666985</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.17</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0.150000006</Thickness>
+					<ForeignProperty name="url">4.376666546</ForeignProperty>
+					<Uvalue>0.22848437</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.239999982</ForeignProperty>
+					<Layers>
+						<Layer id="2595" order="1">
+							<Material materialIdRef="21"/>
+							<Thickness>0.15</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="1801" sourceId="1801">
+					<ForeignProperty name="bsrvalue">0.17003125</ForeignProperty>
+					<ForeignProperty name="bsuvalue">5.881271833</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">31999.99924</ForeignProperty>
+					<Sourcecatagory>7</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">12.31999969</ForeignProperty>
+					<ForeignProperty name="cm2">12.31999969</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.17003125</ForeignProperty>
+					<Name>Aluminium window frame (no break)</Name>
+					<ForeignProperty name="numberlayers">1</ForeignProperty>
+					<ForeignProperty name="outsidetexture">1</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">0.17003125</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>5</Thickness>
+					<ForeignProperty name="url">0.17003125</ForeignProperty>
+					<Uvalue>5.881271825</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">32000.00221</ForeignProperty>
+					<Layers>
+						<Layer id="3032" order="1">
+							<Material materialIdRef="45"/>
+							<Thickness>0.005</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="1802" sourceId="1802">
+					<ForeignProperty name="bsrvalue">0.211924267</ForeignProperty>
+					<ForeignProperty name="bsuvalue">4.718666781</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">23.85253533</ForeignProperty>
+					<Sourcecatagory>7</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">11.18300056</ForeignProperty>
+					<ForeignProperty name="cm2">11.18300056</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.211924265</ForeignProperty>
+					<Name>Aluminium window frame (with thermal break)</Name>
+					<ForeignProperty name="numberlayers">3</ForeignProperty>
+					<ForeignProperty name="outsidetexture">1</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">0.211924264</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>9</Thickness>
+					<ForeignProperty name="url">0.21192427</ForeignProperty>
+					<Uvalue>4.718666852</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">23.85253557</ForeignProperty>
+					<Layers>
+						<Layer id="3033" order="1">
+							<Material materialIdRef="45"/>
+							<Thickness>0.002</Thickness>
+						</Layer>
+						<Layer id="3034" order="2">
+							<Material materialIdRef="214"/>
+							<Thickness>0.005</Thickness>
+						</Layer>
+						<Layer id="3035" order="3">
+							<Material materialIdRef="0"/>
+							<Thickness>0.002</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="1803" sourceId="1803">
+					<ForeignProperty name="bsrvalue">0.287647064</ForeignProperty>
+					<ForeignProperty name="bsuvalue">3.476482559</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">8.499999984</ForeignProperty>
+					<Sourcecatagory>7</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">25.01999855</ForeignProperty>
+					<ForeignProperty name="cm2">25.01999855</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description/>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">157</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0.287647059</ForeignProperty>
+					<Name>UPVC window frame</Name>
+					<ForeignProperty name="numberlayers">1</ForeignProperty>
+					<ForeignProperty name="outsidetexture">157</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">0.287647052</ForeignProperty>
+					<ForeignProperty name="sbemtype">1-Exterior</ForeignProperty>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0</ForeignProperty>
+					<Sourceidentification>DesignBuilder</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>2</Thickness>
+					<ForeignProperty name="url">0.287647069</ForeignProperty>
+					<Uvalue>3.476482702</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">8.500000507</ForeignProperty>
+					<Layers>
+						<Layer id="3036" order="1">
+							<Material materialIdRef="214"/>
+							<Thickness>0.02</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="4180" sourceId="4180">
+					<ForeignProperty name="bsrvalue">4.322969826</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.231322457</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.240791542</ForeignProperty>
+					<Sourcecatagory>1</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">125</ForeignProperty>
+					<ForeignProperty name="cm2">20</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description>Do not delete. This construciton is used by the system</Description>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">132</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">4.322969738</ForeignProperty>
+					<Name>_default_wall_</Name>
+					<ForeignProperty name="numberlayers">4</ForeignProperty>
+					<ForeignProperty name="outsidetexture">172</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">4.32296979</ForeignProperty>
+					<ForeignProperty name="sbemtype"/>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>UK NCM (layer order undefined)</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>3.375000002</Thickness>
+					<ForeignProperty name="url">4.322969913</ForeignProperty>
+					<Uvalue>0.231322459</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.240791542</ForeignProperty>
+					<Layers>
+						<Layer id="3319" order="1">
+							<Material materialIdRef="4300"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+						<Layer id="3320" order="2">
+							<Material materialIdRef="4338"/>
+							<Thickness>3.25</Thickness>
+						</Layer>
+						<Layer id="3321" order="3">
+							<Material materialIdRef="4195"/>
+							<Thickness>0.05</Thickness>
+						</Layer>
+						<Layer id="3322" order="4">
+							<Material materialIdRef="4013"/>
+							<Thickness>0.05</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="4341" sourceId="4341">
+					<ForeignProperty name="bsrvalue">4.322969826</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.231322457</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.240791542</ForeignProperty>
+					<Sourcecatagory>1</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">125</ForeignProperty>
+					<ForeignProperty name="cm2">20</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description>Do not delete. This construciton is used by the system</Description>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">132</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">4.322969738</ForeignProperty>
+					<Name>_default_floor_</Name>
+					<ForeignProperty name="numberlayers">4</ForeignProperty>
+					<ForeignProperty name="outsidetexture">172</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">4.32296979</ForeignProperty>
+					<ForeignProperty name="sbemtype"/>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>UK NCM (layer order undefined)</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>3.375000002</Thickness>
+					<ForeignProperty name="url">4.322969913</ForeignProperty>
+					<Uvalue>0.231322459</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.240791542</ForeignProperty>
+					<Layers>
+						<Layer id="3831" order="1">
+							<Material materialIdRef="4300"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+						<Layer id="3832" order="2">
+							<Material materialIdRef="4338"/>
+							<Thickness>3.25</Thickness>
+						</Layer>
+						<Layer id="3833" order="3">
+							<Material materialIdRef="4195"/>
+							<Thickness>0.05</Thickness>
+						</Layer>
+						<Layer id="3834" order="4">
+							<Material materialIdRef="4013"/>
+							<Thickness>0.05</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="4342" sourceId="4342">
+					<ForeignProperty name="bsrvalue">4.322969826</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.231322457</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.240791542</ForeignProperty>
+					<Sourcecatagory>1</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">125</ForeignProperty>
+					<ForeignProperty name="cm2">20</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description>Do not delete. This construciton is used by the system</Description>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">132</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">4.322969738</ForeignProperty>
+					<Name>_default_roof_</Name>
+					<ForeignProperty name="numberlayers">4</ForeignProperty>
+					<ForeignProperty name="outsidetexture">172</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">4.32296979</ForeignProperty>
+					<ForeignProperty name="sbemtype"/>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>UK NCM (layer order undefined)</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>3.375000002</Thickness>
+					<ForeignProperty name="url">4.322969913</ForeignProperty>
+					<Uvalue>0.231322459</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.240791542</ForeignProperty>
+					<Layers>
+						<Layer id="3835" order="1">
+							<Material materialIdRef="4300"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+						<Layer id="3836" order="2">
+							<Material materialIdRef="4338"/>
+							<Thickness>3.25</Thickness>
+						</Layer>
+						<Layer id="3837" order="3">
+							<Material materialIdRef="4195"/>
+							<Thickness>0.05</Thickness>
+						</Layer>
+						<Layer id="3838" order="4">
+							<Material materialIdRef="4013"/>
+							<Thickness>0.05</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="4343" sourceId="4343">
+					<ForeignProperty name="bsrvalue">4.322969826</ForeignProperty>
+					<ForeignProperty name="bsuvalue">0.231322457</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0.240791542</ForeignProperty>
+					<Sourcecatagory>1</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">125</ForeignProperty>
+					<ForeignProperty name="cm2">20</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description>Do not delete. This construction is used by the system</Description>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.87000084</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">132</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">4.322969738</ForeignProperty>
+					<Name>_default_door_</Name>
+					<ForeignProperty name="numberlayers">4</ForeignProperty>
+					<ForeignProperty name="outsidetexture">172</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.129999638</ForeignProperty>
+					<ForeignProperty name="rvalue">4.32296979</ForeignProperty>
+					<ForeignProperty name="sbemtype"/>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>UK NCM (layer order undefined)</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>3.375000002</Thickness>
+					<ForeignProperty name="url">4.322969913</ForeignProperty>
+					<Uvalue>0.231322459</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0.240791542</ForeignProperty>
+					<Layers>
+						<Layer id="3839" order="1">
+							<Material materialIdRef="4300"/>
+							<Thickness>0.025</Thickness>
+						</Layer>
+						<Layer id="3840" order="2">
+							<Material materialIdRef="4338"/>
+							<Thickness>3.25</Thickness>
+						</Layer>
+						<Layer id="3841" order="3">
+							<Material materialIdRef="4195"/>
+							<Thickness>0.05</Thickness>
+						</Layer>
+						<Layer id="3842" order="4">
+							<Material materialIdRef="4013"/>
+							<Thickness>0.05</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="4478" sourceId="4478">
+					<ForeignProperty name="bsrvalue">0</ForeignProperty>
+					<ForeignProperty name="bsuvalue">1</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0</ForeignProperty>
+					<Sourcecatagory>12</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">160</ForeignProperty>
+					<ForeignProperty name="cm2">160</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description>Typical internal floor for an office</Description>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.45960045</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0</ForeignProperty>
+					<Name>Internal concrete floor (with conditioned space below)</Name>
+					<ForeignProperty name="numberlayers">4</ForeignProperty>
+					<ForeignProperty name="outsidetexture">1</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.540400028</ForeignProperty>
+					<ForeignProperty name="rvalue">0</ForeignProperty>
+					<ForeignProperty name="sbemtype"/>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>UK NCM (layer order undefined)</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0</Thickness>
+					<ForeignProperty name="url">0</ForeignProperty>
+					<Uvalue>1</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0</ForeignProperty>
+					<Layers>
+						<Layer id="4293" order="1">
+							<Material materialIdRef="4344"/>
+							<Thickness>0.015</Thickness>
+						</Layer>
+						<Layer id="4294" order="2">
+							<Material materialIdRef="4346"/>
+							<Thickness>0.4</Thickness>
+						</Layer>
+						<Layer id="4295" order="3">
+							<Material materialIdRef="4253"/>
+							<Thickness>0.15</Thickness>
+						</Layer>
+						<Layer id="4296" order="4">
+							<Material materialIdRef="4013"/>
+							<Thickness>0.05</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+				<Construction id="4481" sourceId="4481">
+					<ForeignProperty name="bsrvalue">0</ForeignProperty>
+					<ForeignProperty name="bsuvalue">3.85</ForeignProperty>
+					<ForeignProperty name="bsuvaluesurfacetosurface">0</ForeignProperty>
+					<Sourcecatagory>1</Sourcecatagory>
+					<Classification>
+						<Code/>
+						<Table/>
+					</Classification>
+					<ForeignProperty name="cm">1</ForeignProperty>
+					<ForeignProperty name="cm2">1</ForeignProperty>
+					<ForeignProperty name="definitionmethod">1-Material layers</ForeignProperty>
+					<Description>Internal window.  U=3.85</Description>
+					<ForeignProperty name="hci">2.151907682</ForeignProperty>
+					<ForeignProperty name="hco">19.45960045</ForeignProperty>
+					<ForeignProperty name="hideinlists">0</ForeignProperty>
+					<ForeignProperty name="insidetexture">1</ForeignProperty>
+					<ForeignProperty name="involvesmetalcladding">0</ForeignProperty>
+					<ForeignProperty name="issystem">0</ForeignProperty>
+					<ForeignProperty name="lrl">0</ForeignProperty>
+					<Name>Internal window</Name>
+					<ForeignProperty name="numberlayers">1</ForeignProperty>
+					<ForeignProperty name="outsidetexture">1</ForeignProperty>
+					<ForeignProperty name="paramselected">0</ForeignProperty>
+					<ForeignProperty name="radi">5.540400028</ForeignProperty>
+					<ForeignProperty name="rado">5.540400028</ForeignProperty>
+					<ForeignProperty name="rvalue">0</ForeignProperty>
+					<ForeignProperty name="sbemtype"/>
+					<Shortname/>
+					<ForeignProperty name="solarabsorptivity">0.7</ForeignProperty>
+					<Sourceidentification>UK NCM (layer order undefined)</Sourceidentification>
+					<ForeignProperty name="sri">0.13</ForeignProperty>
+					<ForeignProperty name="sro">0.04</ForeignProperty>
+					<Thickness>0</Thickness>
+					<ForeignProperty name="url">0</ForeignProperty>
+					<Uvalue>3.85</Uvalue>
+					<ForeignProperty name="uvaluesurfacetosurface">0</ForeignProperty>
+					<Layers>
+						<Layer id="4301" order="1">
+							<Material materialIdRef="4340"/>
+							<Thickness>0.004</Thickness>
+						</Layer>
+					</Layers>
+				</Construction>
+			</Constructions>
+		</j:jelly>
+	</return>
+</ns2:getConListResponse>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" fileVersion="5.6.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema" schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd">
+   <ProjectInfo>
+      <DisplayName>ASHRAEHandbookWall13BrickWallsBrickR5insulationboardsheathingR11battinsulationgypboard</DisplayName>
+      <Comment>This template was made by ResCon</Comment>
+   </ProjectInfo>
+   <!--List of all materials used in this construction-->
+   <Materials>
+      <MaterialReference displayName="4inbrick">${Material Database}/4inbrick_3311.m6</MaterialReference>
+      <MaterialReference displayName="12infiberboardsheathing">${Material Database}/12infiberboardsheathing_3300.m6</MaterialReference>
+      <MaterialReference displayName="58ingypboard">${Material Database}/58ingypboard_3298.m6</MaterialReference>
+      <MaterialReference displayName="R51ininsulationboard">${Material Database}/R51ininsulationboard_3305.m6</MaterialReference>
+      <MaterialReference displayName="R11312inbattinsulation">${Material Database}/R11312inbattinsulation_3308.m6</MaterialReference>
+      <MaterialReference displayName="Airgap10mm">${Material Database}/Airgap10mm_105.m6</MaterialReference>
+   </Materials>
+   <!--Discretization data (grid and sketches)-->
+   <Discretization geometryType="2D">
+      <XSteps unit="m">0.1016 0.16002 0.0254 0.0127 0.089408 0.015875</XSteps>
+   </Discretization>
+   <!--List of all assignments of materials and conditions-->
+   <Assignments>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="4inbrick">3311</Reference>
+         <IBK:Range>0 0 0 0</IBK:Range>
+      </Assignment>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="Airgap10mm">105</Reference>
+         <IBK:Range>1 0 1 0</IBK:Range>
+      </Assignment>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="R51ininsulationboard">3305</Reference>
+         <IBK:Range>2 0 2 0</IBK:Range>
+      </Assignment>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="12infiberboardsheathing">3300</Reference>
+         <IBK:Range>3 0 3 0</IBK:Range>
+      </Assignment>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="R11312inbattinsulation">3308</Reference>
+         <IBK:Range>4 0 4 0</IBK:Range>
+      </Assignment>
+      <Assignment location="Element" type="Material">
+         <Reference displayName="58ingypboard">3298</Reference>
+         <IBK:Range>5 0 5 0</IBK:Range>
+      </Assignment>
+   </Assignments>
+</DelphinProject>
